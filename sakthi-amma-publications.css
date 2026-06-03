@@ -1,0 +1,30 @@
+.news-drpdwn .dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 220px;
+}
+
+.news-drpdwn .dropdown-menu.show {
+  display: block;
+}
+
+.news-drpdwn {
+  position: relative;
+  display: inline-block;
+}
+
+.news-drpdwn .dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+}
+
+.news-drpdwn .dropdown-item:hover {
+  background-color: #f8f9fa;
+}

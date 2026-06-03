@@ -1,0 +1,131 @@
+.about-info-inner p {
+  margin-top: 0px !important;
+}
+
+.darshan-section {
+  padding: 40px 0px 20px 0px;
+}
+
+.darshan-timings-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d4b16f;
+  border: none;
+  margin: 15px auto;
+  border-radius: 2px;
+  opacity: 1 !important;
+}
+
+.darshan-timing-cards {
+  padding: 20px 0px 20px 0px;
+}
+
+.darshan-timing-cards a {
+  text-decoration: none;
+}
+
+.darshan-timing-card {
+  position: relative;
+  display: inline-block;
+  padding: 60px;
+  background-image: url("static/sripuram-org/s.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.darshan-timing-card img {
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.darshan-timing-cards h5 {
+  font-family: 'helvetica';
+  font-size: 20px;
+  color: #9f1605;
+  margin-top: 20px;
+}
+
+.darshan-timing-cards i {
+  font-size: 14px;
+  color: #9f1605;
+  margin-left: 2px;
+  transition: all 0.3s ease;
+}
+
+.darshan-timing-cards a:hover h5 {
+  color: #9f1605;
+}
+
+.darshan-timing-cards a:hover i {
+  color: #9f1605 !important;
+  transform: translateX(5px);
+}
+
+@media (min-width: 1919px) {
+  .about-info-inner {
+    padding: 50px 360px 0 0 !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+  .about-info-inner {
+    padding: 30px 140px 0 0 !important;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1499px) {
+  .about-info-inner {
+    padding: 10px 80px 0 0 !important;
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1400px) {
+  .about-info-inner {
+    padding: 10px 30px 0 0 !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .about-info-inner {
+    padding: 10px 15px 0 0 !important;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .about-info-inner {
+    padding: 0px 10px 0 0 !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .about-info-inner {
+    padding: 0px 10px 0 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-info-inner {
+    padding: 30px 30px 0 !important;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-info-inner {
+    padding: 20px 20px 0 !important;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-info-inner {
+    padding: 15px 15px 0 !important;
+    margin-left: 0;
+  }
+}

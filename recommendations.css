@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 500;
+  src: local("helvetica"), local("helvetica"),
+    url("static/sripuram-org/helvetica.ttf") format("truetype");
+}
+
+.image-bg {
+  position: relative;
+  display: inline-block;
+  padding: 60px;
+}
+
+.recommendation-bg {
+  background-image: url("static/sripuram-org/s.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.recommendations-section h4 {
+  font-family: "helvetica";
+  color: #9f1605 !important;
+  text-transform: uppercase !important;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.recommendations-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.recommendations-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.recommendation-bullets li {
+  font-family: "helvetica";
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 35px;
+  list-style: none;
+}
+
+.recommendation-bullets li img.bullet-img {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 20px;
+  height: auto;
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.recommendations-border {
+  border-bottom: 1px solid #d4b16f;
+}
+
+@media (max-width: 991px) {
+  .recommendations-section h4 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 500;
+  src: local("helvetica"), local("helvetica"),
+    url("static/sripuram-org/helvetica.ttf") format("truetype");
+}
+
+.strictly-prohibited {
+  margin-top: 40px;
+}
+
+.strictly-prohibited-section h4,
+.strictly-prohibited-section1 h4 {
+  font-family: "helvetica";
+  color: #9f1605 !important;
+  text-transform: uppercase !important;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.strictly-prohibited-section p,
+.strictly-prohibited-section1 p {
+  margin-top: 10px;
+}
+
+.strictly-prohibited-section img {
+  background-color: #F1CD98;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.strictly-prohibited-section1 {
+  background-color: #F2CF99;
+  border-radius: 15px;
+  margin: 0px 20px;
+}
+
+.strictly-prohibited-section1 img {
+  background-color: #806940;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .strictly-prohibited-section .row>[class*="col-"] {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  .strictly-prohibited {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .strictly-prohibited {
+    margin-top: 10px;
+  }
+
+  .strictly-prohibited-section h4 {
+    font-size: 18px;
+  }
+
+  .strictly-prohibited-section p {
+    font-size: 14px;
+  }
+}
