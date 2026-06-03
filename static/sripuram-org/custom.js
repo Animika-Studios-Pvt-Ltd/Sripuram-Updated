@@ -2,17 +2,21 @@ AOS.init();
 let overlay = document.querySelector(".menu_overlay"),
   open = document.querySelector(".menu-icon"),
   close = document.querySelector(".fa-times");
-(open.addEventListener("click", () => {
-  overlay.style.transform = "translateY(0)";
-}),
+if (open && overlay) {
+  open.addEventListener("click", () => {
+    overlay.style.transform = "translateY(0)";
+  });
+}
+if (close && overlay) {
   close.addEventListener("click", () => {
     overlay.style.transform = "translateY(-110%)";
-  }),
-  $(window).scroll(function () {
-    $(this).scrollTop() >= 50
-      ? $("#return-to-top").fadeIn(200)
-      : $("#return-to-top").fadeOut(200);
-  }),
+  });
+}
+$(window).scroll(function () {
+  $(this).scrollTop() >= 50
+    ? $("#return-to-top").fadeIn(200)
+    : $("#return-to-top").fadeOut(200);
+}),
   $("#return-to-top").click(function () {
     $("body,html").animate(
       {
@@ -27,8 +31,8 @@ let overlay = document.querySelector(".menu_overlay"),
       "all" == e
         ? $(".filter").show("10000")
         : ($(".filter")
-            .not("." + e)
-            .hide("8000"),
+          .not("." + e)
+          .hide("8000"),
           $(".filter")
             .filter("." + e)
             .show("10000"));
@@ -85,19 +89,19 @@ let overlay = document.querySelector(".menu_overlay"),
         },
       },
     ],
-  }));
+  });
 var $cell = $(".card");
 ($cell.find(".js-expander").click(function () {
   var e = $(this).closest(".card");
   e.hasClass("is-collapsed")
     ? ($cell
-        .not(e)
-        .removeClass("is-expanded")
-        .addClass("is-collapsed")
-        .addClass("is-inactive"),
+      .not(e)
+      .removeClass("is-expanded")
+      .addClass("is-collapsed")
+      .addClass("is-inactive"),
       e.removeClass("is-collapsed").addClass("is-expanded"),
       $cell.not(e).hasClass("is-inactive") ||
-        $cell.not(e).addClass("is-inactive"))
+      $cell.not(e).addClass("is-inactive"))
     : (e.removeClass("is-expanded").addClass("is-collapsed"),
       $cell.not(e).removeClass("is-inactive"));
 }),
@@ -117,7 +121,9 @@ const app = (() => {
         a());
     },
     a = () => {
-      s.addEventListener("click", () => r(e, "nav-active"));
+      if (s) {
+        s.addEventListener("click", () => r(e, "nav-active"));
+      }
     },
     r = (e, s) => {
       e.classList.contains(s) ? e.classList.remove(s) : e.classList.add(s);

@@ -243,18 +243,6 @@ p {
     border-radius: 15px;
 }
 
-.top {
-    width: 100%;
-    position: absolute;
-    padding: 0 12px;
-    left: 0;
-}
-
-.top .header {
-    background: #fff;
-    position: relative;
-    top: 15px;
-}
 
 .logo {
     padding: 10px 20px;
@@ -4074,7 +4062,7 @@ input:-internal-autofill-selected {
     border-radius: 20px;
     margin: 10px 0 40px;
 }
- 
+
 @media (max-width: 991px) {
     .news-drpdwn button {
         font-size: 14px;
@@ -4315,7 +4303,8 @@ input:-internal-autofill-selected {
         color: #212529;
     }
 
-    .parallax-div a, .parallax-div img {
+    .parallax-div a,
+    .parallax-div img {
         color: #4173BA;
     }
 
@@ -4816,7 +4805,8 @@ input:-internal-autofill-selected {
         margin-left: -30px;
     }
 
-    .transport ul li, .transport-3 ul li {
+    .transport ul li,
+    .transport-3 ul li {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -4824,12 +4814,14 @@ input:-internal-autofill-selected {
         gap: 5px;
     }
 
-    .transport ul li img, .transport-3 ul li img {
+    .transport ul li img,
+    .transport-3 ul li img {
         width: 40px;
         height: auto;
     }
 
-    .transport-2 ul li, .transport-4 ul li {
+    .transport-2 ul li,
+    .transport-4 ul li {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -4837,7 +4829,8 @@ input:-internal-autofill-selected {
         gap: 5px;
     }
 
-    .transport-2 ul li img, .transport-4 ul li img {
+    .transport-2 ul li img,
+    .transport-4 ul li img {
         width: 40px;
         height: auto;
     }
@@ -5250,7 +5243,10 @@ input:-internal-autofill-selected {
         margin-left: -35px !important;
     }
 
-    .transport ul li img, .transport-2 ul li img, .transport-3 ul li img, .transport-4 ul li img {
+    .transport ul li img,
+    .transport-2 ul li img,
+    .transport-3 ul li img,
+    .transport-4 ul li img {
         width: 35px !important;
         height: auto;
     }
@@ -5685,7 +5681,8 @@ input:-internal-autofill-selected {
         right: 0;
     }
 
-    .transport-3 p, .transport p {
+    .transport-3 p,
+    .transport p {
         left: 20px !important;
     }
 
@@ -9540,4 +9537,4 @@ input:-internal-autofill-selected {
 .amma-gallery-download-btn:hover i {
     color: white;
     transform: translateY(2px);
-}
+}

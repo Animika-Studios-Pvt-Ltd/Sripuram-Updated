@@ -1,0 +1,866 @@
+/* ═══════════════════════════════════════════════════════════════
+   SRIPURAM HEADER & NAVIGATION LAYOUT STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Top header container spacing */
+.top {
+    width: 100%;
+    position: absolute;
+    padding: 15px 12px !important;
+    left: 0;
+}
+
+.top .header {
+    background: #fff;
+    position: relative;
+    top: 0 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SN SIDE DRAWER — Modern Full-Navigation Panel
+   Theme: Flat Cream/Black, No Shadows, Clean Typography
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Trigger Column ─────────────────────────────────────────── */
+.sn-trigger-col {
+    position: static;
+}
+
+/* ── Hamburger Wrapper ──────────────────────────────────────── */
+.sn-hamburger-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 8px 0;
+}
+
+.sn-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    background: #9f1605;
+    border: 2px solid #c69665;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 10px;
+    transition: background 0.3s, transform 0.2s;
+    position: relative;
+    z-index: 10;
+    box-shadow: none !important;
+}
+
+.sn-hamburger:hover {
+    background: #7a1004;
+    transform: scale(1.05);
+}
+
+.sn-hamburger__bar {
+    display: block;
+    height: 2px;
+    background: #faebd7;
+    border-radius: 2px;
+    transition: transform 0.35s cubic-bezier(0.645, 0.045, 0.355, 1),
+        opacity 0.25s,
+        width 0.3s;
+}
+
+.sn-hamburger__bar:nth-child(1) {
+    width: 22px;
+}
+
+.sn-hamburger__bar:nth-child(2) {
+    width: 16px;
+}
+
+.sn-hamburger__bar:nth-child(3) {
+    width: 22px;
+}
+
+/* Hamburger → X animation when drawer open */
+body.sn-open .sn-hamburger__bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    width: 22px;
+}
+
+body.sn-open .sn-hamburger__bar:nth-child(2) {
+    opacity: 0;
+    width: 0;
+}
+
+body.sn-open .sn-hamburger__bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 22px;
+}
+
+/* ── Backdrop ───────────────────────────────────────────────── */
+.sn-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+body.sn-open .sn-backdrop {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ── Drawer Panel ───────────────────────────────────────────── */
+.sn-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    max-width: 92vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #faebd7;
+    transform: translateX(100%);
+    transition: transform 0.42s cubic-bezier(0.77, 0, 0.175, 1);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #c69665 #faebd7;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #c69665;
+    box-shadow: none !important;
+}
+
+.sn-drawer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sn-drawer::-webkit-scrollbar-track {
+    background: #faebd7;
+}
+
+.sn-drawer::-webkit-scrollbar-thumb {
+    background: #c69665;
+    border-radius: 4px;
+}
+
+body.sn-open .sn-drawer {
+    transform: translateX(0);
+}
+
+/* ── Drawer Header ──────────────────────────────────────────── */
+.sn-drawer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid #c69665;
+    background: rgba(198, 150, 101, 0.1);
+    flex-shrink: 0;
+}
+
+.sn-drawer__logo {
+    height: 54px;
+    width: auto;
+    object-fit: contain;
+    filter: none !important;
+}
+
+/* Close (×) button */
+.sn-close-btn {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #9f1605;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.25s, transform 0.25s;
+    flex-shrink: 0;
+}
+
+.sn-close-btn:hover {
+    background: rgba(159, 22, 5, 0.08);
+    transform: rotate(90deg) scale(1.1);
+}
+
+.sn-close-btn span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    background: #9f1605;
+    border-radius: 2px;
+    display: block;
+}
+
+.sn-close-btn span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.sn-close-btn span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* ── Nav List ───────────────────────────────────────────────── */
+.sn-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 8px 0;
+    flex: 1;
+}
+
+.sn-nav-list__item {
+    border-bottom: 1px solid rgba(198, 150, 101, 0.2);
+}
+
+.sn-nav-list__item:last-child {
+    border-bottom: none;
+}
+
+/* ── Nav Links ──────────────────────────────────────────────── */
+.sn-nav-list__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px 24px;
+    font-size: 15px;
+    font-family: "helvetica", sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: #000;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.25s, color 0.25s, padding-left 0.25s;
+    position: relative;
+}
+
+.sn-nav-list__link:hover {
+    background: rgba(198, 150, 101, 0.12);
+    color: #9f1605;
+    padding-left: 30px;
+}
+
+/* Gold left-border on hover */
+.sn-nav-list__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #9f1605;
+    transform: scaleY(0);
+    transition: transform 0.25s;
+    border-radius: 0 2px 2px 0;
+}
+
+.sn-nav-list__link:hover::before {
+    transform: scaleY(1);
+}
+
+/* Nav icon */
+.sn-nav-icon {
+    font-size: 14px !important;
+    color: #9f1605 !important;
+    width: 18px !important;
+    height: auto !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+    transition: color 0.25s !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.sn-nav-list__link:hover .sn-nav-icon {
+    color: #9f1605;
+}
+
+/* ── Accordion Button ───────────────────────────────────────── */
+.sn-accordion-btn {
+    justify-content: flex-start;
+}
+
+.sn-accordion-btn span {
+    flex: 1;
+}
+
+/* Chevron icon (rightmost) */
+.sn-chevron-icon {
+    font-size: 11px;
+    color: #9f1605;
+    margin-left: auto;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+.sn-accordion-btn[aria-expanded="true"] .sn-chevron-icon {
+    transform: rotate(180deg);
+}
+
+/* ── Sub-list (Accordion Panel) ─────────────────────────────── */
+.sn-sub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.3s;
+    opacity: 0;
+    background: rgba(198, 150, 101, 0.05);
+}
+
+.sn-sub-list.sn-open {
+    opacity: 1;
+    max-height: 1200px;
+}
+
+.sn-sub-list li {
+    border-top: 1px solid rgba(198, 150, 101, 0.1);
+}
+
+.sn-sub-list li a {
+    display: block;
+    padding: 10px 24px 10px 54px;
+    font-size: 15px;
+    font-family: "helvetica", sans-serif;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: color 0.2s, padding-left 0.2s, background 0.2s;
+    position: relative;
+    font-weight: normal;
+}
+
+.sn-sub-list li a::before {
+    content: '›';
+    position: absolute;
+    left: 36px;
+    color: #c69665;
+    font-size: 16px;
+    line-height: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.2s, left 0.2s;
+}
+
+.sn-sub-list li a:hover {
+    color: #9f1605;
+    padding-left: 58px;
+    background: rgba(198, 150, 101, 0.08);
+}
+
+.sn-sub-list li a:hover::before {
+    color: #9f1605;
+    left: 40px;
+}
+
+/* ── Drawer Footer ──────────────────────────────────────────── */
+.sn-drawer__footer {
+    padding: 18px 24px 24px;
+    border-top: 1px solid #c69665;
+    background: rgba(198, 150, 101, 0.12);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.sn-drawer__motto {
+    font-family: "arrusbtroman", serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #9f1605;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+    text-align: center;
+}
+
+.sn-drawer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.sn-drawer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(159, 22, 5, 0.05);
+    border: 1px solid rgba(159, 22, 5, 0.2);
+    color: #9f1605;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+
+.sn-drawer__socials a:hover {
+    background: #9f1605;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* ── Body lock when drawer open ─────────────────────────────── */
+body.sn-open {
+    overflow: hidden;
+}
+
+/* ── Responsive: smaller drawer on tiny screens ─────────────── */
+@media (max-width: 480px) {
+    .sn-drawer {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SN MEGA MENU OVERRIDES — Horizontal Header Sripuram Dropdown
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Ensure all main menu links have the same font-size */
+#main-menu a {
+    font-size: 15px !important;
+}
+
+/* Make the first sub-ul a horizontal mega container */
+#main-menu li.sn-mega-menu-parent>ul {
+    width: 60vw !important;
+    max-width: 95vw !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    padding: 20px !important;
+    gap: 20px !important;
+    background: #faebd7 !important;
+    border: 2px solid #c69665 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 4px !important;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none !important;
+    transition: opacity 0.25s ease, visibility 0.25s ease !important;
+}
+
+/* Subtle animation on hover or when clicked/locked */
+#main-menu li.sn-mega-menu-parent:hover>ul,
+#main-menu li.sn-mega-menu-parent.sn-mega-menu-locked>ul {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    animation: snMegaMenuFade 0.25s ease-out forwards !important;
+}
+
+@keyframes snMegaMenuFade {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* Columns (the 3 category <li> tags) */
+#main-menu li.sn-mega-menu-parent>ul>li {
+    flex: 1 !important;
+    display: block !important;
+    border-right: 1px solid rgba(198, 150, 101, 0.3) !important;
+    padding: 0 15px 0 0 !important;
+    background: transparent !important;
+}
+
+#main-menu li.sn-mega-menu-parent>ul>li:last-child {
+    border-right: none !important;
+    padding-right: 0 !important;
+}
+
+/* Category header links */
+#main-menu li.sn-mega-menu-parent>ul>li>a {
+    font-family: "arrusbtroman", serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #9f1605 !important;
+    border-bottom: 2px solid #c69665 !important;
+    padding: 0 0 6px 0 !important;
+    margin: 0 0 12px 0 !important;
+    display: block !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    pointer-events: none !important;
+    background: transparent !important;
+    text-align: center !important;
+}
+
+/* Sub-lists under categories */
+#main-menu li.sn-mega-menu-parent>ul>li>ul {
+    position: static !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+
+/* Sub-list item rows */
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li {
+    display: block !important;
+    padding: 2px 0 !important;
+    border: none !important;
+    background: transparent !important;
+    margin: 0 !important;
+}
+
+/* Force zero margins on all nested dropdown list elements */
+#main-menu li.sn-mega-menu-parent>ul ul,
+#main-menu li.sn-mega-menu-parent>ul li,
+#main-menu li.sn-mega-menu-parent>ul a {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Bullet list links */
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a {
+    font-family: "helvetica", sans-serif !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    margin: 0 !important;
+    padding: 4px 0 4px 25px !important;
+    display: block !important;
+    text-decoration: none !important;
+    transition: color 0.25s, padding-left 0.25s, background-color 0.25s !important;
+    position: relative !important;
+    font-weight: normal !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+    background: transparent !important;
+    border-radius: 4px !important;
+    border-left: 0 !important;
+}
+
+/* Add custom bullet indicators */
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 12px !important;
+    height: 12px !important;
+    background: url('star-1.webp') no-repeat center center !important;
+    background-size: contain !important;
+    transition: opacity 0.25s ease, transform 0.25s ease !important;
+    opacity: 1 !important;
+}
+
+/* Vertical bar indicator matching side drawer */
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 4px !important;
+    background: #c69665 !important;
+    transform: scaleY(0) !important;
+    transform-origin: bottom !important;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-radius: 2px 0 0 2px !important;
+}
+
+/* Bullet list links hover */
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a:hover {
+    color: #9f1605 !important;
+    background-color: rgba(198, 150, 101, 0.2) !important;
+    padding-left: 14px !important;
+    /* keep padding clean and stable as bullet fades */
+}
+
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a:hover::before {
+    opacity: 0 !important;
+    transform: translateY(-50%) scale(0) !important;
+}
+
+#main-menu li.sn-mega-menu-parent>ul>li>ul>li>a:hover::after {
+    transform: scaleY(1) !important;
+}
+
+/* Desktop header layout above 991px to force single-line flow */
+@media (min-width: 992px) {
+    .top .header {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .top .header > div {
+        width: auto !important;
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .logo img {
+        height: 48px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    .logo2 img {
+        height: 36px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    #main-menu {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+    }
+
+    #main-menu a {
+        white-space: nowrap !important;
+    }
+
+    .navbar {
+        top: 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+}
+
+/* Responsive adjustment for Mobile view in SmartMenus */
+@media (max-width: 991px) {
+    #main-menu li.sn-mega-menu-parent>ul {
+        width: 100% !important;
+        display: block !important;
+        padding: 10px !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        transform: none !important;
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    #main-menu li.sn-mega-menu-parent:hover>ul {
+        animation: none !important;
+    }
+
+    #main-menu li.sn-mega-menu-parent>ul>li {
+        border-right: none !important;
+        padding: 10px 0 !important;
+    }
+
+    #main-menu li.sn-mega-menu-parent>ul>li>a {
+        border-bottom: 1px solid rgba(198, 150, 101, 0.2) !important;
+        margin-bottom: 5px !important;
+    }
+
+    #main-menu li.sn-mega-menu-parent>ul>li>ul>li>a {
+        padding-left: 20px !important;
+    }
+
+    #main-menu li.sn-mega-menu-parent>ul>li>ul>li>a::before {
+        left: 8px !important;
+    }
+
+    /* Adjust top spacing */
+    .top {
+        padding: 8px 8px !important;
+    }
+
+    /* Convert header row to a single-line flexbar */
+    .top .header {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 8px 12px !important;
+        border-radius: 10px !important;
+        margin: 0 !important;
+    }
+
+    /* Hide horizontal main menu column */
+    .top .header>div:nth-child(3) {
+        display: none !important;
+    }
+
+    /* Override Bootstrap columns inside the header */
+    .top .header>div {
+        width: auto !important;
+        flex: 0 0 auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Style the main left logo container and image */
+    .logo {
+        padding: 0 !important;
+    }
+
+    .logo img {
+        height: 38px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    /* Handle the middle logo text column */
+    .logo2 {
+        position: static !important;
+        margin: 0 10px !important;
+        top: 0 !important;
+    }
+
+    .logo2 img {
+        height: 28px !important;
+        width: auto !important;
+        display: block !important;
+    }
+
+    /* Handle hamburger trigger column */
+    .sn-trigger-col {
+        margin-left: auto !important;
+    }
+
+    .sn-hamburger-wrap {
+        padding: 0 !important;
+    }
+
+    .sn-hamburger {
+        width: 38px !important;
+        height: 38px !important;
+        padding: 6px 8px !important;
+        gap: 5px !important;
+    }
+
+    .sn-hamburger__bar {
+        height: 2px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(1),
+    .sn-hamburger__bar:nth-child(3) {
+        width: 18px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(2) {
+        width: 12px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Reduce size of all three header items to fit on mobile screens */
+    .logo img {
+        height: 32px !important;
+    }
+
+    .logo2 img {
+        height: 24px !important;
+    }
+
+    .sn-hamburger {
+        width: 34px !important;
+        height: 34px !important;
+        padding: 5px 7px !important;
+        gap: 4px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(1),
+    .sn-hamburger__bar:nth-child(3) {
+        width: 16px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(2) {
+        width: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Extra reduction for tiny screens down to 320px width */
+    .top {
+        padding: 6px 4px !important;
+    }
+
+    .top .header {
+        padding: 6px 8px !important;
+    }
+
+    .logo img {
+        height: 25px !important;
+    }
+
+    .logo2 {
+        margin: 0 4px !important;
+    }
+
+    .logo2 img {
+        height: 18px !important;
+    }
+
+    .sn-hamburger {
+        width: 30px !important;
+        height: 30px !important;
+        padding: 4px 6px !important;
+        gap: 4px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(1),
+    .sn-hamburger__bar:nth-child(3) {
+        width: 14px !important;
+    }
+
+    .sn-hamburger__bar:nth-child(2) {
+        width: 9px !important;
+    }
+}
+
+/* ── Drawer Subheaders ──────────────────────────────────────── */
+.sn-drawer-subheader {
+    display: block;
+    font-family: 'arrusbtroman', serif;
+    font-weight: bold;
+    color: #9f1605;
+    padding: 14px 24px 4px 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(198, 150, 101, 0.15);
+    margin-bottom: 4px;
+    font-size: 15px;
+}
