@@ -1,38 +1,33 @@
-.social-media {
-  text-align: center;
-}
-
-.links p {
-  color: #fff;
-}
-
-.links p {
-  text-align: left;
-}
-
-.f-logo span,
-.links a {
-  font-family: "helvetica";
-}
-
-.fa-facebook-f,
-.fa-youtube {
-  font-size: 20px;
-  color: #8f5230;
-}
+/* -------------------------- FOOTER MAIN WRAPPER (.footer) -------------------------- */
 
 .footer {
   background: #c69665;
   padding: 45px 85px 45px 120px;
 }
 
-#DT,
-.foot-bk2 {
-  padding: 10px 0;
+/* COLUMN 1: LOGO SECTION (.f-logo) */
+
+.f-logo span,
+.links a {
+  font-family: "helvetica";
 }
 
-.foot-bk2 {
-  background: #ad7a4d;
+.f-logo span {
+  color: #fff;
+  font-size: 17px;
+}
+
+.f-logo p {
+  font-size: 18px;
+  text-align: left;
+  color: #fefefee0;
+}
+
+/* COLUMN 2 & 3: LINKS SECTION (.links) */
+
+.links p {
+  color: #fff;
+  text-align: left;
 }
 
 .links a {
@@ -41,7 +36,37 @@
   text-decoration: none;
 }
 
-.links ul,
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* COLUMN 4: GLOBAL CHARITIES + DARSHAN TIMINGS (#DT) */
+
+#DT,
+.foot-bk2 {
+  padding: 10px 0;
+}
+
+#DT {
+  color: #fff;
+  background: #935b35;
+  text-align: center;
+  border-radius: 10px;
+  width: 85%;
+  margin-left: 0;
+}
+
+/* COLUMN 5: SOCIAL MEDIA (.social-media) */
+
+.social-media {
+  text-align: center;
+}
+
 .social-media ul {
   padding: 0;
   list-style-type: none;
@@ -60,15 +85,12 @@
   text-decoration: none;
 }
 
-.f-logo span {
-  color: #fff;
-  font-size: 17px;
-}
+/* ICONS */
 
-.f-logo p {
-  font-size: 18px;
-  text-align: left;
-  color: #fefefee0;
+.fa-facebook-f,
+.fa-youtube {
+  font-size: 20px;
+  color: #8f5230;
 }
 
 .fa-facebook-f {
@@ -81,6 +103,12 @@
   border: 2px solid #905932;
   border-radius: 50%;
   padding: 7px 6px;
+}
+
+/* FOOTER SECOND ROW (.foot-bk2 / .footer2) */
+
+.foot-bk2 {
+  background: #ad7a4d;
 }
 
 .footer2 p {
@@ -96,6 +124,8 @@
   color: #e9d0ba;
 }
 
+/* BACK TO TOP BUTTON (#return-to-top) */
+
 #return-to-top {
   position: relative;
   top: -125px;
@@ -107,10 +137,6 @@
   height: 40px;
   text-decoration: none;
   display: none;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   border-radius: 10px;
   border: 1px solid #fff;
@@ -123,19 +149,6 @@
   position: relative;
   left: 8px;
   top: 10px;
-}
-
-#DT {
-  color: #fff;
-  background: #935b35;
-  text-align: center;
-  border-radius: 10px;
-  width: 85%;
-  margin-left: 0;
-}
-
-.links a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
@@ -156,6 +169,7 @@
   .f-logo {
     margin-bottom: 10px;
   }
+
   .f-logo p,
   .footer2 p,
   .links a,
@@ -163,31 +177,32 @@
     font-size: 15px;
     text-align: left;
   }
+
   .links ul {
     padding: revert;
   }
+
   .social-media {
     text-align: left;
   }
+
   .footer2 {
     margin-left: 20px;
   }
 
   #DT {
     margin-bottom: 10px;
+    width: 45%;
+    font-size: 15px;
   }
 
   .footer .row {
     margin-right: 0;
   }
+
   .links p {
     text-align: left;
     margin-left: 40px;
-  }
-
-  #DT {
-    width: 45%;
-    font-size: 15px;
   }
 }
 
@@ -199,6 +214,7 @@
   .social-media p {
     font-size: 8px;
   }
+
   .f-logo span {
     font-size: 10px;
   }
@@ -215,9 +231,6 @@
 
   #DT {
     width: 100%;
-  }
-
-  #DT {
     font-size: 9px;
   }
 
@@ -226,25 +239,29 @@
   .fa-youtube {
     font-size: 11px;
   }
+
   .footer {
     padding: 30px 0;
   }
+
   .fa-facebook-f {
     padding: 6px 9px;
   }
+
   .fa-youtube {
     padding: 6px;
+  }
+
+  #return-to-top {
+    right: 20px;
+    width: 35px;
+    height: 35px;
   }
 
   #return-to-top img {
     width: 15px;
     left: 8px;
     top: 5px;
-  }
-  #return-to-top {
-    right: 20px;
-    width: 35px;
-    height: 35px;
   }
 }
 
@@ -275,10 +292,12 @@
     font-size: 11px;
     padding: 5px 8px;
   }
+
   .fa-youtube {
     font-size: 11px;
     padding: 5px;
   }
+
   #return-to-top {
     right: 30px;
   }
@@ -298,16 +317,20 @@
   .footer {
     padding: 30px 0 15px;
   }
+
   #DT {
     width: 100%;
   }
+
   .fa-facebook-f {
     padding: 7px 10px;
     font-size: 15px;
   }
+
   #return-to-top {
     right: 25px;
   }
+
   #return-to-top img {
     top: 5px;
   }
@@ -329,14 +352,17 @@
   .footer {
     padding: 30px 0;
   }
+
   .fa-facebook-f {
     padding: 8px 12px;
     font-size: 14px;
   }
+
   .fa-youtube {
     padding: 8px 7px;
     font-size: 14px;
   }
+
   .footer-rt a,
   .footer-rt p {
     font-size: 14px;
@@ -360,9 +386,11 @@
   .footer {
     padding: 25px 80px;
   }
+
   .f-logo span {
     font-size: 15px;
   }
+
   .f-logo p,
   .fa-facebook-f,
   .fa-youtube,
@@ -372,9 +400,11 @@
   .links a {
     font-size: 14px;
   }
+
   .fa-facebook-f {
     padding: 7px 10px;
   }
+
   .fa-youtube {
     padding: 7px 6px;
   }
@@ -384,6 +414,7 @@
   #DT {
     font-size: 14px;
   }
+
   .social-media p {
     font-size: 12px;
   }
@@ -399,12 +430,15 @@
   .footer {
     padding: 30px 20px;
   }
+
   .fa-facebook-f {
     padding: 6px 10px;
   }
+
   .fa-youtube {
     padding: 6px 5px;
   }
+
   .footer-rt a,
   .footer-rt p,
   .footer2 p {
@@ -453,42 +487,31 @@
     padding: 6px 10px;
     font-size: 14px;
   }
+
   .social-media a,
   .social-media p {
     font-size: 11px;
   }
+
   #return-to-top {
     top: -100px;
     right: 30px;
     width: 30px;
     height: 30px;
   }
+
   #return-to-top img {
     width: 15px;
     left: 6px;
     top: 1px;
   }
+
   .f-logo img {
     width: 75%;
   }
 }
 
-@media (min-width: 1731px) and (max-width: 1830px) {
-  #DT,
-  .links a {
-    font-size: 15px;
-  }
-
-  .footer {
-    padding: 35px 0 25px;
-  }
-
-  #return-to-top {
-    right: 70px;
-  }
-}
-
-@media (min-width: 1831px) and (max-width: 1919px) {
+@media (min-width: 1731px) and (max-width: 1919px) {
   #DT,
   .links a {
     font-size: 15px;
