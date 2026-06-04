@@ -1,0 +1,454 @@
+/* ── Star Journey Section ── */
+.star-journey-section {
+    background: linear-gradient(180deg, #faebd7 0%, #fdfbf7 10%, #fdfbf7 90%, #faebd7 100%);
+    padding: 60px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.star-journey-section h2 {
+    color: #9f1605 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 8px;
+}
+
+.sj-subtitle {
+    color: #5c4033;
+    font-style: italic;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.sj-motif {
+    filter: sepia(0.5) hue-rotate(340deg) saturate(1.5);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* ── Map Container ── */
+.sj-map-wrap {
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.sj-map-container {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(212, 175, 55, 0.35);
+}
+
+.sj-star-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sj-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sj-bg-path {
+    fill: none;
+    stroke: rgba(212, 175, 55, 0.25);
+    stroke-width: 4;
+}
+
+.sj-trace-path {
+    fill: none;
+    stroke: #D4AF37;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.sj-tracer-dot {
+    fill: #FFD700;
+    opacity: 0;
+}
+
+.sj-tracer-dot.visible {
+    opacity: 1;
+}
+
+/* ── Point Markers ── */
+.sj-point {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 5;
+    width: 34px;
+    height: 34px;
+}
+
+.sj-point-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #FFD700 30%, #D4AF37 80%);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #1c0b06;
+    font-family: "helvetica";
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.sj-point-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #D4AF37;
+    opacity: 0;
+}
+
+.sj-point.active .sj-point-pulse {
+    animation: sjPulse 1.5s ease-out infinite;
+}
+
+.sj-point.active .sj-point-dot {
+    width: 28px;
+    height: 28px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8), 0 0 40px rgba(212, 175, 55, 0.3);
+    font-size: 12px;
+}
+
+.sj-point.visited .sj-point-dot {
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.sj-point:hover .sj-point-dot {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+@keyframes sjPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* ── Info Panel ── */
+.sj-info-panel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sj-info-card {
+    display: none;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+}
+
+.sj-info-card.active {
+    display: flex;
+    animation: sjCardIn 0.5s ease forwards;
+}
+
+@keyframes sjCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sj-card-img {
+    flex: 0 0 38%;
+    overflow: hidden;
+}
+
+.sj-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.sj-card-body {
+    flex: 1;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sj-card-body h3 {
+    color: #9f1605 !important;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.sj-card-body p {
+    color: #4a3c31;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.65;
+    margin-bottom: 14px;
+}
+
+.sj-link {
+    color: #9f1605;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "helvetica";
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+    text-align: left;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.sj-link:hover {
+    color: #D4AF37;
+}
+
+.sj-info-default {
+    text-align: center;
+    padding: 45px 20px;
+    border: 1px dashed rgba(159, 22, 5, 0.3);
+    border-radius: 14px;
+    background: rgba(250, 235, 215, 0.25);
+    display: none;
+}
+
+.sj-info-default.active {
+    display: block;
+}
+
+.sj-info-default p {
+    color: #9f1605;
+    font-style: italic;
+    font-size: 17px;
+}
+
+/* ── Controls ── */
+.sj-controls {
+    max-width: 900px;
+    width: fit-content;
+    margin: 24px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    background: #faebd7;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sj-play-btn {
+    background: linear-gradient(135deg, #9f1605, #7d1003);
+    border: none;
+    color: #ffffff;
+    font-family: "helvetica";
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 26px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(159, 22, 5, 0.2);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.sj-play-btn:hover {
+    box-shadow: 0 6px 24px rgba(159, 22, 5, 0.35);
+    transform: translateY(-1px);
+    color: #ffffff;
+}
+
+.sj-play-btn.playing {
+    background: linear-gradient(135deg, #D4AF37, #B8860B);
+    color: #1c0b06;
+}
+
+.sj-indicators {
+    display: flex;
+    gap: 6px;
+}
+
+.sj-ind {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(159, 22, 5, 0.25);
+    background: transparent;
+    color: rgba(159, 22, 5, 0.6);
+    font-family: "helvetica";
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.sj-ind:hover {
+    border-color: #9f1605;
+    color: #9f1605;
+}
+
+.sj-ind.visited {
+    border-color: rgba(159, 22, 5, 0.6);
+    color: rgba(159, 22, 5, 0.85);
+}
+
+.sj-ind.active,
+.sj-ind.visited.active {
+    background: #9f1605 !important;
+    color: #D4AF37 !important;
+    border-color: #D4AF37 !important;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .star-journey-section {
+        padding: 60px 15px 50px;
+    }
+
+    .sj-info-card.active {
+        flex-direction: column;
+    }
+
+    .sj-card-img {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .sj-card-img img {
+        max-height: 200px;
+    }
+
+    .sj-card-body {
+        padding: 20px;
+    }
+
+    .sj-card-body h3 {
+        font-size: 18px;
+    }
+
+    .sj-point {
+        width: 26px;
+        height: 26px;
+    }
+
+    .sj-point-dot {
+        width: 14px;
+        height: 14px;
+        font-size: 8px;
+    }
+
+    .sj-point.active .sj-point-dot {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+
+    .sj-controls {
+        gap: 15px;
+    }
+
+    .sj-ind {
+        width: 26px;
+        height: 26px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sj-map-wrap {
+        position: relative;
+        max-width: 1140px;
+    }
+
+    .sj-info-panel {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        bottom: auto;
+        right: auto;
+        width: 300px;
+        z-index: 10;
+        margin: 0;
+    }
+
+    .sj-info-card {
+        margin-bottom: 0;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+    }
+
+    .sj-info-card.active {
+        flex-direction: column;
+    }
+
+    .sj-card-img {
+        flex: none;
+        width: 100%;
+        height: 140px;
+    }
+
+    .sj-card-body {
+        padding: 18px 20px;
+    }
+
+    .sj-card-body h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .sj-card-body p {
+        display: none;
+    }
+
+    .sj-controls {
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        margin: 0;
+        width: max-content;
+        background: #faebd7;
+        padding: 5px 10px 5px 10px;
+        border-radius: 40px;
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+}

@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/sripuram-org/custom.css">
+    <link rel="stylesheet" href="temple-path.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <meta property="og:url" content="https://sripuram.org/">
@@ -376,6 +377,360 @@
             </div>
         </div>
     </div>
+
+    <!-- ============================================================ -->
+    <!-- STAR PATH INTERACTIVE JOURNEY SECTION -->
+    <!-- ============================================================ -->
+
+
+    <div id="star-journey" class="star-journey-section">
+        <div class="container text-center">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Journey Through the Star Path</h2>
+            <img src="static/sripuram-org/motif-1.webp" class="img-fluid sj-motif" alt="motif" data-aos="fade-down"
+                data-aos-duration="1000">
+            <p class="sj-subtitle" data-aos="fade-up" data-aos-duration="1000">Explore the sacred vertices of the divine
+                star-shaped pathway</p>
+        </div>
+        <div class="container">
+            <!-- Star Map with SVG Overlay -->
+            <div class="sj-map-wrap" data-aos="zoom-in" data-aos-duration="1200">
+                <div class="sj-map-container">
+                    <img src="static/sripuram-org/aerial-view.webp" class="sj-star-img" alt="Star Path Aerial View">
+                    <svg class="sj-svg" viewBox="0 0 1923 1079.1" preserveAspectRatio="none">
+                        <defs>
+                            <filter id="sjGlow">
+                                <feGaussianBlur stdDeviation="4" result="b" />
+                                <feMerge>
+                                    <feMergeNode in="b" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <filter id="sjDotGlow">
+                                <feGaussianBlur stdDeviation="6" result="b" />
+                                <feMerge>
+                                    <feMergeNode in="b" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <path class="sj-bg-path"
+                            d="M567.5,610.6 L638.5,686.5 L742.2,632.8 L881.6,409.4 L698.5,274.2 L992.6,245.3 L1083.9,128.5 L1267.4,214.6 L1533.4,191.3 L1517.3,332.5 L1822.6,473.3 L1509,526.6 L1345.2,427.9 L1346.3,427.3 l7.5-5.3 l-34.1-22.1 c0,0,17.6-12.9,7.8-30.8 s-59.5-44-82.1-51.5 c-22.6-7.5-80.7-10.4-101.4,11.5 c-20.7,21.9-19.5,49.2,37.2,75.5 c56.7,26.4,97.2,17.9,99.8,15.8 l-50.1-32 l12.5-11.1 L1244.6,376.6 L1324.1,422 L1303.9,434.9 L1392.6,495.9 L1484.1,555.2 L1458,808.4 L1121.5,582.7 L775.8,633.9 L576.4,773.3 L661.4,877.4 L643.4,892.6" />
+                        <path id="sjTracePath" class="sj-trace-path"
+                            d="M567.5,610.6 L638.5,686.5 L742.2,632.8 L881.6,409.4 L698.5,274.2 L992.6,245.3 L1083.9,128.5 L1267.4,214.6 L1533.4,191.3 L1517.3,332.5 L1822.6,473.3 L1509,526.6 L1345.2,427.9 L1346.3,427.3 l7.5-5.3 l-34.1-22.1 c0,0,17.6-12.9,7.8-30.8 s-59.5-44-82.1-51.5 c-22.6-7.5-80.7-10.4-101.4,11.5 c-20.7,21.9-19.5,49.2,37.2,75.5 c56.7,26.4,97.2,17.9,99.8,15.8 l-50.1-32 l12.5-11.1 L1244.6,376.6 L1324.1,422 L1303.9,434.9 L1392.6,495.9 L1484.1,555.2 L1458,808.4 L1121.5,582.7 L775.8,633.9 L576.4,773.3 L661.4,877.4 L643.4,892.6"
+                            filter="url(#sjGlow)" />
+                        <circle id="sjDot" class="sj-tracer-dot" r="10" cx="567.5" cy="610.6"
+                            filter="url(#sjDotGlow)" />
+                    </svg>
+
+                    <!-- Point Markers positioned dynamically based on 1923x1079.1 coordinate grid (1 to 6 path sequence) -->
+                    <div class="sj-point" data-point="0" style="top:56.6%;left:29.5%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>1</span></div>
+                    </div>
+                    <div class="sj-point" data-point="1" style="top:63.6%;left:33.2%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>2</span></div>
+                    </div>
+                    <div class="sj-point" data-point="2" style="top:48.8%;left:78.5%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>3</span></div>
+                    </div>
+                    <div class="sj-point" data-point="3" style="top:39.7%;left:70.0%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>4</span></div>
+                    </div>
+                    <div class="sj-point" data-point="4" style="top:34.9%;left:64.7%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>5</span></div>
+                    </div>
+                    <div class="sj-point" data-point="5" style="top:82.7%;left:33.5%">
+                        <div class="sj-point-pulse"></div>
+                        <div class="sj-point-dot"><span>6</span></div>
+                    </div>
+                </div>
+
+                <!-- Info Cards Panel -->
+                <div class="sj-info-panel">
+                    <div class="sj-info-card" data-card="0">
+                        <div class="sj-card-img"><img src="static/sripuram-org/sri-silver-ganapathy-temple.webp"
+                                alt="Sri Sakthi Ganapathy Temple"></div>
+                        <div class="sj-card-body">
+                            <h3>Point 1: Sri Sakthi Ganapathy Temple</h3>
+                            <p>The magnificent silver-made Sri Sakthi Ganapathy Temple stands near the start of the star
+                                path. Lord Ganesha, the remover of obstacles, blesses devotees as they embark on their
+                                sacred walk.</p>
+                            <a href="Sri-sakthi-ganapathy-temple-sripuram.html" class="sj-link">Explore this temple
+                                &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="sj-info-card" data-card="1">
+                        <div class="sj-card-img"><img src="static/sripuram-org/guru-peedam.webp" alt="Guru Peedam">
+                        </div>
+                        <div class="sj-card-body">
+                            <h3>Point 2 &mdash; Sripuram Guru Peedam</h3>
+                            <p>The Guru Peedam represents the seat of the spiritual guide. Devotees visit the Guru
+                                Peedam to offer their respects and seek the guru's wisdom along their journey.</p>
+                            <a href="Sripuram-guru-peedam.html" class="sj-link">Explore Guru Peedam &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="sj-info-card" data-card="2">
+                        <div class="sj-card-img"><img src="static/sripuram-org/sri-swarna-lakshmi-temple.webp"
+                                alt="Sri Swarna Lakshmi Temple"></div>
+                        <div class="sj-card-body">
+                            <h3>Point 3 &mdash; Sri Swarna Lakshmi Temple</h3>
+                            <p>Dedicated to Sri Swarna Lakshmi, the goddess of golden prosperity and abundance. Her
+                                divine presence fills the path with auspicious blessings.</p>
+                            <a href="Sri-swarna-lakshmi-temple.html" class="sj-link">Explore Sri Swarna Lakshmi
+                                &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="sj-info-card" data-card="3">
+                        <div class="sj-card-img"><img src="static/sripuram-org/sri-kamadhenu-silver-gho-matha.webp"
+                                alt="Silver Gho Maatha"></div>
+                        <div class="sj-card-body">
+                            <h3>Point 4 &mdash; Sri Kamadhenu (Silver Gho Matha)</h3>
+                            <p>The divine Silver Gho Maatha (Kamadhenu) symbolizes abundance and purity, located right
+                                at the bridge entry leading to the inner temple loop.</p>
+                            <a href="Sri-kamadhenu-sripuram.html" class="sj-link">Explore Kamadhenu &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="sj-info-card" data-card="4">
+                        <div class="sj-card-img"><img src="static/sripuram-org/sri-lakshmi-narayani-content-image.webp"
+                                alt="Sri Lakshmi Narayani Temple"></div>
+                        <div class="sj-card-body">
+                            <h3>Point 5 &mdash; Sri Lakshmi Narayani Temple</h3>
+                            <p>The pinnacle of the spiritual journey: the magnificent Golden Temple covered in pure gold
+                                inside the pool. Devotees receive the ultimate blessings and divine darshan of Sri
+                                Lakshmi Narayani.</p>
+                            <a href="Sri-lakshmi-narayani-temple.html" class="sj-link">Explore this temple &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="sj-info-card" data-card="5">
+                        <div class="sj-card-img"><img src="static/sripuram-org/sri-srinivasa-perumal-temple.webp"
+                                alt="Sri Srinivasa Perumal Temple"></div>
+                        <div class="sj-card-body">
+                            <h3>Point 6 &mdash; Sri Srinivasa Perumal Temple</h3>
+                            <p>Located near the end of the pathway, the temple of Sri Srinivasa Perumal (an incarnation
+                                of Lord Vishnu) welcomes and blesses devotees as they near the completion of their
+                                spiritual journey through the Star Path.</p>
+                            <a href="Sripuram-srinivasa-perumal-temple.html" class="sj-link">Explore this temple
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Play Controls & Point Indicators -->
+                <div class="sj-controls">
+                    <button id="sjPlayBtn" class="sj-play-btn">
+                        <i class="fas fa-play"></i>&nbsp; Play Journey
+                    </button>
+                    <div class="sj-indicators">
+                        <div class="sj-ind" data-point="0">1</div>
+                        <div class="sj-ind" data-point="1">2</div>
+                        <div class="sj-ind" data-point="2">3</div>
+                        <div class="sj-ind" data-point="3">4</div>
+                        <div class="sj-ind" data-point="4">5</div>
+                        <div class="sj-ind" data-point="5">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ── Star Path Journey Animation Engine ── */
+        (function () {
+            var tracePath, dot, totalLen;
+            var isPlaying = false, progress = 0, currentPt = -1;
+            var raf = null, startTs = null;
+            var DURATION = 22000; /* 22 seconds for walking path */
+
+            /* Target coordinates for each point in 1923x1079.1 space (1 to 6 sequence) */
+            var pointCoords = [
+                { x: 567.5, y: 610.6 },  // Point 1: Sakthi Ganapathy (Start of SVG Path)
+                { x: 638.5, y: 686.5 },  // Point 2: Guru Peedam
+                { x: 1509.0, y: 526.6 }, // Point 3: Swarna Lakshmi
+                { x: 1345.2, y: 427.9 }, // Point 4: Kamadhenu
+                { x: 1244.6, y: 376.6 }, // Point 5: Lakshmi Narayani (Golden Temple / Center Sanctum)
+                { x: 643.4, y: 892.6 }   // Point 6: Srinivasa Perumal (Exit Walkway)
+            ];
+            var THRESHOLDS = [];
+
+            function init() {
+                tracePath = document.getElementById('sjTracePath');
+                dot = document.getElementById('sjDot');
+                if (!tracePath || !dot) return;
+
+                totalLen = tracePath.getTotalLength();
+                tracePath.style.strokeDasharray = totalLen;
+                tracePath.style.strokeDashoffset = totalLen;
+
+                /* Calculate progress thresholds by finding points closest to target coordinates */
+                calculateThresholds();
+
+                /* Point marker clicks */
+                document.querySelectorAll('.sj-point').forEach(function (el) {
+                    el.addEventListener('click', function () {
+                        jumpTo(parseInt(this.dataset.point));
+                    });
+                });
+
+                /* Play / Pause button */
+                document.getElementById('sjPlayBtn').addEventListener('click', toggle);
+
+                /* Indicator clicks */
+                document.querySelectorAll('.sj-ind').forEach(function (el) {
+                    el.addEventListener('click', function () {
+                        jumpTo(parseInt(this.dataset.point));
+                    });
+                });
+            }
+
+            function calculateThresholds() {
+                var steps = 300;
+                for (var p = 0; p < pointCoords.length; p++) {
+                    var minDist = Infinity;
+                    var bestProg = 0;
+                    var target = pointCoords[p];
+
+                    for (var s = 0; s <= steps; s++) {
+                        var prog = s / steps;
+                        var len = prog * totalLen;
+                        var pt = tracePath.getPointAtLength(len);
+                        var dist = Math.sqrt(Math.pow(pt.x - target.x, 2) + Math.pow(pt.y - target.y, 2));
+                        if (dist < minDist) {
+                            minDist = dist;
+                            bestProg = prog;
+                        }
+                    }
+                    THRESHOLDS.push(bestProg);
+                }
+            }
+
+            function toggle() { isPlaying ? pause() : play(); }
+
+            function play() {
+                isPlaying = true;
+                var btn = document.getElementById('sjPlayBtn');
+                btn.innerHTML = '<i class="fas fa-pause"></i>&nbsp; Pause';
+                btn.classList.add('playing');
+                dot.classList.add('visible');
+                if (progress >= 1) { progress = 0; resetAll(); }
+                startTs = null;
+                raf = requestAnimationFrame(step);
+            }
+
+            function pause() {
+                isPlaying = false;
+                var btn = document.getElementById('sjPlayBtn');
+                btn.innerHTML = '<i class="fas fa-play"></i>&nbsp; Play Journey';
+                btn.classList.remove('playing');
+                if (raf) { cancelAnimationFrame(raf); raf = null; }
+            }
+
+            function step(ts) {
+                if (!isPlaying) return;
+                if (!startTs) startTs = ts - progress * DURATION;
+                progress = Math.min((ts - startTs) / DURATION, 1);
+                render();
+
+                /* Check and activate points as the tracer reaches them */
+                for (var i = 0; i < THRESHOLDS.length; i++) {
+                    if (progress >= THRESHOLDS[i] && currentPt < i) {
+                        activatePoint(i);
+                    }
+                }
+
+                if (progress < 1) {
+                    raf = requestAnimationFrame(step);
+                } else {
+                    activatePoint(THRESHOLDS.length - 1);
+                    pause();
+                }
+            }
+
+            function render() {
+                var len = progress * totalLen;
+                tracePath.style.strokeDashoffset = totalLen - len;
+                var pt = tracePath.getPointAtLength(len);
+                dot.setAttribute('cx', pt.x);
+                dot.setAttribute('cy', pt.y);
+            }
+
+            function activatePoint(idx) {
+                currentPt = idx;
+
+                /* Update map markers */
+                document.querySelectorAll('.sj-point').forEach(function (el) {
+                    el.classList.remove('active');
+                    if (parseInt(el.dataset.point) <= idx) el.classList.add('visited');
+                });
+                var mk = document.querySelector('.sj-point[data-point="' + idx + '"]');
+                if (mk) { mk.classList.add('active'); mk.classList.add('visited'); }
+
+                /* Update indicators */
+                document.querySelectorAll('.sj-ind').forEach(function (el) {
+                    el.classList.remove('active');
+                    if (parseInt(el.dataset.point) <= idx) el.classList.add('visited');
+                });
+                var ind = document.querySelector('.sj-ind[data-point="' + idx + '"]');
+                if (ind) ind.classList.add('active');
+
+
+
+                var def = document.querySelector('.sj-info-default');
+                if (def) def.classList.remove('active');
+                document.querySelectorAll('.sj-info-card').forEach(function (c) {
+                    c.classList.remove('active');
+                });
+                var card = document.querySelector('.sj-info-card[data-card="' + idx + '"]');
+                if (card) card.classList.add('active');
+            }
+
+            function jumpTo(idx) {
+                if (isPlaying) pause();
+                dot.classList.add('visible');
+                progress = THRESHOLDS[idx] + 0.001;
+                render();
+                for (var j = 0; j <= idx; j++) {
+                    var mk2 = document.querySelector('.sj-point[data-point="' + j + '"]');
+                    if (mk2) mk2.classList.add('visited');
+                    var nk = document.querySelector('.sj-ind[data-point="' + j + '"]');
+                    if (nk) nk.classList.add('visited');
+                }
+                activatePoint(idx);
+            }
+
+            function resetAll() {
+                currentPt = -1;
+                document.querySelectorAll('.sj-point').forEach(function (e) {
+                    e.classList.remove('active', 'visited');
+                });
+                document.querySelectorAll('.sj-ind').forEach(function (e) {
+                    e.classList.remove('active', 'visited');
+                });
+                document.querySelectorAll('.sj-info-card').forEach(function (c) {
+                    c.classList.remove('active');
+                });
+
+                var def = document.querySelector('.sj-info-default');
+                if (def) def.classList.add('active');
+                dot.classList.remove('visible');
+                tracePath.style.strokeDashoffset = totalLen;
+            }
+
+            /* Boot up when DOM is ready */
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+    <!-- ============================================================ -->
+    <!-- END STAR PATH INTERACTIVE JOURNEY SECTION -->
+    <!-- ============================================================ -->
+
     <div class="container-fluid p-0">
         <div class="container">
             <div class="row">
@@ -1186,15 +1541,6 @@
         <!-- SRIPURAM CHATBOT END -->
         <!-- ============================================================ -->
 
-        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="/static/sripuram-org/slick.js"></script>
-        <script src="/static/sripuram-org/slick.min.js"></script>
-        <script src="/static/sripuram-org/custom.js" defer></script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-        <script src="/static/sripuram-org/jquery.smartmenus.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
         <!-- jQuery first -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <!-- jQuery UI if needed -->
@@ -1246,9 +1592,3 @@
 </body>
 
 </html>
-<!--    *******************************************************************  -->
-<!--    * Website deployed using [ The Guild ] platform by [ PASKAN ]·····*  -->
-<!--    * All rights reserved - paskan.com································*  -->
-<!--    * Like to work with us? mail to info@·····························*  -->
-<!--    * Want to host your website on The Guild platform? mail to info@··*  -->
-<!--    *******************************************************************  -->
