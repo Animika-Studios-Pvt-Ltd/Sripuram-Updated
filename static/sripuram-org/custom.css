@@ -1,3 +1,6 @@
+@import "navbar.css";
+@import "footer.css";
+
 html,
 body {
   overflow-x: hidden;
@@ -367,7 +370,6 @@ p {
 .pub-inner,
 .scan-img,
 .section-title,
-.social-media,
 .spiritual-img p,
 .video {
   text-align: center;
@@ -403,7 +405,6 @@ p {
 .fas:hover,
 .involved-inner a:hover + .involved-inner li span,
 .involved-inner a:hover + .plus a,
-.links p,
 .more-1 a:hover,
 .more-4 a,
 .peedam h2,
@@ -939,8 +940,7 @@ p {
 
 .cutomer-address p,
 .eventsdetails p,
-.facility-info p,
-.links p {
+.facility-info p {
   text-align: left;
 }
 
@@ -1739,9 +1739,7 @@ p {
 }
 
 #table-header .col,
-.dropdown li a,
-.f-logo span,
-.links a {
+.dropdown li a {
   font-family: "helvetica";
 }
 
@@ -1908,12 +1906,6 @@ p {
   font-size: 6rem;
 }
 
-.fa-facebook-f,
-.fa-youtube {
-  font-size: 20px;
-  color: #8f5230;
-}
-
 .h2-r {
   transform: rotate(270deg);
   margin-left: -100px;
@@ -1934,50 +1926,13 @@ p {
   }
 }
 
-.footer {
-  background: #c69665;
-  padding: 45px 85px 45px 120px;
-}
-
-#DT,
-.foot-bk2,
 textarea {
   padding: 10px 0;
 }
 
-.foot-bk2 {
-  background: #ad7a4d;
-}
-
-.links a {
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.links ul,
-.social-media ul,
 .star {
   padding: 0;
   list-style-type: none;
-}
-
-.social-media li {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.social-media a,
-.social-media p {
-  color: #5e1f00;
-  font-size: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.f-logo span {
-  color: #fff;
-  font-size: 17px;
 }
 
 .calendar-header,
@@ -1987,70 +1942,10 @@ textarea {
   font-weight: 300;
 }
 
-.f-logo p {
-  font-size: 18px;
-  text-align: left;
-  color: #fefefee0;
-}
-
-.fa-facebook-f {
-  border: 2px solid #905932;
-  border-radius: 50%;
-  padding: 7px 12px;
-}
-
-.fa-youtube {
-  border: 2px solid #905932;
-  border-radius: 50%;
-  padding: 7px 6px;
-}
-
-.footer2 p {
-  font-size: 17px;
-  text-align: left;
-  color: #e9d0ba;
-}
-
 .more-6,
 .read,
 .read-more {
   text-align: right;
-}
-
-.footer-rt a,
-.footer-rt p {
-  font-size: 17px;
-  text-align: right;
-  color: #e9d0ba;
-}
-
-#return-to-top {
-  position: relative;
-  top: -125px;
-  right: 130px;
-  float: right;
-  margin-top: -50px;
-  z-index: 999991;
-  width: 40px;
-  height: 40px;
-  text-decoration: none;
-  display: none;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 10px;
-  border: 1px solid #fff;
-}
-
-#return-to-top img {
-  width: 20px;
-  transform: rotate(315deg);
-  filter: brightness(6.5);
-  position: relative;
-  left: 8px;
-  top: 10px;
 }
 
 .calendar-wrapper {
@@ -2709,15 +2604,6 @@ button:focus {
 
 [type="checkbox"]:disabled + label {
   color: #aaa;
-}
-
-#DT {
-  color: #fff;
-  background: #935b35;
-  text-align: center;
-  border-radius: 10px;
-  width: 85%;
-  margin-left: 0;
 }
 
 .charity-img,
@@ -3702,11 +3588,6 @@ input:-internal-autofill-selected {
   box-shadow: none;
 }
 
-.links a:hover {
-  /* color: #0a58ca; */
-  text-decoration: underline;
-}
-
 .ns-subscribe p {
   font-size: 17px;
 }
@@ -4389,7 +4270,6 @@ input:-internal-autofill-selected {
     width: 40px;
     height: auto;
   }
-  .social-media li,
   .transport li,
   .transport-3 li {
     text-align: left;
@@ -4430,11 +4310,7 @@ input:-internal-autofill-selected {
     padding: 20px 15px 0;
     margin-left: 0;
   }
-  #DT,
-  .f-logo,
-  .social-media {
-    margin-left: 38px;
-  }
+
   .about-info-inner p {
     font-size: 16px;
     margin-top: 10px;
@@ -4452,7 +4328,6 @@ input:-internal-autofill-selected {
   .light-inner h2 {
     top: -15px !important;
   }
-  .footer,
   .gallery-slider__thumbnails .slick-arrow img,
   .involved-inner li,
   .light-inner p {
@@ -4503,25 +4378,7 @@ input:-internal-autofill-selected {
     margin-top: 30px;
     margin-bottom: 0;
   }
-  .f-logo {
-    margin-bottom: 10px;
-  }
-  .f-logo p,
-  .footer2 p,
-  .links a,
-  .social-media p {
-    font-size: 15px;
-    text-align: left;
-  }
-  .links ul {
-    padding: revert;
-  }
-  .social-media {
-    text-align: left;
-  }
-  .footer2 {
-    margin-left: 20px;
-  }
+
   .facility-info h6 {
     text-align: center;
   }
@@ -4541,7 +4398,6 @@ input:-internal-autofill-selected {
   .route {
     margin-bottom: 0;
   }
-  #DT,
   .charity-img {
     margin-bottom: 10px;
   }
@@ -4567,13 +4423,7 @@ input:-internal-autofill-selected {
     display: none;
     margin-left: 0;
   }
-  .footer .row {
-    margin-right: 0;
-  }
-  .links p {
-    text-align: left;
-    margin-left: 40px;
-  }
+
   .more-7 {
     top: 90px;
   }
@@ -4597,10 +4447,7 @@ input:-internal-autofill-selected {
   .month-overlay {
     height: 75px;
   }
-  #DT {
-    width: 45%;
-    font-size: 15px;
-  }
+
   .spiritual-img {
     margin-bottom: 20px;
   }
@@ -4773,11 +4620,6 @@ input:-internal-autofill-selected {
     text-align: center;
   }
   .fa-search,
-  .footer-rt a,
-  .footer-rt p,
-  .footer2 p,
-  .links a,
-  .social-media p,
   .transport li,
   .transport-2 li,
   .transport-3 li,
@@ -4786,7 +4628,6 @@ input:-internal-autofill-selected {
   }
   .charity-info h5,
   .donate button,
-  .f-logo span,
   .icons p,
   .more-7 a {
     font-size: 10px;
@@ -4817,8 +4658,6 @@ input:-internal-autofill-selected {
   h2 {
     font-size: 22px;
   }
-  .social-media a,
-  .social-media p,
   p {
     font-size: 13px;
   }
@@ -4834,9 +4673,7 @@ input:-internal-autofill-selected {
   .peedam {
     margin-top: 0;
   }
-  .footer .row .col-md-1,
   .involved-inner li,
-  .links ul,
   .peedam p {
     padding: 0;
   }
@@ -4852,7 +4689,6 @@ input:-internal-autofill-selected {
     left: 0;
     bottom: 0;
   }
-  #DT,
   .gallery-slider__images {
     width: 100%;
   }
@@ -4968,7 +4804,6 @@ input:-internal-autofill-selected {
     padding-bottom: 20px;
     margin-bottom: 10px;
   }
-  #DT,
   .globe-info p {
     font-size: 9px;
   }
@@ -5100,21 +4935,10 @@ input:-internal-autofill-selected {
   .temples h2 {
     font-size: 19px;
   }
-  .charity-info p,
-  .f-logo p,
-  .fa-facebook-f,
-  .fa-youtube {
+  .charity-info p {
     font-size: 11px;
   }
-  .footer {
-    padding: 30px 0;
-  }
-  .fa-facebook-f {
-    padding: 6px 9px;
-  }
-  .fa-youtube {
-    padding: 6px;
-  }
+
   .map-2 {
     left: 16%;
     top: -340px;
@@ -5217,16 +5041,7 @@ input:-internal-autofill-selected {
     width: 60px;
     height: 60px;
   }
-  #return-to-top img {
-    width: 15px;
-    left: 8px;
-    top: 5px;
-  }
-  #return-to-top {
-    right: 20px;
-    width: 35px;
-    height: 35px;
-  }
+
   #first-arrow {
     margin-left: 38px;
   }
@@ -5286,12 +5101,8 @@ input:-internal-autofill-selected {
   .icons {
     padding-top: 13px;
   }
-  .footer-rt a,
-  .footer-rt p,
-  .footer2 p,
   .icons p,
-  .leaders-details p,
-  .links a {
+  .leaders-details p {
     font-size: 12px;
   }
   .fa-android,
@@ -5299,10 +5110,7 @@ input:-internal-autofill-selected {
     font-size: 26px;
     padding-top: 5px;
   }
-  #DT,
-  .fa-search,
-  .social-media a,
-  .social-media p {
+  .fa-search {
     font-size: 11px;
   }
   #about {
@@ -5512,8 +5320,6 @@ input:-internal-autofill-selected {
   .transport-3 {
     left: -40px;
   }
-  .f-logo p,
-  .f-logo span,
   .loc3,
   .loc5,
   .loc7,
@@ -5598,23 +5404,11 @@ input:-internal-autofill-selected {
   .loc13 {
     margin-left: 30%;
   }
-  .footer {
-    padding: 35px 0;
-  }
+
   .more-7 {
     top: 95px;
   }
-  .fa-facebook-f {
-    font-size: 11px;
-    padding: 5px 8px;
-  }
-  .fa-youtube {
-    font-size: 11px;
-    padding: 5px;
-  }
-  #return-to-top {
-    right: 30px;
-  }
+
   .sun::after,
   .sun::before {
     top: -12px;
@@ -5685,9 +5479,7 @@ input:-internal-autofill-selected {
   }
   .breadcrumb-item .active,
   .breadcrumb-item a,
-  .fa-youtube,
   .leaders-details p,
-  .links a,
   .plus i,
   .transport li,
   .transport p,
@@ -5925,8 +5717,6 @@ input:-internal-autofill-selected {
     line-height: 25px;
     margin-top: 30px;
   }
-  .f-logo p,
-  .f-logo span,
   p {
     font-size: 16px;
   }
@@ -5957,22 +5747,7 @@ input:-internal-autofill-selected {
   .pooja-img p {
     font-size: 13px;
   }
-  .footer {
-    padding: 30px 0 15px;
-  }
-  #DT {
-    width: 100%;
-  }
-  .fa-facebook-f {
-    padding: 7px 10px;
-    font-size: 15px;
-  }
-  #return-to-top {
-    right: 25px;
-  }
-  #return-to-top img {
-    top: 5px;
-  }
+
   #facility-bg::before {
     left: -60px;
   }
@@ -6015,9 +5790,7 @@ input:-internal-autofill-selected {
   p {
     font-size: 18px;
   }
-  #DT {
-    font-size: 13px;
-  }
+
   .fa-search,
   .transport p,
   .transport-2 p,
@@ -6182,16 +5955,11 @@ input:-internal-autofill-selected {
     width: auto;
     left: 20px;
   }
-  .f-logo p,
-  .f-logo span,
-  .footer2 p,
-  .links a,
   .loc3,
   .loc5,
   .loc7,
   .loc8,
   .loc9,
-  .social-media p,
   .transport li,
   .transport-2 li,
   .transport-3 li,
@@ -6244,22 +6012,7 @@ input:-internal-autofill-selected {
   .plus i {
     font-size: 17px;
   }
-  .footer {
-    padding: 30px 0;
-  }
-  .fa-facebook-f {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-  .fa-youtube {
-    padding: 8px 7px;
-    font-size: 14px;
-  }
-  .footer-rt a,
-  .footer-rt p {
-    font-size: 14px;
-    text-align: center;
-  }
+
   #facility-bg::before {
     left: -50px;
   }
@@ -6343,9 +6096,7 @@ input:-internal-autofill-selected {
     top: -15px;
     left: 74px;
   }
-  #return-to-top {
-    right: 50px;
-  }
+
   .light-inner {
     padding: 30px 30px 50px;
   }
@@ -6389,7 +6140,6 @@ input:-internal-autofill-selected {
   p {
     font-size: 18px;
   }
-  #DT,
   .fa-search {
     font-size: 12px;
   }
@@ -6534,8 +6284,7 @@ input:-internal-autofill-selected {
   .globe-info h6 {
     font-size: 29px;
   }
-  .globe-info p,
-  .social-media p {
+  .globe-info p {
     font-size: 13px;
   }
   .globe-info {
@@ -6586,28 +6335,11 @@ input:-internal-autofill-selected {
   #about-inner img {
     top: 70px;
   }
-  .footer {
-    padding: 25px 80px;
-  }
-  .f-logo span,
+
   .icons p {
     font-size: 15px;
   }
-  .f-logo p,
-  .fa-facebook-f,
-  .fa-youtube,
-  .footer-rt a,
-  .footer-rt p,
-  .footer2 p,
-  .links a {
-    font-size: 14px;
-  }
-  .fa-facebook-f {
-    padding: 7px 10px;
-  }
-  .fa-youtube {
-    padding: 7px 6px;
-  }
+
   .map-2 {
     padding-left: 64%;
     top: -280px;
@@ -6739,7 +6471,6 @@ input:-internal-autofill-selected {
   .list li {
     font-size: 22px;
   }
-  #DT,
   .calender button,
   .more-1 a,
   .more-2 a,
@@ -6749,8 +6480,7 @@ input:-internal-autofill-selected {
   .more-7 a {
     font-size: 14px;
   }
-  .fa-search,
-  .social-media p {
+  .fa-search {
     font-size: 12px;
   }
   .dropdown li a,
@@ -6852,12 +6582,7 @@ input:-internal-autofill-selected {
     padding: 7px 18px;
     left: 380px;
   }
-  .f-logo p,
-  .f-logo span,
-  .fa-facebook-f,
-  .fa-youtube,
-  .involved i,
-  .links a {
+  .involved i {
     font-size: 15px;
   }
   .gallery-slider__images .item .img-fill img {
@@ -6983,21 +6708,7 @@ input:-internal-autofill-selected {
   #about-inner img {
     left: 229px;
   }
-  .footer {
-    padding: 30px 20px;
-  }
-  .fa-facebook-f {
-    padding: 6px 10px;
-  }
-  .fa-youtube {
-    padding: 6px 5px;
-  }
-  .footer-rt a,
-  .footer-rt p,
-  .footer2 p {
-    font-size: 13px;
-    text-align: left;
-  }
+
   .map-2 {
     left: 0%;
     top: -215px;
@@ -7054,9 +6765,7 @@ input:-internal-autofill-selected {
   .pooja-img p {
     font-size: 19px;
   }
-  #return-to-top {
-    right: 80px;
-  }
+
   #first-arrow {
     margin-left: 40px;
   }
@@ -7213,9 +6922,7 @@ input:-internal-autofill-selected {
     font-size: 28px;
     padding: 9px 20px;
   }
-  .footer {
-    padding: 35px 0 25px;
-  }
+
   .about-info-inner {
     padding: 50px 188px 0 0;
   }
@@ -7258,17 +6965,12 @@ input:-internal-autofill-selected {
     margin-left: 0%;
     left: 0;
   }
-  #return-to-top {
-    right: 70px;
-  }
+
   .involved-inner span {
     font-size: 27px;
     padding: 9px 19px;
   }
-  #DT,
-  .links a {
-    font-size: 15px;
-  }
+
   .list a,
   .list li {
     font-size: 22px;
@@ -7356,15 +7058,6 @@ input:-internal-autofill-selected {
   .motif {
     padding-left: 50%;
   }
-  #DT,
-  .f-logo p,
-  .f-logo span,
-  .fa-youtube,
-  .footer-rt a,
-  .footer-rt p,
-  .footer2 p,
-  .links a,
-  .links p,
   .more-1 a,
   .more-2 a,
   .more-4 a,
@@ -7535,34 +7228,11 @@ input:-internal-autofill-selected {
     width: 100px;
     right: 38%;
   }
-  .footer {
-    padding: 30px 0;
-  }
+
   .involved-inner li {
     padding: 0 0 3px 25px;
   }
-  .fa-facebook-f {
-    padding: 6px 10px;
-    font-size: 14px;
-  }
-  .social-media a,
-  .social-media p {
-    font-size: 11px;
-  }
-  #return-to-top {
-    top: -100px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-  }
-  #return-to-top img {
-    width: 15px;
-    left: 6px;
-    top: 1px;
-  }
-  .f-logo img {
-    width: 75%;
-  }
+
   .about-info-inner {
     padding: 25px 120px 0 0;
   }
@@ -7613,10 +7283,7 @@ input:-internal-autofill-selected {
   h2 {
     font-size: 22px;
   }
-  #DT,
-  .links a {
-    font-size: 15px;
-  }
+
   .motif {
     padding-left: 50%;
   }
@@ -7725,9 +7392,7 @@ input:-internal-autofill-selected {
     margin-top: -21%;
     width: 100px;
   }
-  .footer {
-    padding: 35px 0 25px;
-  }
+
   .about-info-inner {
     padding: 50px 188px 0 0;
   }
@@ -7759,9 +7424,7 @@ input:-internal-autofill-selected {
   .loc13 {
     margin-left: 32%;
   }
-  #return-to-top {
-    right: 70px;
-  }
+
   .involved-inner span {
     font-size: 27px;
     padding: 9px 19px;
@@ -7800,10 +7463,7 @@ input:-internal-autofill-selected {
   h2 {
     font-size: 22px;
   }
-  #DT,
-  .links a {
-    font-size: 15px;
-  }
+
   #facility-bg::before,
   .Q1 {
     left: 70px;
@@ -7896,9 +7556,7 @@ input:-internal-autofill-selected {
     margin-top: -20%;
     width: 100px;
   }
-  .footer {
-    padding: 35px 0 25px;
-  }
+
   .about-info-inner {
     padding: 50px 188px 0 0;
   }
@@ -7930,9 +7588,7 @@ input:-internal-autofill-selected {
   .loc13 {
     margin-left: 32%;
   }
-  #return-to-top {
-    right: 70px;
-  }
+
   .involved-inner span {
     font-size: 27px;
     padding: 9px 19px;
