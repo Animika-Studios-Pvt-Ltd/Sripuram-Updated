@@ -1,5 +1,3 @@
-import "./navbar.js";
-
 AOS.init();
 let overlay = document.querySelector(".menu_overlay"),
   open = document.querySelector(".menu-icon"),
