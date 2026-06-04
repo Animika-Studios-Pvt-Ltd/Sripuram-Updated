@@ -2646,6 +2646,13 @@
         }
       });
 
+      // Close dropdown when scrolling the page
+      window.addEventListener("scroll", function () {
+        if (sripuramParent && sripuramParent.classList.contains("sn-mega-menu-locked")) {
+          sripuramParent.classList.remove("sn-mega-menu-locked");
+        }
+      }, { passive: true });
+
       const openBtn = document.getElementById("sn-open-btn");
       const closeBtn = document.getElementById("sn-close-btn");
       const drawer = document.getElementById("sn-drawer");

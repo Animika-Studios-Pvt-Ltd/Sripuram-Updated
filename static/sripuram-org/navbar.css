@@ -306,6 +306,16 @@
     visibility 0.25s ease;
 }
 
+#main-menu li.sn-mega-menu-parent > ul::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background: transparent;
+}
+
 #main-menu li.sn-mega-menu-parent:hover > ul,
 #main-menu li.sn-mega-menu-parent.sn-mega-menu-locked > ul {
   opacity: 1 !important;
