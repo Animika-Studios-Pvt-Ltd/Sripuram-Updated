@@ -783,7 +783,8 @@ body.sn-open .sn-drawer {
   font-size: inherit !important;
 }
 
-.sn-drawer__socials .fa-facebook-f, .sn-drawer__socials .fa-youtube {
+.sn-drawer__socials .fa-facebook-f,
+.sn-drawer__socials .fa-youtube {
   border: none;
 }
 
