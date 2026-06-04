@@ -279,7 +279,7 @@
                 </li>
 
                 <!-- Sripuram Accordion -->
-                <li class="sn-nav-list__item sn-has-sub">
+                <li class="sn-nav-list__item sn-has-sub sn-desktop-hidden">
                   <button class="sn-nav-list__link sn-accordion-btn" aria-expanded="false">
                     <i class="fas fa-gopuram sn-nav-icon"></i>
                     <span>Sripuram</span>
@@ -324,19 +324,19 @@
                   </ul>
                 </li>
 
-                <li class="sn-nav-list__item">
+                <li class="sn-nav-list__item sn-desktop-hidden">
                   <a href="darshan-timings.html" class="sn-nav-list__link">
                     <i class="fas fa-calendar-alt sn-nav-icon"></i> Darshan Timings
                   </a>
                 </li>
 
-                <li class="sn-nav-list__item">
+                <li class="sn-nav-list__item sn-desktop-hidden">
                   <a href="Sripuram-pooja-and-sevas.html" class="sn-nav-list__link">
                     <i class="fas fa-om sn-nav-icon"></i> Pooja/Sevas
                   </a>
                 </li>
 
-                <li class="sn-nav-list__item">
+                <li class="sn-nav-list__item sn-desktop-hidden">
                   <a href="Charities-sripuram-golden-temple.html" class="sn-nav-list__link">
                     <i class="fas fa-hands-helping sn-nav-icon"></i> Charities
                   </a>
@@ -379,7 +379,7 @@
                   </a>
                 </li>
 
-                <li class="sn-nav-list__item">
+                <li class="sn-nav-list__item sn-desktop-hidden">
                   <a href="Golden-temple-contact-number.html" class="sn-nav-list__link">
                     <i class="fas fa-phone-alt sn-nav-icon"></i> Contact Us
                   </a>
@@ -2662,9 +2662,30 @@
         openBtn.setAttribute("aria-expanded", "false");
       }
 
-      openBtn.addEventListener("click", openDrawer);
-      closeBtn.addEventListener("click", closeDrawer);
-      backdrop.addEventListener("click", closeDrawer);
+      if (openBtn && closeBtn && drawer && backdrop) {
+        openBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          openDrawer();
+        });
+        closeBtn.addEventListener("click", closeDrawer);
+        backdrop.addEventListener("click", closeDrawer);
+
+        // Close drawer if user clicks anywhere outside of the drawer and open button
+        document.addEventListener("click", function (e) {
+          if (document.body.classList.contains("sn-open")) {
+            if (!drawer.contains(e.target) && !openBtn.contains(e.target)) {
+              closeDrawer();
+            }
+          }
+        });
+
+        // Close drawer if user scrolls the page
+        window.addEventListener("scroll", function () {
+          if (document.body.classList.contains("sn-open")) {
+            closeDrawer();
+          }
+        }, { passive: true });
+      }
 
       // Accordion Logic
       accordions.forEach(btn => {
