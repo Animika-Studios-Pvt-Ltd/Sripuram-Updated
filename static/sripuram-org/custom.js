@@ -204,248 +204,33 @@ function updateCaption(e) {
         : $(this).text("View All"));
   }));
 
-$(document).ready(function () {
-  $("#myModal").modal("show");
-});
+// Dynamic Calendar Assets Injection
+(function () {
+  if (document.getElementById("niceZoomIn")) {
+    let basePath = "";
+    const customScript = document.querySelector('script[src*="custom.js"]');
+    if (customScript) {
+      const src = customScript.getAttribute("src");
+      const idx = src.indexOf("static/sripuram-org/custom.js");
+      if (idx !== -1) {
+        basePath = src.substring(0, idx);
+      }
+    }
 
-/* Calendar Section */
-// document.addEventListener("DOMContentLoaded", function () {
-//   const nextBtn = document.querySelector(".next");
-//   const prevBtn = document.querySelector(".prev");
-//   const daysEl = document.querySelector(".days");
-//   const todayBtn = document.querySelector(".today-btn");
-//   const dateEl = document.querySelector(".date");
-//   const addEventBtn = document.querySelector(".add-event");
-//   const addEventWrapper = document.querySelector(".add-event-wrapper");
-//   const addEventCloseBtn = document.querySelector(".close");
-//   const addEventTitle = document.querySelector(".event-name");
-//   const addEventTimeFrom = document.querySelector(".event-time-from");
-//   const addEventTimeTo = document.querySelector(".event-time-to");
-//   const addEventSubmit = document.querySelector(".add-event-btn");
-//   const eventDay = document.querySelector(".event-day");
-//   const eventDate = document.querySelector(".event-date");
-//   const eventsContainer = document.querySelector(".events");
+    // Inject calender.css if not already present
+    if (!document.querySelector('link[href*="calender.css"]')) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = basePath + "static/sripuram-org/calender.css";
+      document.head.appendChild(link);
+    }
 
-//   let today = new Date();
-//   let activeDay;
-//   let month = today.getMonth();
-//   let year = today.getFullYear();
+    // Inject calender.js if not already present
+    if (!document.querySelector('script[src*="calender.js"]')) {
+      const script = document.createElement("script");
+      script.src = basePath + "static/sripuram-org/calender.js";
+      document.body.appendChild(script);
+    }
+  }
+})();
 
-//   const months = [
-//     "January",
-//     "February",
-//     "March",
-//     "April",
-//     "May",
-//     "June",
-//     "July",
-//     "August",
-//     "September",
-//     "October",
-//     "November",
-//     "December",
-//   ];
-
-//   let eventsArr = [];
-
-//   function getEvents() {
-//     const stored = localStorage.getItem("calendar-events");
-//     eventsArr = stored ? JSON.parse(stored) : [];
-//   }
-
-//   function saveEvents() {
-//     localStorage.setItem("calendar-events", JSON.stringify(eventsArr));
-//   }
-
-//   function initCalendar() {
-//     getEvents();
-//     const firstDay = new Date(year, month, 1);
-//     const lastDay = new Date(year, month + 1, 0);
-//     const prevLastDay = new Date(year, month, 0);
-//     const prevDays = prevLastDay.getDate();
-//     const lastDate = lastDay.getDate();
-//     const day = firstDay.getDay();
-//     const nextDays = 7 - lastDay.getDay() - 1;
-
-//     dateEl.textContent = `${months[month]} ${year}`;
-//     let days = "";
-
-//     for (let x = day; x > 0; x--) {
-//       days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
-//     }
-
-//     for (let i = 1; i <= lastDate; i++) {
-//       let event = false;
-//       eventsArr.forEach((eventObj) => {
-//         if (
-//           eventObj.day === i &&
-//           eventObj.month === month + 1 &&
-//           eventObj.year === year
-//         ) {
-//           event = true;
-//         }
-//       });
-
-//       if (
-//         i === new Date().getDate() &&
-//         year === new Date().getFullYear() &&
-//         month === new Date().getMonth()
-//       ) {
-//         activeDay = i;
-//         getActiveDay(i);
-//         updateEvents(i);
-//         days += `<div class="day today active ${
-//           event ? "event" : ""
-//         }">${i}</div>`;
-//       } else {
-//         days += `<div class="day ${event ? "event" : ""}">${i}</div>`;
-//       }
-//     }
-
-//     for (let j = 1; j <= nextDays; j++) {
-//       days += `<div class="day next-date">${j}</div>`;
-//     }
-
-//     daysEl.innerHTML = days;
-//     addListener();
-//   }
-
-//   function addListener() {
-//     const days = document.querySelectorAll(".day");
-//     days.forEach((day) => {
-//       day.addEventListener("click", (e) => {
-//         activeDay = Number(e.target.innerHTML);
-//         getActiveDay(activeDay);
-//         updateEvents(activeDay);
-
-//         days.forEach((d) => d.classList.remove("active"));
-//         e.target.classList.add("active");
-//       });
-//     });
-//   }
-
-//   function getActiveDay(date) {
-//     const day = new Date(year, month, date);
-//     const dayName = day.toString().split(" ")[0];
-//     eventDay.textContent = dayName;
-//     eventDate.textContent = `${date} ${months[month]} ${year}`;
-//   }
-
-//   function updateEvents(date) {
-//     let events = "";
-//     eventsArr.forEach((eventObj) => {
-//       if (
-//         eventObj.day === date &&
-//         eventObj.month === month + 1 &&
-//         eventObj.year === year
-//       ) {
-//         eventObj.events.forEach((event) => {
-//           events += `
-//             <div class="event">
-//               <div class="title">
-//                 <i class="fas fa-circle"></i>
-//                 <h3 class="event-title">${event.title}</h3>
-//               </div>
-//               <div class="event-time">${event.time}</div>
-//             </div>`;
-//         });
-//       }
-//     });
-//     eventsContainer.innerHTML =
-//       events || `<div class="no-event"><h3>No Events</h3></div>`;
-//   }
-
-//   addEventBtn.addEventListener("click", () =>
-//     addEventWrapper.classList.toggle("active"),
-//   );
-//   addEventCloseBtn.addEventListener("click", () =>
-//     addEventWrapper.classList.remove("active"),
-//   );
-
-//   addEventSubmit.addEventListener("click", () => {
-//     const title = addEventTitle.value.trim();
-//     const timeFrom = addEventTimeFrom.value.trim();
-//     const timeTo = addEventTimeTo.value.trim();
-//     if (!title || !timeFrom || !timeTo) return alert("Please fill all fields");
-
-//     const newEvent = { title, time: `${timeFrom} - ${timeTo}` };
-//     let eventAdded = false;
-
-//     eventsArr.forEach((item) => {
-//       if (
-//         item.day === activeDay &&
-//         item.month === month + 1 &&
-//         item.year === year
-//       ) {
-//         item.events.push(newEvent);
-//         eventAdded = true;
-//       }
-//     });
-
-//     if (!eventAdded) {
-//       eventsArr.push({
-//         day: activeDay,
-//         month: month + 1,
-//         year: year,
-//         events: [newEvent],
-//       });
-//     }
-
-//     saveEvents();
-//     addEventWrapper.classList.remove("active");
-//     addEventTitle.value = addEventTimeFrom.value = addEventTimeTo.value = "";
-//     updateEvents(activeDay);
-//     initCalendar();
-//   });
-
-//   prevBtn.addEventListener("click", () => {
-//     month--;
-//     if (month < 0) {
-//       month = 11;
-//       year--;
-//     }
-//     initCalendar();
-//   });
-
-//   nextBtn.addEventListener("click", () => {
-//     month++;
-//     if (month > 11) {
-//       month = 0;
-//       year++;
-//     }
-//     initCalendar();
-//   });
-
-//   todayBtn.addEventListener("click", () => {
-//     today = new Date();
-//     month = today.getMonth();
-//     year = today.getFullYear();
-//     initCalendar();
-//   });
-
-//   document.querySelector(".goto-btn").addEventListener("click", () => {
-//     const val = document.querySelector(".date-input").value.trim();
-//     const dateArr = val.split("/");
-//     if (
-//       dateArr.length === 2 &&
-//       dateArr[0] > 0 &&
-//       dateArr[0] < 13 &&
-//       dateArr[1].length === 4
-//     ) {
-//       month = dateArr[0] - 1;
-//       year = parseInt(dateArr[1]);
-//       initCalendar();
-//     } else {
-//       alert("Invalid Date");
-//     }
-//   });
-
-//   document.querySelector(".date-input").addEventListener("keypress", (e) => {
-//     if (e.key === "Enter") document.querySelector(".goto-btn").click();
-//   });
-
-//   const modal = document.getElementById("niceZoomIn");
-//   if (modal) {
-//     modal.addEventListener("shown.bs.modal", () => initCalendar());
-//   }
-// });

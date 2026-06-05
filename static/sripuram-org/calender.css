@@ -1,0 +1,478 @@
+/* Minimalist Premium Calendar Design System for Sripuram */
+:root {
+  --primary-accent: #722f37;
+  /* Soft elegant burgundy */
+  --neutral-dark: #2d2926;
+  /* Rich dark grey/charcoal */
+  --neutral-mid: #555555;
+  /* Subtle grey for secondary text */
+  --neutral-light: #f9f8f6;
+  /* Soft warm off-white background */
+  --border-color: rgba(0, 0, 0, 0.08);
+  --bg-main: #ffffff;
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.03);
+  --font-family: "helvetica", Arial, sans-serif;
+}
+
+/* Enforce Helvetica globally on all text elements inside the modal, excluding icons */
+#niceZoomIn,
+#niceZoomIn *:not(i):not(.fas):not(.far):not(.fab):not(.fa) {
+  font-family: "helvetica", Arial, sans-serif !important;
+}
+
+/* Modal adjustments */
+#niceZoomIn .modal-dialog {
+  max-width: 950px;
+  margin: 1.75rem auto;
+}
+
+#niceZoomIn .modal-content {
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background: var(--bg-main);
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+#niceZoomIn .modal-header {
+  border-bottom: none;
+  padding: 1.2rem 1.5rem 0.2rem;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#niceZoomIn .btn-close {
+  position: relative !important;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #8f1d03 !important;
+  /* Elegant rich temple maroon */
+  background-image: none !important;
+  /* Suppress Bootstrap background SVG to avoid duplication */
+  border-radius: 50% !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(143, 29, 3, 0.25) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 9999 !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  opacity: 1 !important;
+}
+
+#niceZoomIn .btn-close span {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: -3px !important;
+  font-family: Arial, sans-serif !important;
+}
+
+#niceZoomIn .btn-close:hover {
+  background-color: #b51201 !important;
+  /* Vibrant maroon on hover */
+  transform: rotate(90deg) scale(1.1) !important;
+  box-shadow: 0 6px 16px rgba(143, 29, 3, 0.35) !important;
+}
+
+#niceZoomIn .modal-body {
+  padding: 0;
+}
+
+/* Main Container Layout */
+#niceZoomIn .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 560px;
+}
+
+/* Left Section: Calendar Grid */
+#niceZoomIn .left {
+  flex: 1.25;
+  padding: 1rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#niceZoomIn .calendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Month display header */
+#niceZoomIn .calendar .month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.75rem;
+  background: var(--neutral-light);
+  color: var(--neutral-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+#niceZoomIn .calendar .month .date {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#niceZoomIn .calendar .month i {
+  cursor: pointer;
+  font-size: 1.05rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--neutral-dark);
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+#niceZoomIn .calendar .month i:hover {
+  background: var(--neutral-dark);
+  color: #ffffff;
+}
+
+/* Weekdays */
+#niceZoomIn .calendar .weekdays {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 1.2rem 0.5rem;
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+}
+
+#niceZoomIn .calendar .weekdays div {
+  width: 14.28%;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--neutral-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Days Grid */
+#niceZoomIn .calendar .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  padding: 1rem 1.2rem;
+  background: var(--bg-main);
+  flex-grow: 1;
+}
+
+#niceZoomIn .calendar .days .day {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--neutral-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  position: relative;
+}
+
+#niceZoomIn .calendar .days .day:hover {
+  background: var(--neutral-light);
+  color: var(--neutral-dark);
+  font-weight: 600;
+}
+
+#niceZoomIn .calendar .days .prev-date,
+#niceZoomIn .calendar .days .next-date {
+  color: #d2ceca;
+}
+
+#niceZoomIn .calendar .days .today {
+  border: 2px solid #D4AF37;
+  font-weight: 700;
+}
+
+#niceZoomIn .calendar .days .active {
+  background: #D4AF37 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* Event indicator on Day */
+#niceZoomIn .calendar .days .event::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-accent);
+}
+
+#niceZoomIn .calendar .days .active.event::after {
+  background-color: #ffffff;
+}
+
+/* Go to Today widget */
+#niceZoomIn .goto-today {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  background: var(--neutral-light);
+  border-top: 1px solid var(--border-color);
+  gap: 1rem;
+}
+
+#niceZoomIn .goto-today .goto {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#niceZoomIn .goto-today .goto input {
+  border: none;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  outline: none;
+  width: 95px;
+}
+
+#niceZoomIn .goto-today .goto button {
+  background: #b51201;
+  color: #ffffff;
+  border: none;
+  padding: 0.35rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#niceZoomIn .goto-today .goto button:hover {
+  opacity: 0.9;
+}
+
+#niceZoomIn .goto-today .today-btn {
+  background: transparent;
+  color: var(--neutral-dark);
+  border: 1px solid #D4AF37;
+  border-radius: 8px;
+  padding: 0.35rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#niceZoomIn .goto-today .today-btn:hover {
+  background: #b51201;
+  color: #ffffff;
+}
+
+/* Right Section: Events List */
+#niceZoomIn .right {
+  flex: 0.95;
+  margin: 1rem 1.5rem 1.5rem 0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--neutral-light);
+  border-radius: 16px;
+  color: var(--neutral-dark);
+  border: 1px solid var(--border-color);
+  min-height: auto;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+#niceZoomIn .right .today-date {
+  display: none !important;
+}
+
+/* Events List styling */
+#niceZoomIn .events {
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#niceZoomIn .events::-webkit-scrollbar {
+  width: 4px;
+}
+
+#niceZoomIn .events::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#niceZoomIn .events::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+#niceZoomIn .events .event {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.15rem 1.3rem;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-left: 5px solid #8f1d03 !important;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.04);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#niceZoomIn .events .event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(143, 29, 3, 0.08);
+  border-color: rgba(212, 175, 55, 0.35);
+}
+
+#niceZoomIn .events .event .title {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  text-align: left !important;
+}
+
+#niceZoomIn .events .event .title i {
+  position: static !important;
+  transform: none !important;
+  margin: 2px 0.3rem 0 0 !important;
+  color: #8f1d03 !important;
+  font-size: 0.95rem !important;
+  display: inline-block !important;
+  background: transparent !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
+
+#niceZoomIn .events .event .title h3,
+#niceZoomIn .events .event .title h3.event-title {
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  color: #3c2a21 !important;
+  /* Rich elegant dark brown */
+  text-transform: none !important;
+  letter-spacing: 0px !important;
+  text-align: left !important;
+}
+
+#niceZoomIn .events .event .event-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  color: #8f1d03;
+  background: #fdf6e2;
+  /* Delicate soft gold/cream badge */
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  margin-top: 0.65rem;
+  font-weight: 600;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+#niceZoomIn .events .no-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  color: var(--neutral-mid);
+  font-size: 1rem;
+}
+
+/* Hide Add Event panels and buttons */
+#niceZoomIn .add-event,
+#niceZoomIn .add-event-wrapper,
+.add-event,
+.add-event-wrapper {
+  display: none !important;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  #niceZoomIn .modal-dialog {
+    max-width: 95%;
+  }
+
+  #niceZoomIn .container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  #niceZoomIn .right {
+    margin: 0 1.5rem 1.5rem;
+    padding: 1.2rem;
+    min-height: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #niceZoomIn .calendar .month .date {
+    font-size: 1.15rem;
+  }
+
+  #niceZoomIn .calendar .month {
+    padding: 0.8rem 1rem;
+  }
+
+  #niceZoomIn .calendar .weekdays {
+    padding: 0.6rem 0.5rem;
+  }
+
+  #niceZoomIn .calendar .days {
+    padding: 0.4rem;
+  }
+
+  #niceZoomIn .calendar .days .day {
+    height: 38px;
+    font-size: 0.85rem;
+  }
+
+  #niceZoomIn .goto-today {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.8rem;
+  }
+
+  #niceZoomIn .goto-today .goto {
+    justify-content: space-between;
+  }
+
+  #niceZoomIn .goto-today .goto input {
+    flex-grow: 1;
+  }
+}
