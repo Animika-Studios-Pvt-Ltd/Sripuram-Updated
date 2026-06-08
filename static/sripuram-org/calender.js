@@ -22,23 +22,23 @@ function initCalendarApp() {
   let year = 2026; // Lock strictly to 2026
 
   const months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
 
   // Static events compiled
   const PREDEFINED_EVENTS = [
-    // January
+    // Jan
     { day: 1, month: 1, year: 2026, events: [{ title: "New Year, Pradosham", time: "All Day" }] },
     { day: 2, month: 1, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam) & Special Pooja for Sri Ananda Nadarajar", time: "6:00 PM" }] },
     { day: 3, month: 1, year: 2026, events: [{ title: "Sri Sakthi Amma 50th Jayanthi Festival, Aaruthra Darshan", time: "All Day" }] },
@@ -57,7 +57,7 @@ function initCalendarApp() {
     { day: 29, month: 1, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 30, month: 1, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
 
-    // February
+    // Feb
     { day: 1, month: 2, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
     { day: 5, month: 2, year: 2026, events: [{ title: "Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 13, month: 2, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
@@ -69,7 +69,7 @@ function initCalendarApp() {
     { day: 27, month: 2, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 28, month: 2, year: 2026, events: [{ title: "National Science Day", time: "All Day" }] },
 
-    // March
+    // Mar
     { day: 1, month: 3, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
     { day: 2, month: 3, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
     { day: 3, month: 3, year: 2026, events: [{ title: "Lunar Eclipse in Tamilnadu, Good Friday", time: "All Day" }] },
@@ -87,7 +87,7 @@ function initCalendarApp() {
     { day: 30, month: 3, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
     { day: 31, month: 3, year: 2026, events: [{ title: "Mahaveer Jayanthi", time: "All Day" }] },
 
-    // April
+    // Apr
     { day: 1, month: 4, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
     { day: 5, month: 4, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 13, month: 4, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
@@ -111,7 +111,7 @@ function initCalendarApp() {
     { day: 20, month: 5, year: 2026, events: [{ title: "Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 27, month: 5, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
 
-    // June
+    // Jun
     { day: 4, month: 6, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 11, month: 6, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 12, month: 6, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
@@ -125,7 +125,7 @@ function initCalendarApp() {
     { day: 27, month: 6, year: 2026, events: [{ title: "Sanipradosham", time: "All Day" }] },
     { day: 29, month: 6, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
 
-    // July
+    // Jul
     { day: 3, month: 7, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja in Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 10, month: 7, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 12, month: 7, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
@@ -134,7 +134,7 @@ function initCalendarApp() {
     { day: 26, month: 7, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
     { day: 28, month: 7, year: 2026, events: [{ title: "Full Moon Guru Poornima (Sri Narayani Maha Yagam & Sri Sakthi Amma Paatha Pooja)", time: "6:00 PM" }] },
 
-    // August
+    // Aug
     { day: 2, month: 8, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
     { day: 9, month: 8, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 10, month: 8, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
@@ -149,7 +149,7 @@ function initCalendarApp() {
     { day: 27, month: 8, year: 2026, events: [{ title: "Aavani Avittam, Full Moon (Sri Narayani Maha Yagam & Special Pooja for Sri Ananda Nadarajar)", time: "6:00 PM" }] },
     { day: 31, month: 8, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
 
-    // September
+    // Sep
     { day: 4, month: 9, year: 2026, events: [{ title: "Krishna Jayanthi", time: "All Day" }] },
     { day: 5, month: 9, year: 2026, events: [{ title: "Teacher’s Day", time: "All Day" }] },
     { day: 7, month: 9, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
@@ -163,7 +163,7 @@ function initCalendarApp() {
     { day: 27, month: 9, year: 2026, events: [{ title: "Halalaya Patcham Start", time: "All Day" }] },
     { day: 29, month: 9, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
 
-    // October
+    // Oct
     { day: 2, month: 10, year: 2026, events: [{ title: "Gandhi Jayanthi", time: "All Day" }] },
     { day: 6, month: 10, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 8, month: 10, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
@@ -176,7 +176,7 @@ function initCalendarApp() {
     { day: 25, month: 10, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
     { day: 29, month: 10, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
 
-    // November
+    // Nov
     { day: 5, month: 11, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 6, month: 11, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
     { day: 7, month: 11, year: 2026, events: [{ title: "Naga Chaturthi - Special Pooja at Sri Sakthi Ganapathy Temple", time: "12:00 PM" }] },
@@ -189,7 +189,7 @@ function initCalendarApp() {
     { day: 24, month: 11, year: 2026, events: [{ title: "Full Moon (Sri Narayani Maha Yagam at Sri Narayani Peedam)", time: "6:00 PM" }] },
     { day: 27, month: 11, year: 2026, events: [{ title: "Sankada Hara Chaturthi (Special Pooja at Sri Sakthi Ganapathy Temple)", time: "12:00 PM" }] },
 
-    // December
+    // Dec
     { day: 4, month: 12, year: 2026, events: [{ title: "Ekadasi (Special Pooja at Sripuram Srinivasa Perumal Temple)", time: "All Day" }] },
     { day: 6, month: 12, year: 2026, events: [{ title: "Pradosham", time: "All Day" }] },
     { day: 8, month: 12, year: 2026, events: [{ title: "New Moon (Navachandi Yagam in Sripuram Yagasala)", time: "6:00 PM" }] },
@@ -380,7 +380,7 @@ function initCalendarApp() {
         month = currentToday.getMonth();
         activeDay = currentToday.getDate();
       } else {
-        month = 0; // Fallback to January 2026 if current year is not 2026
+        month = 0; // Fallback to Jan 2026 if current year is not 2026
         activeDay = 1;
       }
       year = 2026;
@@ -549,8 +549,8 @@ function initCalendarApp() {
     eventsToRender.sort((a, b) => a.dateObj - b.dateObj);
 
     const monthNames = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
+      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
     ];
 
     function getEventImage(title) {
