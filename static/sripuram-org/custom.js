@@ -90,6 +90,45 @@ $(window).scroll(function () {
       },
     ],
   });
+  $(".cwd-volumes-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    loop: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    arrows: true,
+    nextArrow:
+      '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+    prevArrow:
+      '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+
+
 var $cell = $(".card");
 ($cell.find(".js-expander").click(function () {
   var e = $(this).closest(".card");

@@ -482,9 +482,12 @@ function initCalendarApp() {
     });
 
     const today = new Date();
-    // Show all events for the current month only (June 1 → June 30, etc.)
-    const startDate = new Date(2026, today.getMonth(), 1);          // 1st of current month
-    const endDate = new Date(2026, today.getMonth() + 1, 0);        // last day of current month
+    // Show all events from today till the next 30 days
+    const startDate = new Date(2026, today.getMonth(), today.getDate());
+    startDate.setHours(0, 0, 0, 0);
+    const endDate = new Date(startDate.getTime());
+    endDate.setDate(startDate.getDate() + 30);
+    endDate.setHours(23, 59, 59, 999);
 
     const allowedKeywords = [
       "sankada", "chaturthi", "ekadasi", "new moon", "amavasya",
