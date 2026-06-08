@@ -482,10 +482,9 @@ function initCalendarApp() {
     });
 
     const today = new Date();
-    // Use 2026 events window starting from today's month/day
-    const startDate = new Date(2026, today.getMonth(), today.getDate());
-    const endDate = new Date(startDate);
-    endDate.setDate(startDate.getDate() + 30);
+    // Show all events for the current month only (June 1 → June 30, etc.)
+    const startDate = new Date(2026, today.getMonth(), 1);          // 1st of current month
+    const endDate = new Date(2026, today.getMonth() + 1, 0);        // last day of current month
 
     const allowedKeywords = [
       "sankada", "chaturthi", "ekadasi", "new moon", "amavasya",
@@ -542,8 +541,11 @@ function initCalendarApp() {
       });
     }
 
-    // Merge custom HTML slides
-    eventsToRender = eventsToRender.concat(customSlides);
+    // Merge custom HTML slides — only those within the same date window
+    const filteredCustomSlides = customSlides.filter(slide => {
+      return slide.dateObj >= startDate && slide.dateObj <= endDate;
+    });
+    eventsToRender = eventsToRender.concat(filteredCustomSlides);
 
     // Sort chronologically by dateObj
     eventsToRender.sort((a, b) => a.dateObj - b.dateObj);
