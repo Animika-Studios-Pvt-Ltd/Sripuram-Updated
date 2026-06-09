@@ -472,9 +472,11 @@ function initCalendarApp() {
         const parts = dateAttr.split("-");
         if (parts.length === 3) {
           const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+          const clonedSlide = slide.cloneNode(true);
+          clonedSlide.className = "px-3 custom-event-slide";
           customSlides.push({
             isCustomHtml: true,
-            html: slide.outerHTML,
+            html: clonedSlide.outerHTML,
             dateObj: dateObj
           });
         }
@@ -588,7 +590,7 @@ function initCalendarApp() {
         const img = getEventImage(evt.title);
 
         html += `
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="px-3">
             <div class="each-client">
               <img src="${img}" class="img-fluid" alt="${evt.title}" />
               <div class="row">
@@ -609,54 +611,193 @@ function initCalendarApp() {
       }
     });
 
-    container.innerHTML = html;
+    // Render custom CSS/JS carousel HTML
+    let slidesHtml = "";
+    eventsToRender.forEach((evt) => {
+      if (evt.isCustomHtml) {
+        slidesHtml += evt.html;
+      } else {
+        const dayStr = String(evt.day).padStart(2, "0");
+        const monthName = monthNames[evt.month - 1];
+        const img = getEventImage(evt.title);
 
-    $container.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      loop: 0,
-      autoplay: !0,
-      speed: 1500,
-      autoplaySpeed: 5e3,
-      arrows: !0,
-      nextArrow:
-        '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-      prevArrow:
-        '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: 0,
-          },
-        },
-        {
-          breakpoint: 699,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 476,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
+        slidesHtml += `
+          <div class="px-3">
+            <div class="each-client">
+              <img src="${img}" class="img-fluid" alt="${evt.title}" />
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+                  <div class="eventsdate">
+                    <h5>${dayStr}</h5>
+                    <h4>${monthName}</h4>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-9">
+                  <div class="eventsdetails">
+                    <p>${evt.title}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`;
+      }
     });
+
+    container.innerHTML = `
+      <div class="custom-carousel-container">
+        <button class="carousel-nav-btn prev-btn"><img src="static/sripuram-org/arrow.webp" alt="Prev"></button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            ${slidesHtml}
+          </div>
+        </div>
+        <button class="carousel-nav-btn next-btn"><img src="static/sripuram-org/arrow.webp" alt="Next"></button>
+      </div>
+    `;
+
+    // Inject styles if not present
+    if (!document.getElementById("custom-carousel-styles")) {
+      const style = document.createElement("style");
+      style.id = "custom-carousel-styles";
+      style.innerHTML = `
+        .custom-carousel-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 60px;
+        }
+        .carousel-viewport {
+          overflow: hidden;
+          width: 100%;
+          padding: 10px 0;
+        }
+        .carousel-track {
+          display: flex;
+          transition: transform 0.4s ease-in-out;
+          will-change: transform;
+        }
+        .carousel-track > div {
+          flex: 0 0 100%;
+          box-sizing: border-box;
+        }
+        @media (min-width: 768px) {
+          .carousel-track > div {
+            flex: 0 0 50%;
+          }
+        }
+        @media (min-width: 992px) {
+          .carousel-track > div {
+            flex: 0 0 33.3333%;
+          }
+        }
+        .carousel-nav-btn {
+          background: white;
+          border: 1px solid #d1aa67;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          z-index: 10;
+          position: absolute;
+          bottom: 0px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          transition: background 0.3s;
+        }
+        .carousel-nav-btn:hover {
+          background: #fcd475;
+        }
+        .carousel-nav-btn.prev-btn {
+          right: 55px;
+        }
+        .carousel-nav-btn.next-btn {
+          right: 0px;
+        }
+        .carousel-nav-btn img {
+          width: 15px;
+          height: 15px;
+        }
+        .carousel-nav-btn.prev-btn img {
+          transform: rotate(225deg);
+        }
+        .carousel-nav-btn.next-btn img {
+          transform: rotate(45deg);
+        }
+        .carousel-nav-btn.disabled {
+          opacity: 0.3;
+          pointer-events: none;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    // Carousel script logic
+    const track = container.querySelector(".carousel-track");
+    const pBtn = container.querySelector(".prev-btn");
+    const nBtn = container.querySelector(".next-btn");
+    const slides = Array.from(track.children);
+    let currentIndex = 0;
+
+    function getItemsPerView() {
+      if (window.innerWidth >= 992) return 3;
+      if (window.innerWidth >= 768) return 2;
+      return 1;
+    }
+
+    function updateCarousel() {
+      const itemsPerView = getItemsPerView();
+      const maxIndex = Math.max(0, slides.length - itemsPerView);
+      
+      // Keep index within bounds
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+      if (currentIndex < 0) currentIndex = 0;
+
+      // Translate track
+      const percentage = -(currentIndex * (100 / itemsPerView));
+      track.style.transform = `translateX(${percentage}%)`;
+
+      // Update button states
+      if (currentIndex === 0) {
+        pBtn.classList.add("disabled");
+      } else {
+        pBtn.classList.remove("disabled");
+      }
+
+      if (currentIndex >= maxIndex) {
+        nBtn.classList.add("disabled");
+      } else {
+        nBtn.classList.remove("disabled");
+      }
+
+      // Hide navigation entirely if all items fit in viewport
+      if (slides.length <= itemsPerView) {
+        pBtn.style.display = "none";
+        nBtn.style.display = "none";
+        track.style.justifyContent = "center";
+      } else {
+        pBtn.style.display = "";
+        nBtn.style.display = "";
+        track.style.justifyContent = "";
+      }
+    }
+
+    pBtn.addEventListener("click", () => {
+      currentIndex--;
+      updateCarousel();
+    });
+
+    nBtn.addEventListener("click", () => {
+      currentIndex++;
+      updateCarousel();
+    });
+
+    window.addEventListener("resize", updateCarousel);
+    updateCarousel();
   }
 
   // Initialize dynamic carousel on load
-  if (typeof $ !== "undefined" && typeof $.fn.slick !== "undefined") {
-    initDynamicEventsCarousel();
-  } else {
-    // Fallback if jQuery/Slick isn't fully ready
-    $(document).ready(() => initDynamicEventsCarousel());
-  }
+  initDynamicEventsCarousel();
 }
 
 if (document.readyState !== "loading") {
