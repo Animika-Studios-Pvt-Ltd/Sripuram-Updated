@@ -1,5 +1,5 @@
 AOS.init();
-$(window).scroll(function () {
+($(window).scroll(function () {
   $(this).scrollTop() >= 50
     ? $("#return-to-top").fadeIn(200)
     : $("#return-to-top").fadeOut(200);
@@ -18,8 +18,8 @@ $(window).scroll(function () {
       "all" == e
         ? $(".filter").show("10000")
         : ($(".filter")
-          .not("." + e)
-          .hide("8000"),
+            .not("." + e)
+            .hide("8000"),
           $(".filter")
             .filter("." + e)
             .show("10000"));
@@ -40,58 +40,92 @@ $(window).scroll(function () {
           $(e.target).prev(".panel-heading").removeClass("active");
         }));
   }),
-
-  $(".cwd-volumes-slider").slick({
-    slidesToShow: 4,
+  $(".client-section").slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    loop: true,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 3000,
-    arrows: true,
+    loop: 0,
+    autoplay: !0,
+    speed: 1500,
+    autoplaySpeed: 5e3,
+    arrows: !0,
     nextArrow:
       '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
     prevArrow:
       '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
     responsive: [
       {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: 0,
+        },
+      },
+      {
+        breakpoint: 699,
+        settings: {
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 476,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
     ],
-  });
-
-
+  }));
+$(".cwd-volumes-slider").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  loop: true,
+  autoplay: true,
+  speed: 1000,
+  autoplaySpeed: 3000,
+  arrows: true,
+  nextArrow:
+    '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+  prevArrow:
+    '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 
 var $cell = $(".card");
 ($cell.find(".js-expander").click(function () {
   var e = $(this).closest(".card");
   e.hasClass("is-collapsed")
     ? ($cell
-      .not(e)
-      .removeClass("is-expanded")
-      .addClass("is-collapsed")
-      .addClass("is-inactive"),
+        .not(e)
+        .removeClass("is-expanded")
+        .addClass("is-collapsed")
+        .addClass("is-inactive"),
       e.removeClass("is-collapsed").addClass("is-expanded"),
       $cell.not(e).hasClass("is-inactive") ||
-      $cell.not(e).addClass("is-inactive"))
+        $cell.not(e).addClass("is-inactive"))
     : (e.removeClass("is-expanded").addClass("is-collapsed"),
       $cell.not(e).removeClass("is-inactive"));
 }),
@@ -100,6 +134,7 @@ var $cell = $(".card");
     (e.removeClass("is-expanded").addClass("is-collapsed"),
       $cell.not(e).removeClass("is-inactive"));
   }));
+
 var $imagesSlider = $(".gallery-slider .gallery-slider__images>div"),
   $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
 ($imagesSlider.slick({
@@ -176,7 +211,10 @@ function updateCaption(e) {
 
 // Dynamic Calendar Assets Injection
 (function () {
-  if (document.getElementById("niceZoomIn") || document.querySelector(".client-section")) {
+  if (
+    document.getElementById("niceZoomIn") ||
+    document.querySelector(".client-section")
+  ) {
     let basePath = "";
     const customScript = document.querySelector('script[src*="custom.js"]');
     if (customScript) {
@@ -203,4 +241,3 @@ function updateCaption(e) {
     }
   }
 })();
-
