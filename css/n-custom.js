@@ -211,7 +211,10 @@ function updateCaption(e) {
 
 // Dynamic Calendar Assets Injection
 (function () {
-  if (document.getElementById("niceZoomIn")) {
+  if (
+    document.getElementById("niceZoomIn") ||
+    document.querySelector(".client-section")
+  ) {
     let basePath = "";
     const customScript = document.querySelector('script[src*="custom.js"]');
     if (customScript) {
