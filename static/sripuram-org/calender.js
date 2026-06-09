@@ -663,7 +663,7 @@ function initCalendarApp() {
         .custom-carousel-container {
           position: relative;
           width: 100%;
-          padding-bottom: 60px;
+          // padding-bottom: 60px;
         }
         .carousel-viewport {
           overflow: hidden;

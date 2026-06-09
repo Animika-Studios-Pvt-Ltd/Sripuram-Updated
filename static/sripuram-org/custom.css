@@ -1,5 +1,6 @@
 @import "navbar.css";
 @import "footer.css";
+@import "events.css";
 
 html,
 body {
@@ -39,13 +40,10 @@ body {
 
 .breadcrumb-item .active,
 .breadcrumb-item a,
-.calender a,
 .involved a,
 .involved-inner a,
 .involved-inner a:hover,
-.more-3 a,
 .plus a,
-.services a,
 .temples a {
   text-decoration: none;
 }
@@ -422,7 +420,6 @@ p {
 
 .news-drpdwn button:hover,
 .more-2 a:hover,
-.more-3 a:hover,
 .more-4 a:hover {
   color: #fff;
   background: #9f1605;
@@ -433,10 +430,8 @@ p {
   color: #487fc3;
 }
 
-.calender:hover .more-img,
 .more-1:hover .more-img,
 .more-2:hover .more-img,
-.more-3:hover .more-img,
 .more-4:hover .more-img,
 .more-5:hover .more-img,
 .more-6:hover .more-img {
@@ -845,15 +840,6 @@ p {
   margin-bottom: 50px;
 }
 
-.services {
-  padding-top: 100px;
-}
-
-.section-title {
-  position: relative;
-  bottom: 30px;
-}
-
 .slick-custom-arrow-right img {
   position: absolute;
   right: 0;
@@ -870,22 +856,6 @@ p {
   transform: rotate(225deg);
 }
 
-.services a {
-  color: #000;
-}
-
-.eventsdate h4,
-.eventsdate h5 {
-  font-family: "helvetica";
-  text-align: center;
-  color: #a87c3f;
-}
-
-.each-client img {
-  padding: 0 10px;
-  border-radius: 25px;
-}
-
 .arrow-carousel a:hover .bkgrd,
 .book button:hover,
 .gallery-slider__thumbnails .next-arrow:hover,
@@ -898,93 +868,15 @@ p {
   filter: brightness(6.5) !important;
 }
 
-.eventsdate {
-  background: #fcd475;
-  border-radius: 6px;
-  margin-top: 12px;
-  margin-left: 10px;
-  padding: 5px;
-}
-
-.calender,
-.more-3 {
-  width: fit-content;
-  position: relative;
-}
-
-.eventsdate h5 {
-  font-size: 40px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.eventsdate h4 {
-  margin: -5px 0 0;
-  font-size: 20px;
-}
-
-.calender a,
-.calender button,
-.more-3 a {
-  color: #467ec9;
-  font-family: "helvetica";
-  background: #fff;
-}
-
-.eventsdetails {
-  display: block;
-  position: relative;
-  top: 25px;
-  padding-bottom: 70px;
-}
-
 .cutomer-address p,
-.eventsdetails p,
 .facility-info p {
   text-align: left;
-}
-
-.more-3 {
-  bottom: -16px;
-}
-
-.calender a,
-.more-3 a {
-  border: 1px solid #d4b16f;
-  border-radius: 20px;
-  padding: 8px 20px;
-  letter-spacing: 0.01em;
-}
-
-.calender {
-  left: 210px;
-  top: -16px;
-}
-
-.calender button {
-  border: 1px solid #d4b16f;
-  border-radius: 20px;
-  box-shadow: none;
-  font-size: 15px;
-  position: relative;
-  top: 5px;
-  padding: 0 20px;
 }
 
 .motif-2,
 .parallax-div h2 {
   top: 200px;
   position: relative;
-}
-
-.fa-calendar-alt {
-  background: #d6b06f;
-  padding: 10px;
-  margin-left: -20px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  height: 33px;
-  color: #fff;
 }
 
 .parallax,
@@ -1003,11 +895,6 @@ p {
   color: #fff;
   background-color: #9f1605;
   border-color: transparent;
-}
-
-.client-section {
-  border-bottom: 2px solid #d4b16f;
-  margin-top: -100px;
 }
 
 .parallax {
@@ -3316,10 +3203,7 @@ input:-internal-autofill-selected {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
   }
-  .calender,
-  .eventsdetails,
   .leaders-details,
-  .more-3,
   .motif,
   .top {
     position: relative;
@@ -3404,12 +3288,6 @@ input:-internal-autofill-selected {
     left: 0;
     align-items: start;
   }
-  /* .dropdown {
-        left: 120px;
-        top: 0;
-        padding: 0;
-    }
-    */
 
   .dropdown li a,
   .light p,
@@ -3538,35 +3416,7 @@ input:-internal-autofill-selected {
   .gallery-slider {
     height: 700px;
   }
-  .each-client {
-    margin-bottom: 20px;
-  }
-  .eventsdate {
-    width: 70%;
-  }
-  .eventsdate h4 {
-    font-size: 16px;
-  }
-  .eventsdate h5 {
-    font-size: 24px;
-  }
-  .eventsdetails {
-    padding-bottom: 0px;
-    bottom: auto;
-    right: 0;
-    width: 70%;
-  }
-  .eventsdetails p {
-    font-size: 20px;
-  }
-  .more-3 {
-    bottom: -20px;
-    width: fit-content;
-  }
-  .calender {
-    left: 0;
-    top: 40px;
-  }
+
   #publications {
     padding: 130px 0 120px;
   }
@@ -3967,9 +3817,7 @@ input:-internal-autofill-selected {
     font-size: 14px !important;
     margin-left: -20px;
   }
-  .eventsdetails p {
-    font-size: 18px !important;
-  }
+
   .gallery-slider__images .item .img-fill img {
     top: 115px !important;
   }
@@ -4061,8 +3909,7 @@ input:-internal-autofill-selected {
   .Q1 {
     position: relative;
   }
-  #about,
-  .each-client {
+  #about {
     text-align: center;
   }
   .fa-search,
@@ -4232,20 +4079,7 @@ input:-internal-autofill-selected {
     top: 150px;
     left: 70px;
   }
-  .eventsdate {
-    height: 60px;
-    width: 50px;
-  }
-  .eventsdate h5 {
-    font-size: 20px;
-  }
-  .eventsdate h4 {
-    font-size: 14px;
-    margin-top: 0;
-  }
-  .eventsdetails p {
-    font-size: 18px;
-  }
+
   #publications .row img {
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -4497,12 +4331,6 @@ input:-internal-autofill-selected {
   .list {
     left: 15%;
   }
-  /* .dropdown {
-        left: 170px;
-        top: -30px;
-    }
-    */
-
   .dropdown li a {
     font-size: 18px;
   }
@@ -4689,17 +4517,7 @@ input:-internal-autofill-selected {
     top: 50px;
     padding: 0 0 0 66vh;
   }
-  .eventsdate h5 {
-    font-size: 30px;
-  }
-  .eventsdate h4 {
-    margin-top: 0;
-    font-size: 18px;
-  }
-  .eventsdate {
-    height: 70px;
-    width: 65px;
-  }
+
   .parallax-div {
     margin-top: -420px;
   }
@@ -5018,21 +4836,7 @@ input:-internal-autofill-selected {
   .leaders-details {
     padding-left: 81vh;
   }
-  .eventsdate {
-    height: 70px;
-    width: 65px;
-  }
-  .eventsdate h4 {
-    margin-top: 0;
-    font-size: 15px;
-  }
-  .eventsdate h5 {
-    font-size: 30px;
-  }
-  .eventsdetails {
-    top: 15px;
-    padding-bottom: 50px;
-  }
+
   .parallax-div .row {
     margin: 0 0 0 50px;
   }
@@ -5653,17 +5457,7 @@ input:-internal-autofill-selected {
     font-size: 15px;
     top: -2px;
   }
-  .eventsdate {
-    height: 70px;
-    width: 65px;
-  }
-  .eventsdate h5 {
-    font-size: 30px;
-  }
-  .eventsdate h4 {
-    margin-top: 0;
-    font-size: 17px;
-  }
+
   .gallery-slider__images .item .img-fill img {
     max-height: 90%;
   }
@@ -5852,10 +5646,6 @@ input:-internal-autofill-selected {
   .fa-apple {
     padding-top: 0;
   }
-  /* .dropdown {
-        top: -30px;
-    }
-    */
 
   #first-arrow {
     margin-left: 38px;
@@ -5953,12 +5743,6 @@ input:-internal-autofill-selected {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
   }
-  /* .dropdown {
-        left: 200px;
-        top: -25px;
-    }
-    */
-
   .leaders-details h4,
   h2 {
     font-size: 25px;
@@ -6468,12 +6252,6 @@ input:-internal-autofill-selected {
   .list li {
     font-size: 18px;
   }
-  /* .dropdown {
-        left: 200px;
-        top: -30px;
-    }
-    */
-
   .dropdown li {
     padding: 0 !important;
   }
