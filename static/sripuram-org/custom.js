@@ -39,43 +39,6 @@ AOS.init();
         .on("hide.bs.collapse", function (e) {
           $(e.target).prev(".panel-heading").removeClass("active");
         }));
-  }),
-  $(".client-section").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    loop: 0,
-    autoplay: !0,
-    speed: 1500,
-    autoplaySpeed: 5e3,
-    arrows: !0,
-    nextArrow:
-      '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-    prevArrow:
-      '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: 0,
-        },
-      },
-      {
-        breakpoint: 699,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 476,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
   }));
 $(".cwd-volumes-slider").slick({
   slidesToShow: 4,

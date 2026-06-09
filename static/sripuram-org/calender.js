@@ -458,13 +458,7 @@ function initCalendarApp() {
   function initDynamicEventsCarousel() {
     const container = document.querySelector(".client-section");
     if (!container) return;
-
-    const $container = $(container);
-    if ($container.hasClass("slick-initialized")) {
-      $container.slick("unslick");
-    }
-    
-    // Parse custom slides written in the HTML after unslicking has cleaned up clones
+    // Parse custom slides written in the HTML
     let customSlides = [];
     container.querySelectorAll(".custom-event-slide").forEach((slide) => {
       const dateAttr = slide.getAttribute("data-date");
