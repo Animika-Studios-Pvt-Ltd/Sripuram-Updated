@@ -706,6 +706,10 @@
     margin-bottom: 8px;
   }
 
+  .footer hr {
+    margin: 0px 0 0px 0;
+  }
+
   .footer .f-logo img {
     max-width: 160px;
     margin-bottom: 6px;
