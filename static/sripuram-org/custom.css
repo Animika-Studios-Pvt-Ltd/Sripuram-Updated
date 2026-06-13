@@ -2,6 +2,47 @@
 @import "footer.css";
 @import "events.css";
 
+@font-face {
+  font-family: "arrusbtroman";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("arrusbtroman"),
+    local("arrusbtroman"),
+    url("arrusbtroman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("helvetica"),
+    local("helvetica"),
+    url("helvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "georgia";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("georgia"),
+    local("georgia"),
+    url("https://sripuram.org/static/sripuram-org/georgia.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "taranis";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("taranis"),
+    local("taranis"),
+    url("taranis.ttf") format("truetype");
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -56,47 +97,6 @@ body {
 .add-event,
 .more-1 a:before {
   opacity: 0.5;
-}
-
-@font-face {
-  font-family: "arrusbtroman";
-  font-style: normal;
-  font-weight: 600;
-  src:
-    local("arrusbtroman"),
-    local("arrusbtroman"),
-    url("arrusbtroman.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "helvetica";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    local("helvetica"),
-    local("helvetica"),
-    url("helvetica.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "georgia";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    local("georgia"),
-    local("georgia"),
-    url("https://sripuram.org/static/sripuram-org/georgia.ttf")
-      format("truetype");
-}
-
-@font-face {
-  font-family: "taranis";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    local("taranis"),
-    local("taranis"),
-    url("taranis.ttf") format("truetype");
 }
 
 h2 {
