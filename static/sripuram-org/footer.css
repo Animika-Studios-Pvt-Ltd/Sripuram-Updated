@@ -733,6 +733,9 @@
     font-size: 13px;
   }
 
+  .footer .row:last-of-type > div {
+    padding: 6px 0;
+  }
   .footer .f-box .pill {
     font-size: 13px;
   }
@@ -766,12 +769,11 @@
   }
 
   .footer-darshan-timing {
-    margin-top: 8px;
-    margin-bottom: 15px;
+    margin-top: 6px;
   }
 
   .footer-darshan-timing a {
-    max-width: 210px;
+    max-width: 200px;
   }
 
   .footer-darshan-timing a .title {
