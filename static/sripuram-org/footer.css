@@ -1,5 +1,6 @@
 .footer {
-  background: #c69665;
+  /* Darkened from #c69665 so white text meets WCAG AA (~5.6:1) */
+  background: #8b5e3c;
   padding: 30px 0 10px 0;
   font-family: "helvetica";
 }
@@ -83,7 +84,6 @@
 .footer-policies a {
   color: #fff;
   text-decoration: none;
-  opacity: 0.9;
 }
 
 .footer-policies .separator {
@@ -121,14 +121,10 @@
   font-size: 18px;
   color: #fff;
   text-decoration: none;
-  opacity: 0.9;
-  transition:
-    opacity 0.2s ease,
-    text-decoration 0.2s ease;
+  transition: text-decoration 0.2s ease;
 }
 
 .footer .links a:hover {
-  opacity: 1;
   text-decoration: underline;
 }
 
@@ -167,7 +163,7 @@
 }
 
 .footer .f-box svg {
-  stroke: #905b34;
+  stroke: #fff;
   stroke-width: 1.5;
 }
 
@@ -216,9 +212,9 @@
   justify-content: center;
   width: 35px;
   height: 35px;
-  border: 2px solid #905b34;
+  border: 2px solid #fff;
   border-radius: 50%;
-  color: #905b34;
+  color: #fff;
   background: transparent;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -226,13 +222,14 @@
 }
 
 .footer .f-box .social a:hover {
-  background: #905932;
-  color: #fff;
+  background: #fff;
+  color: #8b5e3c;
 }
 
 /* FOOTER 2 & COGNATES */
 .foot-bk2 {
-  background: #ad7a4d;
+  /* Darker bar under footer for white text WCAG AA (~8.5:1) */
+  background: #6b4423;
   padding: 10px 0;
 }
 

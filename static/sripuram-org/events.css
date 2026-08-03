@@ -18,7 +18,8 @@
 .eventsdate h5 {
   font-family: "helvetica";
   text-align: center;
-  color: #a87c3f;
+  /* Darker brown for WCAG AA contrast on #fcd475 (~7.1:1) */
+  color: #5c3a1e;
 }
 
 .each-client img {

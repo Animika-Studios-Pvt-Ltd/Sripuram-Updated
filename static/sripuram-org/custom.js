@@ -40,42 +40,81 @@ AOS.init();
           $(e.target).prev(".panel-heading").removeClass("active");
         }));
   }));
-$(".cwd-volumes-slider").slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  loop: true,
-  autoplay: true,
-  speed: 1000,
-  autoplaySpeed: 3000,
-  arrows: true,
-  nextArrow:
-    '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-  prevArrow:
-    '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
-  responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+function syncSlickSlideFocus($slider) {
+  $slider.find(".slick-slide").each(function () {
+    var $slide = $(this);
+    // With slidesToShow > 1, Slick incorrectly sets aria-hidden on
+    // visible non-current slides. Use .slick-active as the source of truth.
+    var isVisible = $slide.hasClass("slick-active");
+
+    $slide.attr({
+      "aria-hidden": isVisible ? "false" : "true",
+      tabindex: "-1",
+    });
+
+    $slide.find("a, button, input, select, textarea").each(function () {
+      var $el = $(this);
+      if (!isVisible) {
+        if ($el.data("slick-prev-tabindex") === undefined) {
+          var existing = $el.attr("tabindex");
+          $el.data(
+            "slick-prev-tabindex",
+            existing !== undefined ? existing : null,
+          );
+        }
+        $el.attr("tabindex", "-1");
+      } else {
+        var prev = $el.data("slick-prev-tabindex");
+        if (prev === null || prev === undefined) {
+          $el.removeAttr("tabindex");
+        } else {
+          $el.attr("tabindex", prev);
+        }
+      }
+    });
+  });
+}
+
+$(".cwd-volumes-slider")
+  .on("init reInit afterChange", function () {
+    syncSlickSlideFocus($(this));
+  })
+  .slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    loop: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
+    arrows: true,
+    nextArrow:
+      '<div class="slick-custom-arrow slick-custom-arrow-right"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+    prevArrow:
+      '<div class="slick-custom-arrow slick-custom-arrow-left"><img src="/static/sripuram-org/arrow.webp" alt="Arrow" class="img-fluid"></div>',
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-  ],
-});
+    ],
+  });
 
 var $cell = $(".card");
 ($cell.find(".js-expander").click(function () {
