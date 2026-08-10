@@ -22,6 +22,17 @@ AOS.init();
         );
       }
     });
+    // Dynamically apply accessible names (aria-label) to icon-only plus links
+    $(".plus a").each(function () {
+      var href = $(this).attr("href") || "";
+      if (href.indexOf("Sripuram-pooja-and-sevas") !== -1) {
+        $(this).attr("aria-label", "Book Pooja or Seva");
+      } else if (href.indexOf("Charities-sripuram-golden-temple") !== -1) {
+        $(this).attr("aria-label", "Donate for a Cause");
+      } else if (href.indexOf("Volunteers-sripuram") !== -1) {
+        $(this).attr("aria-label", "Become a Volunteer");
+      }
+    });
   }),
   $(document).ready(function () {
     $(".filter-button").click(function () {
