@@ -13,6 +13,17 @@ AOS.init();
     );
   }),
   $(document).ready(function () {
+    $("#return-to-top img").each(function () {
+      var src = $(this).attr("src");
+      if (src) {
+        $(this).attr(
+          "src",
+          src.replace("arrow.webp", "return-to-top-arrow.webp"),
+        );
+      }
+    });
+  }),
+  $(document).ready(function () {
     $(".filter-button").click(function () {
       var e = $(this).attr("data-filter");
       "all" == e
