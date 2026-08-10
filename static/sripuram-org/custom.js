@@ -83,40 +83,40 @@ AOS.init();
           $(e.target).prev(".panel-heading").removeClass("active");
         }));
   }));
-// function syncSlickSlideFocus($slider) {
-//   $slider.find(".slick-slide").each(function () {
-//     var $slide = $(this);
-//     // With slidesToShow > 1, Slick incorrectly sets aria-hidden on
-//     // visible non-current slides. Use .slick-active as the source of truth.
-//     var isVisible = $slide.hasClass("slick-active");
+function syncSlickSlideFocus($slider) {
+  $slider.find(".slick-slide").each(function () {
+    var $slide = $(this);
+    // With slidesToShow > 1, Slick incorrectly sets aria-hidden on
+    // visible non-current slides. Use .slick-active as the source of truth.
+    var isVisible = $slide.hasClass("slick-active");
 
-//     $slide.attr({
-//       "aria-hidden": isVisible ? "false" : "true",
-//       tabindex: "-1",
-//     });
+    $slide.attr({
+      "aria-hidden": isVisible ? "false" : "true",
+      tabindex: "-1",
+    });
 
-//     $slide.find("a, button, input, select, textarea").each(function () {
-//       var $el = $(this);
-//       if (!isVisible) {
-//         if ($el.data("slick-prev-tabindex") === undefined) {
-//           var existing = $el.attr("tabindex");
-//           $el.data(
-//             "slick-prev-tabindex",
-//             existing !== undefined ? existing : null,
-//           );
-//         }
-//         $el.attr("tabindex", "-1");
-//       } else {
-//         var prev = $el.data("slick-prev-tabindex");
-//         if (prev === null || prev === undefined) {
-//           $el.removeAttr("tabindex");
-//         } else {
-//           $el.attr("tabindex", prev);
-//         }
-//       }
-//     });
-//   });
-// }
+    $slide.find("a, button, input, select, textarea").each(function () {
+      var $el = $(this);
+      if (!isVisible) {
+        if ($el.data("slick-prev-tabindex") === undefined) {
+          var existing = $el.attr("tabindex");
+          $el.data(
+            "slick-prev-tabindex",
+            existing !== undefined ? existing : null,
+          );
+        }
+        $el.attr("tabindex", "-1");
+      } else {
+        var prev = $el.data("slick-prev-tabindex");
+        if (prev === null || prev === undefined) {
+          $el.removeAttr("tabindex");
+        } else {
+          $el.attr("tabindex", prev);
+        }
+      }
+    });
+  });
+}
 
 $(".cwd-volumes-slider")
   .on("init reInit afterChange", function () {
