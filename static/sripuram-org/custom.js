@@ -1,6 +1,6 @@
 AOS.init();
 ($(window).scroll(function () {
-  $(this).scrollTop() >= 50
+  $(this).scrollTop() >= $(document).height() / 2
     ? $("#return-to-top").fadeIn(200)
     : $("#return-to-top").fadeOut(200);
 }),

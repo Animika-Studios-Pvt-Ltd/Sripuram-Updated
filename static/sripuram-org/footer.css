@@ -1,5 +1,4 @@
 .footer {
-  /* Darkened from #c69665 so white text meets WCAG AA (~5.6:1) */
   background: #c69765;
   padding: 30px 0 10px 0;
   font-family: "helvetica";
@@ -228,7 +227,6 @@
 
 /* FOOTER 2 & COGNATES */
 .foot-bk2 {
-  /* Darker bar under footer for white text WCAG AA (~8.5:1) */
   background: #6b4423;
   padding: 10px 0;
 }
@@ -254,22 +252,31 @@
 /* BACK TO TOP */
 #return-to-top {
   position: fixed;
-  bottom: 100px;
-  right: 50px;
+  bottom: 90px;
+  right: 30px;
   width: 40px;
   height: 40px;
-  border: 1px solid #fff;
+  border: 1px solid #9f1605;
   border-radius: 10px;
+  background: #9f1605;
   display: none;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#return-to-top:hover {
+  background: #d4b16f;
+  border-color: #d4b16f;
 }
 
 #return-to-top img {
-  width: 20px;
-  transform: rotate(315deg);
-  filter: brightness(6.5);
-  position: relative;
-  left: 20%;
-  top: 15%;
+  width: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(315deg);
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 992px) {
@@ -496,6 +503,17 @@
   .footer-darshan-timing a .time {
     font-size: 17px;
   }
+
+  #return-to-top {
+    right: 30px;
+    bottom: 85px;
+    width: 38px;
+    height: 38px;
+  }
+
+  #return-to-top img {
+    width: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -581,6 +599,16 @@
 
   .footer-darshan-timing a .time {
     font-size: 17px;
+  }
+
+  #return-to-top {
+    right: 30px;
+    bottom: 85px;
+    width: 36px;
+    height: 36px;
+  }
+  #return-to-top img {
+    width: 15px;
   }
 }
 
@@ -696,6 +724,16 @@
     text-align: center;
     font-size: 12px;
   }
+
+  #return-to-top {
+    right: 30px;
+    bottom: 85px;
+    width: 34px;
+    height: 34px;
+  }
+  #return-to-top img {
+    width: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -760,9 +798,14 @@
   }
 
   #return-to-top {
-    right: 20px;
-    width: 35px;
-    height: 35px;
+    right: 32px;
+    bottom: 85px;
+    width: 32px;
+    height: 32px;
+  }
+
+  #return-to-top img {
+    width: 13px;
   }
 
   .footer-darshan-timing {
