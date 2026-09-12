@@ -1,4 +1,32 @@
-AOS.init();
+// Initialize AOS safely and setup event listeners for DOM ready, window load, and resize
+function safeInitAOS() {
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 50,
+      disableMutationObserver: false
+    });
+    AOS.refresh();
+  }
+}
+
+$(document).ready(function () {
+  safeInitAOS();
+});
+
+$(window).on("load", function () {
+  if (typeof AOS !== "undefined") {
+    AOS.refresh();
+  }
+});
+
+$(window).on("resize", function () {
+  if (typeof AOS !== "undefined") {
+    AOS.refresh();
+  }
+});
+
 ($(window).scroll(function () {
   $(this).scrollTop() >= $(document).height() / 2
     ? $("#return-to-top").fadeIn(200)
@@ -119,6 +147,9 @@ $(".cwd-volumes-slider").slick({
     },
   ],
 });
+if (typeof AOS !== "undefined") {
+  AOS.refresh();
+}
 
 var $cell = $(".card");
 ($cell.find(".js-expander").click(function () {

@@ -1,9 +1,18 @@
-window.onload = function () {
-  document.getElementById("popupOverlay").style.display = "flex";
-};
+window.addEventListener("load", function () {
+  const popup = document.getElementById("popupOverlay");
+  if (popup) {
+    popup.style.display = "flex";
+  }
+  if (typeof AOS !== "undefined") {
+    AOS.refresh();
+  }
+});
 
 function closePopup() {
-  document.getElementById("popupOverlay").style.display = "none";
+  const popup = document.getElementById("popupOverlay");
+  if (popup) {
+    popup.style.display = "none";
+  }
 }
 
 /* World Leaders at Sripuram Carousel */
