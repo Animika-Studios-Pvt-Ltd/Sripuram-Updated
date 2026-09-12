@@ -162,8 +162,14 @@ function updateCaption(e) {
   ("" === e && (e = "&nbsp;"), $caption.html(e), $caption.removeClass("hide"));
 }
 (updateCaption(captionText),
-  $imagesSlider.on("beforeChange", function (e, s, l, i) {
+  $imagesSlider.on("beforeChange", function (e, s, currentSlide, nextSlide) {
     $caption.addClass("hide");
+    if (s && s.$slides && s.$slides[nextSlide]) {
+      $(s.$slides[nextSlide]).find("img[data-src]").each(function () {
+        this.src = this.dataset.src;
+        $(this).removeAttr("data-src");
+      });
+    }
   }),
   $imagesSlider.on("afterChange", function (e, s, l, i) {
     updateCaption(
@@ -178,6 +184,33 @@ function updateCaption(e) {
         ? $(this).text("View Less")
         : $(this).text("View All"));
   }));
+
+// Progressive Batch Loading for Gallery Slider Images
+function processGalleryImageBatches() {
+  const lazyImages = Array.from(document.querySelectorAll(".gallery-slider img[data-src]"));
+  if (!lazyImages.length) return;
+
+  const batchSize = 6;
+  const delay = 250;
+
+  function processBatch(index) {
+    if (index >= lazyImages.length) return;
+    const batch = lazyImages.slice(index, index + batchSize);
+    batch.forEach((img) => {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+      }
+    });
+    setTimeout(() => processBatch(index + batchSize), delay);
+  }
+
+  processBatch(0);
+}
+
+$(window).on("load", function () {
+  setTimeout(processGalleryImageBatches, 300);
+});
 
 // Dynamic Calendar Assets Injection
 (function () {
