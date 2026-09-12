@@ -5,7 +5,7 @@ function safeInitAOS() {
       duration: 1000,
       once: true,
       offset: 50,
-      disableMutationObserver: false
+      disableMutationObserver: false,
     });
     AOS.refresh();
   }
@@ -50,38 +50,6 @@ $(window).on("resize", function () {
         );
       }
     });
-    // Restructure .involved-inner ul to be valid HTML
-    // $(".involved-inner ul").each(function () {
-    //   var $ul = $(this);
-    //   var newLis = [];
-    //   $ul.children("a").each(function () {
-    //     var $a = $(this);
-    //     var $li = $a.children("li").first();
-    //     if ($li.length) {
-    //       var href = $a.attr("href");
-    //       var $newA = $("<a></a>").attr("href", href).html($li.html());
-    //       $li.empty().append($newA);
-
-    //       var $spanPlus = $a.next("span.plus");
-    //       if ($spanPlus.length) {
-    //         $li.append($spanPlus);
-    //       }
-    //       newLis.push($li);
-    //     }
-    //   });
-    //   $ul.empty().append(newLis);
-    // });
-    // Dynamically apply accessible names (aria-label) to icon-only plus links
-    // $(".plus a").each(function () {
-    //   var href = $(this).attr("href") || "";
-    //   if (href.indexOf("Sripuram-pooja-and-sevas") !== -1) {
-    //     $(this).attr("aria-label", "Book Pooja or Seva");
-    //   } else if (href.indexOf("Charities-sripuram-golden-temple") !== -1) {
-    //     $(this).attr("aria-label", "Donate for a Cause");
-    //   } else if (href.indexOf("Volunteers-sripuram") !== -1) {
-    //     $(this).attr("aria-label", "Become a Volunteer");
-    //   }
-    // });
   }),
   $(document).ready(function () {
     $(".filter-button").click(function () {
