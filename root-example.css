@@ -18,7 +18,8 @@
   color: #9f1605 !important;
 }
 
-.sri-sakthi-amma h3 {
+.sri-sakthi-amma h3,
+.sri-sakthi-amma h1 {
   margin-bottom: 15px;
   font-size: 28px;
 }
@@ -40,13 +41,15 @@
 }
 
 @media (max-width: 1600px) {
-  .sri-sakthi-amma h3 {
+  .sri-sakthi-amma h3,
+  .sri-sakthi-amma h1 {
     font-size: 26px;
   }
 }
 
 @media (max-width: 1440px) {
-  .sri-sakthi-amma h3 {
+  .sri-sakthi-amma h3,
+  .sri-sakthi-amma h1 {
     font-size: 23px;
   }
 }
@@ -56,7 +59,8 @@
     margin-bottom: -30px;
   }
 
-  .sri-sakthi-amma h3 {
+  .sri-sakthi-amma h3,
+  .sri-sakthi-amma h1 {
     font-size: 18px;
   }
 }
