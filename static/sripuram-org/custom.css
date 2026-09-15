@@ -49,6 +49,7 @@ body {
   box-sizing: border-box;
 }
 
+h1,
 h2,
 h3 {
   font-family: "arrusbtroman" !important;
@@ -56,6 +57,7 @@ h3 {
   text-transform: uppercase;
 }
 
+h1,
 h2,
 h3,
 p {
@@ -64,6 +66,7 @@ p {
 }
 
 .icons p,
+h1,
 h2,
 h3 {
   text-transform: uppercase;
@@ -180,19 +183,13 @@ p {
   top: 80px;
 }
 
-#about h1 {
-  font-family: "arrusbtroman";
-  color: #9f1605;
-  text-align: center;
-  padding-left: 50%;
+#about h1,
+#about h3 {
+  padding-left: 48%;
 }
 
 #about h2 {
   padding-left: 50%;
-}
-
-#about h3 {
-  padding-left: 48%;
 }
 
 #first-arrow {
@@ -3326,6 +3323,7 @@ input:-internal-autofill-selected {
   #video-carousel-example {
     padding-left: 0;
   }
+  #about h1,
   #about h3 {
     font-size: 22px;
     padding-top: 0px !important;
@@ -3798,6 +3796,7 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 575px) {
+  #about h1,
   #about h3 {
     font-size: 16px !important;
   }
