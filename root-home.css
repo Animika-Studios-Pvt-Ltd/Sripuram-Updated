@@ -1,13 +1,3 @@
-/* World Leaders at Sripuram Carousel */
-.slick-slide[aria-hidden="true"] {
-  pointer-events: none;
-}
-
-.slick-slide[aria-hidden="true"] a,
-.slick-slide[aria-hidden="true"] button {
-  visibility: hidden;
-}
-
 /* SRI SAKTHI AMMA SECTION */
 .amma-heading-section {
   padding-top: 50px;
