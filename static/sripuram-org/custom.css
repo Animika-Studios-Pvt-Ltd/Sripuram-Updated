@@ -804,15 +804,13 @@ p {
   position: relative;
 }
 
-.parallax,
-.parallax-1 {
+.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
 
 #facility-bg::before,
-.parallax,
-.parallax-1 {
+.parallax {
   background-repeat: no-repeat;
 }
 
@@ -842,11 +840,7 @@ p {
   list-style: none;
 }
 
-.parallax-1,
-.parallax-div-1 {
-  min-height: 600px;
-  border-radius: 20px;
-}
+
 
 .parallax-div .row {
   margin: -45px 0 0 70px;
@@ -893,16 +887,9 @@ p {
   border-right: 1px solid #9f1618b3;
 }
 
-.parallax-1 {
-  background-image: url(golden-temple-bg.webp);
-  background-position: center;
-  margin: 50px 0;
-}
 
-.parallax-div-1 {
-  margin-top: -650px;
-  background: #6a43327d;
-}
+
+
 
 #niceZoomIn .modal-header,
 .dropdown li {
@@ -2942,14 +2929,9 @@ input:-internal-autofill-selected {
   
 }
 
-.parallax-1 {
-    min-height: 670px;
-  }
 
-.parallax-div-1 {
-    margin-top: -720px;
-    min-height: 650px;
-  }
+
+
 
 #publications {
     padding: 130px 0 120px;
@@ -3881,10 +3863,7 @@ p {
 }
 
 @media (min-width: 992px) and (max-width: 1099px) {
-.parallax-1,
-  .parallax-div-1 {
-    min-height: 500px;
-  }
+
 
 .star-six,
   .star-six::after {
@@ -3988,9 +3967,7 @@ p {
     padding-left: 50px;
   }
 
-.parallax-div-1 {
-    margin-top: -550px;
-  }
+
 
 .parallax,
   .parallax-div {
