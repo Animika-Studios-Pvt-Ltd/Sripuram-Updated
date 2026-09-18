@@ -1477,6 +1477,7 @@ p {
   top: 0;
   border-radius: 10px;
   padding: 45px 30px 45px;
+  height: 100%;
 }
 
 .light-inner h2 {
@@ -4907,7 +4908,7 @@ input:-internal-autofill-selected {
   }
 
   .light-inner {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 20px 30px 40px;
   }
 
