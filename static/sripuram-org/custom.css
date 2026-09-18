@@ -781,7 +781,6 @@ p {
   transform: rotate(225deg);
 }
 
-.arrow-carousel a:hover .bkgrd,
 .book button:hover,
 .gallery-slider__thumbnails .next-arrow:hover,
 .gallery-slider__thumbnails .prev-arrow:hover {
@@ -1917,11 +1916,6 @@ textarea {
   .empty-message {
     color: #000;
   }
-
-  .bkgrd {
-    width: 35px !important;
-    height: 35px !important;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1998,27 +1992,8 @@ textarea {
   right: 0;
 }
 
-#video-carousel-example {
-  padding-left: 200px;
-}
 
-.arrow-carousel {
-  position: relative;
-  padding: 30px 0 0;
-}
 
-.arrow-carousel a:hover .bkgrd img {
-  filter: brightness(16.5);
-}
-
-.bkgrd {
-  border: 1px solid #e7a00e;
-  border-radius: 50%;
-  background: #fff;
-  display: block;
-  width: 40px;
-  height: 40px;
-}
 
 @keyframes bounce3 {
   100%,
@@ -3715,11 +3690,6 @@ input:-internal-autofill-selected {
 
   .gallery-slider__thumbnails {
     top: -80px;
-  }
-
-  .bkgrd {
-    width: 30px !important;
-    height: 30px !important;
   }
 
   #POL {
