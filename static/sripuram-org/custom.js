@@ -133,23 +133,16 @@ var $imagesSlider = $(".gallery-slider .gallery-slider__images>div"),
     nextArrow: ".gallery-slider__thumbnails .next-arrow",
     responsive: [
       {
-        breakpoint: 720,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 350,
-        settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
