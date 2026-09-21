@@ -160,12 +160,6 @@
   }
 }
 
-/* .container .right,
-.add-event,
-.calendar .goto-today {
-  display: flex !important;
-} */
-
 @media (min-width: 1919px) {
   .Q1 {
     left: 140px !important;
