@@ -204,36 +204,3 @@ function processGalleryImageBatches() {
 $(window).on("load", function () {
   setTimeout(processGalleryImageBatches, 300);
 });
-
-// Dynamic Calendar Assets Injection
-(function () {
-  if (
-    document.getElementById("niceZoomIn") ||
-    document.querySelector(".client-section")
-  ) {
-    let basePath = "";
-    const customScript = document.querySelector('script[src*="custom.js"]');
-    if (customScript) {
-      const src = customScript.getAttribute("src");
-      const idx = src.indexOf("static/sripuram-org/custom.js");
-      if (idx !== -1) {
-        basePath = src.substring(0, idx);
-      }
-    }
-
-    // Inject calender.css if not already present
-    if (!document.querySelector('link[href*="calender.css"]')) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = basePath + "static/sripuram-org/calender.css";
-      document.head.appendChild(link);
-    }
-
-    // Inject calender.js if not already present
-    if (!document.querySelector('script[src*="calender.js"]')) {
-      const script = document.createElement("script");
-      script.src = basePath + "static/sripuram-org/calender.js";
-      document.body.appendChild(script);
-    }
-  }
-})();

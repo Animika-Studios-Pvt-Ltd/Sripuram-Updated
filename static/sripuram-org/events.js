@@ -684,33 +684,39 @@ function initCalendarApp() {
           }
         }
         .carousel-nav-btn {
-          background: white;
-          border: 1px solid #d1aa67;
+          background: #ffffff;
+          border: 1px solid #d4b16f;
           border-radius: 50%;
-          width: 40px;
-          height: 40px;
+          width: 32px !important;
+          height: 32px !important;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
           z-index: 10;
           position: absolute;
-          bottom: 0px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-          transition: background 0.3s;
+          bottom: 8px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          transition: all 0.25s ease;
         }
         .carousel-nav-btn:hover {
-          background: #fcd475;
+          background: #9f1605 !important;
+          border-color: #9f1605 !important;
+          box-shadow: 0 4px 10px rgba(159, 22, 5, 0.3) !important;
+        }
+        .carousel-nav-btn:hover img {
+          filter: brightness(0) invert(1) !important;
         }
         .carousel-nav-btn.prev-btn {
-          right: 55px;
+          right: 38px !important;
         }
         .carousel-nav-btn.next-btn {
-          right: 0px;
+          right: 0px !important;
         }
         .carousel-nav-btn img {
-          width: 15px;
-          height: 15px;
+          width: 10px !important;
+          height: 10px !important;
+          transition: filter 0.25s ease;
         }
         .carousel-nav-btn.prev-btn img {
           transform: rotate(225deg);
@@ -719,7 +725,7 @@ function initCalendarApp() {
           transform: rotate(45deg);
         }
         .carousel-nav-btn.disabled {
-          opacity: 0.3;
+          opacity: 0.35;
           pointer-events: none;
         }
       `;
