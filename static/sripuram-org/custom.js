@@ -154,6 +154,29 @@ var $caption = $(".gallery-slider .caption"),
 function updateCaption(e) {
   ("" === e && (e = "&nbsp;"), $caption.html(e), $caption.removeClass("hide"));
 }
+// Helper function to remove focusable descendents from aria-hidden slick slides
+function fixSlickAriaFocus() {
+  if (typeof $ === "undefined") return;
+  $(".slick-slide[aria-hidden='true']").each(function () {
+    $(this).attr("tabindex", "-1");
+    $(this).find("a, button, input, select, textarea, [tabindex]").attr("tabindex", "-1");
+  });
+  $(".slick-slide[aria-hidden='false']").each(function () {
+    $(this).removeAttr("tabindex");
+    $(this).find("a, button, input, select, textarea").removeAttr("tabindex");
+  });
+}
+
+$(document).on("init reInit afterChange setPosition breakpoint", ".slick-slider", function () {
+  fixSlickAriaFocus();
+});
+
+$(document).ready(function () {
+  fixSlickAriaFocus();
+  setTimeout(fixSlickAriaFocus, 300);
+  setTimeout(fixSlickAriaFocus, 1000);
+});
+
 (updateCaption(captionText),
   $imagesSlider.on("beforeChange", function (e, s, currentSlide, nextSlide) {
     $caption.addClass("hide");
@@ -170,6 +193,7 @@ function updateCaption(e) {
         "alt",
       )),
     );
+    fixSlickAriaFocus();
   }),
   $(".read-more").click(function () {
     ($(this).prev().slideToggle(),

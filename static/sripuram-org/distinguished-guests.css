@@ -285,12 +285,15 @@
 }
 
 .slick-slide[aria-hidden="true"] {
-  pointer-events: none;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
+.slick-slide[aria-hidden="true"] *,
 .slick-slide[aria-hidden="true"] a,
 .slick-slide[aria-hidden="true"] button {
-  visibility: hidden;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 @media (max-width: 1800px) {

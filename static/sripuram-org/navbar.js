@@ -83,7 +83,26 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  // Accordion Logic
+  // Accordion Logic & Tabindex Accessibility Helper
+  function syncSubListAccessibility(subList, isOpen) {
+    if (!subList) return;
+    subList.setAttribute("aria-hidden", isOpen ? "false" : "true");
+    const focusables = subList.querySelectorAll("a, button, input, select, textarea");
+    focusables.forEach((el) => {
+      if (isOpen) {
+        el.removeAttribute("tabindex");
+      } else {
+        el.setAttribute("tabindex", "-1");
+      }
+    });
+  }
+
+  // Initial pass on side drawer sublists
+  document.querySelectorAll(".sn-sub-list").forEach((subList) => {
+    const isOpen = subList.classList.contains("sn-open");
+    syncSubListAccessibility(subList, isOpen);
+  });
+
   accordions.forEach((btn) => {
     btn.addEventListener("click", function () {
       const isExpanded = this.getAttribute("aria-expanded") === "true";
@@ -91,21 +110,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Close all others first
       accordions.forEach((otherBtn) => {
-        if (otherBtn !== this) {
+        if (otherBtn !== this && otherBtn.nextElementSibling) {
           otherBtn.setAttribute("aria-expanded", "false");
           otherBtn.nextElementSibling.classList.remove("sn-open");
-          otherBtn.nextElementSibling.setAttribute("aria-hidden", "true");
+          syncSubListAccessibility(otherBtn.nextElementSibling, false);
         }
       });
 
       // Toggle current
       this.setAttribute("aria-expanded", !isExpanded);
-      if (!isExpanded) {
+      if (!isExpanded && subList) {
         subList.classList.add("sn-open");
-        subList.setAttribute("aria-hidden", "false");
-      } else {
+        syncSubListAccessibility(subList, true);
+      } else if (subList) {
         subList.classList.remove("sn-open");
-        subList.setAttribute("aria-hidden", "true");
+        syncSubListAccessibility(subList, false);
       }
     });
   });
