@@ -1,5 +1,5 @@
 .footer {
-  background: #c69765;
+  background: #ead8ba;
   padding: 30px 0 10px 0;
   font-family: "helvetica";
 }
@@ -32,7 +32,7 @@
 .footer .f-logo p {
   font-family: "helvetica";
   font-size: 20px;
-  color: #fff !important;
+  color: #682d10 !important;
   line-height: 1.6;
   text-align: left;
   margin-top: 0px;
@@ -44,12 +44,12 @@
 
 .footer-darshan-timing a {
   display: block;
-  background-color: #935b35;
+  background-color: #682d10;
   padding: 8px 16px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   width: 100%;
   max-width: 250px;
   box-sizing: border-box;
@@ -77,16 +77,23 @@
 .footer-policies {
   font-family: "helvetica";
   font-size: 20px;
-  color: #fff;
+  color: #682d10 !important;
 }
 
 .footer-policies a {
-  color: #fff;
+  color: #682d10 !important;
   text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-policies a:hover {
+  color: #9f1605 !important;
+  text-decoration: underline;
 }
 
 .footer-policies .separator {
   margin: 0;
+  color: #682d10 !important;
   opacity: 0.6;
 }
 
@@ -96,7 +103,7 @@
   font-family: "helvetica" !important;
   font-size: 20px !important;
   font-weight: 600 !important;
-  color: #fff !important;
+  color: #682d10 !important;
   margin-bottom: 10px;
   text-transform: uppercase !important;
   letter-spacing: 0.8px !important;
@@ -120,19 +127,20 @@
 .footer .links a {
   font-family: "helvetica";
   font-size: 18px;
-  color: #fff;
+  color: #682d10 !important;
   text-decoration: none;
-  transition: text-decoration 0.2s ease;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .footer .links a:hover {
+  color: #9f1605 !important;
   text-decoration: underline;
 }
 
 /* DIVIDER */
 .footer hr {
   border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(104, 45, 16, 0.25);
   margin: 15px 0 20px 0;
   opacity: 1;
 }
@@ -164,7 +172,7 @@
 }
 
 .footer .f-box svg {
-  stroke: #fff;
+  stroke: #682d10 !important;
   stroke-width: 1.5;
 }
 
@@ -177,7 +185,7 @@
 }
 
 .footer .f-box .pill {
-  color: #fff;
+  color: #682d10 !important;
   font-family: "helvetica";
   font-size: 20px;
   border-radius: 5px;
@@ -187,14 +195,13 @@
 .footer .f-box a {
   font-family: "helvetica";
   font-size: 18px;
-  color: #fff;
+  color: #682d10 !important;
   text-decoration: none;
-  transition: opacity 0.2s ease;
+  transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
 }
 
 .footer .f-box a:hover {
-  opacity: 0.85;
-  color: #fff;
+  color: #9f1605 !important;
   text-decoration: underline;
 }
 
@@ -213,9 +220,9 @@
   justify-content: center;
   width: 35px;
   height: 35px;
-  border: 2px solid #fff;
+  border: 2px solid #682d10 !important;
   border-radius: 50%;
-  color: #fff;
+  color: #682d10 !important;
   background: transparent;
   font-size: 18px;
   transition: all 0.3s ease;
@@ -223,26 +230,27 @@
 }
 
 .footer .f-box .social a:hover {
-  background: #fff;
-  color: #8b5e3c;
+  background: #9f1605 !important;
+  border-color: #9f1605 !important;
+  color: #ead8ba !important;
 }
 
 /* FOOTER 2 & COGNATES */
 .foot-bk2 {
-  background: #6b4423;
+  background: #682d10;
   padding: 10px 0;
 }
 
 .footer2 p {
   font-size: 16px;
-  color: #fff;
+  color: #fff !important;
   text-align: left;
 }
 
 .footer-rt p,
 .footer-rt a {
   font-size: 16px;
-  color: #fff;
+  color: #fff !important;
   text-align: right;
   text-decoration: none;
 }
