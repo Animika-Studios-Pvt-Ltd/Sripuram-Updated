@@ -1,7 +1,55 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Helper function to sync tabindex for aria-hidden containers (SmartMenus & Side Drawer)
+  function syncAriaHiddenFocusableElements() {
+    // 1. SmartMenus submenus
+    if (typeof $ !== "undefined") {
+      $(".sm ul[aria-hidden='true'], .sm-blue ul[aria-hidden='true'], ul[role='group'][aria-hidden='true']").each(function () {
+        $(this).find("a, button, input, select, textarea, [tabindex]").attr("tabindex", "-1");
+      });
+      $(".sm ul[aria-hidden='false'], .sm-blue ul[aria-hidden='false'], ul[role='group'][aria-hidden='false']").each(function () {
+        $(this).find("a, button, input, select, textarea").removeAttr("tabindex");
+      });
+    } else {
+      document.querySelectorAll("ul[aria-hidden='true']").forEach((ul) => {
+        ul.querySelectorAll("a, button, input, select, textarea, [tabindex]").forEach((el) => {
+          el.setAttribute("tabindex", "-1");
+        });
+      });
+    }
+
+    // 2. Side Drawer sublists
+    document.querySelectorAll(".sn-sub-list").forEach((subList) => {
+      const isOpen = subList.classList.contains("sn-open");
+      subList.setAttribute("aria-hidden", isOpen ? "false" : "true");
+      subList.querySelectorAll("a, button, input, select, textarea").forEach((el) => {
+        if (isOpen) {
+          el.removeAttribute("tabindex");
+        } else {
+          el.setAttribute("tabindex", "-1");
+        }
+      });
+    });
+  }
+
   // Initialize SmartMenus on horizontal header
   if (typeof $ !== "undefined" && $.fn.smartmenus) {
-    $("#main-menu").smartmenus();
+    const $mainMenu = $("#main-menu");
+    $mainMenu.smartmenus();
+
+    // Event handlers when submenus are shown or hidden by SmartMenus
+    $(document).on("show.smapi", function (e, menu) {
+      if (menu) {
+        $(menu).attr("aria-hidden", "false");
+        $(menu).find("a, button, input, select, textarea").removeAttr("tabindex");
+      }
+    });
+
+    $(document).on("hide.smapi", function (e, menu) {
+      if (menu) {
+        $(menu).attr("aria-hidden", "true");
+        $(menu).find("a, button, input, select, textarea").attr("tabindex", "-1");
+      }
+    });
   }
 
   // Hold dropdown open when "Sripuram" header item is clicked
@@ -97,11 +145,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Initial pass on side drawer sublists
-  document.querySelectorAll(".sn-sub-list").forEach((subList) => {
-    const isOpen = subList.classList.contains("sn-open");
-    syncSubListAccessibility(subList, isOpen);
-  });
+  // Initial pass on side drawer sublists and SmartMenus
+  syncAriaHiddenFocusableElements();
+  setTimeout(syncAriaHiddenFocusableElements, 100);
+  setTimeout(syncAriaHiddenFocusableElements, 500);
 
   accordions.forEach((btn) => {
     btn.addEventListener("click", function () {

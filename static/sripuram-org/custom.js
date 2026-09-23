@@ -154,7 +154,7 @@ var $caption = $(".gallery-slider .caption"),
 function updateCaption(e) {
   ("" === e && (e = "&nbsp;"), $caption.html(e), $caption.removeClass("hide"));
 }
-// Helper function to remove focusable descendents from aria-hidden slick slides
+// Helper function to remove focusable descendents from aria-hidden slick slides & submenus
 function fixSlickAriaFocus() {
   if (typeof $ === "undefined") return;
   $(".slick-slide[aria-hidden='true']").each(function () {
@@ -164,6 +164,9 @@ function fixSlickAriaFocus() {
   $(".slick-slide[aria-hidden='false']").each(function () {
     $(this).removeAttr("tabindex");
     $(this).find("a, button, input, select, textarea").removeAttr("tabindex");
+  });
+  $("[aria-hidden='true']").each(function () {
+    $(this).find("a, button, input, select, textarea").attr("tabindex", "-1");
   });
 }
 
