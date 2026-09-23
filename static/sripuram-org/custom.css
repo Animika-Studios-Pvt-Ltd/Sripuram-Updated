@@ -3,6 +3,7 @@
 @import "events.css";
 @import "get-involved.css";
 @import "distinguished-guests.css";
+@import "publications.css";
 
 @font-face {
   font-family: "arrusbtroman";
@@ -342,12 +343,10 @@ p {
 }
 
 #about-inner,
-#publications,
 #second-carousel,
 .HGH,
 .more-5,
 .peedam,
-.pub-inner,
 .scan-img,
 .section-title,
 .spiritual-img p,
@@ -396,7 +395,6 @@ p {
   color: #9f1605 !important;
 }
 
-.news-drpdwn button:hover,
 .more-2 a:hover,
 .more-4 a:hover {
   color: #fff;
@@ -532,15 +530,7 @@ p {
   margin-bottom: 70px;
 }
 
-#publications {
-  padding: 30px 0 120px 0;
-}
 
-#publications .row img {
-  border-bottom: 1px solid #d3a888;
-  padding-bottom: 40px;
-  margin-bottom: 20px;
-}
 
 .HGH {
   padding: 60px 0;
@@ -1858,8 +1848,7 @@ button:focus {
   color: #aaa;
 }
 
-.charity-img,
-.pub-inner .more-1 {
+.charity-img {
   margin-bottom: 60px;
 }
 
@@ -1989,11 +1978,7 @@ textarea {
   margin-bottom: 50px;
 }
 
-.pub-inner img {
-  border-bottom: 1px solid #d3a888;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
+
 
 iframe {
   margin-bottom: 25px;
@@ -2297,26 +2282,7 @@ input:-internal-autofill-selected {
   list-style-type: none;
 }
 
-.news-drpdwn {
-  left: 0;
-  top: 0;
-  display: unset;
-}
 
-.news-drpdwn button {
-  font-family: "helvetica";
-  border: 1px solid #9f1605;
-  color: #9f1605;
-  border-radius: 20px;
-  margin: 10px 0 40px;
-}
-
-@media (max-width: 991px) {
-  .news-drpdwn button {
-    font-size: 14px;
-    margin: 10px 0 30px;
-  }
-}
 
 .dropdown-menu li a {
   font-size: 16px;
@@ -2729,14 +2695,7 @@ input:-internal-autofill-selected {
     right: 0;
   }
 
-  #publications {
-    padding: 130px 0 120px;
-  }
 
-  #publications .row img {
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-  }
 
   .charity-info,
   .more-1,
@@ -3333,10 +3292,7 @@ input:-internal-autofill-selected {
     left: 70px;
   }
 
-  #publications .row img {
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-  }
+
 
   .globe-info p {
     font-size: 9px;
@@ -6022,7 +5978,6 @@ input:-internal-autofill-selected {
 }
 
 /* Amma's Gallery */
-
 .amma-gallery-item {
   text-align: center;
   transition: transform 0.3s ease-in-out;
