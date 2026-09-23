@@ -1,0 +1,434 @@
+/* Gho Samrakshana Homepage Section Styles */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(gho-samrakshana-home.webp);
+  min-height: 630px;
+  background-position: top;
+  border-radius: 20px;
+}
+
+.parallax-div {
+  margin-top: -630px;
+  min-height: 630px;
+  text-align: center;
+}
+
+.parallax-div h2 {
+  top: 200px;
+  position: relative;
+  text-align: center;
+  right: 100px;
+  color: #fff;
+}
+
+.motif-2 {
+  top: 200px;
+  position: relative;
+  right: 110px;
+}
+
+.parallax-div .row {
+  margin: -45px 0 0 70px;
+}
+
+.parallax-div p {
+  color: #fff;
+  position: relative;
+  top: 270px;
+  right: 20px;
+  padding-right: 250px;
+}
+
+.more-4 {
+  position: relative;
+  top: 300px;
+  text-align: left;
+  left: 25px;
+}
+
+.more-4 a {
+  font-family: "helvetica";
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  border: 1px solid #d4b16f;
+  border-radius: 40px;
+  color: #fff;
+  padding: 4px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.more-4 a:hover {
+  color: #fff;
+  background: #9f1605;
+  border: 1px solid #9f1605;
+}
+
+.more-4:hover .more-img {
+  transform: rotate(45deg) !important;
+  filter: brightness(10.5);
+}
+
+.more-4 img {
+  filter: brightness(5.5);
+}
+
+@media (min-width: 1830px) {
+  .parallax {
+    margin: 0px 70px;
+  }
+}
+
+@media (min-width: 1731px) and (max-width: 1830px) {
+  .parallax {
+    margin: 0px 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .parallax-div h2 {
+    right: 30px;
+  }
+
+  .motif-2 {
+    right: 40px;
+  }
+
+  .parallax-div p {
+    right: 10px;
+    padding-right: 110px;
+  }
+
+  .more-4 {
+    top: 320px;
+    left: -65px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1730px) {
+  .parallax {
+    margin: 0px 60px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1699px) {
+  .parallax-div h2 {
+    right: 30px;
+  }
+
+  .motif-2 {
+    right: 40px;
+  }
+
+  .parallax-div p {
+    right: 10px;
+    padding-right: 110px;
+  }
+
+  .more-4 {
+    top: 320px;
+    left: -65px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+  .parallax {
+    margin: 0px 60px;
+  }
+
+  .parallax-div h2 {
+    top: 150px;
+    right: 0;
+  }
+
+  .motif-2 {
+    top: 160px;
+    right: 0;
+  }
+
+  .parallax-div p {
+    top: 230px;
+    padding-right: 45px;
+  }
+
+  .more-4 {
+    top: 250px;
+    left: -50px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1499px) {
+  .parallax {
+    margin: 0px 60px;
+  }
+
+  .parallax,
+  .parallax-div {
+    min-height: 500px;
+  }
+
+  .parallax-div {
+    margin-top: -500px;
+  }
+
+  .parallax-div h2 {
+    right: 30px;
+    top: 130px;
+  }
+
+  .motif-2 {
+    right: 50px;
+    top: 130px;
+  }
+
+  .parallax-div .row {
+    margin: 0 0 0 70px;
+  }
+
+  .parallax-div p {
+    right: 20px;
+    padding-right: 120px;
+    top: 200px;
+  }
+
+  .more-4 {
+    top: 230px;
+    left: 110px;
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1400px) {
+  .parallax {
+    margin: 0px 55px;
+  }
+
+  .parallax,
+  .parallax-div {
+    min-height: 450px;
+  }
+
+  .parallax-div {
+    margin-top: -475px;
+  }
+
+  .parallax-div h2 {
+    top: 145px;
+    right: 30px;
+  }
+
+  .motif-2 {
+    top: 150px;
+    right: 40px;
+  }
+
+  .parallax-div p {
+    top: 235px;
+    padding-right: 80px;
+  }
+
+  .more-4 {
+    top: 250px;
+    left: 85px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .parallax {
+    margin: 0px 50px;
+  }
+
+  .parallax,
+  .parallax-div {
+    min-height: 500px;
+  }
+
+  .parallax-div {
+    margin-top: -500px;
+  }
+
+  .parallax-div h2 {
+    top: 145px;
+    right: 20px;
+  }
+
+  .motif-2 {
+    top: 150px;
+    right: 25px;
+  }
+
+  .parallax-div p {
+    top: 215px;
+    padding-right: 70px;
+  }
+
+  .more-4 {
+    top: 235px;
+    left: 80px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .parallax {
+    margin: 0px 40px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .parallax {
+    margin: 0px 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .parallax,
+  .parallax-div {
+    min-height: 350px;
+  }
+
+  .parallax-div {
+    margin-top: -420px;
+  }
+
+  .parallax-div h2 {
+    top: 130px;
+    right: -10px;
+  }
+
+  .motif-2 {
+    top: 130px;
+    right: 0;
+  }
+
+  .parallax-div .row {
+    margin: -10px 0 0 70px;
+  }
+
+  .parallax-div p {
+    top: 170px;
+    padding-right: 0;
+  }
+
+  .more-4 {
+    top: 190px;
+    left: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .parallax-div h2 {
+    top: 210px;
+    right: 0;
+  }
+
+  .motif-2 {
+    top: 210px;
+    right: 15px;
+  }
+
+  .parallax-div .row {
+    margin: 0 0 0 50px;
+  }
+
+  .parallax-div p {
+    top: 250px;
+    right: 0;
+    padding-right: 60px;
+  }
+
+  .more-4 {
+    top: 275px;
+  }
+}
+
+@media (max-width: 767px) {
+  .parallax {
+    background-image: none;
+    min-height: auto;
+  }
+
+  .parallax-div {
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  .parallax-div h2 {
+    color: #9f1605;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+  }
+
+  .motif-2 {
+    top: 0;
+    right: 0;
+    padding-bottom: 20px;
+  }
+
+  .parallax-div .row {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .gho-samrakshana-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .parallax-div p {
+    color: #212529;
+    top: 0;
+    right: 0;
+    padding-right: 0;
+  }
+
+  .parallax-div a,
+  .parallax-div img {
+    color: #4173ba;
+  }
+
+  .more-4 {
+    text-align: center;
+    top: 20px;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-div {
+    margin-top: -400px;
+  }
+
+  .parallax-div h2 {
+    top: 125px;
+    right: 0;
+  }
+
+  .motif-2 {
+    top: 115px;
+    right: 0;
+  }
+
+  .parallax-div .row {
+    margin: 0;
+  }
+
+  .parallax-div p {
+    top: 135px;
+    right: 0;
+    padding-right: 0;
+  }
+
+  .more-4 {
+    top: 150px;
+    left: 70px;
+  }
+}
