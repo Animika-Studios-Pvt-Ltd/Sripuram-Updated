@@ -33,21 +33,25 @@
   padding: 5px;
 }
 
-.eventsdate h5 {
+.eventsdate h5,
+.eventsdate .event-day {
   font-size: 40px;
   font-weight: 600;
   margin: 0;
   font-family: "helvetica";
   text-align: center;
   color: #5c3a1e;
+  display: block;
 }
 
-.eventsdate h4 {
+.eventsdate h4,
+.eventsdate .event-month {
   margin: -5px 0 0;
   font-size: 20px;
   font-family: "helvetica";
   text-align: center;
   color: #5c3a1e;
+  display: block;
 }
 
 .eventsdetails {
@@ -265,10 +269,12 @@
     height: 70px;
     width: 65px;
   }
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 17px;
   }
@@ -305,11 +311,13 @@
     height: 70px;
     width: 65px;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 15px;
   }
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
   .eventsdetails {
@@ -330,10 +338,12 @@
 }
 
 @media (max-width: 1024px) {
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 18px;
   }
@@ -377,10 +387,12 @@
     height: 60px;
     width: 50px;
   }
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 20px;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 14px;
     margin-top: 0;
   }
@@ -432,10 +444,12 @@
   .eventsdate {
     width: 70%;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 16px;
   }
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 24px;
   }
   .eventsdetails {
@@ -543,10 +557,12 @@
     border-bottom-left-radius: 15px;
     font-size: 10px;
   }
-  .eventsdate h5 {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 20px;
   }
-  .eventsdate h4 {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 14px;
   }
   .eventsdetails p {

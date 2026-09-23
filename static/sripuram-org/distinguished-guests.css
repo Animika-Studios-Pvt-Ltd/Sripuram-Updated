@@ -123,8 +123,9 @@
 }
 
 .leaders-details h4,
+.leaders-details h3,
 .leaders-details p {
-  font-family: "arrusbtroman";
+  font-family: "arrusbtroman" !important;
   text-align: left;
 }
 
@@ -139,8 +140,12 @@
   font-style: italic;
 }
 
-.leaders-details h4 {
-  font-size: 28px;
+.leaders-details h4,
+.leaders-details h3 {
+  font-size: 28px !important;
+  color: #fff !important;
+  text-transform: none !important;
+  font-style: italic !important;
 }
 
 .leaders-details p {
@@ -306,9 +311,10 @@
     max-height: 75%;
   }
 
-  .leaders-details h4 {
-    font-size: 26px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 26px !important;
+    text-align: left !important;
   }
 
   .leaders-details p {
@@ -323,9 +329,10 @@
     text-align: left;
   }
 
-  .leaders-details h4 {
-    font-size: 26px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 26px !important;
+    text-align: left !important;
   }
 
   .gallery-slider__thumbnails .item .img-fill {
@@ -347,9 +354,10 @@
     text-align: left;
   }
 
-  .leaders-details h4 {
-    font-size: 26px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 26px !important;
+    text-align: left !important;
   }
 
   .gallery-slider__thumbnails .item .img-fill {
@@ -360,9 +368,10 @@
 }
 
 @media (max-width: 1500px) {
-  .leaders-details h4 {
-    font-size: 26px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 26px !important;
+    text-align: left !important;
   }
 
   .gallery-slider__thumbnails {
@@ -406,9 +415,10 @@
     text-align: left;
   }
 
-  .leaders-details h4 {
-    font-size: 26px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 26px !important;
+    text-align: left !important;
   }
 
   .gallery-slider__thumbnails {
@@ -447,9 +457,10 @@
 }
 
 @media (max-width: 1366px) {
-  .leaders-details h4 {
-    font-size: 23px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 23px !important;
+    text-align: left !important;
   }
 
   .leaders-details p {
@@ -488,9 +499,10 @@
     max-height: 65%;
   }
 
-  .leaders-details h4 {
-    font-size: 21px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 21px !important;
+    text-align: left !important;
   }
 
   .leaders-details p {
@@ -545,9 +557,10 @@
     left: 260px;
   }
 
-  .leaders-details h4 {
-    font-size: 20px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 20px !important;
+    text-align: left !important;
   }
 
   .leaders-details {
@@ -574,9 +587,10 @@
     text-align: left;
   }
 
-  .leaders-details h4 {
-    font-size: 19px;
-    text-align: left;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 19px !important;
+    text-align: left !important;
   }
 
   .gallery-slider {
@@ -685,12 +699,13 @@
     margin: 0 auto;
   }
 
-  .leaders-details h4 {
-    font-size: 20px;
-    text-align: center;
+  .leaders-details h4,
+  .leaders-details h3 {
+    font-size: 20px !important;
+    text-align: center !important;
     margin-bottom: 4px;
-    font-style: italic;
-    color: #fff;
+    font-style: italic !important;
+    color: #fff !important;
   }
 
   .leaders-details p {

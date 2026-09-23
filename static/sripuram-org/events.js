@@ -590,8 +590,8 @@ function initCalendarApp() {
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                   <div class="eventsdate">
-                    <h5>${dayStr}</h5>
-                    <h4>${monthName}</h4>
+                    <span class="event-day">${dayStr}</span>
+                    <span class="event-month">${monthName}</span>
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-9">
@@ -622,8 +622,8 @@ function initCalendarApp() {
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-3">
                   <div class="eventsdate">
-                    <h5>${dayStr}</h5>
-                    <h4>${monthName}</h4>
+                    <span class="event-day">${dayStr}</span>
+                    <span class="event-month">${monthName}</span>
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-9">
