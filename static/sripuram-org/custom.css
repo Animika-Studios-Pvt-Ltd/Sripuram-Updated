@@ -4,6 +4,7 @@
 @import "get-involved.css";
 @import "distinguished-guests.css";
 @import "publications.css";
+@import "gho-samrakshana.css";
 
 @font-face {
   font-family: "arrusbtroman";
@@ -336,11 +337,7 @@ p {
   margin-top: 20px;
 }
 
-.more-4 {
-  top: 300px;
-  text-align: left;
-  left: 25px;
-}
+
 
 #about-inner,
 #second-carousel,
@@ -356,7 +353,6 @@ p {
 
 .more-1 a,
 .more-2 a,
-.more-4 a,
 .more-5 a,
 .more-7 a {
   font-family: "helvetica";
@@ -381,7 +377,6 @@ p {
 
 .fas:hover,
 .more-1 a:hover,
-.more-4 a,
 .peedam h2,
 .peedam p {
   color: #fff;
@@ -395,8 +390,7 @@ p {
   color: #9f1605 !important;
 }
 
-.more-2 a:hover,
-.more-4 a:hover {
+.more-2 a:hover {
   color: #fff;
   background: #9f1605;
 }
@@ -408,7 +402,6 @@ p {
 
 .more-1:hover .more-img,
 .more-2:hover .more-img,
-.more-4:hover .more-img,
 .more-5:hover .more-img,
 .more-6:hover .more-img {
   transform: rotate(45deg) !important;
@@ -419,13 +412,7 @@ p {
   transform: rotate(45deg) !important;
 }
 
-.more-4 img {
-  filter: brightness(5.5);
-}
 
-.more-4 a:hover {
-  border: 1px solid #9f1605;
-}
 
 #POL {
   border-radius: 20px;
@@ -778,19 +765,7 @@ p {
   text-align: left;
 }
 
-.motif-2,
-.parallax-div h2 {
-  top: 200px;
-  position: relative;
-}
-
-.parallax {
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#facility-bg::before,
-.parallax {
+#facility-bg::before {
   background-repeat: no-repeat;
 }
 
@@ -800,18 +775,7 @@ p {
   border-color: transparent;
 }
 
-.parallax {
-  background-image: url(gho-samrakshana-home.webp);
-  min-height: 630px;
-  background-position: top;
-  border-radius: 20px;
-}
 
-.parallax-div {
-  margin-top: -630px;
-  min-height: 630px;
-  text-align: center;
-}
 
 .sm,
 .sm li,
@@ -820,27 +784,7 @@ p {
   list-style: none;
 }
 
-.parallax-div .row {
-  margin: -45px 0 0 70px;
-}
 
-.parallax-div h2 {
-  text-align: center;
-  right: 100px;
-  color: #fff;
-}
-
-.parallax-div p {
-  color: #fff;
-  position: relative;
-  top: 270px;
-  right: 20px;
-  padding-right: 250px;
-}
-
-.motif-2 {
-  right: 110px;
-}
 
 .sm {
   top: 0;
@@ -2499,54 +2443,7 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 767px) {
-  .parallax {
-    background-image: none;
-    min-height: auto;
-  }
-
-  .parallax-div {
-    min-height: auto;
-    margin-top: 0;
-  }
-
-  .parallax-div h2 {
-    color: #9f1605;
-  }
-
-  .parallax-div p {
-    color: #212529;
-  }
-
-  .parallax-div a,
-  .parallax-div img {
-    color: #4173ba;
-  }
-
-  .parallax-div .row {
-    display: flex;
-    align-items: center;
-  }
-
-  .gho-samrakshana-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
-  .star-six,
-  .star-six::after {
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-  }
-
-  .motif,
-  .top {
-    position: relative;
-  }
-
-  #about,
-  .more-4 {
+  #about {
     text-align: center;
   }
 
@@ -2703,39 +2600,12 @@ input:-internal-autofill-selected {
     margin-bottom: 40px;
   }
 
-  .parallax-div h2 {
-    top: 0;
-    right: 0;
-    padding-top: 20px;
-  }
-
-  .motif-2 {
-    top: 0;
-    right: 0;
-    padding-bottom: 20px;
-  }
-
   #about {
     padding: 15px 0 30px 0;
   }
 
   .transport-header {
     padding: 15px 0;
-  }
-
-  .parallax-div .row {
-    margin: 0;
-  }
-
-  .parallax-div p {
-    top: 0;
-    right: 0;
-    padding-right: 0;
-  }
-
-  .more-4 {
-    top: 20px;
-    left: 0;
   }
 
   .star-six {
@@ -2822,7 +2692,6 @@ input:-internal-autofill-selected {
 
   .more-1 a,
   .more-2 a,
-  .more-4 a,
   .more-5 a {
     font-size: 15px;
   }
@@ -3144,10 +3013,7 @@ input:-internal-autofill-selected {
     width: 45px;
   }
 
-  .parallax,
-  .parallax-div {
-    min-height: 350px;
-  }
+
 
   .star-six,
   .star-six::after {
@@ -3263,34 +3129,9 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .parallax-div {
-    margin-top: -400px;
-  }
 
-  .parallax-div h2 {
-    top: 125px;
-    right: 0;
-  }
 
-  .motif-2 {
-    top: 115px;
-    right: 0;
-  }
 
-  .parallax-div .row {
-    margin: 0;
-  }
-
-  .parallax-div p {
-    top: 135px;
-    right: 0;
-    padding-right: 0;
-  }
-
-  .more-4 {
-    top: 150px;
-    left: 70px;
-  }
 
 
 
@@ -3706,47 +3547,16 @@ input:-internal-autofill-selected {
     padding-left: 50px;
   }
 
-  .parallax,
-  .parallax-div {
-    min-height: 420px;
-  }
+
 
   .next-arrow img,
   .prev-arrow img {
     margin-top: -5px;
   }
 
-  .parallax-div {
-    margin-top: -420px;
-  }
-
-  .parallax-div h2 {
-    top: 130px;
-    right: -10px;
-  }
-
   .img-2 span,
   .map-2 {
     right: 0;
-  }
-
-  .motif-2 {
-    top: 130px;
-    right: 0;
-  }
-
-  .parallax-div p {
-    top: 170px;
-    padding-right: 0;
-  }
-
-  .more-4 {
-    top: 190px;
-    left: 70px;
-  }
-
-  .parallax-div .row {
-    margin: -10px 0 0 70px;
   }
 
   .star-six {
@@ -4008,29 +3818,7 @@ input:-internal-autofill-selected {
     padding-left: 40px;
   }
 
-  .parallax-div .row {
-    margin: 0 0 0 50px;
-  }
 
-  .parallax-div p {
-    top: 250px;
-    right: 0;
-    padding-right: 60px;
-  }
-
-  .parallax-div h2 {
-    top: 210px;
-    right: 0;
-  }
-
-  .motif-2 {
-    top: 210px;
-    right: 15px;
-  }
-
-  .more-4 {
-    top: 275px;
-  }
 
   .transport,
   .transport-2,
@@ -4206,10 +3994,7 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1200px) and (max-width: 1320px) {
-  .parallax,
-  .parallax-div {
-    min-height: 500px;
-  }
+
 
   .star-six,
   .star-six::after {
@@ -4312,29 +4097,7 @@ input:-internal-autofill-selected {
     margin-top: -5px;
   }
 
-  .parallax-div {
-    margin-top: -500px;
-  }
 
-  .parallax-div h2 {
-    top: 145px;
-    right: 20px;
-  }
-
-  .motif-2 {
-    top: 150px;
-    right: 25px;
-  }
-
-  .parallax-div p {
-    top: 215px;
-    padding-right: 70px;
-  }
-
-  .more-4 {
-    top: 235px;
-    left: 80px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -4564,10 +4327,7 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1321px) and (max-width: 1400px) {
-  .parallax,
-  .parallax-div {
-    min-height: 450px;
-  }
+
 
   .star-six,
   .star-six::after {
@@ -4651,29 +4411,7 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-  .parallax-div {
-    margin-top: -475px;
-  }
 
-  .parallax-div h2 {
-    top: 145px;
-    right: 30px;
-  }
-
-  .motif-2 {
-    top: 150px;
-    right: 40px;
-  }
-
-  .parallax-div p {
-    top: 235px;
-    padding-right: 80px;
-  }
-
-  .more-4 {
-    top: 250px;
-    left: 85px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -4892,10 +4630,7 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1401px) and (max-width: 1499px) {
-  .parallax,
-  .parallax-div {
-    min-height: 500px;
-  }
+
 
   .list {
     top: 0;
@@ -5008,30 +4743,7 @@ input:-internal-autofill-selected {
     padding-left: 150px;
   }
 
-  .parallax-div {
-    margin-top: -500px;
-  }
 
-  .parallax-div h2 {
-    top: 130px;
-    right: 45px;
-  }
-
-  .motif-2 {
-    top: 130px;
-    right: 50px;
-  }
-
-  .parallax-div p {
-    top: 200px;
-    right: 20px;
-    padding-right: 120px;
-  }
-
-  .more-4 {
-    top: 230px;
-    left: 75px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -5256,28 +4968,7 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .parallax-div h2 {
-    right: 30px;
-  }
 
-  .motif-2 {
-    right: 40px;
-  }
-
-  .parallax-div .row {
-    margin: 0 0 0 70px;
-  }
-
-  .parallax-div p {
-    right: 10px;
-    padding-right: 110px;
-    top: 270px;
-  }
-
-  .more-4 {
-    top: 300px;
-    left: 110px;
-  }
 
   .star-six {
     left: 125px;
@@ -5483,25 +5174,7 @@ input:-internal-autofill-selected {
     padding-left: 100px;
   }
 
-  .parallax-div h2 {
-    top: 150px;
-    right: 0;
-  }
 
-  .motif-2 {
-    top: 160px;
-    right: 0;
-  }
-
-  .parallax-div p {
-    top: 230px;
-    padding-right: 45px;
-  }
-
-  .more-4 {
-    top: 250px;
-    left: -50px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -5706,23 +5379,7 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .parallax-div h2 {
-    right: 30px;
-  }
 
-  .motif-2 {
-    right: 40px;
-  }
-
-  .parallax-div p {
-    right: 10px;
-    padding-right: 110px;
-  }
-
-  .more-4 {
-    top: 320px;
-    left: -65px;
-  }
 
   .star-six {
     left: 175px;
@@ -5880,23 +5537,7 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .parallax-div h2 {
-    right: 30px;
-  }
 
-  .motif-2 {
-    right: 40px;
-  }
-
-  .parallax-div p {
-    right: 10px;
-    padding-right: 110px;
-  }
-
-  .more-4 {
-    top: 320px;
-    left: -65px;
-  }
 
   .star-six {
     left: 175px;
