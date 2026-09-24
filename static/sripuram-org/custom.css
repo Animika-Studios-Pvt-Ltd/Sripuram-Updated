@@ -5,6 +5,8 @@
 @import "distinguished-guests.css";
 @import "publications.css";
 @import "gho-samrakshana.css";
+@import "how-to-get-here.css";
+@import "transport.css";
 
 @font-face {
   font-family: "arrusbtroman";
@@ -122,8 +124,7 @@ p {
 .carousel-indicators,
 .credits,
 .header-text h5,
-.second-indicators,
-.sun {
+.second-indicators {
   display: none;
 }
 
@@ -337,11 +338,8 @@ p {
   margin-top: 20px;
 }
 
-
-
 #about-inner,
 #second-carousel,
-.HGH,
 .more-5,
 .peedam,
 .scan-img,
@@ -411,8 +409,6 @@ p {
 .more-7:hover .more-img {
   transform: rotate(45deg) !important;
 }
-
-
 
 #POL {
   border-radius: 20px;
@@ -519,10 +515,6 @@ p {
 
 
 
-.HGH {
-  padding: 60px 0;
-}
-
 .innerhead span {
   font-size: 12px;
   color: red;
@@ -536,29 +528,6 @@ p {
   color: #333;
   margin-top: 15px;
   font-family: "helvetica";
-}
-
-.sun::after,
-.sun::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 130px;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
-  border-radius: 50%;
-  -webkit-mask-image: radial-gradient(black 40%, transparent 65%);
-  mask-image: radial-gradient(black 40%, transparent 65%);
-}
-
-.sun::before {
-  background: conic-gradient(
-    from 5deg,
-    #fddcba9c 0deg 65deg,
-    transparent 0deg 40deg
-  );
-  transform: rotateZ(50deg) scale(1.9);
 }
 
 @keyframes rotate {
@@ -590,132 +559,6 @@ p {
   }
 }
 
-.transport-header {
-  background: #01417e;
-  padding: 60px 260px;
-  position: relative;
-  z-index: 0;
-  border-radius: 20px;
-  margin: 0px 30px;
-}
-
-.transport,
-.transport-2,
-.transport-3,
-.transport-4 {
-  background: #fff;
-  margin: 15px 0;
-  width: 58vh;
-  position: relative;
-}
-
-.transport,
-.transport-3 {
-  border: 1px solid #d3a888;
-  border-radius: 10px;
-  left: 40px;
-}
-
-.transport-2,
-.transport-4 {
-  border: 1px solid #d3a888;
-  border-radius: 10px;
-  left: 40px;
-}
-
-.transport p,
-.transport-2 p,
-.transport-3 p,
-.transport-4 p {
-  font-family: "arrusbtroman";
-  color: brown;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 0px;
-  margin: 0;
-}
-
-.transport p,
-.transport-3 p {
-  justify-content: flex-end;
-}
-
-.transport-2 p,
-.transport-4 p {
-  justify-content: flex-start;
-  position: relative;
-  right: 55px;
-}
-
-.img img,
-.img-1 img,
-.img-2 img,
-.img-3 img,
-.img-4 img {
-  padding-bottom: 6px;
-}
-
-.img-1 p {
-  position: relative;
-  left: 60px;
-}
-
-.transport ul,
-.transport-2 ul,
-.transport-3 ul,
-.transport-4 ul {
-  list-style-type: none;
-  margin-top: 15px;
-  position: relative;
-  left: 5vh;
-  padding: 0;
-}
-
-.transport li,
-.transport-2 li,
-.transport-3 li,
-.transport-4 li {
-  font-family: "helvetica";
-  font-size: 17px;
-}
-
-.transport li,
-.transport-3 li {
-  text-align: right;
-}
-
-.transport-2 ul {
-  margin-left: -115px;
-}
-
-.transport-3 ul {
-  padding: 15px 0 0 0;
-}
-
-.transport-4 ul {
-  text-align: left;
-  position: relative;
-  left: -50px;
-  margin-left: -20px;
-}
-
-.transport-2::after {
-  content: "";
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  border: 12px solid #688eb3;
-  display: block;
-  top: 85px;
-  left: -135px;
-  z-index: -1;
-}
-
-.transport-2::after {
-  position: absolute;
-}
-
 .slick-custom-arrow-left img,
 .slick-custom-arrow-right img {
   bottom: -60px;
@@ -726,7 +569,6 @@ p {
   cursor: pointer;
 }
 
-.HGH .row,
 .outer-input3 input {
   margin: 0;
 }
@@ -775,16 +617,12 @@ p {
   border-color: transparent;
 }
 
-
-
 .sm,
 .sm li,
 .sm ul {
   margin: 0;
   list-style: none;
 }
-
-
 
 .sm {
   top: 0;
@@ -814,12 +652,6 @@ p {
   border-radius: 0 0 15px 15px;
 }
 
-.globe-info h6,
-.globe-info p {
-  color: #9f1605;
-  text-transform: uppercase;
-}
-
 .prev-arrow img {
   transform: rotate(225deg);
 }
@@ -829,7 +661,6 @@ p {
   transform: rotate(45deg);
 }
 
-.globe-info,
 .route img,
 .star-six {
   position: relative;
@@ -854,10 +685,6 @@ p {
 .fa-map-marker-alt {
   font-size: 23px;
   color: #cd9933;
-}
-
-.globe {
-  text-align: end;
 }
 
 .star-six {
@@ -896,21 +723,6 @@ p {
   100% {
     transform: scale(1);
   }
-}
-
-.globe-info {
-  top: -125px;
-  left: 175px;
-}
-
-.globe-info h6 {
-  font-family: "taranis";
-  font-size: 35px;
-}
-
-.globe-info p {
-  font-family: "arrusbtroman";
-  font-size: 15px;
 }
 
 .loc1,
@@ -1922,8 +1734,6 @@ textarea {
   margin-bottom: 50px;
 }
 
-
-
 iframe {
   margin-bottom: 25px;
 }
@@ -2226,8 +2036,6 @@ input:-internal-autofill-selected {
   list-style-type: none;
 }
 
-
-
 .dropdown-menu li a {
   font-size: 16px;
   text-decoration: none;
@@ -2456,52 +2264,8 @@ input:-internal-autofill-selected {
   .Q2,
   .motif-home,
   .motif-inner,
-  .route-hdng,
-  .sun::after,
-  .sun::before {
+  .route-hdng {
     display: none;
-  }
-
-  .transport-2::after {
-    display: none;
-  }
-
-  .img-2 p,
-  .img-4 p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  }
-
-  .img-1 p,
-  .img-3 p {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  }
-
-  .img-1 span,
-  .img-2 span,
-  .img-3 span,
-  .img-4 span {
-    display: block !important;
-    font-size: 16px;
-    margin-top: 5px;
-    text-align: center;
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    width: 100px;
-    height: auto;
   }
 
   .list a,
@@ -2587,13 +2351,6 @@ input:-internal-autofill-selected {
     padding: 50px 0 20px;
   }
 
-  .transport-2 p,
-  .transport-4 p {
-    right: 0;
-  }
-
-
-
   .charity-info,
   .more-1,
   .more-2 {
@@ -2602,10 +2359,6 @@ input:-internal-autofill-selected {
 
   #about {
     padding: 15px 0 30px 0;
-  }
-
-  .transport-header {
-    padding: 15px 0;
   }
 
   .star-six {
@@ -2620,40 +2373,6 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  .globe-info {
-    top: -50px;
-    left: 0;
-  }
-
-  .globe-info h6 {
-    font-size: 23px;
-  }
-
-  .globe-info p {
-    font-size: 11px;
-  }
-
-  .transport ul {
-    position: absolute;
-    top: 120px;
-  }
-
-  .transport .img-1 p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 150px;
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    right: 0;
-    left: 0;
-    margin: 15px auto;
-    max-width: 400px;
-  }
-
   #about {
     margin-top: 20px;
   }
@@ -2662,85 +2381,14 @@ input:-internal-autofill-selected {
     margin-top: 8px;
   }
 
-  .icons,
-  .transport-2 ul,
-  .transport-4 ul {
+  .icons {
     margin-left: 0;
-  }
-
-  .transport-3 ul {
-    padding: 50px 0 0 10px;
-    position: absolute;
-    top: 70px;
-  }
-
-  .transport-3 li img {
-    position: relative;
-    bottom: 0;
-    padding: 0 5px;
-  }
-
-  .img-1 p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 70px;
-  }
-
-  .transport-4 ul {
-    left: 5vh;
   }
 
   .more-1 a,
   .more-2 a,
   .more-5 a {
     font-size: 15px;
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-    font-size: 16px;
-    margin-left: -30px;
-  }
-
-  .transport ul li,
-  .transport-3 ul li {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-  }
-
-  .transport ul li img,
-  .transport-3 ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport-2 ul li,
-  .transport-4 ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-
-  .transport-2 ul li img,
-  .transport-4 ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport li,
-  .transport-3 li {
-    text-align: left;
-  }
-
-  .transport-3 p {
-    left: 0 !important;
   }
 
   .motif {
@@ -2965,45 +2613,9 @@ input:-internal-autofill-selected {
     font-size: 16px !important;
   }
 
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    right: 0;
-    left: 0;
-    margin: 15px !important;
-    width: auto !important;
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-    font-size: 14px !important;
-    margin-left: -20px;
-  }
-
   #POL {
     padding: 10px 0;
     margin: 0px 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-    font-size: 12px !important;
-    margin-left: -35px !important;
-  }
-
-  .transport ul li img,
-  .transport-2 ul li img,
-  .transport-3 ul li img,
-  .transport-4 ul li img {
-    width: 35px !important;
-    height: auto;
   }
 }
 
@@ -3012,8 +2624,6 @@ input:-internal-autofill-selected {
   .Q2 {
     width: 45px;
   }
-
-
 
   .star-six,
   .star-six::after {
@@ -3029,11 +2639,7 @@ input:-internal-autofill-selected {
     text-align: center;
   }
 
-  .fa-search,
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
+  .fa-search {
     font-size: 8px;
   }
 
@@ -3049,11 +2655,7 @@ input:-internal-autofill-selected {
   .more-1 a,
   .more-2 a,
   .more-4 a,
-  .more-5 a,
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
+  .more-5 a {
     font-size: 12px;
   }
 
@@ -3123,25 +2725,9 @@ input:-internal-autofill-selected {
     padding-left: 0;
   }
 
-  .globe-info h6,
   .list a,
   .list li {
     font-size: 20px;
-  }
-
-
-
-
-
-
-
-  .globe-info p {
-    font-size: 9px;
-  }
-
-  .globe-info {
-    top: -65px;
-    left: 80px;
   }
 
   .star-six {
@@ -3150,94 +2736,14 @@ input:-internal-autofill-selected {
     left: 86px;
   }
 
-  .transport-3 li img {
-    bottom: 0;
-  }
-
   .star-six::after {
     top: 7px;
     left: -12px;
     border-top: 20px solid #9f1605;
   }
 
-  .sun::after,
-  .sun::before {
-    top: -10px;
-    left: 42px;
-  }
 
-  .transport-2::after {
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: -100px;
-  }
 
-  .transport,
-  .transport-3 {
-    width: auto;
-    left: -10px;
-  }
-
-  .transport-2,
-  .transport-4 {
-    left: 10px;
-    width: auto;
-  }
-
-  .transport-header {
-    padding: 0 50px;
-  }
-
-  .transport ul li img,
-  .transport-2 ul li img,
-  .transport-3 ul li img,
-  .transport-4 ul li img {
-    width: 35px;
-  }
-
-  .img img,
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    width: 60px;
-  }
-
-  .transport-3 ul {
-    padding: 5px 0 7px 80px;
-  }
-
-  .transport-4 ul {
-    left: -18px;
-    margin-left: -20px;
-  }
-
-  .img-1 p {
-    left: 35px;
-    top: 12px;
-  }
-
-  .transport-2 ul {
-    margin-left: -75px;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    right: 35px;
-    top: 12px;
-  }
-
-  .img-2 span {
-    right: 0;
-  }
-
-  .transport-3 p,
-  .transport p {
-    left: 20px !important;
-  }
-
-  .img-1 span,
   .route img {
     left: 0;
   }
@@ -3481,7 +2987,6 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .globe-info h6,
   .temples h2,
   h2 {
     font-size: 22px;
@@ -3547,14 +3052,11 @@ input:-internal-autofill-selected {
     padding-left: 50px;
   }
 
-
-
   .next-arrow img,
   .prev-arrow img {
     margin-top: -5px;
   }
 
-  .img-2 span,
   .map-2 {
     right: 0;
   }
@@ -3571,79 +3073,20 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  .globe-info {
-    top: -75px;
-    left: 85px;
-  }
 
-  .globe-info p {
-    font-size: 10px;
-  }
-
-  .transport-header {
-    padding: 10px 50px;
-  }
-
-  .transport-3 li img {
-    bottom: -5px;
-  }
-
-  .img img,
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    margin-top: 0;
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    width: auto;
-  }
-
-  .transport,
-  .transport-3 {
-    left: -40px;
-  }
 
   .loc3,
   .loc5,
   .loc7,
   .loc8,
-  .loc9,
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
+  .loc9 {
     font-size: 14px;
   }
 
   .book button,
   .charity-info p,
-  .donate button,
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
+  .donate button {
     font-size: 13px;
-  }
-
-  .img-1 span {
-    left: 0;
-  }
-
-  .transport-3 ul {
-    padding: 20px 0 0 80px;
-  }
-
-  .transport-4 ul {
-    left: -30px;
-  }
-
-  .transport-2 ul {
-    margin-left: -88px;
   }
 
   .map-2 {
@@ -3715,12 +3158,6 @@ input:-internal-autofill-selected {
     top: 95px;
   }
 
-  .sun::after,
-  .sun::before {
-    top: -12px;
-    left: 60px;
-  }
-
   .about-info-inner {
     padding: 30px 40px 0 0;
   }
@@ -3767,15 +3204,7 @@ input:-internal-autofill-selected {
   }
 
   .breadcrumb-item .active,
-  .breadcrumb-item a,
-  .transport li,
-  .transport p,
-  .transport-2 li,
-  .transport-2 p,
-  .transport-3 li,
-  .transport-3 p,
-  .transport-4 li,
-  .transport-4 p {
+  .breadcrumb-item a {
     font-size: 15px;
   }
 
@@ -3816,36 +3245,6 @@ input:-internal-autofill-selected {
 
   #video-carousel-example {
     padding-left: 40px;
-  }
-
-
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    left: 0;
-    width: 55vh;
-  }
-
-  .transport-2::after {
-    left: -116px;
-  }
-
-  .transport-header {
-    padding: 25px 30px;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .img-1 p {
-    position: relative;
-    left: 25px;
   }
 
   .loc1,
@@ -3994,8 +3393,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1200px) and (max-width: 1320px) {
-
-
   .star-six,
   .star-six::after {
     border-left: 15px solid transparent;
@@ -4025,11 +3422,7 @@ input:-internal-autofill-selected {
     font-size: 18px;
   }
 
-  .fa-search,
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
+  .fa-search {
     font-size: 12px;
   }
 
@@ -4097,16 +3490,13 @@ input:-internal-autofill-selected {
     margin-top: -5px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 70px;
     left: 148px;
   }
 
-  .map-2,
-  .transport-3 li img {
+  .map-2 {
     bottom: 0;
   }
 
@@ -4116,65 +3506,12 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  .globe-info {
-    top: -110px;
-    left: 120px;
-  }
-
-  .globe-info h6 {
-    font-size: 25px;
-  }
-
-  .globe-info p {
-    font-size: 11px;
-  }
-
-  .transport-header {
-    padding: 10px 50px;
-  }
-
-  .transport,
-  .transport-3 {
-    left: -20px;
-    width: auto;
-  }
-
-  .transport-2 ul {
-    margin-left: -100px;
-  }
-
-  .transport-2,
-  .transport-4 {
-    width: auto;
-    left: 20px;
-  }
-
   .loc3,
   .loc5,
   .loc7,
   .loc8,
-  .loc9,
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
+  .loc9 {
     font-size: 14px;
-  }
-
-  .transport-2::after {
-    left: -120px;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .img-1 p {
-    position: relative;
-    left: 25px;
   }
 
   #about-inner h2 {
@@ -4297,12 +3634,6 @@ input:-internal-autofill-selected {
     padding-left: 100px;
   }
 
-  .sun::after,
-  .sun::before {
-    top: -15px;
-    left: 74px;
-  }
-
   .light-inner {
     padding: 30px 30px 50px;
   }
@@ -4327,8 +3658,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1321px) and (max-width: 1400px) {
-
-
   .star-six,
   .star-six::after {
     border-left: 15px solid transparent;
@@ -4344,10 +3673,6 @@ input:-internal-autofill-selected {
   }
 
   .dropdown li a,
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p,
   p {
     font-size: 18px;
   }
@@ -4411,8 +3736,6 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 70px;
@@ -4423,57 +3746,6 @@ input:-internal-autofill-selected {
     top: 8px;
     left: -15px;
     border-top: 25px solid #9f1605;
-  }
-
-  .globe-info h6 {
-    font-size: 29px;
-  }
-
-  .globe-info p {
-    font-size: 13px;
-  }
-
-  .globe-info {
-    top: -100px;
-    left: 100px;
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    left: 0;
-    width: auto;
-  }
-
-  .transport-2::after {
-    width: 150px;
-    height: 150px;
-    left: -87px;
-  }
-
-  .transport-header {
-    padding: 25px 56px;
-  }
-
-  .transport-2 ul {
-    margin-left: -100px;
-  }
-
-  .transport-3 li img {
-    bottom: 7px;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .img-1 p {
-    position: relative;
-    left: 25px;
   }
 
   .about-info-inner {
@@ -4592,12 +3864,6 @@ input:-internal-autofill-selected {
     height: 65px;
   }
 
-  .sun::after,
-  .sun::before {
-    top: -15px;
-    left: 80px;
-  }
-
   .light-inner {
     padding: 35px 30px 50px;
   }
@@ -4630,8 +3896,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1401px) and (max-width: 1499px) {
-
-
   .list {
     top: 0;
   }
@@ -4684,10 +3948,6 @@ input:-internal-autofill-selected {
     font-size: 25px;
   }
 
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li,
   p {
     font-size: 18px;
   }
@@ -4743,8 +4003,6 @@ input:-internal-autofill-selected {
     padding-left: 150px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 80px;
@@ -4755,41 +4013,6 @@ input:-internal-autofill-selected {
     top: 9px;
     left: -15px;
     border-top: 25px solid #9f1605;
-  }
-
-  .globe-info {
-    top: -110px;
-    left: 110px;
-  }
-
-  .globe-info h6 {
-    font-size: 30px;
-  }
-
-  .globe-info p {
-    font-size: 13px;
-  }
-
-  .transport-header {
-    padding: 60px 77px;
-  }
-
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-    font-size: 20px;
-  }
-
-  .transport,
-  .transport-3 {
-    left: -5vh;
-    width: auto;
-  }
-
-  .transport-2,
-  .transport-4 {
-    width: auto;
   }
 
   #about-inner h2 {
@@ -4960,38 +4183,12 @@ input:-internal-autofill-selected {
     padding-left: 130px;
   }
 
-  .dropdown li a,
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
+  .dropdown li a {
     font-size: 20px;
   }
 
-
-
   .star-six {
     left: 125px;
-  }
-
-  .globe-info {
-    right: 5px;
-    bottom: 30px;
-  }
-
-  .transport-header {
-    padding: 25px 85px;
-  }
-
-  .transport,
-  .transport-3 {
-    left: 0;
-    width: 80vh;
-  }
-
-  .transport-2,
-  .transport-4 {
-    width: 80vh;
   }
 
   .about-info-inner {
@@ -5078,15 +4275,7 @@ input:-internal-autofill-selected {
   }
 
   .dropdown li a,
-  .icons p,
-  .transport li,
-  .transport p,
-  .transport-2 li,
-  .transport-2 p,
-  .transport-3 li,
-  .transport-3 p,
-  .transport-4 li,
-  .transport-4 p {
+  .icons p {
     font-size: 15px;
   }
 
@@ -5135,7 +4324,6 @@ input:-internal-autofill-selected {
     font-size: 22px;
   }
 
-  .globe-info h6,
   h2 {
     font-size: 25px;
   }
@@ -5174,43 +4362,16 @@ input:-internal-autofill-selected {
     padding-left: 100px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 75px;
     left: 140px;
   }
 
-  .globe-info {
-    left: 100px;
-    top: -100px;
-  }
-
-  .globe-info p {
-    font-size: 12px;
-  }
-
   .star-six::after {
     top: 8px;
     left: -15px;
     border-top: 25px solid #9f1605;
-  }
-
-  .transport-header {
-    padding: 20px 70px;
-  }
-
-  .transport-3 ul {
-    padding: 30px 0 0 80px;
-  }
-
-  .transport-2 ul {
-    margin-left: -110px;
-  }
-
-  .transport-3 li img {
-    bottom: 0;
   }
 
   .fa-map-marker-alt,
@@ -5316,21 +4477,6 @@ input:-internal-autofill-selected {
   .facility-img img {
     left: 20px;
   }
-
-  .transport,
-  .transport-3 {
-    left: 15vh;
-    width: 75vh;
-  }
-
-  .transport-2,
-  .transport-4 {
-    width: 75vh;
-  }
-
-  .transport-2::after {
-    left: -128px;
-  }
 }
 
 @media (min-width: 1731px) and (max-width: 1830px) {
@@ -5379,42 +4525,8 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-
-
   .star-six {
     left: 175px;
-  }
-
-  .globe-info {
-    right: 5px;
-    bottom: 30px;
-  }
-
-  .transport,
-  .transport-3 {
-    left: 10vh;
-    width: 80vh;
-  }
-
-  .transport-2,
-  .transport-4 {
-    left: 15px;
-    width: 80vh;
-  }
-
-  .transport-header {
-    padding: 25px 85px;
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-    font-size: 19px;
-  }
-
-  .transport-3 li img {
-    bottom: 8px;
   }
 
   .map-2 {
@@ -5537,19 +4649,8 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-
-
   .star-six {
     left: 175px;
-  }
-
-  .globe-info {
-    right: 5px;
-    bottom: 30px;
-  }
-
-  .img-1 p {
-    left: 80px;
   }
 
   .map-2 {

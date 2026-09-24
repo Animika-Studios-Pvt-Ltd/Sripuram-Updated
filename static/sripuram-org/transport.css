@@ -1,0 +1,1180 @@
+/* Transport Homepage Section Styles */
+.transport-header {
+  background: #01417e;
+  padding: 60px 260px;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+  margin: 0px 30px;
+}
+
+.transport,
+.transport-2,
+.transport-3,
+.transport-4 {
+  background: #fff;
+  margin: 15px 0;
+  width: 58vh;
+  position: relative;
+  border: 1px solid #d3a888;
+  border-radius: 10px;
+  left: 40px;
+}
+
+.transport p,
+.transport-2 p,
+.transport-3 p,
+.transport-4 p {
+  font-family: "arrusbtroman";
+  color: brown;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 0;
+}
+
+.transport p,
+.transport-3 p {
+  justify-content: flex-end;
+}
+
+.transport-2 p,
+.transport-4 p {
+  justify-content: flex-start;
+  position: relative;
+  right: 55px;
+}
+
+.img-1 img,
+.img-2 img,
+.img-3 img,
+.img-4 img {
+  padding-bottom: 6px;
+}
+
+.img-1 p {
+  position: relative;
+  left: 60px;
+}
+
+.transport ul,
+.transport-2 ul,
+.transport-3 ul,
+.transport-4 ul {
+  list-style-type: none;
+  margin-top: 15px;
+  position: relative;
+  left: 5vh;
+  padding: 0;
+}
+
+.transport li,
+.transport-2 li,
+.transport-3 li,
+.transport-4 li {
+  font-family: "helvetica";
+  font-size: 17px;
+}
+
+.transport li,
+.transport-3 li {
+  text-align: right;
+}
+
+.transport-2 ul {
+  margin-left: -115px;
+}
+
+.transport-3 ul {
+  padding: 15px 0 0 0;
+}
+
+.transport-4 ul {
+  text-align: left;
+  position: relative;
+  left: -50px;
+  margin-left: -20px;
+}
+
+.transport-2::after {
+  content: "";
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 12px solid #688eb3;
+  display: block;
+  top: 85px;
+  left: -135px;
+  z-index: -1;
+  position: absolute;
+}
+
+/* Media Queries (High to Low) */
+@media (min-width: 992px) and (max-width: 1099px) {
+  .transport-header {
+    padding: 10px 50px;
+  }
+
+  .transport-3 li img {
+    bottom: -5px;
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .transport-2::after {
+    width: 150px;
+    height: 150px;
+    top: 40px;
+    left: -100px;
+  }
+
+  .transport,
+  .transport-3 {
+    width: auto;
+    left: -10px;
+  }
+
+  .transport-2,
+  .transport-4 {
+    left: 10px;
+    width: auto;
+  }
+
+  .transport-header {
+    padding: 0 50px;
+  }
+
+  .transport ul li img,
+  .transport-2 ul li img,
+  .transport-3 ul li img,
+  .transport-4 ul li img {
+    width: 35px;
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+    width: 60px;
+  }
+
+  .transport-3 ul {
+    padding: 5px 0 7px 80px;
+  }
+
+  .transport-4 ul {
+    left: -18px;
+    margin-left: -20px;
+  }
+
+  .img-1 p {
+    left: 35px;
+    top: 12px;
+  }
+
+  .transport-2 ul {
+    margin-left: -75px;
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+    right: 35px;
+    top: 12px;
+  }
+
+  .img-2 span {
+    right: 0;
+  }
+
+  .transport-3 p,
+  .transport p {
+    left: 20px !important;
+  }
+
+  .img-1 span {
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .transport-2::after {
+    display: none;
+  }
+
+  .img-2 p,
+  .img-4 p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .img-1 p,
+  .img-3 p {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .img-1 span,
+  .img-2 span,
+  .img-3 span,
+  .img-4 span {
+    display: block !important;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+    width: 100px;
+    height: auto;
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+    right: 0;
+  }
+
+  .transport-header {
+    padding: 15px 0;
+  }
+
+  .transport ul {
+    position: absolute;
+    top: 120px;
+  }
+
+  .transport .img-1 p {
+    left: 0;
+    top: -10px;
+    padding-bottom: 150px;
+  }
+
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+    right: 0;
+    left: 0;
+    margin: 15px auto;
+    max-width: 400px;
+  }
+
+  .transport-2 ul,
+  .transport-4 ul {
+    margin-left: 0;
+  }
+
+  .transport-3 ul {
+    padding: 50px 0 0 10px;
+    position: absolute;
+    top: 70px;
+  }
+
+  .transport-3 li img {
+    position: relative;
+    bottom: 0;
+    padding: 0 5px;
+  }
+
+  .img-1 p {
+    left: 0;
+    top: -10px;
+    padding-bottom: 70px;
+  }
+
+  .transport-4 ul {
+    left: 5vh;
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+    font-size: 16px;
+    margin-left: -30px;
+  }
+
+  .transport ul li,
+  .transport-3 ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  .transport ul li img,
+  .transport-3 ul li img {
+    width: 40px;
+    height: auto;
+  }
+
+  .transport-2 ul li,
+  .transport-4 ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .transport-2 ul li img,
+  .transport-4 ul li img {
+    width: 40px;
+    height: auto;
+  }
+
+  .transport li,
+  .transport-3 li {
+    text-align: left;
+  }
+
+  .transport-3 p {
+    left: 0 !important;
+  }
+}
+
+/* Extracted Transport Media Queries from custom.css */
+
+@media (max-width: 767px) {
+  .transport-2::after {
+
+    display: none;
+  
+  }
+
+  .img-2 p,
+  .img-4 p {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  
+  }
+
+  .img-1 p,
+  .img-3 p {
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  
+  }
+
+  .img-1 span,
+  .img-2 span,
+  .img-3 span,
+  .img-4 span {
+
+    display: block !important;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+  
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+
+    width: 100px;
+    height: auto;
+  
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+
+    right: 0;
+  
+  }
+
+  .transport-header {
+
+    padding: 15px 0;
+  
+  }
+
+  .transport ul {
+
+    position: absolute;
+    top: 120px;
+  
+  }
+
+  .transport .img-1 p {
+
+    left: 0;
+    top: -10px;
+    padding-bottom: 150px;
+  
+  }
+
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+
+    right: 0;
+    left: 0;
+    margin: 15px auto;
+    max-width: 400px;
+  
+  }
+
+  .transport-2 ul,
+  .transport-4 ul {
+
+    margin-left: 0;
+  
+  }
+
+  .transport-3 ul {
+
+    padding: 50px 0 0 10px;
+    position: absolute;
+    top: 70px;
+  
+  }
+
+  .transport-3 li img {
+
+    position: relative;
+    bottom: 0;
+    padding: 0 5px;
+  
+  }
+
+  .img-1 p {
+
+    left: 0;
+    top: -10px;
+    padding-bottom: 70px;
+  
+  }
+
+  .transport-4 ul {
+
+    left: 5vh;
+  
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 16px;
+    margin-left: -30px;
+  
+  }
+
+  .transport ul li,
+  .transport-3 ul li {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+  
+  }
+
+  .transport ul li img,
+  .transport-3 ul li img {
+
+    width: 40px;
+    height: auto;
+  
+  }
+
+  .transport-2 ul li,
+  .transport-4 ul li {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  
+  }
+
+  .transport-2 ul li img,
+  .transport-4 ul li img {
+
+    width: 40px;
+    height: auto;
+  
+  }
+
+  .transport li,
+  .transport-3 li {
+
+    text-align: left;
+  
+  }
+
+  .transport-3 p {
+
+    left: 0 !important;
+  
+  }
+}
+
+@media (max-width: 575px) {
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+
+    right: 0;
+    left: 0;
+    margin: 15px !important;
+    width: auto !important;
+  
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 14px !important;
+    margin-left: -20px;
+  
+  }
+}
+
+@media (max-width: 480px) {
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 12px !important;
+    margin-left: -35px !important;
+  
+  }
+
+  .transport ul li img,
+  .transport-2 ul li img,
+  .transport-3 ul li img,
+  .transport-4 ul li img {
+
+    width: 35px !important;
+    height: auto;
+  
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 8px;
+  
+  }
+
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 12px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: 0;
+  
+  }
+
+  .transport-2::after {
+
+    width: 150px;
+    height: 150px;
+    top: 40px;
+    left: -100px;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    width: auto;
+    left: -10px;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    left: 10px;
+    width: auto;
+  
+  }
+
+  .transport-header {
+
+    padding: 0 50px;
+  
+  }
+
+  .transport ul li img,
+  .transport-2 ul li img,
+  .transport-3 ul li img,
+  .transport-4 ul li img {
+
+    width: 35px;
+  
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+
+    width: 60px;
+  
+  }
+
+  .transport-3 ul {
+
+    padding: 5px 0 7px 80px;
+  
+  }
+
+  .transport-4 ul {
+
+    left: -18px;
+    margin-left: -20px;
+  
+  }
+
+  .img-1 p {
+
+    left: 35px;
+    top: 12px;
+  
+  }
+
+  .transport-2 ul {
+
+    margin-left: -75px;
+  
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+
+    right: 35px;
+    top: 12px;
+  
+  }
+
+  .img-2 span {
+
+    right: 0;
+  
+  }
+
+  .transport-3 p,
+  .transport p {
+
+    left: 20px !important;
+  
+  }
+
+  .img-1 span {
+
+    left: 0;
+  
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .img-2 span {
+
+    right: 0;
+  
+  }
+
+  .transport-header {
+
+    padding: 10px 50px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: -5px;
+  
+  }
+
+  .img-1 img,
+  .img-2 img,
+  .img-3 img,
+  .img-4 img {
+
+    margin-top: 0;
+  
+  }
+
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+
+    width: auto;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    left: -40px;
+  
+  }
+
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 14px;
+  
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 13px;
+  
+  }
+
+  .img-1 span {
+
+    left: 0;
+  
+  }
+
+  .transport-3 ul {
+
+    padding: 20px 0 0 80px;
+  
+  }
+
+  .transport-4 ul {
+
+    left: -30px;
+  
+  }
+
+  .transport-2 ul {
+
+    margin-left: -88px;
+  
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .transport li,
+  .transport p,
+  .transport-2 li,
+  .transport-2 p,
+  .transport-3 li,
+  .transport-3 p,
+  .transport-4 li,
+  .transport-4 p {
+
+    font-size: 15px;
+  
+  }
+
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+
+    left: 0;
+    width: 55vh;
+  
+  }
+
+  .transport-2::after {
+
+    left: -116px;
+  
+  }
+
+  .transport-header {
+
+    padding: 25px 30px;
+  
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  
+  }
+
+  .img-1 p {
+
+    position: relative;
+    left: 25px;
+  
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 12px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: 0;
+  
+  }
+
+  .transport-header {
+
+    padding: 10px 50px;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    left: -20px;
+    width: auto;
+  
+  }
+
+  .transport-2 ul {
+
+    margin-left: -100px;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    width: auto;
+    left: 20px;
+  
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 14px;
+  
+  }
+
+  .transport-2::after {
+
+    left: -120px;
+  
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  
+  }
+
+  .img-1 p {
+
+    position: relative;
+    left: 25px;
+  
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1400px) {
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 18px;
+  
+  }
+
+  .transport,
+  .transport-2,
+  .transport-3,
+  .transport-4 {
+
+    left: 0;
+    width: auto;
+  
+  }
+
+  .transport-2::after {
+
+    width: 150px;
+    height: 150px;
+    left: -87px;
+  
+  }
+
+  .transport-header {
+
+    padding: 25px 56px;
+  
+  }
+
+  .transport-2 ul {
+
+    margin-left: -100px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: 7px;
+  
+  }
+
+  .transport-2 p,
+  .transport-4 p {
+
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  
+  }
+
+  .img-1 p {
+
+    position: relative;
+    left: 25px;
+  
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1499px) {
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 18px;
+  
+  }
+
+  .transport-header {
+
+    padding: 60px 77px;
+  
+  }
+
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 20px;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    left: -5vh;
+    width: auto;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    width: auto;
+  
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+  .transport p,
+  .transport-2 p,
+  .transport-3 p,
+  .transport-4 p {
+
+    font-size: 20px;
+  
+  }
+
+  .transport-header {
+
+    padding: 25px 85px;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    left: 0;
+    width: 80vh;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    width: 80vh;
+  
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1730px) {
+  .transport li,
+  .transport p,
+  .transport-2 li,
+  .transport-2 p,
+  .transport-3 li,
+  .transport-3 p,
+  .transport-4 li,
+  .transport-4 p {
+
+    font-size: 15px;
+  
+  }
+
+  .transport-header {
+
+    padding: 20px 70px;
+  
+  }
+
+  .transport-3 ul {
+
+    padding: 30px 0 0 80px;
+  
+  }
+
+  .transport-2 ul {
+
+    margin-left: -110px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: 0;
+  
+  }
+
+  .transport,
+  .transport-3 {
+
+    left: 15vh;
+    width: 75vh;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    width: 75vh;
+  
+  }
+
+  .transport-2::after {
+
+    left: -128px;
+  
+  }
+}
+
+@media (min-width: 1731px) and (max-width: 1830px) {
+  .transport,
+  .transport-3 {
+
+    left: 10vh;
+    width: 80vh;
+  
+  }
+
+  .transport-2,
+  .transport-4 {
+
+    left: 15px;
+    width: 80vh;
+  
+  }
+
+  .transport-header {
+
+    padding: 25px 85px;
+  
+  }
+
+  .transport li,
+  .transport-2 li,
+  .transport-3 li,
+  .transport-4 li {
+
+    font-size: 19px;
+  
+  }
+
+  .transport-3 li img {
+
+    bottom: 8px;
+  
+  }
+}
+
+@media (min-width: 1831px) and (max-width: 1919px) {
+  .img-1 p {
+
+    left: 80px;
+  
+  }
+}
