@@ -137,26 +137,7 @@
   filter: grayscale(1);
 }
 
-@media (min-width: 1320px) and (max-width: 1400px) {
-  .inner-page-involved li {
-    padding: 20px 75px 20px 22px;
-    min-height: 98px;
-  }
-  .inner-page-involved li span {
-    font-size: 19px;
-  }
-  .inner-page-involved li img {
-    max-width: 52px;
-    top: -6px;
-  }
-  .inner-page-involved .plus {
-    right: 22px !important;
-    width: 44px !important;
-    height: 44px !important;
-  }
-}
-
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .inner-page-involved li {
     padding: 16px 70px 16px 20px;
     min-height: 85px;
@@ -207,9 +188,6 @@
   .involved-inner.inner-page-involved {
     margin-top: 20px !important;
   }
-}
-
-@media (max-width: 640px) {
   .inner-page-involved li {
     padding: 12px 44px 12px 12px;
     min-height: 65px;
@@ -265,7 +243,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .inner-page-involved li {
     padding: 8px 32px 8px 8px;
     min-height: 52px;
@@ -275,7 +253,7 @@
     width: calc(100% - 28px);
   }
   .inner-page-involved li span {
-    font-size: 11.5px;
+    font-size: 12px;
     line-height: 1.2;
   }
   .inner-page-involved li img {
@@ -293,12 +271,34 @@
   }
 }
 
+@media (max-width: 360px) {
+  .inner-page-involved li {
+    padding: 6px 28px 6px 6px;
+    min-height: 48px;
+  }
+  .inner-page-involved li span {
+    font-size: 11px;
+  }
+  .inner-page-involved li img {
+    max-width: 24px;
+    top: -3px;
+  }
+  .inner-page-involved .plus {
+    right: 4px !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .inner-page-involved .plus i {
+    font-size: 8px !important;
+  }
+}
+
 /* -------------------------------------- SECTION 2: PATHWAY OF LIGHT (INNER PAGES) -------------------------------------- */
 .light-inner {
   background: #01417e;
   top: 0;
   border-radius: 10px;
-  padding: 45px 30px 45px;
+  padding: 30px 30px;
   height: 100%;
 }
 
@@ -306,10 +306,11 @@
   padding: 0 !important;
   top: 0 !important;
   color: #fff;
+  margin-bottom: 25px;
 }
 
 .light-inner p {
-  padding: 0 50px;
+  padding: 0 20px;
   color: #fff;
   font-size: 22px;
   font-style: italic;
@@ -317,121 +318,168 @@
 }
 
 .light-inner span {
-  top: 30px;
-  left: 80px;
+  position: relative;
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fefe64e8;
 }
 
-.light-inner .Q1 {
-  position: absolute;
-  left: 25px;
-  bottom: 210px;
+.light-inner .Q1,
+.light-inner .Q2 {
+  display: inline-block;
+  width: 55px;
+  height: auto;
 }
 
-@media (min-width: 1831px) and (max-width: 1919px) {
+@media (max-width: 1440px) {
   .light-inner {
-    padding: 40px 30px 60px;
+    padding: 35px 30px;
   }
-
-  .light-inner .Q1 {
-    bottom: 225px;
+  .light-inner h2 {
+    margin-bottom: 20px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 45px;
   }
 }
 
-@media (min-width: 1731px) and (max-width: 1830px) {
+@media (max-width: 1366px) {
   .light-inner {
-    padding: 40px 30px 60px;
+    padding: 30px 30px;
   }
-
-  .light-inner .Q1 {
-    bottom: 225px;
+  .light-inner h2 {
+    margin-bottom: 18px;
   }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .light-inner .Q1 {
-    left: 35px;
-    bottom: 220px;
+  .light-inner p {
+    font-size: 21px;
   }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  .light-inner .Q1 {
-    left: 30px;
-    bottom: 215px;
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 40px;
   }
 }
 
-@media (min-width: 1321px) and (max-width: 1400px) {
+@media (max-width: 1200px) {
+  .light-inner {
+    margin-top: 0;
+    padding: 25px 30px;
+  }
+  .light-inner h2 {
+    margin-bottom: 15px;
+  }
   .light-inner p {
     font-size: 20px;
   }
-  .light-inner {
-    padding: 35px 30px 50px;
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 35px;
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .light-inner p {
-    font-size: 18px;
-  }
-  .light-inner .Q1 {
-    left: 25px;
-    bottom: 174px;
-  }
+@media (max-width: 1024px) {
   .light-inner {
-    padding: 30px 30px 50px;
+    padding: 30px 30px;
+  }
+  .light-inner h2 {
+    margin-bottom: 12px;
+  }
+  .light-inner p {
+    font-size: 19px;
+  }
+  .light-inner span {
+    margin-top: 20px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 30px;
   }
 }
 
-@media (min-width: 1100px) and (max-width: 1199px) {
-  .light-inner p {
-    padding: 0 20px;
-    font-size: 18px;
-  }
-  .light-inner .Q1 {
-    width: 45px;
-  }
+@media (max-width: 991px) {
   .light-inner {
-    margin-top: 0px;
-    padding: 20px 30px 40px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  .light-inner p {
-    font-size: 17px;
-  }
-  .light-inner {
-    padding: 17px 30px 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .light-inner p {
-    font-size: 14px;
-    padding: 0 15px;
-  }
-  .light-inner .Q1 {
-    left: 15px;
-    bottom: 175px;
-  }
-  .light-inner {
-    padding: 16px 30px 50px;
+    padding: 30px 30px;
     margin-top: 0;
+  }
+  .light-inner h2 {
+    margin-bottom: 10px;
+  }
+  .light-inner p {
+    font-size: 18px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 28px;
   }
 }
 
 @media (max-width: 767px) {
-  .light-inner p {
-    font-size: 16px;
-    padding: 0;
+  .light-inner {
+    padding: 25px 30px;
   }
   .light-inner h2 {
-    top: -15px !important;
+    margin-bottom: 10px;
   }
-  .light-inner .Q1 {
-    left: 20px;
-    bottom: 230px;
-    width: 50px;
+  .light-inner p {
+    font-size: 17px;
+    padding: 0 15px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .light-inner {
+    padding: 20px 30px;
+  }
+  .light-inner h2 {
+    margin-bottom: 15px;
+  }
+  .light-inner p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .light-inner span {
+    margin-top: 8px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .light-inner {
+    padding: 15px 20px;
+  }
+  .light-inner h2 {
+    margin-bottom: 8px;
+  }
+  .light-inner p {
+    font-size: 15px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .light-inner {
+    padding: 12px 15px;
+  }
+  .light-inner h2 {
+    margin-bottom: 6px;
+  }
+  .light-inner p {
+    font-size: 14px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 18px;
   }
 }
