@@ -1,254 +1,438 @@
-/* --------------------- SRI NARAYANI PEEDAM SECTION --------------------- */
-/* Outer Container Row */
+/* ---------------------------------------------- SRI NARAYANI PEEDAM SECTION (HOMEPAGE) ---------------------------------------------- */
+.sri-narayani-peedam {
+  width: 100%;
+}
+
 #POL {
   background: #01417e;
   margin: 0 50px;
-  padding: 50px 0;
+  padding: 50px 40px;
   border-radius: 20px;
+  align-items: center;
 }
 
-/* Section Wrapper & Text Content */
 .peedam {
-  margin-top: 20px;
+  margin-top: 0;
   text-align: center;
 }
 
-.peedam h2,
-.peedam p {
+.peedam h2 {
   color: #fff;
+  margin-bottom: 2px;
 }
 
 .peedam p {
-  padding: 0 200px;
-  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 0 80px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .peedam .more-2 {
-  margin-bottom: 70px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
-/* Pathway of Light Quote Sub-section */
+.peedam .more-2 a {
+  font-family: "helvetica";
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  border: 1px solid #d4b16f;
+  border-radius: 40px;
+  background: white;
+  padding: 4px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.peedam .more-2 a:hover {
+  color: #fff;
+  background: #9f1605;
+  border-color: #9f1605;
+}
+
+.peedam .more-2:hover .more-img,
+.peedam .more-2 a:hover .more-img {
+  transform: rotate(45deg) !important;
+  filter: brightness(10.5);
+}
+
+.light {
+  margin-top: 10px;
+}
+
 .light p {
   font-family: "georgia";
   font-style: italic;
   font-size: 26px;
   letter-spacing: 0.01em;
-  padding: 0 210px;
-  margin-top: 10px;
-  line-height: 32px;
+  color: #fff;
+  padding: 0 70px;
+  margin-top: 15px;
+  line-height: 1.5;
 }
 
 .light .Q1,
 .light .Q2 {
-  position: absolute;
-}
-
-.light .Q1 {
-  left: 165px;
-  bottom: 160px;
+  display: inline-block;
+  position: static;
+  width: 45px;
+  height: auto;
+  vertical-align: middle;
 }
 
 .light span {
   position: relative;
-  bottom: 0;
-  font-size: 20px;
-  top: 20px;
-  float: inline-end;
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  color: #fefe64e8;
+  margin-top: 15px;
+  padding-right: 20px;
 }
 
-/* --------------------- MEDIA QUERIES (HIGH TO LOW) --------------------- */
-
-@media (min-width: 1919px) {
-  .light .Q1 {
-    left: 140px !important;
-  }
+/* Visibility Control for Pathway of Light */
+.desktop-light {
+  display: block;
 }
 
-@media (min-width: 1831px) and (max-width: 1919px) {
+.mobile-light {
+  display: none !important;
+}
+
+.sri-narayani-peedam .row > .col-lg-6:last-child,
+.sri-narayani-peedam .row > .col-md-6:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sri-narayani-peedam .row > .col-lg-6:last-child img,
+.sri-narayani-peedam .row > .col-md-6:last-child img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (MAX-WIDTH ONLY)
+   ========================================================================== */
+
+@media (max-width: 1440px) {
   #POL {
-    left: 70px;
-  }
-  .peedam {
-    margin-top: 60px;
-  }
-  .light p {
-    padding: 0 120px;
-  }
-  .light .Q1 {
-    left: 70px;
-    bottom: 130px;
-  }
-}
-
-@media (min-width: 1731px) and (max-width: 1830px) {
-  .peedam {
-    margin-top: 60px;
-  }
-  .light p {
-    padding: 0 120px;
-  }
-  .light .Q1 {
-    left: 70px;
-    bottom: 130px;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .peedam p,
-  .light p {
-    font-size: 22px;
-  }
-  .peedam {
-    margin-top: 20px;
-  }
-  .light .Q1,
-  .light .Q2 {
-    width: 50px;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1599px) {
-  .peedam {
-    margin-top: 60px;
+    margin: 0 40px;
+    padding: 45px 30px;
   }
   .peedam p {
-    padding: 0 120px;
-  }
-  .light p {
-    padding: 0 130px;
-  }
-  .light .Q1 {
-    left: 85px;
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  .peedam p {
-    padding: 0 120px;
-  }
-  .light p {
-    font-size: 21px;
-  }
-  .light .Q1 {
-    left: 70px;
-  }
-  .light span {
-    bottom: 70px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .peedam {
-    text-align: center;
-    margin-top: 10px;
-  }
-  .peedam p {
-    padding: 0 100px;
-  }
-  .peedam .more-2 {
-    margin-bottom: 50px;
-  }
-  .light p {
-    font-size: 22px;
-  }
-  .light span {
-    bottom: 10px;
-  }
-  .light .Q1 {
-    left: 45px;
-    bottom: 160px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .peedam {
-    margin-top: 30px;
-  }
-  .peedam p {
-    padding: 0 120px;
-  }
-  .light p {
-    font-size: 22px;
-  }
-  .light span {
-    bottom: 0;
-  }
-  .light .Q1 {
-    left: 60px;
-    bottom: 160px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .peedam {
-    margin-top: 0;
-  }
-  .peedam p {
-    padding: 0;
+    padding: 0 60px;
+    font-size: 17px;
   }
   .peedam .more-2 {
     margin-bottom: 30px;
   }
+  .peedam .more-2 a {
+    font-size: 16px;
+    padding: 4px 14px;
+  }
   .light p {
-    font-size: 18px;
-    padding: 0 10px;
-    line-height: 25px;
+    padding: 0 50px;
+    font-size: 20px;
   }
   .light .Q1,
   .light .Q2 {
-    width: 45px;
+    width: 40px;
   }
-  .light .Q1 {
-    position: relative;
-    left: 0;
-    bottom: 0;
+}
+
+@media (max-width: 1366px) {
+  #POL {
+    margin: 0 30px;
+    padding: 40px 25px;
+  }
+  .peedam p {
+    padding: 0 50px;
+    font-size: 16px;
+  }
+  .peedam .more-2 {
+    margin-bottom: 28px;
+  }
+  .peedam .more-2 a {
+    font-size: 16px;
+    padding: 4px 14px;
+  }
+  .light p {
+    padding: 0 40px;
+    font-size: 19px;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #POL {
+    margin: 0 20px;
+    padding: 35px 20px;
+  }
+  .peedam p {
+    padding: 0 40px;
+    font-size: 16px;
+  }
+  .peedam .more-2 {
+    margin-bottom: 25px;
+  }
+  .peedam .more-2 a {
+    font-size: 15px;
+    padding: 3px 13px;
+  }
+  .light p {
+    padding: 0 30px;
+    font-size: 18px;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #POL {
+    margin: 0 15px;
+    padding: 30px 20px;
+  }
+  .peedam p {
+    padding: 0 30px;
+    font-size: 15.5px;
+  }
+  .peedam .more-2 {
+    margin-bottom: 25px;
+  }
+  .peedam .more-2 a {
+    font-size: 15px;
+    padding: 3px 13px;
+  }
+  .light p {
+    padding: 0 20px;
+    font-size: 17px;
+  }
+  .light span {
+    margin-top: 15px;
+    padding-right: 10px;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  #POL {
+    margin: 0 15px;
+    padding: 25px 15px;
+  }
+  .desktop-light {
+    display: none !important;
+  }
+  .mobile-light {
+    display: block !important;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .mobile-light h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  .sri-narayani-peedam .row > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .sri-narayani-peedam .row > div:nth-child(2) {
+    margin-top: 5px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .sri-narayani-peedam .row > div:nth-child(2) img {
+    width: 60%;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .peedam h2 {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  .peedam p {
+    font-size: 14.5px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .peedam .more-2 {
+    margin-bottom: 10px;
+  }
+  .peedam .more-2 a {
+    font-size: 14px;
+    padding: 3px 12px;
+  }
+  .light p {
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 24px;
+  }
+  .light span {
+    margin-top: 10px;
+    font-size: 16px;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 767px) {
   #POL {
-    padding: 20px 0;
-    margin: 0px 30px;
+    margin: 0 10px;
+    padding: 25px 15px;
   }
-  .peedam {
-    margin-top: 0;
+  .mobile-light h2,
+  .peedam h2 {
+    font-size: 24px;
+    margin-bottom: 2px;
   }
   .peedam p {
-    padding: 0;
+    font-size: 14.5px;
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-  .light {
-    padding-bottom: 50px;
+  .peedam .more-2 {
+    margin-bottom: 22px;
   }
-  .light span {
-    bottom: 25px;
-    font-size: 18px;
-    margin-bottom: 50px;
+  .peedam .more-2 a {
+    font-size: 14px;
+    padding: 3px 12px;
   }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .sri-narayani-peedam .row > .col-md-6:last-child {
-    display: flex;
-    justify-content: center;
+  .light p {
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 1.4;
   }
-
-  .sri-narayani-peedam .row > .col-md-6:last-child img {
-    width: 75%;
+  .light .Q1,
+  .light .Q2 {
+    width: 22px;
   }
 }
 
 @media (max-width: 575px) {
   #POL {
-    padding: 10px 0;
-    margin: 0px 15px;
+    margin: 0 5px;
+    padding: 20px 12px;
   }
-
-  .sri-narayani-peedam .row > .col-md-6:last-child {
-    display: flex;
-    justify-content: center;
+  .mobile-light h2,
+  .peedam h2 {
+    font-size: 22px;
+    margin-bottom: 2px;
   }
+  .peedam p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .peedam .more-2 {
+    margin-bottom: 20px;
+  }
+  .peedam .more-2 a {
+    font-size: 13.5px;
+    padding: 3px 10px;
+  }
+  .light p {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 20px;
+  }
+  .light span {
+    font-size: 14px;
+  }
+  .sri-narayani-peedam .row > div:nth-child(2) img {
+    width: 85%;
+  }
+}
 
-  .sri-narayani-peedam .row > .col-md-6:last-child img {
-    width: 80%;
+@media (max-width: 480px) {
+  #POL {
+    margin: 0;
+    padding: 18px 10px;
+    border-radius: 12px;
+  }
+  .sri-narayani-peedam .row > div:nth-child(2) img {
+    width: 90%;
+  }
+  .mobile-light h2,
+  .peedam h2 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .peedam p {
+    font-size: 13.5px;
+    padding: 0;
+  }
+  .peedam .more-2 {
+    margin-bottom: 18px;
+  }
+  .peedam .more-2 a {
+    font-size: 13px;
+    padding: 2px 10px;
+  }
+  .light p {
+    font-size: 13.5px;
+    padding: 0;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  #POL {
+    padding: 15px 8px;
+  }
+  .mobile-light h2,
+  .peedam h2 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .peedam p {
+    font-size: 13px;
+    padding: 0;
+  }
+  .peedam .more-2 {
+    margin-bottom: 15px;
+  }
+  .peedam .more-2 a {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+  .light p {
+    font-size: 13px;
+    padding: 0;
+  }
+  .light .Q1,
+  .light .Q2 {
+    width: 16px;
   }
 }
