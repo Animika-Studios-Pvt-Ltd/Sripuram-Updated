@@ -81,36 +81,6 @@
   }
 }
 
-/* SRI NARAYANI PEEDAM SECTION */
-@media (min-width: 576px) and (max-width: 767px) {
-  .sri-narayani-peedam .row>.col-md-6:last-child {
-    display: flex;
-    justify-content: center;
-  }
-
-  .sri-narayani-peedam .row>.col-md-6:last-child img {
-    width: 75%;
-  }
-}
-
-@media (max-width: 575px) {
-  .sri-narayani-peedam .row>.col-md-6:last-child {
-    display: flex;
-    justify-content: center;
-  }
-
-  .sri-narayani-peedam .row>.col-md-6:last-child img {
-    width: 80%;
-  }
-}
-
-
-@media (min-width: 1919px) {
-  .Q1 {
-    left: 140px !important;
-  }
-}
-
 
 
 .popup-overlay {

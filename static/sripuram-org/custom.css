@@ -1,6 +1,7 @@
 @import "navbar.css";
 @import "footer.css";
 @import "events.css";
+@import "sri-narayani-peedam.css";
 @import "get-involved.css";
 @import "involved.css";
 @import "distinguished-guests.css";
@@ -202,7 +203,6 @@ p {
 }
 
 .button,
-.light span,
 .more-4 {
   position: relative;
 }
@@ -342,7 +342,6 @@ p {
 #about-inner,
 #second-carousel,
 .more-5,
-.peedam,
 .scan-img,
 .section-title,
 .spiritual-img p,
@@ -375,9 +374,7 @@ p {
 }
 
 .fas:hover,
-.more-1 a:hover,
-.peedam h2,
-.peedam p {
+.more-1 a:hover {
   color: #fff;
 }
 
@@ -409,10 +406,6 @@ p {
 
 .more-7:hover .more-img {
   transform: rotate(45deg) !important;
-}
-
-#POL {
-  border-radius: 20px;
 }
 
 .more-1 a:after,
@@ -450,21 +443,8 @@ p {
   display: block;
 }
 
-#POL {
-  background: #01417e;
-  margin: 0;
-  padding: 50px 0;
-  margin: 0 50px;
-}
-
-#about-inner,
-.peedam {
+#about-inner {
   margin-top: 20px;
-}
-
-.peedam p {
-  padding: 0 200px;
-  margin-top: 10px;
 }
 
 .get-hdng,
@@ -480,33 +460,6 @@ p {
 .dash {
   border-bottom: 1px dashed #fefe64ab;
   padding-bottom: 40px !important;
-}
-
-.Q1,
-.Q2 {
-  position: absolute;
-}
-
-.light p {
-  font-family: "georgia";
-  font-style: italic;
-  font-size: 26px;
-  letter-spacing: 0.01em;
-  padding: 0 210px;
-  margin-top: 10px;
-  line-height: 32px;
-}
-
-.Q1 {
-  left: 165px;
-  bottom: 160px;
-}
-
-.light span {
-  bottom: 0;
-  font-size: 20px;
-  top: 20px;
-  float: inline-end;
 }
 
 .more-2,
@@ -696,9 +649,7 @@ p {
 
 #about-inner h2,
 #about-inner img,
-.breadcrumb li,
-.light-inner h2,
-.light-inner span {
+.breadcrumb li {
   position: relative;
 }
 
@@ -782,38 +733,6 @@ p {
   margin-top: 30px;
 }
 
-.light-inner {
-  background: #01417e;
-  top: 0;
-  border-radius: 10px;
-  padding: 45px 30px 45px;
-  height: 100%;
-}
-
-.light-inner h2 {
-  padding: 0 !important;
-  top: 0 !important;
-  color: #fff;
-}
-
-.light-inner p {
-  padding: 0 50px;
-  color: #fff;
-  font-size: 22px;
-  font-style: italic;
-  font-family: "arrusbtroman";
-}
-
-.light-inner span {
-  top: 30px;
-  left: 80px;
-}
-
-.light-inner .Q1 {
-  position: absolute;
-  left: 25px;
-  bottom: 210px;
-}
 
 .temples a {
   color: #333;
@@ -2121,7 +2040,6 @@ input:-internal-autofill-selected {
   }
 
   .dropdown li a,
-  .light p,
   h3 {
     font-size: 16px;
   }
@@ -2136,28 +2054,6 @@ input:-internal-autofill-selected {
     padding: 5px;
   }
 
-  #POL {
-    padding: 20px 0;
-    margin: 0px 30px;
-  }
-
-  .peedam {
-    margin-top: 0;
-  }
-
-  .peedam p {
-    padding: 0;
-  }
-
-  .light {
-    padding-bottom: 50px;
-  }
-
-  .light span {
-    bottom: 25px;
-    font-size: 18px;
-    margin-bottom: 50px;
-  }
 
   #about h2,
   #about h1,
@@ -2264,8 +2160,7 @@ input:-internal-autofill-selected {
     text-align: justify;
   }
 
-  p,
-  .light-inner p {
+  p {
     font-size: 16px;
   }
 
@@ -2274,19 +2169,6 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  .light-inner h2 {
-    top: -15px !important;
-  }
-
-  .light-inner p {
-    padding: 0;
-  }
-
-  .light-inner .Q1 {
-    left: 20px;
-    bottom: 230px;
-    width: 50px;
-  }
 
   .temples {
     margin-bottom: 30px;
@@ -2395,26 +2277,13 @@ input:-internal-autofill-selected {
     font-size: 16px !important;
   }
 
-  #POL {
-    padding: 10px 0;
-    margin: 0px 15px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .Q1,
-  .Q2 {
-    width: 45px;
-  }
-
   .star-six,
   .star-six::after {
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-  }
-
-  .Q1 {
-    position: relative;
   }
 
   #about {
@@ -2474,33 +2343,10 @@ input:-internal-autofill-selected {
     margin-top: 10px;
   }
 
-  .peedam {
-    margin-top: 0;
-  }
-
-  .peedam p {
-    padding: 0;
-  }
-
   .more-2 {
     margin-bottom: 30px;
   }
 
-  .light p {
-    font-size: 18px;
-    padding: 0 10px;
-    line-height: 25px;
-  }
-
-  .Q1 {
-    left: 0;
-    bottom: 0;
-  }
-
-  .light span {
-    bottom: -20px;
-    font-size: 17px;
-  }
 
   #video-carousel-example {
     padding-left: 0;
@@ -2543,14 +2389,7 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  .light-inner p {
-    padding: 0 15px;
-  }
 
-  .light-inner .Q1 {
-    left: 15px;
-    bottom: 175px;
-  }
 
   .temples h2 {
     font-size: 19px;
@@ -2561,15 +2400,10 @@ input:-internal-autofill-selected {
   }
 
   .active,
-  .breadcrumb-item a,
-  .light-inner p {
+  .breadcrumb-item a {
     font-size: 14px;
   }
 
-  .light-inner {
-    padding: 16px 30px 50px;
-    margin-top: 0;
-  }
 
   .book,
   .more-6 {
@@ -2707,33 +2541,10 @@ input:-internal-autofill-selected {
     margin-top: 10px;
   }
 
-  .peedam {
-    margin-top: 0;
-  }
-
-  .peedam p {
-    padding: 0 60px;
-  }
-
   .more-2 {
     margin-bottom: 40px;
   }
 
-  .light p {
-    font-size: 19px;
-    padding: 0 52px;
-    line-height: 27px;
-  }
-
-  .Q1 {
-    left: 12px;
-    bottom: 144px;
-  }
-
-  .light span {
-    bottom: -32px;
-    font-size: 16px;
-  }
 
   #video-carousel-example {
     padding-left: 50px;
@@ -2762,9 +2573,6 @@ input:-internal-autofill-selected {
     font-size: 13px;
   }
 
-  .light-inner p {
-    font-size: 17px;
-  }
 
   .more-7 {
     top: 95px;
@@ -2779,9 +2587,6 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  .light-inner {
-    padding: 17px 30px 50px;
-  }
 
   .button.is-play {
     width: 65px;
@@ -2841,19 +2646,6 @@ input:-internal-autofill-selected {
     margin-top: 25px;
   }
 
-  .peedam p {
-    padding: 0 80px;
-  }
-
-  .light p {
-    font-size: 20px;
-    padding: 0 70px;
-  }
-
-  .Q1 {
-    left: 12px;
-    bottom: 130px;
-  }
 
   #video-carousel-example {
     padding-left: 40px;
@@ -2873,20 +2665,6 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-  .light-inner p {
-    padding: 0 20px;
-    font-size: 18px;
-  }
-
-  .Q2,
-  .light-inner .Q1 {
-    width: 45px;
-  }
-
-  .light-inner {
-    margin-top: 0px;
-    padding: 20px 30px 40px;
-  }
 
   .pooja-img a,
   .pooja-img p {
@@ -2932,7 +2710,6 @@ input:-internal-autofill-selected {
   }
 
   .dropdown li a,
-  .light-inner p,
   p {
     font-size: 18px;
   }
@@ -2975,29 +2752,8 @@ input:-internal-autofill-selected {
     margin-top: 25px;
   }
 
-  .peedam p {
-    padding: 0 100px;
-  }
-
-  .peedam {
-    margin-top: 10px;
-  }
-
   .more-2 {
     margin-bottom: 50px;
-  }
-
-  .light p {
-    font-size: 22px;
-  }
-
-  .light span {
-    bottom: 10px;
-  }
-
-  .Q1 {
-    left: 45px;
-    bottom: 160px;
   }
 
   .next-arrow img,
@@ -3030,10 +2786,6 @@ input:-internal-autofill-selected {
     margin-top: 35px;
   }
 
-  .light-inner .Q1 {
-    left: 25px;
-    bottom: 174px;
-  }
 
   #facility-bg::before {
     left: -50px;
@@ -3056,9 +2808,6 @@ input:-internal-autofill-selected {
     padding-left: 100px;
   }
 
-  .light-inner {
-    padding: 30px 30px 50px;
-  }
 
   .facility-img img {
     left: 10px;
@@ -3103,7 +2852,6 @@ input:-internal-autofill-selected {
     font-size: 12px;
   }
 
-  .light-inner p,
   .list a,
   .list li {
     font-size: 20px;
@@ -3125,26 +2873,6 @@ input:-internal-autofill-selected {
     margin-top: 50px;
   }
 
-  .peedam {
-    margin-top: 30px;
-  }
-
-  .peedam p {
-    padding: 0 120px;
-  }
-
-  .light p {
-    font-size: 22px;
-  }
-
-  .light span {
-    bottom: 0;
-  }
-
-  .Q1 {
-    left: 60px;
-    bottom: 160px;
-  }
 
   #video-carousel-example {
     padding-left: 140px;
@@ -3205,9 +2933,6 @@ input:-internal-autofill-selected {
     height: 65px;
   }
 
-  .light-inner {
-    padding: 35px 30px 50px;
-  }
 
   .facility-img {
     text-align: center;
@@ -3319,21 +3044,6 @@ input:-internal-autofill-selected {
     height: 65px;
   }
 
-  .peedam p {
-    padding: 0 120px;
-  }
-
-  .light p {
-    font-size: 21px;
-  }
-
-  .Q1 {
-    left: 70px;
-  }
-
-  .light span {
-    bottom: 70px;
-  }
 
   #video-carousel-example {
     padding-left: 150px;
@@ -3369,10 +3079,6 @@ input:-internal-autofill-selected {
     margin-top: 40px;
   }
 
-  .light-inner .Q1 {
-    left: 30px;
-    bottom: 215px;
-  }
 
   #about-inner img {
     left: 229px;
@@ -3429,21 +3135,6 @@ input:-internal-autofill-selected {
     padding-left: 50%;
   }
 
-  .peedam {
-    margin-top: 60px;
-  }
-
-  .peedam p {
-    padding: 0 120px;
-  }
-
-  .light p {
-    padding: 0 130px;
-  }
-
-  .Q1 {
-    left: 85px;
-  }
 
   #video-carousel-example {
     padding-left: 130px;
@@ -3539,8 +3230,6 @@ input:-internal-autofill-selected {
     padding: 15px 100px;
   }
 
-  .light p,
-  .peedam p,
   h3 {
     font-size: 22px;
   }
@@ -3569,15 +3258,10 @@ input:-internal-autofill-selected {
     background-color: #faebd791;
   }
 
-  .peedam,
   .video {
     margin-top: 20px;
   }
 
-  .Q1,
-  .Q2 {
-    width: 50px;
-  }
 
   #video-carousel-example {
     padding-left: 100px;
@@ -3604,10 +3288,6 @@ input:-internal-autofill-selected {
     margin-top: 30px;
   }
 
-  .light-inner .Q1 {
-    left: 35px;
-    bottom: 220px;
-  }
 
   .facility-img img {
     left: 20px;
@@ -3639,18 +3319,6 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  .peedam {
-    margin-top: 60px;
-  }
-
-  .light p {
-    padding: 0 120px;
-  }
-
-  .Q1 {
-    left: 70px;
-    bottom: 130px;
-  }
 
   #video-carousel-example {
     padding-left: 130px;
@@ -3673,13 +3341,7 @@ input:-internal-autofill-selected {
     margin-top: 40px;
   }
 
-  .light-inner {
-    padding: 40px 30px 60px;
-  }
 
-  .light-inner .Q1 {
-    bottom: 225px;
-  }
 
   #first-arrow {
     margin-left: 41px;
@@ -3715,8 +3377,7 @@ input:-internal-autofill-selected {
     font-size: 22px;
   }
 
-  #facility-bg::before,
-  .Q1 {
+  #facility-bg::before {
     left: 70px;
   }
 
@@ -3726,18 +3387,6 @@ input:-internal-autofill-selected {
 
   .video {
     margin-top: 20px;
-  }
-
-  .peedam {
-    margin-top: 60px;
-  }
-
-  .light p {
-    padding: 0 120px;
-  }
-
-  .Q1 {
-    bottom: 130px;
   }
 
   #video-carousel-example {
@@ -3761,13 +3410,7 @@ input:-internal-autofill-selected {
     margin-top: 40px;
   }
 
-  .light-inner {
-    padding: 40px 30px 60px;
-  }
 
-  .light-inner .Q1 {
-    bottom: 225px;
-  }
 
   #first-arrow {
     margin-left: 41px;
