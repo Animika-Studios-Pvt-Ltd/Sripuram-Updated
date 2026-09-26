@@ -82,7 +82,6 @@ h3 {
   text-transform: uppercase;
 }
 
-#about,
 body {
   background: #faebd7;
 }
@@ -1822,15 +1821,6 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 767px) {
-  #about {
-    text-align: center;
-  }
-
-  .about-img,
-  .about-info {
-    top: 0;
-  }
-
   .motif-home,
   .motif-inner {
     display: none;
@@ -1879,12 +1869,6 @@ input:-internal-autofill-selected {
   }
 
 
-  #about h2,
-  #about h1,
-  #about h3,
-  #video-carousel-example {
-    padding-left: 0;
-  }
 
   .charity-info {
     margin-bottom: 40px;
@@ -2065,23 +2049,13 @@ input:-internal-autofill-selected {
   }
 }
 
-@media (max-width: 575px) {
-  #about h1,
-  #about h3 {
-    font-size: 16px !important;
-  }
 
-}
 
 @media (min-width: 768px) and (max-width: 991px) {
   .star-six,
   .star-six::after {
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-  }
-
-  #about {
-    text-align: center;
   }
 
   .fa-search {
@@ -2103,17 +2077,11 @@ input:-internal-autofill-selected {
     font-size: 12px;
   }
 
-  #about {
-    padding: 15px 0;
-  }
 
 
 
 
 
-  #video-carousel-example {
-    padding-left: 0;
-  }
 
   .list a,
   .list li {
@@ -2263,9 +2231,6 @@ input:-internal-autofill-selected {
     font-size: 11px;
   }
 
-  #about {
-    padding: 15px 20px;
-  }
 
   h3 {
     font-size: 20px;
@@ -2292,9 +2257,6 @@ input:-internal-autofill-selected {
 
 
 
-  #video-carousel-example {
-    padding-left: 50px;
-  }
 
   .next-arrow img,
   .prev-arrow img {
@@ -2371,10 +2333,6 @@ input:-internal-autofill-selected {
     font-size: 15px;
   }
 
-  #about {
-    padding: 20px 20px;
-    margin-top: 20px;
-  }
 
   h3 {
     font-size: 23px;
@@ -2393,9 +2351,6 @@ input:-internal-autofill-selected {
   }
 
 
-  #video-carousel-example {
-    padding-left: 40px;
-  }
 
   .about-info-inner {
     padding: 20px 60px 0 0;
@@ -2523,9 +2478,6 @@ input:-internal-autofill-selected {
     height: 60px;
   }
 
-  #video-carousel-example {
-    padding-left: 100px;
-  }
 
 
   .facility-img img {
@@ -2576,16 +2528,8 @@ input:-internal-autofill-selected {
     font-size: 20px;
   }
 
-  #about {
-    padding: 15px 100px;
-  }
-
   .motif {
     padding-left: 69%;
-  }
-
-  .about-info {
-    top: 60px;
   }
 
   .video {
@@ -2593,9 +2537,6 @@ input:-internal-autofill-selected {
   }
 
 
-  #video-carousel-example {
-    padding-left: 140px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -2744,9 +2685,6 @@ input:-internal-autofill-selected {
 
 
 
-  #video-carousel-example {
-    padding-left: 150px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -2813,7 +2751,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
-  #about,
   .facility-img {
     text-align: center;
   }
@@ -2826,18 +2763,11 @@ input:-internal-autofill-selected {
     font-size: 23px;
   }
 
-  #about {
-    padding: 15px 50px;
-  }
-
   .motif {
     padding-left: 50%;
   }
 
 
-  #video-carousel-example {
-    padding-left: 130px;
-  }
 
   .dropdown li a {
     font-size: 20px;
@@ -2875,7 +2805,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1600px) and (max-width: 1730px) {
-  #about,
   .facility-img,
   .more-4 {
     text-align: center;
@@ -2932,9 +2861,6 @@ input:-internal-autofill-selected {
   }
 
 
-  #video-carousel-example {
-    padding-left: 100px;
-  }
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -2964,7 +2890,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1731px) and (max-width: 1830px) {
-  #about,
   .facility-img,
   .more-4 {
     text-align: center;
@@ -2989,9 +2914,6 @@ input:-internal-autofill-selected {
   }
 
 
-  #video-carousel-example {
-    padding-left: 130px;
-  }
 
   .dropdown li a {
     font-size: 20px;
@@ -3030,7 +2952,6 @@ input:-internal-autofill-selected {
 }
 
 @media (min-width: 1831px) and (max-width: 1919px) {
-  #about,
   .facility-img,
   .more-4 {
     text-align: center;
@@ -3058,9 +2979,6 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  #video-carousel-example {
-    padding-left: 130px;
-  }
 
   .dropdown li a {
     font-size: 20px;
