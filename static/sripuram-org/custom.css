@@ -1,6 +1,7 @@
 @import "navbar.css";
 @import "footer.css";
 @import "events.css";
+@import "sri-sakthi-amma.css";
 @import "sri-narayani-peedam.css";
 @import "get-involved.css";
 @import "involved.css";
@@ -162,190 +163,23 @@ p {
   margin-top: -80px;
 }
 
-#about {
-  padding: 15px 240px;
-  margin-top: 50px;
-  border-radius: 20px;
-}
 
-.about-img {
-  position: relative;
-  top: -120px;
-}
 
-.about-info {
-  position: relative;
-  top: 80px;
-}
 
-#about h1,
-#about h3 {
-  padding-left: 48%;
-}
-
-#about h2 {
-  padding-left: 50%;
-}
-
-#first-arrow {
-  margin-left: 48px;
-}
-
-#second-arrow {
-  margin-left: 128px;
-}
-
-.motif {
-  padding-left: 69%;
-}
-
-.button,
-.more-4 {
-  position: relative;
-}
-
-.button {
-  display: inline-block;
-}
-
-.button.is-play {
-  background-color: #faebd7bf;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.button.is-play .button-outer-circle {
-  background: rgb(250 235 215);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.button.is-play .button-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  transform: translate(-50%, -50%);
-}
-
-.button.is-play .button-icon .triangle {
-  -webkit-animation: 7s fadeIn;
-  animation: 7s fadeIn;
-}
-
-.button.is-play .button-icon .path {
-  stroke-dasharray: 90;
-  stroke-dashoffset: 0;
-  -webkit-animation: 3s triangleStroke;
-  animation: 3s triangleStroke;
-}
-
-.has-scale-animation {
-  -webkit-animation: 3s infinite smallScale;
-  animation: 3s infinite smallScale;
-}
-
-#bounce3 {
-  animation: 2s infinite bounce;
-}
-
-.has-delay-short {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes triangleStroke {
-  from {
-    stroke-dashoffset: 90;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes triangleStroke {
-  from {
-    stroke-dashoffset: 90;
-  }
-
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes smallScale {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  to {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-@keyframes smallScale {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  to {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-.more-1 {
-  text-align: center;
-  margin-top: 20px;
-}
 
 #about-inner,
 #second-carousel,
+.more-1,
+.more-4,
 .more-5,
 .scan-img,
 .section-title,
-.spiritual-img p,
-.video {
+.spiritual-img p {
   text-align: center;
 }
 
 .more-1 a,
+.more-4 a,
 .more-5 a,
 .more-7 a {
   font-family: "helvetica";
@@ -368,8 +202,12 @@ p {
   border: 0 solid #d4b16f;
 }
 
-.fas:hover,
-.more-1 a:hover {
+.fas {
+  color: #fff;
+}
+
+.more-1 a:hover,
+.more-4 a:hover {
   color: #fff;
 }
 
@@ -381,13 +219,13 @@ p {
   color: #9f1605 !important;
 }
 
-
 .more-7 a {
   font-size: 15px;
   color: #487fc3;
 }
 
 .more-1:hover .more-img,
+.more-4:hover .more-img,
 .more-5:hover .more-img,
 .more-6:hover .more-img {
   transform: rotate(45deg) !important;
@@ -399,7 +237,9 @@ p {
 }
 
 .more-1 a:after,
-.more-1 a:before {
+.more-1 a:before,
+.more-4 a:after,
+.more-4 a:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -411,22 +251,19 @@ p {
   transition: 0.35s;
 }
 
-.more-1 a:after {
+.more-1 a:after,
+.more-4 a:after {
   transition-delay: 0.2s;
 }
 
 .more-1 a:hover:after,
-.more-1 a:hover:before {
+.more-1 a:hover:before,
+.more-4 a:hover:after,
+.more-4 a:hover:before {
   top: 0;
 }
 
-.video {
-  margin-top: 30px;
-}
 
-.video h2 {
-  padding: 0 !important;
-}
 
 .B-P {
   width: 100%;
@@ -2049,23 +1886,8 @@ input:-internal-autofill-selected {
     padding-left: 0;
   }
 
-  #about h1,
-  #about h3 {
-    font-size: 22px;
-    padding-top: 0px !important;
-  }
-
-  .get-hdng {
-    padding: 50px 0 20px;
-  }
-
-  .charity-info,
-  .more-1 {
+  .charity-info {
     margin-bottom: 40px;
-  }
-
-  #about {
-    padding: 15px 0 30px 0;
   }
 
   .star-six {
@@ -2080,25 +1902,12 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  #about {
-    margin-top: 20px;
-  }
-
-  .video {
-    margin-top: 8px;
-  }
-
   .icons {
     margin-left: 0;
   }
 
-  .more-1 a,
   .more-5 a {
     font-size: 15px;
-  }
-
-  .motif {
-    padding-left: 0;
   }
 
   .top {
@@ -2298,34 +2107,7 @@ input:-internal-autofill-selected {
     padding: 15px 0;
   }
 
-  #about h2,
-  #about h1 {
-    padding-left: 45%;
-  }
 
-  h3 {
-    font-size: 17px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 13px;
-  }
-
-  .about-info {
-    top: 45px;
-  }
-
-  .motif {
-    padding-left: 47%;
-  }
-
-  .video {
-    margin-top: 10px;
-  }
 
 
 
@@ -2503,22 +2285,9 @@ input:-internal-autofill-selected {
   }
 
   .charity-info h5,
-  .more-1 a,
   .more-4 a,
   .more-5 a {
     font-size: 15px;
-  }
-
-  .motif {
-    padding-left: 68%;
-  }
-
-  .about-info {
-    top: 60px;
-  }
-
-  .video {
-    margin-top: 10px;
   }
 
 
@@ -2700,32 +2469,9 @@ input:-internal-autofill-selected {
   }
 
   .icons p,
-  .more-1 a,
   .more-4 a,
   .more-5 a {
     font-size: 15px;
-  }
-
-  .fa-android,
-  .fa-apple {
-    font-size: 33px;
-    padding-top: 5px;
-  }
-
-  #about {
-    padding: 15px 60px;
-  }
-
-  .motif {
-    padding-left: 69%;
-  }
-
-  .about-info {
-    top: 50px;
-  }
-
-  .video {
-    margin-top: 25px;
   }
 
 
@@ -2995,26 +2741,7 @@ input:-internal-autofill-selected {
     padding-top: 5px;
   }
 
-  #about {
-    padding: 15px 120px;
-  }
 
-  #about h1 {
-    font-size: 24px;
-  }
-
-  .about-info {
-    top: 50px;
-  }
-
-  .video {
-    margin-top: 20px;
-  }
-
-  .button.is-play {
-    width: 65px;
-    height: 65px;
-  }
 
 
   #video-carousel-example {
@@ -3198,39 +2925,10 @@ input:-internal-autofill-selected {
     border-right: 15px solid transparent;
   }
 
-  #about {
-    padding: 15px 100px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  .motif {
-    padding-left: 50%;
-  }
-
-  .more-1 a,
   .more-4 a,
   .more-5 a,
   .more-7 a {
     font-size: 14px;
-  }
-
-  .about-info {
-    top: 50px;
-  }
-
-  .button.is-play {
-    background-color: #faebd791;
-  }
-
-  .video {
-    margin-top: 20px;
   }
 
 
