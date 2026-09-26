@@ -107,7 +107,22 @@
   width: 100%;
 }
 
+@media (min-width: 1831px) and (max-width: 1919px) {
+  #video-carousel-example {
+    padding-left: 130px;
+  }
+}
+
+@media (min-width: 1731px) and (max-width: 1830px) {
+  #video-carousel-example {
+    padding-left: 130px;
+  }
+}
+
 @media (min-width: 1600px) and (max-width: 1730px) {
+  #video-carousel-example {
+    padding-left: 100px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 36%;
@@ -119,6 +134,9 @@
 }
 
 @media (min-width: 1500px) and (max-width: 1599px) {
+  #video-carousel-example {
+    padding-left: 130px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 37%;
@@ -130,6 +148,9 @@
 }
 
 @media (min-width: 1401px) and (max-width: 1499px) {
+  #video-carousel-example {
+    padding-left: 150px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 35%;
@@ -141,6 +162,9 @@
 }
 
 @media (min-width: 1321px) and (max-width: 1400px) {
+  #video-carousel-example {
+    padding-left: 140px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 36%;
@@ -152,6 +176,9 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1320px) {
+  #video-carousel-example {
+    padding-left: 100px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 37%;
@@ -163,6 +190,9 @@
 }
 
 @media (min-width: 1100px) and (max-width: 1199px) {
+  #video-carousel-example {
+    padding-left: 40px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 36%;
@@ -170,6 +200,12 @@
   #Involve-arrow-2,
   #involve-arrow-2 {
     left: 48%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  #video-carousel-example {
+    padding-left: 50px;
   }
 }
 
