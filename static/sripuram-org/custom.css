@@ -1,6 +1,7 @@
 @import "navbar.css";
 @import "footer.css";
 @import "home-banner.css";
+@import "breadcrumbs.css";
 @import "events.css";
 @import "sri-sakthi-amma.css";
 @import "sri-narayani-peedam.css";
@@ -88,8 +89,6 @@ body {
   margin-right: 0;
 }
 
-.breadcrumb-item .active,
-.breadcrumb-item a,
 .temples a {
   text-decoration: none;
 }
@@ -389,11 +388,6 @@ p {
   padding: 0;
 }
 
-.brd-crmb nav,
-.brd-crmb ol {
-  border-radius: 0 0 15px 15px;
-}
-
 .prev-arrow img {
   transform: rotate(225deg);
 }
@@ -435,53 +429,6 @@ p {
   top: 12px;
   left: -20px;
   border-top: 35px solid #9f1605;
-}
-
-.breadcrumb li {
-  position: relative;
-}
-
-.brd-crmb ol {
-  background: #ecb05a;
-  padding: 20px;
-}
-
-.breadcrumb-item {
-  display: inline-flex;
-  align-items: center;
-}
-
-.breadcrumb-item a {
-  font-family: "helvetica";
-  font-size: 14px;
-  color: #333;
-  letter-spacing: 0.03em;
-}
-
-.breadcrumb-item.active {
-  font-family: "helvetica";
-  font-size: 14px;
-  color: #9f1605;
-  letter-spacing: 0.03em;
-}
-
-.breadcrumb-item a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  color: #333;
-  content: ">";
-  font-family: "helvetica";
-  font-size: 12px;
-  font-weight: normal;
-  vertical-align: middle;
-  margin: 0px;
-  line-height: 1;
-}
-
-.breadcrumb li {
-  z-index: 2;
 }
 
 #inner-row {
@@ -1790,16 +1737,6 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-  .breadcrumb-item .active,
-  .breadcrumb-item a {
-    font-size: 14px;
-    letter-spacing: 0;
-  }
-
-  .brd-crmb ol {
-    padding: 5px;
-  }
-
   .charity-info {
     margin-bottom: 40px;
   }
@@ -2029,11 +1966,6 @@ input:-internal-autofill-selected {
     font-size: 11px;
   }
 
-  .active,
-  .breadcrumb-item a {
-    font-size: 14px;
-  }
-
   .book,
   .more-6 {
     padding: 40px 0 20px 5px;
@@ -2206,11 +2138,6 @@ input:-internal-autofill-selected {
 
   .list {
     left: 20%;
-  }
-
-  .breadcrumb-item .active,
-  .breadcrumb-item a {
-    font-size: 15px;
   }
 
   h2 {

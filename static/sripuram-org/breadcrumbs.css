@@ -1,0 +1,100 @@
+/* ------------------------------------ Breadcrumbs Section Styles ------------------------------------ */
+.breadcrumb li {
+  position: relative;
+  z-index: 2;
+}
+
+.breadcrumb-item .active,
+.breadcrumb-item a {
+  text-decoration: none;
+}
+
+.brd-crmb nav,
+.brd-crmb ol {
+  border-radius: 0 0 15px 15px;
+}
+
+.brd-crmb ol {
+  background: #ecb05a;
+  padding: 20px;
+}
+
+.breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-item a {
+  font-family: "helvetica";
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0.03em;
+}
+
+.breadcrumb-item.active {
+  font-family: "helvetica";
+  font-size: 16px;
+  color: #9f1605;
+  letter-spacing: 0.03em;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #333;
+  content: ">";
+  font-family: "helvetica";
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+  margin: 0px;
+  line-height: 1;
+}
+
+@media (max-width: 1440px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 14px;
+  }
+
+  .brd-crmb ol {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .breadcrumb-item.active,
+  .breadcrumb-item a {
+    font-size: 11px;
+  }
+}
