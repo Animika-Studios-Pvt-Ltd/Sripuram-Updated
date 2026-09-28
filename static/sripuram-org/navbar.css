@@ -649,7 +649,7 @@ body.sn-open .sn-drawer {
 
 .sn-nav-icon {
   font-size: 14px;
-  color: #9f1605;
+  color: #9f1605 !important;
   width: 18px;
   height: auto;
   text-align: center;
