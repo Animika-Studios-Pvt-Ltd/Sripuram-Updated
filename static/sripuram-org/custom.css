@@ -1,5 +1,6 @@
 @import "navbar.css";
 @import "footer.css";
+@import "home-banner.css";
 @import "events.css";
 @import "sri-sakthi-amma.css";
 @import "sri-narayani-peedam.css";
@@ -123,10 +124,6 @@ p {
   display: none;
 }
 
-#banner img {
-  border-radius: 15px;
-}
-
 .icons {
   padding-top: 10px;
 }
@@ -140,21 +137,6 @@ p {
 .icons img {
   width: 100px !important;
   margin-bottom: 5px;
-}
-
-.banner-text {
-  position: absolute;
-  bottom: 50px;
-}
-
-.motif-home,
-.motif-inner {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-  text-align: center;
-  margin-top: -80px;
 }
 
 #second-carousel,
@@ -1786,11 +1768,6 @@ input:-internal-autofill-selected {
 }
 
 @media (max-width: 767px) {
-  .motif-home,
-  .motif-inner {
-    display: none;
-  }
-
   .list a,
   .list li {
     font-size: 18px;
