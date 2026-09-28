@@ -75,10 +75,7 @@ p {
   text-align: center;
 }
 
-.icons p,
-h1,
-h2,
-h3 {
+.icons p {
   text-transform: uppercase;
 }
 
@@ -86,7 +83,6 @@ body {
   background: #faebd7;
 }
 
-#about-inner .row,
 #inner-row {
   margin-right: 0;
 }
@@ -106,12 +102,12 @@ body {
   opacity: 0.5;
 }
 
-h2 {
-  font-size: 30px;
+h1 {
+  font-size: 28px;
 }
 
-h3 {
-  font-size: 31px;
+h2 {
+  font-size: 25px;
 }
 
 p {
@@ -119,7 +115,6 @@ p {
   font-size: 19px;
   margin: auto;
 }
-
 
 .carousel-indicators,
 .credits,
@@ -162,11 +157,6 @@ p {
   margin-top: -80px;
 }
 
-
-
-
-
-#about-inner,
 #second-carousel,
 .more-1,
 .more-4,
@@ -262,15 +252,9 @@ p {
   top: 0;
 }
 
-
-
 .B-P {
   width: 100%;
   display: block;
-}
-
-#about-inner {
-  margin-top: 20px;
 }
 
 .get-hdng,
@@ -472,8 +456,6 @@ p {
   border-top: 35px solid #9f1605;
 }
 
-#about-inner h2,
-#about-inner img,
 .breadcrumb li {
   position: relative;
 }
@@ -521,22 +503,6 @@ p {
   z-index: 2;
 }
 
-#about-inner img {
-  top: 80px;
-  left: 263px;
-}
-
-#about-inner h2 {
-  padding: 0 0 0 28%;
-  top: 80px;
-}
-
-#about-inner .motif {
-  position: absolute;
-  padding-left: 60.5%;
-  bottom: 190px;
-}
-
 #inner-row {
   margin-top: 80px;
   margin-bottom: 40px;
@@ -557,7 +523,6 @@ p {
   text-align: justify;
   margin-top: 30px;
 }
-
 
 .temples a {
   color: #333;
@@ -1853,8 +1818,7 @@ input:-internal-autofill-selected {
     align-items: start;
   }
 
-  .dropdown li a,
-  h3 {
+  .dropdown li a {
     font-size: 16px;
   }
 
@@ -1867,8 +1831,6 @@ input:-internal-autofill-selected {
   .brd-crmb ol {
     padding: 5px;
   }
-
-
 
   .charity-info {
     margin-bottom: 40px;
@@ -1917,16 +1879,6 @@ input:-internal-autofill-selected {
     right: 70px;
   }
 
-  #about-inner h2 {
-    padding: 0;
-    top: 0;
-  }
-
-  #about-inner img {
-    top: 0;
-    left: 0;
-  }
-
   .about-info-inner {
     padding: 20px 15px 0;
     margin-left: 0;
@@ -1946,7 +1898,6 @@ input:-internal-autofill-selected {
   h2 {
     font-size: 20px;
   }
-
 
   .temples {
     margin-bottom: 30px;
@@ -2049,8 +2000,6 @@ input:-internal-autofill-selected {
   }
 }
 
-
-
 @media (min-width: 768px) and (max-width: 991px) {
   .star-six,
   .star-six::after {
@@ -2077,12 +2026,6 @@ input:-internal-autofill-selected {
     font-size: 12px;
   }
 
-
-
-
-
-
-
   .list a,
   .list li {
     font-size: 20px;
@@ -2100,16 +2043,6 @@ input:-internal-autofill-selected {
     border-top: 20px solid #9f1605;
   }
 
-  #about-inner h2 {
-    padding: 0 0 0 40%;
-    top: 65px;
-  }
-
-  #about-inner img {
-    top: 55px;
-    left: 155px;
-  }
-
   .about-info-inner {
     padding: 0 40px 0 0;
   }
@@ -2119,8 +2052,6 @@ input:-internal-autofill-selected {
     line-height: 20px;
     margin-top: 20px;
   }
-
-
 
   .temples h2 {
     font-size: 19px;
@@ -2134,7 +2065,6 @@ input:-internal-autofill-selected {
   .breadcrumb-item a {
     font-size: 14px;
   }
-
 
   .book,
   .more-6 {
@@ -2231,11 +2161,6 @@ input:-internal-autofill-selected {
     font-size: 11px;
   }
 
-
-  h3 {
-    font-size: 20px;
-  }
-
   .temples h2,
   h2 {
     font-size: 22px;
@@ -2254,9 +2179,6 @@ input:-internal-autofill-selected {
   .more-5 a {
     font-size: 15px;
   }
-
-
-
 
   .next-arrow img,
   .prev-arrow img {
@@ -2281,7 +2203,6 @@ input:-internal-autofill-selected {
     font-size: 13px;
   }
 
-
   .more-7 {
     top: 95px;
   }
@@ -2294,7 +2215,6 @@ input:-internal-autofill-selected {
     font-size: 19px;
     margin-top: 20px;
   }
-
 
   .button.is-play {
     width: 65px;
@@ -2333,24 +2253,9 @@ input:-internal-autofill-selected {
     font-size: 15px;
   }
 
-
-  h3 {
-    font-size: 23px;
-  }
-
   h2 {
     font-size: 25px;
   }
-
-  .motif {
-    padding-left: 68%;
-  }
-
-  .video {
-    margin-top: 25px;
-  }
-
-
 
   .about-info-inner {
     padding: 20px 60px 0 0;
@@ -2365,7 +2270,6 @@ input:-internal-autofill-selected {
   p {
     font-size: 16px;
   }
-
 
   .pooja-img a,
   .pooja-img p {
@@ -2400,8 +2304,7 @@ input:-internal-autofill-selected {
 
   .list a,
   .list li,
-  .pooja-img p,
-  h3 {
+  .pooja-img p {
     font-size: 17px;
   }
 
@@ -2429,7 +2332,6 @@ input:-internal-autofill-selected {
     font-size: 15px;
   }
 
-
   .next-arrow img,
   .prev-arrow img {
     margin-top: -5px;
@@ -2447,10 +2349,6 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  #about-inner h2 {
-    padding: 0 0 0 41%;
-  }
-
   .about-info-inner {
     padding: 50px 80px 0 0;
   }
@@ -2459,7 +2357,6 @@ input:-internal-autofill-selected {
     font-size: 20px;
     margin-top: 35px;
   }
-
 
   #facility-bg::before {
     left: -50px;
@@ -2477,8 +2374,6 @@ input:-internal-autofill-selected {
     width: 60px;
     height: 60px;
   }
-
-
 
   .facility-img img {
     left: 10px;
@@ -2506,10 +2401,6 @@ input:-internal-autofill-selected {
     border-right: 15px solid transparent;
   }
 
-  h3 {
-    font-size: 24px;
-  }
-
   h2 {
     font-size: 25px;
   }
@@ -2527,16 +2418,6 @@ input:-internal-autofill-selected {
   .list li {
     font-size: 20px;
   }
-
-  .motif {
-    padding-left: 69%;
-  }
-
-  .video {
-    margin-top: 50px;
-  }
-
-
 
   .star-six {
     border-bottom: 25px solid #9f1605;
@@ -2557,14 +2438,6 @@ input:-internal-autofill-selected {
   .about-info-inner p {
     font-size: 20px;
     margin-top: 30px;
-  }
-
-  #about-inner h2 {
-    padding: 0 0 0 39%;
-  }
-
-  #about-inner img {
-    top: 70px;
   }
 
   .icons p {
@@ -2592,7 +2465,6 @@ input:-internal-autofill-selected {
     width: 65px;
     height: 65px;
   }
-
 
   .facility-img {
     text-align: center;
@@ -2682,10 +2554,6 @@ input:-internal-autofill-selected {
     padding-top: 5px;
   }
 
-
-
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 80px;
@@ -2698,29 +2566,6 @@ input:-internal-autofill-selected {
     border-top: 25px solid #9f1605;
   }
 
-  #about-inner h2 {
-    padding: 0 0 0 32%;
-  }
-
-  .about-info-inner {
-    padding: 50px 150px 0 0;
-  }
-
-  #about-inner .motif {
-    padding-left: 60.7%;
-    bottom: 60px;
-  }
-
-  .about-info-inner p {
-    font-size: 22px;
-    margin-top: 40px;
-  }
-
-
-  #about-inner img {
-    left: 229px;
-  }
-
   .pooja-img p {
     font-size: 19px;
   }
@@ -2731,10 +2576,6 @@ input:-internal-autofill-selected {
 
   #second-arrow {
     margin-left: 111px;
-  }
-
-  .motif {
-    padding-left: 69%;
   }
 
   .facility-img {
@@ -2755,19 +2596,9 @@ input:-internal-autofill-selected {
     text-align: center;
   }
 
-  h3 {
-    font-size: 25px;
-  }
-
   h2 {
     font-size: 23px;
   }
-
-  .motif {
-    padding-left: 50%;
-  }
-
-
 
   .dropdown li a {
     font-size: 20px;
@@ -2860,8 +2691,6 @@ input:-internal-autofill-selected {
     font-size: 14px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 75px;
@@ -2883,7 +2712,6 @@ input:-internal-autofill-selected {
     margin-top: 30px;
   }
 
-
   .facility-img img {
     left: 20px;
   }
@@ -2895,25 +2723,11 @@ input:-internal-autofill-selected {
     text-align: center;
   }
 
-  h3 {
-    font-size: 24px;
-  }
-
   .list a,
   .list li,
   h2 {
     font-size: 22px;
   }
-
-  .motif {
-    padding-left: 50%;
-  }
-
-  .video {
-    margin-top: 20px;
-  }
-
-
 
   .dropdown li a {
     font-size: 20px;
@@ -2931,8 +2745,6 @@ input:-internal-autofill-selected {
     font-size: 23px;
     margin-top: 40px;
   }
-
-
 
   #first-arrow {
     margin-left: 41px;
@@ -2957,10 +2769,6 @@ input:-internal-autofill-selected {
     text-align: center;
   }
 
-  h3 {
-    font-size: 24px;
-  }
-
   .list a,
   .list li,
   h2 {
@@ -2970,15 +2778,6 @@ input:-internal-autofill-selected {
   #facility-bg::before {
     left: 70px;
   }
-
-  .motif {
-    padding-left: 50%;
-  }
-
-  .video {
-    margin-top: 20px;
-  }
-
 
   .dropdown li a {
     font-size: 20px;
@@ -2996,8 +2795,6 @@ input:-internal-autofill-selected {
     font-size: 23px;
     margin-top: 40px;
   }
-
-
 
   #first-arrow {
     margin-left: 41px;
