@@ -230,6 +230,12 @@
   text-transform: uppercase;
 }
 
+.sn-dropdown-icon {
+  font-size: 10px;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
 .sm-blue a:active,
 .sm-blue a:focus,
 .sm-blue a:hover {
@@ -677,7 +683,7 @@ body.sn-open .sn-drawer {
 
 .sn-chevron-icon {
   font-size: 11px;
-  color: #9f1605;
+  color: #9f1605 !important;
   margin-left: auto;
   transition: transform 0.3s;
   flex-shrink: 0;
@@ -761,6 +767,16 @@ body.sn-open .sn-drawer {
   border-bottom: 1px solid rgba(198, 150, 101, 0.15);
   margin-bottom: 4px;
   font-size: 15px;
+}
+
+.sn-drawer-subgroup {
+  border: none !important;
+}
+
+.sn-drawer-subgroup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sn-drawer__footer {
@@ -892,7 +908,6 @@ body.sn-open .sn-hamburger__bar:nth-child(3) {
   width: 40px;
 }
 
-/* ---------------------------- RESPONSIVE MEDIA QUERIES (Sorted Highest to Lowest Breakpoint) ---------------------------- */
 @media (min-width: 1920px) {
   .logo2 {
     left: -90px;
