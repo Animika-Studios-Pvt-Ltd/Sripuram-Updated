@@ -139,7 +139,6 @@ p {
   margin-bottom: 5px;
 }
 
-#second-carousel,
 .more-1,
 .more-4,
 .more-5,
@@ -1773,13 +1772,7 @@ input:-internal-autofill-selected {
     font-size: 18px;
   }
 
-  #first-arrow {
-    margin-left: 34px;
-  }
 
-  #second-arrow {
-    margin-left: 92px;
-  }
 
   .arrow {
     width: 10px;
@@ -2069,13 +2062,7 @@ input:-internal-autofill-selected {
     height: 60px;
   }
 
-  #first-arrow {
-    margin-left: 38px;
-  }
 
-  #second-arrow {
-    margin-left: 103px;
-  }
 
   .list {
     left: 15%;
@@ -2339,13 +2326,7 @@ input:-internal-autofill-selected {
     left: -50px;
   }
 
-  #first-arrow {
-    margin-left: 38px;
-  }
 
-  #second-arrow {
-    margin-left: 102px;
-  }
 
   .button.is-play {
     width: 60px;
@@ -2430,13 +2411,7 @@ input:-internal-autofill-selected {
     padding-top: 0;
   }
 
-  #first-arrow {
-    margin-left: 38px;
-  }
 
-  #second-arrow {
-    margin-left: 103px;
-  }
 
   .button.is-play {
     width: 65px;
@@ -2547,13 +2522,7 @@ input:-internal-autofill-selected {
     font-size: 19px;
   }
 
-  #first-arrow {
-    margin-left: 40px;
-  }
 
-  #second-arrow {
-    margin-left: 111px;
-  }
 
   .facility-img {
     text-align: center;
@@ -2599,13 +2568,7 @@ input:-internal-autofill-selected {
     font-size: 22px;
   }
 
-  #first-arrow {
-    margin-left: 41px;
-  }
 
-  #second-arrow {
-    margin-left: 113px;
-  }
 
   .facility-img img {
     left: 0;
@@ -2723,13 +2686,7 @@ input:-internal-autofill-selected {
     margin-top: 40px;
   }
 
-  #first-arrow {
-    margin-left: 41px;
-  }
 
-  #second-arrow {
-    margin-left: 113px;
-  }
 
   .facility-img img {
     left: 15px;
@@ -2773,13 +2730,7 @@ input:-internal-autofill-selected {
     margin-top: 40px;
   }
 
-  #first-arrow {
-    margin-left: 41px;
-  }
 
-  #second-arrow {
-    margin-left: 113px;
-  }
 
   .facility-img img {
     left: 15px;
