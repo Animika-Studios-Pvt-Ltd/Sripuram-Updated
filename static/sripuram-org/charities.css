@@ -1,0 +1,126 @@
+.charity-img {
+  margin-bottom: 60px;
+}
+
+.charity-img img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.charity-info {
+  border-bottom: 1px solid #d4b16f;
+}
+
+.charity-info h5 {
+  font-family: "arrusbtroman";
+  font-size: 23px;
+}
+
+.charity-info p {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 17px;
+}
+
+.donate,
+.more-7 {
+  padding: 20px 0;
+}
+
+.donate button {
+  font-family: "helvetica";
+  background: #0078e0;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.donate button:hover {
+  background: #a71605;
+}
+
+.more-7 {
+  position: absolute;
+  right: 30px;
+  top: 118px;
+}
+
+.more-7 a {
+  font-family: "helvetica";
+  text-decoration: none;
+  font-size: 15px;
+  border: 0 solid #d4b16f;
+  color: #487fc3;
+}
+
+.more-7:hover .more-img {
+  transform: rotate(45deg) !important;
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .more-7 a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .more-7 a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .charity-info h5 {
+    font-size: 15px;
+  }
+
+  .charity-info p {
+    font-size: 13px;
+  }
+
+  .donate button {
+    font-size: 13px;
+  }
+
+  .more-7 {
+    top: 95px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .charity-info h5 {
+    font-size: 10px;
+  }
+
+  .charity-info p {
+    font-size: 11px;
+  }
+
+  .donate button,
+  .more-7 a {
+    font-size: 10px;
+  }
+
+  .more-7 {
+    top: 95px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .charity-img {
+    margin-bottom: 10px;
+  }
+
+  .charity-info {
+    margin-bottom: 40px;
+  }
+
+  .charity-info p {
+    margin-top: 10px;
+  }
+
+  .more-7 {
+    top: 90px;
+  }
+}
