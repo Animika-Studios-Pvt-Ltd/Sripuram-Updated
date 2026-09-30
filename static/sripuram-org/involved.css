@@ -1,4 +1,199 @@
-/* -------------------------------------- SECTION 1: GET INVOLVED (INNER PAGES) -------------------------------------- */
+/* -------------------------------------- SECTION 1: PATHWAY OF LIGHT (INNER PAGES) -------------------------------------- */
+.involved-section {
+  padding: 10px 0;
+
+}
+.light-inner {
+  background: #01417e;
+  top: 0;
+  border-radius: 10px;
+  padding: 30px 30px;
+  height: 100%;
+}
+
+.light-inner h2 {
+  padding: 0 !important;
+  top: 0 !important;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.light-inner p {
+  padding: 0 20px;
+  color: #fff;
+  font-size: 22px;
+  font-style: italic;
+  font-family: "arrusbtroman";
+}
+
+.light-inner span {
+  position: relative;
+  display: block;
+  text-align: right;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fefe64e8;
+}
+
+.light-inner .Q1,
+.light-inner .Q2 {
+  display: inline-block;
+  width: 55px;
+  height: auto;
+}
+
+@media (max-width: 1440px) {
+  .light-inner {
+    padding: 30px 0;
+  }
+  .light-inner h2 {
+    margin-bottom: 20px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 45px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .light-inner {
+    padding: 30px 10px;
+  }
+  .light-inner h2 {
+    margin-bottom: 18px;
+  }
+  .light-inner p {
+    font-size: 21px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .light-inner {
+    margin-top: 0;
+    padding: 25px 0;
+  }
+  .light-inner h2 {
+    margin-bottom: 15px;
+  }
+  .light-inner p {
+    font-size: 20px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .light-inner {
+    padding: 30px 0;
+  }
+  .light-inner h2 {
+    margin-bottom: 12px;
+  }
+  .light-inner p {
+    font-size: 19px;
+  }
+  .light-inner span {
+    margin-top: 20px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .light-inner {
+    padding: 20px 0;
+    margin-top: 0;
+  }
+  .light-inner h2 {
+    margin-bottom: 10px;
+  }
+  .light-inner p {
+    font-size: 18px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .light-inner {
+    padding: 20px 30px 15px;
+  }
+  .light-inner h2 {
+    margin-bottom: 10px;
+  }
+  .light-inner p {
+    font-size: 17px;
+    padding: 0 15px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .light-inner {
+    padding: 20px 10px;
+  }
+  .light-inner h2 {
+    margin-bottom: 15px;
+  }
+  .light-inner p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .light-inner span {
+    margin-top: 8px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .light-inner {
+    padding: 15px 20px;
+  }
+  .light-inner h2 {
+    margin-bottom: 8px;
+  }
+  .light-inner p {
+    font-size: 15px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .light-inner {
+    padding: 12px 15px;
+  }
+  .light-inner h2 {
+    margin-bottom: 6px;
+  }
+  .light-inner p {
+    font-size: 14px;
+  }
+  .light-inner .Q1,
+  .light-inner .Q2 {
+    width: 18px;
+  }
+}
+
+/* -------------------------------------- SECTION 2: GET INVOLVED (INNER PAGES) -------------------------------------- */
 .inner-page-involved,
 .involved-inner.inner-page-involved {
   background-image: url(get-involved-bg.webp);
@@ -293,193 +488,70 @@
   }
 }
 
-/* -------------------------------------- SECTION 2: PATHWAY OF LIGHT (INNER PAGES) -------------------------------------- */
-.light-inner {
-  background: #01417e;
-  top: 0;
+/* -------------------------------------- SECTION 3: TEMPLES SECTION (INNER PAGES) -------------------------------------- */
+.temples-section {
+  padding: 30px 0 10px;
+}
+.temples-section h2 {
+  margin-bottom: 10px;
+}
+.temples-section img {
   border-radius: 10px;
-  padding: 30px 30px;
-  height: 100%;
+  margin-bottom: 10px;
+  width: 100%;
 }
-
-.light-inner h2 {
-  padding: 0 !important;
-  top: 0 !important;
-  color: #fff;
-  margin-bottom: 25px;
+.temples-section a {
+  text-decoration: none;
+  color: #333;
 }
-
-.light-inner p {
-  padding: 0 20px;
-  color: #fff;
-  font-size: 22px;
-  font-style: italic;
-  font-family: "arrusbtroman";
-}
-
-.light-inner span {
-  position: relative;
-  display: block;
-  text-align: right;
-  font-size: 18px;
+.temples-section-cta {
+  text-align: center;
   margin-top: 10px;
-  color: #fefe64e8;
 }
-
-.light-inner .Q1,
-.light-inner .Q2 {
+.temples-section-cta img {
+  margin-bottom: 0;
+  border-radius: 0;
+  width: auto;
+}
+.temples-section-cta a {
+  font-family: "helvetica";
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  border: 1px solid #d4b16f;
+  border-radius: 40px;
+  color: #4173ba;
+  padding: 4px 15px;
+  text-transform: capitalize;
   display: inline-block;
-  width: 55px;
-  height: auto;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s;
 }
-
-@media (max-width: 1440px) {
-  .light-inner {
-    padding: 30px 0;
-  }
-  .light-inner h2 {
-    margin-bottom: 20px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 45px;
-  }
+.temples-section-cta a:before,
+.temples-section-cta a:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #9f1605;
+  z-index: -1;
+  transition: 0.35s;
+  transition-delay: 0.2s;
 }
-
-@media (max-width: 1366px) {
-  .light-inner {
-    padding: 30px 10px;
-  }
-  .light-inner h2 {
-    margin-bottom: 18px;
-  }
-  .light-inner p {
-    font-size: 21px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 40px;
-  }
+.temples-section-cta a:before {
+  opacity: 0.5;
 }
-
-@media (max-width: 1200px) {
-  .light-inner {
-    margin-top: 0;
-    padding: 25px 0;
-  }
-  .light-inner h2 {
-    margin-bottom: 15px;
-  }
-  .light-inner p {
-    font-size: 20px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 35px;
-  }
+.temples-section-cta a:hover {
+  color: #fff;
 }
-
-@media (max-width: 1024px) {
-  .light-inner {
-    padding: 30px 0;
-  }
-  .light-inner h2 {
-    margin-bottom: 12px;
-  }
-  .light-inner p {
-    font-size: 19px;
-  }
-  .light-inner span {
-    margin-top: 20px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 30px;
-  }
+.temples-section-cta a:hover:before,
+.temples-section-cta a:hover:after {
+  top: 0;
 }
-
-@media (max-width: 991px) {
-  .light-inner {
-    padding: 20px 0;
-    margin-top: 0;
-  }
-  .light-inner h2 {
-    margin-bottom: 10px;
-  }
-  .light-inner p {
-    font-size: 18px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 28px;
-  }
-}
-
-@media (max-width: 767px) {
-  .light-inner {
-    padding: 20px 30px 15px;
-  }
-  .light-inner h2 {
-    margin-bottom: 10px;
-  }
-  .light-inner p {
-    font-size: 17px;
-    padding: 0 15px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 24px;
-  }
-}
-
-@media (max-width: 575px) {
-  .light-inner {
-    padding: 20px 10px;
-  }
-  .light-inner h2 {
-    margin-bottom: 15px;
-  }
-  .light-inner p {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-  .light-inner span {
-    margin-top: 8px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  .light-inner {
-    padding: 15px 20px;
-  }
-  .light-inner h2 {
-    margin-bottom: 8px;
-  }
-  .light-inner p {
-    font-size: 15px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 20px;
-  }
-}
-
-@media (max-width: 360px) {
-  .light-inner {
-    padding: 12px 15px;
-  }
-  .light-inner h2 {
-    margin-bottom: 6px;
-  }
-  .light-inner p {
-    font-size: 14px;
-  }
-  .light-inner .Q1,
-  .light-inner .Q2 {
-    width: 18px;
-  }
+.temples-section-cta:hover .more-img {
+  transform: rotate(45deg) !important;
+  filter: brightness(10.5);
 }
