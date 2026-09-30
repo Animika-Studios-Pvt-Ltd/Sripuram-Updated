@@ -90,9 +90,7 @@ body {
   margin-right: 0;
 }
 
-.temples a {
-  text-decoration: none;
-}
+
 
 .main_text,
 .side_text {
@@ -446,9 +444,7 @@ p {
   margin-top: 30px;
 }
 
-.temples a {
-  color: #333;
-}
+
 
 #table-header .col,
 .dropdown li a {
@@ -469,15 +465,9 @@ p {
   border-top: 0 dashed #fefe64ab !important;
 }
 
-.temples h2 {
-  padding: 0 !important;
-  top: 0 !important;
-  margin-top: 50px;
-  font-size: 25px;
-}
 
-.spiritual-img img,
-.temples img {
+
+.spiritual-img img {
   border-radius: 10px;
   margin-bottom: 10px;
   width: 100%;
@@ -1765,13 +1755,8 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-  .temples h2,
   h2 {
     font-size: 20px;
-  }
-
-  .temples {
-    margin-bottom: 30px;
   }
 
   #inner-row {
@@ -1798,10 +1783,6 @@ input:-internal-autofill-selected {
 
   .read {
     width: 80%;
-  }
-
-  .temples p {
-    text-align: justify;
   }
 
   .button.is-play {
@@ -1916,10 +1897,6 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  .temples h2 {
-    font-size: 19px;
-  }
-
 
 
   .book,
@@ -2007,7 +1984,6 @@ input:-internal-autofill-selected {
     font-size: 11px;
   }
 
-  .temples h2,
   h2 {
     font-size: 22px;
   }
@@ -2144,7 +2120,6 @@ input:-internal-autofill-selected {
     font-size: 17px;
   }
 
-  .temples h2,
   h2 {
     font-size: 24px;
   }
