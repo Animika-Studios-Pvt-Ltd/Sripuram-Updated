@@ -14,13 +14,13 @@
 @import "transport.css";
 @import "route-map-to-sripuram.css";
 @import "charities.css";
+@import "global.css";
 
 @font-face {
   font-family: "arrusbtroman";
   font-style: normal;
   font-weight: 600;
-  src:
-    local("arrusbtroman"),
+  src: local("arrusbtroman"),
     local("arrusbtroman"),
     url("arrusbtroman.ttf") format("truetype");
 }
@@ -29,8 +29,7 @@
   font-family: "helvetica";
   font-style: normal;
   font-weight: 500;
-  src:
-    local("helvetica"),
+  src: local("helvetica"),
     local("helvetica"),
     url("helvetica.ttf") format("truetype");
 }
@@ -39,8 +38,7 @@
   font-family: "georgia";
   font-style: normal;
   font-weight: 500;
-  src:
-    local("georgia"),
+  src: local("georgia"),
     local("georgia"),
     url("https://sripuram.org/static/sripuram-org/georgia.ttf")
       format("truetype");
@@ -50,47 +48,18 @@
   font-family: "taranis";
   font-style: normal;
   font-weight: 500;
-  src:
-    local("taranis"),
+  src: local("taranis"),
     local("taranis"),
     url("taranis.ttf") format("truetype");
-}
-
-html,
-body {
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "arrusbtroman" !important;
-  color: #9f1605;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-h3,
-p {
-  letter-spacing: 0.01em;
-  text-align: center;
 }
 
 .icons p {
   text-transform: uppercase;
 }
 
-body {
-  background: #faebd7;
-}
-
 #inner-row {
   margin-right: 0;
 }
-
-
 
 .main_text,
 .side_text {
@@ -99,20 +68,6 @@ body {
 
 .more-1 a:before {
   opacity: 0.5;
-}
-
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-p {
-  font-family: "helvetica";
-  font-size: 19px;
-  margin: auto;
 }
 
 .carousel-indicators,
@@ -185,8 +140,6 @@ p {
   color: #9f1605 !important;
 }
 
-
-
 .more-1:hover .more-img,
 .more-4:hover .more-img,
 .more-5:hover .more-img,
@@ -194,8 +147,6 @@ p {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
-
-
 
 .more-1 a:after,
 .more-1 a:before,
@@ -270,8 +221,7 @@ p {
 }
 
 @keyframes scale {
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
   }
 
@@ -444,8 +394,6 @@ p {
   margin-top: 30px;
 }
 
-
-
 #table-header .col,
 .dropdown li a {
   font-family: "helvetica";
@@ -464,8 +412,6 @@ p {
 .dash-inner {
   border-top: 0 dashed #fefe64ab !important;
 }
-
-
 
 .spiritual-img img {
   border-radius: 10px;
@@ -769,11 +715,7 @@ textarea {
 }
 
 @-webkit-keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
+  0%, 100%, 20%, 50%, 80% {
     -webkit-transform: translateY(0);
   }
 
@@ -787,11 +729,7 @@ textarea {
 }
 
 @-moz-keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
+  0%, 100%, 20%, 50%, 80% {
     -moz-transform: translateY(0);
   }
 
@@ -805,11 +743,7 @@ textarea {
 }
 
 @-o-keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
+  0%, 100%, 20%, 50%, 80% {
     -o-transform: translateY(0);
   }
 
@@ -823,11 +757,7 @@ textarea {
 }
 
 @keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
+  0%, 100%, 20%, 50%, 80% {
     transform: translateY(0);
   }
 
@@ -903,10 +833,6 @@ textarea {
   font-size: 18px;
 }
 
-button:focus {
-  outline: -webkit-focus-ring-color auto 0;
-}
-
 .more-6 a {
   color: #4c83cc;
   font-family: "helvetica";
@@ -932,8 +858,6 @@ button:focus {
   filter: hue-rotate(150deg);
   transform: rotate(45deg);
 }
-
-
 
 .pooja-info {
   margin-bottom: 40px;
@@ -1045,16 +969,10 @@ button:focus {
   color: #aaa;
 }
 
-
-
 .read-more,
 .star li {
   font-family: "helvetica";
 }
-
-
-
-
 
 .facility-img img,
 .read,
@@ -1695,8 +1613,6 @@ input:-internal-autofill-selected {
     font-size: 16px;
   }
 
-
-
   .star-six {
     border-bottom: 25px solid #9f1605;
     bottom: 65px;
@@ -1751,14 +1667,6 @@ input:-internal-autofill-selected {
     text-align: justify;
   }
 
-  p {
-    font-size: 16px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
   #inner-row {
     margin-right: -15px;
     margin-top: 30px;
@@ -1768,10 +1676,6 @@ input:-internal-autofill-selected {
   .facility-info h6 {
     text-align: center;
   }
-
-
-
-
 
   .book button {
     font-size: 13px;
@@ -1897,8 +1801,6 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-
-
   .book,
   .more-6 {
     padding: 40px 0 20px 5px;
@@ -1915,8 +1817,6 @@ input:-internal-autofill-selected {
   label {
     font-size: 16px;
   }
-
-
 
   .button.is-play {
     width: 60px;
@@ -1984,14 +1884,6 @@ input:-internal-autofill-selected {
     font-size: 11px;
   }
 
-  h2 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
   .pooja-img p {
     font-size: 14px;
   }
@@ -2021,8 +1913,6 @@ input:-internal-autofill-selected {
   .book button {
     font-size: 13px;
   }
-
-
 
   .about-info-inner {
     padding: 30px 40px 0 0;
@@ -2065,10 +1955,6 @@ input:-internal-autofill-selected {
     left: 20%;
   }
 
-  h2 {
-    font-size: 25px;
-  }
-
   .about-info-inner {
     padding: 20px 60px 0 0;
   }
@@ -2077,10 +1963,6 @@ input:-internal-autofill-selected {
     font-size: 19px;
     line-height: 25px;
     margin-top: 30px;
-  }
-
-  p {
-    font-size: 16px;
   }
 
   .pooja-img a,
@@ -2118,10 +2000,6 @@ input:-internal-autofill-selected {
   .list li,
   .pooja-img p {
     font-size: 17px;
-  }
-
-  h2 {
-    font-size: 24px;
   }
 
   .dropdown li a,
@@ -2202,10 +2080,6 @@ input:-internal-autofill-selected {
   .star-six::after {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-  }
-
-  h2 {
-    font-size: 25px;
   }
 
   .dropdown li a,
@@ -2330,14 +2204,6 @@ input:-internal-autofill-selected {
     border-right: 15px solid transparent;
   }
 
-  h2 {
-    font-size: 25px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
   .icons {
     padding-top: 18px;
   }
@@ -2380,10 +2246,6 @@ input:-internal-autofill-selected {
 @media (min-width: 1500px) and (max-width: 1599px) {
   .facility-img {
     text-align: center;
-  }
-
-  h2 {
-    font-size: 23px;
   }
 
   .dropdown li a {
