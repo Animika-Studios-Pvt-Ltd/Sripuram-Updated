@@ -53,6 +53,67 @@
     url("taranis.ttf") format("truetype");
 }
 
+/* --------------------------------------- Inner Pages Code --------------------------------------- */
+.inner-page-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.inner-page-section h1 {
+  margin-bottom: 0;
+}
+
+.inner-page-section img {
+  width: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .inner-page-section {
+    padding: 30px 0;
+  }
+  .inner-page-section img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-page-section {
+    padding: 25px 0;
+  }
+  .inner-page-section img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner-page-section {
+    padding: 20px 0;
+  }
+  .inner-page-section img {
+    max-width: 25%;
+  }
+}
+
+@media (max-width: 575px) {
+  .inner-page-section {
+    padding: 15px 0;
+  }
+  .inner-page-section img {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-page-section {
+    padding: 10px 0;
+  }
+  .inner-page-section img {
+    max-width: 25%;
+  }
+}
+
+/* --------------------------------------- All Pages Code --------------------------------------- */
 .icons p {
   text-transform: uppercase;
 }
