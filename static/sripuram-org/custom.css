@@ -21,7 +21,8 @@
   font-family: "arrusbtroman";
   font-style: normal;
   font-weight: 600;
-  src: local("arrusbtroman"),
+  src:
+    local("arrusbtroman"),
     local("arrusbtroman"),
     url("arrusbtroman.ttf") format("truetype");
 }
@@ -30,7 +31,8 @@
   font-family: "helvetica";
   font-style: normal;
   font-weight: 500;
-  src: local("helvetica"),
+  src:
+    local("helvetica"),
     local("helvetica"),
     url("helvetica.ttf") format("truetype");
 }
@@ -39,7 +41,8 @@
   font-family: "georgia";
   font-style: normal;
   font-weight: 500;
-  src: local("georgia"),
+  src:
+    local("georgia"),
     local("georgia"),
     url("https://sripuram.org/static/sripuram-org/georgia.ttf")
       format("truetype");
@@ -49,7 +52,8 @@
   font-family: "taranis";
   font-style: normal;
   font-weight: 500;
-  src: local("taranis"),
+  src:
+    local("taranis"),
     local("taranis"),
     url("taranis.ttf") format("truetype");
 }
@@ -73,6 +77,7 @@
   .inner-page-section {
     padding: 30px 0;
   }
+
   .inner-page-section img {
     max-width: 60%;
   }
@@ -82,6 +87,7 @@
   .inner-page-section {
     padding: 25px 0;
   }
+
   .inner-page-section img {
     max-width: 50%;
   }
@@ -91,6 +97,7 @@
   .inner-page-section {
     padding: 20px 0;
   }
+
   .inner-page-section img {
     max-width: 25%;
   }
@@ -100,6 +107,7 @@
   .inner-page-section {
     padding: 15px 0;
   }
+
   .inner-page-section img {
     max-width: 20%;
   }
@@ -109,6 +117,7 @@
   .inner-page-section {
     padding: 10px 0;
   }
+
   .inner-page-section img {
     max-width: 25%;
   }
@@ -282,7 +291,8 @@
 }
 
 @keyframes scale {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
 
@@ -775,7 +785,11 @@ textarea {
 }
 
 @-webkit-keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -webkit-transform: translateY(0);
   }
 
@@ -789,7 +803,11 @@ textarea {
 }
 
 @-moz-keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -moz-transform: translateY(0);
   }
 
@@ -803,7 +821,11 @@ textarea {
 }
 
 @-o-keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -o-transform: translateY(0);
   }
 
@@ -817,7 +839,11 @@ textarea {
 }
 
 @keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     transform: translateY(0);
   }
 
@@ -851,8 +877,6 @@ textarea {
   padding: 16px 25px 20px 40px;
 }
 
-
-
 .book a {
   font-size: 14px !important;
 }
@@ -866,10 +890,6 @@ textarea {
   display: block;
 }
 
-
-
-
-
 .pooja-info a,
 .read-more {
   border-radius: 45px;
@@ -879,8 +899,6 @@ textarea {
 .dropdown-menu li a:hover {
   color: #9f1605;
 }
-
-
 
 .pooja-info {
   margin-bottom: 40px;
