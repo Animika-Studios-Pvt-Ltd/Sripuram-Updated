@@ -14,6 +14,7 @@
 @import "transport.css";
 @import "route-map-to-sripuram.css";
 @import "charities.css";
+@import "poojas-and-sevas.css";
 @import "global.css";
 
 @font-face {
@@ -203,8 +204,7 @@
 
 .more-1:hover .more-img,
 .more-4:hover .more-img,
-.more-5:hover .more-img,
-.more-6:hover .more-img {
+.more-5:hover .more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
@@ -621,7 +621,6 @@ textarea {
   font-weight: 300;
 }
 
-.more-6,
 .read,
 .read-more {
   text-align: right;
@@ -848,24 +847,16 @@ textarea {
   text-align: end;
 }
 
-.book,
-.more-6 {
+.book {
   padding: 16px 25px 20px 40px;
 }
 
-.more-6 {
-  width: fit-content;
-  float: inline-start;
-  position: relative;
-  margin-top: -60px;
-}
+
 
 .book a {
   font-size: 14px !important;
 }
 
-.pooja-img img,
-.pooja-img-inner img,
 .pooja-info img {
   border-radius: 10px;
 }
@@ -875,34 +866,9 @@ textarea {
   display: block;
 }
 
-.pooja-img img:hover {
-  transform: scale(1.1) !important;
-  transition: 0.2s ease-in-out 0.1s;
-}
 
-.pooja-img {
-  border-bottom: 1px solid #d4b16f;
-  margin-bottom: 20px;
-}
 
-.pooja-img a,
-.pooja-img p {
-  font-family: "arrusbtroman";
-  margin-top: 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
 
-.more-6 a {
-  color: #4c83cc;
-  font-family: "helvetica";
-  font-size: inherit;
-}
-
-.more-6 img {
-  border-radius: 0;
-}
 
 .pooja-info a,
 .read-more {
@@ -910,15 +876,11 @@ textarea {
   padding: 2px 20px;
 }
 
-.dropdown-menu li a:hover,
-.more-6 a:hover {
+.dropdown-menu li a:hover {
   color: #9f1605;
 }
 
-.more-6 a:hover .more-6 img {
-  filter: hue-rotate(150deg);
-  transform: rotate(45deg);
-}
+
 
 .pooja-info {
   margin-bottom: 40px;
@@ -1862,15 +1824,9 @@ input:-internal-autofill-selected {
     margin-top: 20px;
   }
 
-  .book,
-  .more-6 {
+  .book {
     padding: 40px 0 20px 5px;
     font-size: 12px;
-  }
-
-  .pooja-img p {
-    font-size: 11px;
-    letter-spacing: 0.04em;
   }
 
   .pooja-info h4,
@@ -1943,10 +1899,6 @@ input:-internal-autofill-selected {
 
   .fa-search {
     font-size: 11px;
-  }
-
-  .pooja-img p {
-    font-size: 14px;
   }
 
   .more-4 a,
@@ -2026,11 +1978,6 @@ input:-internal-autofill-selected {
     margin-top: 30px;
   }
 
-  .pooja-img a,
-  .pooja-img p {
-    font-size: 13px;
-  }
-
   #facility-bg::before {
     left: -60px;
   }
@@ -2058,8 +2005,7 @@ input:-internal-autofill-selected {
   }
 
   .list a,
-  .list li,
-  .pooja-img p {
+  .list li {
     font-size: 17px;
   }
 
@@ -2216,11 +2162,6 @@ input:-internal-autofill-selected {
   .accordion-body-inner button {
     font-size: 12px;
   }
-
-  .pooja-img a,
-  .pooja-img p {
-    font-size: 17px;
-  }
 }
 
 @media (min-width: 1401px) and (max-width: 1499px) {
@@ -2285,10 +2226,6 @@ input:-internal-autofill-selected {
     top: 9px;
     left: -15px;
     border-top: 25px solid #9f1605;
-  }
-
-  .pooja-img p {
-    font-size: 19px;
   }
 
   .facility-img {

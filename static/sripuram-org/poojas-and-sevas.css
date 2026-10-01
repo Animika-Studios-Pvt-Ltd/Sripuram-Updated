@@ -1,0 +1,101 @@
+/* --------------------------------------- Pooja's and Seva's Section --------------------------------------- */
+.pooja-img {
+  border-bottom: 1px solid #d4b16f;
+  margin-bottom: 20px;
+}
+
+.pooja-img img {
+  border-radius: 10px;
+}
+
+.pooja-img img:hover {
+  transform: scale(1.1) !important;
+  transition: 0.2s ease-in-out 0.1s;
+}
+
+.pooja-img a,
+.pooja-img p {
+  font-family: "arrusbtroman";
+  margin-top: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.poojas-and-sevas-buttons-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.poojas-and-sevas-buttons-group .book,
+.poojas-and-sevas-buttons-group .poojas-and-sevas-more-btn {
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+.poojas-and-sevas-buttons-group .book {
+  order: 2;
+}
+
+.poojas-and-sevas-buttons-group .poojas-and-sevas-more-btn {
+  order: 1;
+}
+
+.poojas-and-sevas-more-btn {
+  padding: 16px 25px 20px 40px;
+  width: fit-content;
+  float: inline-start;
+  position: relative;
+  margin-top: -60px;
+  text-align: right;
+}
+
+.poojas-and-sevas-more-btn a {
+  color: #4c83cc;
+  font-family: "helvetica";
+  font-size: inherit;
+}
+
+.poojas-and-sevas-more-btn a:hover {
+  color: #9f1605;
+}
+
+.poojas-and-sevas-more-btn img {
+  border-radius: 0;
+}
+
+.poojas-and-sevas-more-btn:hover .more-img {
+  transform: rotate(45deg) !important;
+  filter: brightness(10.5);
+}
+
+.poojas-and-sevas-more-btn a:hover img {
+  filter: hue-rotate(150deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 991px) {
+  .poojas-and-sevas-more-btn {
+    padding: 40px 0 20px 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .pooja-img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pooja-img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
