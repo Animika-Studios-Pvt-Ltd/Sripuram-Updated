@@ -1,16 +1,17 @@
 /* --------------------- CAROUSEL & LAYOUT --------------------- */
-.home-get-involved {
+.get-involved {
   position: relative;
+  padding: 40px 0 20px;
 }
 
-.home-get-involved > .row {
+.get-involved > .row {
   display: flex;
   align-items: center;
 }
 
-.home-get-hdng {
-  padding: 50px 0;
+.get-involved-heading {
   text-align: center;
+  margin-bottom: 0;
 }
 
 #video-carousel-example {
@@ -18,14 +19,14 @@
   padding-left: 200px;
 }
 
-.home-get-involved-carousel {
+.get-involved-carousel {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   text-align: center;
 }
 
-.home-get-involved-carousel img {
+.get-involved-carousel img {
   width: 85%;
   margin: 0 auto;
 }
@@ -211,7 +212,7 @@
 }
 
 @media (max-width: 1600px) {
-  .home-get-involved-carousel img {
+  .get-involved-carousel img {
     width: 100%;
     margin: 0 auto;
   }
@@ -242,6 +243,9 @@
 }
 
 @media (max-width: 1200px) {
+  .get-involved {
+    padding: 35px 0 20px;
+  }
   #video-carousel-example {
     padding-left: 0;
   }
@@ -259,8 +263,8 @@
 }
 
 @media (max-width: 991px) {
-  .home-get-hdng {
-    padding: 50px 0 20px;
+  .get-involved {
+    padding: 30px 0 15px;
   }
   #Involve-arrow-1,
   #involve-arrow-1 {
@@ -288,12 +292,12 @@
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
-  .home-get-involved .row > .col-md-6:last-child {
+  .get-involved .row > .col-md-6:last-child {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .home-get-involved .home-involved-inner {
+  .get-involved .home-involved-inner {
     margin-top: 0;
     transform: translateY(0);
   }
@@ -321,6 +325,9 @@
 }
 
 @media (max-width: 767px) {
+  .get-involved {
+    padding: 25px 0 10px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 0;
@@ -339,9 +346,9 @@
   }
   .home-involved-inner {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto 0 !important;
   }
-  .home-get-involved-carousel img {
+  .get-involved-carousel img {
     width: 70%;
     margin: 0 auto;
   }
@@ -366,6 +373,9 @@
 }
 
 @media (max-width: 575px) {
+  .get-involved {
+    padding: 20px 0 15px;
+  }
   #Involve-arrow-1,
   #involve-arrow-1 {
     left: 0;
@@ -384,7 +394,7 @@
   }
   .home-involved-inner {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto 0 !important;
   }
 }
 

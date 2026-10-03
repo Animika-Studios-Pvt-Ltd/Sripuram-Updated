@@ -1,12 +1,16 @@
 /* -------------------------------------- Auspicious Days & Events Section Styles -------------------------------------- */
 /* Section Outer Container & Title */
 .auspicious-events-section {
-  padding-top: 60px;
+  padding: 40px 0 20px;
 }
 
 .auspicious-events-section-title {
   position: relative;
   bottom: 0px;
+}
+
+.auspicious-events-section-title h2 {
+  margin-bottom: 0;
 }
 
 .auspicious-events-section a {
@@ -292,6 +296,9 @@
 }
 
 @media (max-width: 1200px) {
+  .auspicious-events-section {
+  padding: 35px 0 20px;
+}
   .calender button,
   .more-3 a {
     height: 40px;
@@ -365,6 +372,9 @@
 }
 
 @media (max-width: 991px) {
+  .auspicious-events-section {
+  padding: 30px 0 15px;
+}
   .calender button,
   .more-3 a {
     height: 38px;
@@ -413,6 +423,9 @@
 }
 
 @media (max-width: 767px) {
+  .auspicious-events-section {
+  padding: 25px 0 10px;
+}
   .events-action-container {
     flex-wrap: wrap;
     gap: 10px;
@@ -475,6 +488,9 @@
 }
 
 @media (max-width: 575px) {
+  .auspicious-events-section {
+  padding: 20px 0 10px;
+}
   .calender button,
   .more-3 a {
     height: 34px;

@@ -1,4 +1,8 @@
 /* Gho Samrakshana Homepage Section Styles */
+.gho-samrakshana-section {
+  margin: 10px 0;
+}
+
 .parallax {
   background-attachment: fixed;
   background-size: cover;
@@ -58,7 +62,7 @@
   letter-spacing: 0.01em;
   border: 1px solid #d4b16f;
   border-radius: 40px;
-  color: #fff;
+  color: #fff !important;
   padding: 4px 15px;
   text-transform: capitalize;
   display: inline-block;
@@ -264,6 +268,10 @@
 }
 
 @media (max-width: 991px) {
+  .gho-samrakshana-section {
+    margin: 0;
+    padding: 15px 0;
+  }
   .parallax {
     background-image: none;
     min-height: auto;
@@ -283,7 +291,6 @@
     color: #9f1605;
     top: 0;
     right: 0;
-    padding-top: 20px;
     margin-bottom: 2px !important;
   }
 
@@ -345,6 +352,10 @@
 }
 
 @media (max-width: 767px) {
+  .gho-samrakshana-section {
+    padding: 15px 0 25px;
+  }
+
   .parallax-div .row {
     flex-direction: column;
   }

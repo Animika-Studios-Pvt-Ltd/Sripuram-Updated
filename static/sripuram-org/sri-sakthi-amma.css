@@ -17,7 +17,7 @@
 }
 
 .sri-sakthi-amma h1 {
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.3;
   margin-bottom: 20px;
 }
@@ -252,7 +252,7 @@
     max-width: 85%;
   }
   .sri-sakthi-amma h1 {
-    font-size: 27px;
+    font-size: 29px;
   }
   .sri-sakthi-amma .more-1 a {
     font-size: 15px;
@@ -265,7 +265,7 @@
     padding: 60px 0 40px;
   }
   .sri-sakthi-amma h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
   .sri-sakthi-amma h2 {
     font-size: 23px;
@@ -284,7 +284,7 @@
     padding: 60px 0 35px;
   }
   .sri-sakthi-amma h1 {
-    font-size: 25px;
+    font-size: 26px;
   }
   .sri-sakthi-amma h2 {
     font-size: 22px;
@@ -304,7 +304,7 @@
     margin-bottom: 20px;
   }
   .sri-sakthi-amma h1 {
-    font-size: 24px;
+    font-size: 25px;
     width: 100%;
     max-width: 100%;
   }
@@ -327,6 +327,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .sri-sakthi-amma h1 {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 991px) {
   .sri-sakthi-amma {
     padding: 60px 0 30px;
@@ -338,7 +344,7 @@
     margin-bottom: 10px;
   }
   .sri-sakthi-amma h1 {
-    font-size: 21px;
+    font-size: 23px;
     margin-bottom: 10px;
   }
   .sri-sakthi-amma h2 {
@@ -375,7 +381,7 @@
     max-width: 60%;
   }
   .sri-sakthi-amma h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .sri-sakthi-amma h2 {
     font-size: 17px;
@@ -400,7 +406,7 @@
     max-width: 85%;
   }
     .sri-sakthi-amma h1 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .about-info p {
     width: 100%;
@@ -426,7 +432,7 @@
     width: 75%;
   }
   .sri-sakthi-amma h1 {
-    font-size: 16px;
+    font-size: 19px;
   }
   .sri-sakthi-amma .more-1 a {
     font-size: 11px;
@@ -442,7 +448,7 @@
     max-width: 90%;
   }
   .sri-sakthi-amma h1 {
-    font-size: 15px;
+    font-size: 18px;
   }
   .sri-sakthi-amma h2 {
     font-size: 16px;

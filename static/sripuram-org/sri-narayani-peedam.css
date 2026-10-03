@@ -121,10 +121,6 @@
   border-radius: 12px;
 }
 
-/* ==========================================================================
-   MEDIA QUERIES (MAX-WIDTH ONLY)
-   ========================================================================== */
-
 @media (max-width: 1440px) {
   #POL {
     margin: 0 40px;
@@ -248,7 +244,6 @@
   }
   .mobile-light h2 {
     color: #fff;
-    font-size: 24px;
     margin-bottom: 2px;
   }
   .sri-narayani-peedam .row > div {
@@ -269,7 +264,6 @@
     display: block !important;
   }
   .peedam h2 {
-    font-size: 24px;
     margin-bottom: 2px;
   }
   .peedam p {
@@ -302,13 +296,15 @@
 }
 
 @media (max-width: 767px) {
+  .sri-narayani-peedam {
+    margin: 10px 0;
+  }
   #POL {
     margin: 0 10px;
     padding: 25px 15px;
   }
   .mobile-light h2,
   .peedam h2 {
-    font-size: 24px;
     margin-bottom: 2px;
   }
   .peedam p {
@@ -342,7 +338,6 @@
   }
   .mobile-light h2,
   .peedam h2 {
-    font-size: 22px;
     margin-bottom: 2px;
   }
   .peedam p {
@@ -383,7 +378,6 @@
   }
   .mobile-light h2,
   .peedam h2 {
-    font-size: 20px;
     margin-bottom: 2px;
   }
   .peedam p {
@@ -413,7 +407,6 @@
   }
   .mobile-light h2,
   .peedam h2 {
-    font-size: 18px;
     margin-bottom: 2px;
   }
   .peedam p {
