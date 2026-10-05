@@ -109,6 +109,24 @@
   opacity: 1;
 }
 
+.gallery-slider .next-arrow img:hover,
+.gallery-slider .prev-arrow img:hover {
+  filter: brightness(6.5) !important;
+}
+
+.gallery-slider .next-arrow img,
+.gallery-slider .prev-arrow img {
+  margin-top: -5px;
+}
+
+.gallery-slider .prev-arrow img {
+  transform: rotate(225deg);
+}
+
+.gallery-slider .next-arrow img {
+  transform: rotate(45deg);
+}
+
 .gallery-slider__images .caption {
   width: 100%;
   position: relative;
