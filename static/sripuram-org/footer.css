@@ -840,3 +840,49 @@
     font-size: 16px;
   }
 }
+
+/* ===== APP DOWNLOAD LINKS (Global Charities column) ===== */
+.footer-app-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.footer-store-btn {
+  display: block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-store-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.88;
+}
+
+.footer-store-btn img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .footer-app-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .footer-store-btn img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-store-btn img {
+    max-width: 120px;
+  }
+}
