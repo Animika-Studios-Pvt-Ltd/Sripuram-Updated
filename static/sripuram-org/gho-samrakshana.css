@@ -1,390 +1,1054 @@
-/* Gho Samrakshana Homepage Section Styles */
+/* Gho Samrakshana / Gho Seva Homepage Section Styles */
 .gho-samrakshana-section {
-  margin: 10px 0;
+  padding: 50px 0;
+  background: #c2670799;
 }
 
-.parallax {
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(gho-samrakshana-home.webp);
-  min-height: 630px;
-  background-position: top;
-  border-radius: 20px;
-  margin: 0 70px;
-}
-
-.parallax-div {
-  margin-top: -630px;
-  min-height: 630px;
+.gho-seva-left-img {
   text-align: center;
 }
 
-.parallax-div h2 {
-  position: relative;
-  top: 180px;
-  right: 20px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 10px !important;
-}
-
-.motif-2 {
-  position: relative;
-  top: 175px;
-  right: 25px;
-}
-
-.parallax-div .row {
-  margin: -45px 0 0 50px;
-}
-
-.parallax-div p {
-  position: relative;
-  top: 240px;
-  right: 15px;
-  padding-right: 60px;
-  color: #fff;
-  text-align: center;
-}
-
-.more-4 {
-  position: relative;
-  top: 260px;
-  left: -40px;
-  text-align: center;
-}
-
-.more-4 a {
-  font-family: "helvetica";
-  text-decoration: none;
-  font-size: 17px;
-  letter-spacing: 0.01em;
-  border: 1px solid #d4b16f;
-  border-radius: 40px;
-  color: #fff !important;
-  padding: 4px 15px;
-  text-transform: capitalize;
+.gho-seva-left-img img {
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
   display: inline-block;
-  position: relative;
+  object-fit: cover;
+}
+
+.gho-seva-right-content {
+  padding-left: 20px;
+  text-align: center;
+}
+
+.gho-seva-right-content h2 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gho-seva-motif {
+  display: block;
+  margin: 0 auto 15px auto;
+  max-width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1) opacity(0.85);
+}
+
+.gho-seva-desc {
+  font-family: "helvetica", sans-serif;
+  font-size: 18px;
+  color: #faebd7;
+  margin-bottom: 25px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gho-seva-cards-row {
+  margin-top: 15px;
+}
+
+.gho-seva-card {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gho-seva-card:hover {
+  transform: translateY(-5px);
+  box-shadow: none;
+}
+
+.gho-seva-card a {
+  text-decoration: none;
+  display: block;
+}
+
+.gho-card-img-wrap {
+  border-radius: 14px;
   overflow: hidden;
-  transition: 0.35s;
+  margin-bottom: 12px;
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  border: 2px solid #e4cc9e;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.more-4 a:hover {
-  color: #fff;
-  background: #9f1605;
+.gho-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gho-seva-card:hover .gho-card-img-wrap img {
+  transform: scale(1.01);
+}
+
+.gho-seva-card h5 {
+  font-family: "arrusbtroman", serif;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 500;
+  margin: 6px 0 12px 0;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+}
+
+.gho-seva-card:hover h5 {
+  color: #9F1605;
+  text-shadow: none;
+}
+
+.gho-card-btn {
+  margin-top: auto;
+}
+
+.gho-card-btn a {
+  font-family: "helvetica", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.01em;
   border: 1px solid #9f1605;
+  border-radius: 40px;
+  color: #ffffff !important;
+  padding: 5px 20px;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: #9f1605;
+  box-shadow: 0 4px 12px rgba(159, 22, 5, 0.25);
+  transition: all 0.3s ease;
 }
 
-.more-4:hover .more-img {
-  transform: rotate(45deg) !important;
-  filter: brightness(10.5);
+.gho-card-btn a:hover {
+  background: transparent;
+  color: #ffffff !important;
+  border-color: #ffd700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
-.more-4 img {
-  filter: brightness(5.5);
+.gho-card-btn a .more-img {
+  width: 12px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
 }
 
-/* Media Queries (High to Low) */
-@media (max-width: 1800px) {
-  .parallax {
-    margin: 0 60px;
-  }
+.gho-card-btn a:hover .more-img {
+  transform: rotate(45deg);
+  filter: brightness(0) invert(1);
 }
 
-@media (max-width: 1700px) {
-  .parallax {
-    margin: 0 55px;
-  }
-}
-
-@media (max-width: 1600px) {
-
-  .parallax,
-  .parallax-div {
-    min-height: 580px;
-  }
-
-  .parallax-div {
-    margin-top: -580px;
-  }
-
-  .parallax {
-    margin: 0 50px;
-  }
-
-  .parallax-div h2 {
-    top: 155px;
-    right: 20px;
-  }
-
-  .motif-2 {
-    top: 150px;
-    right: 25px;
-  }
-
-  .parallax-div .row {
-    margin: -40px 0 0 50px;
-  }
-
-  .parallax-div p {
-    top: 210px;
-    right: 15px;
-    padding-right: 50px;
-  }
-
-  .more-4 {
-    top: 230px;
-    left: -35px;
-  }
-}
-
-@media (max-width: 1440px) {
-
-  .parallax,
-  .parallax-div {
-    min-height: 540px;
-  }
-
-  .parallax-div {
-    margin-top: -540px;
-  }
-
-  .parallax {
-    margin: 0 40px;
-  }
-
-  .parallax-div h2 {
-    top: 115px;
-    right: 15px;
-  }
-
-  .motif-2 {
-    top: 110px;
-    right: 20px;
-  }
-
-  .parallax-div .row {
-    margin: -35px 0 0 40px;
-  }
-
-  .parallax-div p {
-    top: 160px;
-    right: 10px;
-    padding-right: 40px;
-  }
-
-  .more-4 {
-    top: 175px;
-    left: -30px;
-  }
-}
-
-@media (max-width: 1366px) {
-
-  .parallax,
-  .parallax-div {
-    min-height: 520px;
-  }
-
-  .parallax-div {
-    margin-top: -520px;
-  }
-
-  .parallax {
-    margin: 0 35px;
-  }
-
-  .parallax-div h2 {
-    top: 105px;
-    right: 12px;
-  }
-
-  .motif-2 {
-    top: 100px;
-    right: 18px;
-  }
-
-  .parallax-div .row {
-    margin: -32px 0 0 35px;
-  }
-
-  .parallax-div p {
-    top: 145px;
-    right: 8px;
-    padding-right: 30px;
-  }
-
-  .more-4 {
-    top: 160px;
-    left: -28px;
-  }
-}
-
+/* Responsive Breakpoints */
 @media (max-width: 1200px) {
-
-  .parallax,
-  .parallax-div {
-    min-height: 500px;
+  .gho-seva-card h5 {
+    font-size: 16px;
   }
-
-  .parallax-div {
-    margin-top: -500px;
-  }
-
-  .parallax {
-    margin: 0 30px;
-  }
-
-  .parallax-div h2 {
-    top: 95px;
-    right: 10px;
-  }
-
-  .motif-2 {
-    top: 90px;
-    right: 15px;
-  }
-
-  .parallax-div .row {
-    margin: -30px 0 0 30px;
-  }
-
-  .parallax-div .row>div:first-child img {
-    margin-top: 20px;
-  }
-
-  .parallax-div p {
-    top: 135px;
-    right: 5px;
-    padding-right: 20px;
-  }
-
-  .more-4 {
-    top: 150px;
-    left: -25px;
+  .gho-card-btn a {
+    font-size: 13px;
+    padding: 3px 10px;
   }
 }
 
 @media (max-width: 991px) {
   .gho-samrakshana-section {
-    margin: 0;
-    padding: 15px 0;
+    padding: 30px 0;
   }
-  .parallax {
-    background-image: none;
-    min-height: auto;
-    margin: 0;
+  .gho-seva-right-content {
+    padding-left: 0;
+    margin-top: 25px;
   }
-
-  .parallax-div {
-    min-height: auto;
-    margin-top: 0;
-    padding: 0;
-    display: block;
-    width: 80%;
-    margin: 0 auto;
+  .gho-seva-left-img img {
+    max-width: 380px;
   }
-
-  .parallax-div h2 {
-    color: #9f1605;
-    top: 0;
-    right: 0;
-    margin-bottom: 2px !important;
-  }
-
-  .motif-2 {
-    top: 0;
-    right: 0;
-    padding-bottom: 12px;
-  }
-
-  .parallax-div .row {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-
-  .parallax-div .row>div:first-child {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .parallax-div .row>div:first-child img {
-    max-width: 95%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .gho-samrakshana-text {
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0 15px;
-  }
-
-  .parallax-div .row>div:last-child {
-    display: none;
-  }
-
-  .parallax-div p {
-    color: #212529;
-    top: 0;
-    right: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .parallax-div a,
-  .parallax-div img {
-    color: #4173ba;
-  }
-
-  .more-4 {
-    text-align: center;
-    top: 20px;
-    left: 0;
+  .gho-seva-cards-row > div {
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
   .gho-samrakshana-section {
-    padding: 15px 0 25px;
+    padding: 25px 0;
   }
-
-  .parallax-div .row {
-    flex-direction: column;
+  .gho-seva-left-img img {
+    max-width: 320px;
   }
-
-  .parallax-div .row>div:first-child,
-  .gho-samrakshana-text {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .gho-seva-right-content h2 {
+    font-size: 24px;
   }
-
-  .parallax-div .row>div:first-child img {
-    max-width: 70%;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .gho-samrakshana-text {
-    padding-top: 15px;
+  .gho-seva-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 575px) {
-  .parallax-div {
-    width: 100%;
+  .gho-seva-cards-row {
+    row-gap: 15px;
+  }
+  .gho-seva-card {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+/* ==================== GHO SAMRAKSHANA PAGE NEW SECTIONS ==================== */
+
+/* Mission Highlights / Features Section */
+.gho-features-section {
+  padding: 30px 0 15px 0;
+}
+
+.gho-feature-card {
+  background: #ffffff;
+  border: 1px solid #e8d7c3;
+  border-radius: 12px;
+  padding: 20px 18px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gho-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gho-feature-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px auto;
+  border-radius: 50%;
+  background: #fdf5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebd3b4;
+}
+
+.gho-feature-icon i {
+  font-size: 22px;
+  color: #9f1605;
+}
+
+.gho-feature-card h4 {
+  font-family: "arrusbtroman" !important;
+  color: #9f1605;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.gho-feature-card p {
+  font-family: "helvetica" !important;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Cow Maintenance Charges / Cost Section */
+.gho-cost-section {
+  padding: 25px 0;
+}
+
+.gho-section-header {
+  margin-bottom: 20px;
+}
+
+.gho-badge {
+  display: inline-block;
+  background: #9f1605;
+  color: #fff;
+  font-size: 12px;
+  font-family: "helvetica" !important;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.gho-section-header h2 {
+  font-family: "arrusbtroman" !important;
+  color: #9f1605;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.gho-motif {
+  margin: 0 auto 10px auto;
+  max-width: 100%;
+  display: block;
+}
+
+.gho-subtitle {
+  font-family: "helvetica" !important;
+  font-size: 16px;
+  color: #555;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.gho-cost-card {
+  background: #ffffff;
+  border: 1px solid #e5d2bc;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.gho-cost-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.09);
+}
+
+.gho-cost-card.featured {
+  border: 2px solid #9f1605;
+  box-shadow: 0 6px 20px rgba(159, 22, 5, 0.1);
+}
+
+.gho-cost-header {
+  background: linear-gradient(180deg, #fef8f0 0%, #ffffff 100%);
+  padding: 20px 16px 16px 16px;
+  text-align: center;
+  border-bottom: 1px dashed #e8d7c3;
+}
+
+.gho-cost-header h3 {
+  font-family: "arrusbtroman" !important;
+  color: #2c2c2c;
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.gho-cost-price {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+}
+
+.gho-cost-price .currency {
+  font-size: 20px;
+  font-weight: 700;
+  color: #9f1605;
+  font-family: "arrusbtroman" !important;
+}
+
+.gho-cost-price .amount {
+  font-size: 30px;
+  font-weight: 800;
+  color: #9f1605;
+  font-family: "arrusbtroman" !important;
+}
+
+.gho-cost-price .period {
+  font-size: 14px;
+  color: #777;
+  font-family: "helvetica" !important;
+  margin-left: 3px;
+}
+
+.gho-cost-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #888;
+  background: #f4ecdf;
+  padding: 2px 9px;
+  border-radius: 10px;
+  font-family: "helvetica" !important;
+}
+
+.gho-cost-body {
+  padding: 18px 16px 20px 16px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.gho-cost-fodder-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+  background: #fdf5e9;
+  padding: 6px;
+  border: 1px solid #ebd9c3;
+}
+
+.gho-cost-body h5 {
+  font-family: "arrusbtroman" !important;
+  color: #9f1605;
+  font-size: 17.5px;
+  margin-bottom: 6px;
+}
+
+.gho-cost-body p {
+  font-family: "helvetica" !important;
+  font-size: 14.5px;
+  color: #555;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Sponsor Sacred Cow Care Section */
+.gho-sponsor-section {
+  padding: 20px 0 45px 0;
+}
+
+.gho-sponsor-box {
+  background: #ffffff;
+  border: 1px solid #ebd9c4;
+  border-radius: 16px;
+  padding: 32px 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.gho-frequency-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px 0 22px 0;
+}
+
+.gho-tab-btn {
+  background: #fdf5e9;
+  border: 1px solid #dec3a4;
+  color: #665;
+  font-family: "helvetica" !important;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 7px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gho-tab-btn:hover {
+  background: #f5e4cc;
+}
+
+.gho-tab-btn.active {
+  background: #9f1605;
+  color: #ffffff;
+  border-color: #9f1605;
+  box-shadow: 0 4px 12px rgba(159, 22, 5, 0.25);
+}
+
+.gho-options-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.gho-opt-card {
+  background: #faf6f0;
+  border: 1.5px solid #e7d6c1;
+  border-radius: 10px;
+  padding: 12px 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.gho-opt-card:hover {
+  background: #fff;
+  border-color: #c98835;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.gho-opt-card.active {
+  background: #fff7ee;
+  border-color: #9f1605;
+  border-width: 2px;
+  box-shadow: 0 4px 14px rgba(159, 22, 5, 0.16);
+}
+
+.gho-opt-amt {
+  font-family: "arrusbtroman" !important;
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #9f1605;
+  margin-bottom: 2px;
+}
+
+.gho-opt-label {
+  font-family: "helvetica" !important;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.gho-custom-donation {
+  max-width: 420px;
+  margin: 0 auto 28px auto;
+  text-align: center;
+}
+
+.gho-custom-donation label {
+  font-family: "arrusbtroman" !important;
+  font-size: 18px;
+  color: #2c2c2c;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.gho-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gho-input-wrap .currency-prefix {
+  position: absolute;
+  left: 16px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #9f1605;
+  pointer-events: none;
+  font-family: "arrusbtroman" !important;
+}
+
+.gho-input-wrap input {
+  padding-left: 36px;
+  height: 48px;
+  border-radius: 25px;
+  border: 1.5px solid #d8be9f;
+  font-family: "helvetica" !important;
+  font-size: 16.5px;
+  text-align: left;
+}
+
+.gho-input-wrap input:focus {
+  border-color: #9f1605;
+  box-shadow: 0 0 0 0.2rem rgba(159, 22, 5, 0.15);
+}
+
+.gho-primary-donate-btn {
+  display: inline-block;
+  background: #9f1605;
+  color: #ffffff !important;
+  font-family: "helvetica" !important;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 12px 42px;
+  border-radius: 35px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(159, 22, 5, 0.3);
+  transition: all 0.3s ease;
+  border: 2px solid #9f1605;
+}
+
+.gho-primary-donate-btn:hover {
+  background: #7a1103;
+  border-color: #7a1103;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(159, 22, 5, 0.4);
+}
+
+.gho-action-hint {
+  font-family: "helvetica" !important;
+  font-size: 13.5px;
+  color: #777;
+  margin-top: 12px;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .gho-options-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .gho-sponsor-box {
+    padding: 30px 18px;
+  }
+  .gho-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gho-cost-card.featured {
+    order: -1;
+  }
+  .gho-primary-donate-btn {
+    font-size: 16px;
+    padding: 10px 30px;
   }
 }
 
 @media (max-width: 480px) {
-  .more-4 {
-    top: 15px;
+  .gho-options-grid {
+    grid-template-columns: 1fr;
   }
+  .gho-frequency-tabs {
+    gap: 6px;
+  }
+  .gho-tab-btn {
+    padding: 7px 18px;
+    font-size: 14px;
+  }
+}
+
+/* ==================== STATS & SANCTUARY HIGHLIGHTS CARDS (FROM DESIGN) ==================== */
+
+/* Card 1: 675+ Cows Sheltered | 1,000 Ltrs Milk Cooler Capacity */
+.gho-stats-banner-card {
+  background: #fdf5ea;
+  border: 1px solid #ebd9c3;
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(122, 31, 10, 0.04);
+  height: 100%;
+}
+
+.gho-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.gho-stat-icon-circle {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: #f3dfcb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gho-stat-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.gho-stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.gho-stat-number {
+  font-family: "arrusbtroman" !important;
+  font-size: 26px;
+  font-weight: 700;
+  color: #5c1808;
+  line-height: 1.1;
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+}
+
+.gho-stat-title {
+  font-family: "helvetica" !important;
+  font-size: 13.5px;
+  color: #4a3424;
+  line-height: 1.25;
+}
+
+.gho-stat-divider {
+  width: 1px;
+  height: 44px;
+  background: #e5cbaf;
+  margin: 0 8px;
+}
+
+/* Card 2: 24/7 Clinic, 600+ Cows, Native/Hybrid, Special Breeds, Stray & Disowned */
+.gho-sanctuary-highlights-card {
+  background: #f4d09f;
+  border: 1px solid #e8c28e;
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin-top: 0;
+  box-shadow: 0 4px 14px rgba(122, 31, 10, 0.05);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.gho-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 12px;
+  column-gap: 16px;
+  width: 100%;
+  justify-items: start;
+}
+
+.gho-highlight-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  gap: 10px;
+  width: 100%;
+}
+
+.gho-cow-icon-img {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.gho-highlight-item span {
+  font-family: "helvetica" !important;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2e1a0d;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Row wrapper for both cards in straight line */
+.gho-design-cards-row {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  align-items: stretch !important;
+}
+
+.gho-design-cards-row > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments for design cards */
+@media (max-width: 991px) {
+  .gho-stats-banner-card {
+    padding: 12px 14px;
+  }
+  .gho-stat-number {
+    font-size: 22px;
+  }
+  .gho-sanctuary-highlights-card {
+    padding: 14px 16px;
+    margin-top: 14px;
+  }
+  .gho-highlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 14px;
+  }
+  .gho-highlight-item {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gho-stats-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .gho-stat-divider {
+    width: 100%;
+    height: 1px;
+    margin: 4px 0;
+  }
+  .gho-highlights-grid {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
+  }
+}
+
+/* ========================================================= */
+/* GHO DHANAM EXTENDED SECTIONS: HISTORY PILLARS & COW & CALF */
+/* ========================================================= */
+
+.gho-dhanam-extended-section {
+  padding-bottom: 25px;
+}
+
+/* 1. History Pillars Card */
+.gho-dhanam-history-card {
+  background: #fdf5ea;
+  border: 1px solid #ebd9c3;
+  border-radius: 18px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 14px rgba(122, 31, 10, 0.04);
+}
+
+.gho-history-pillar-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.gho-pillar-icon-wrap {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  background: #fae9ce;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebd0ad;
+}
+
+.gho-pillar-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.gho-pillar-text h5 {
+  font-family: "arrusbtroman" !important;
+  font-size: 19px;
+  font-weight: 700;
+  color: #7b2909;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.gho-pillar-text p {
+  font-family: "helvetica" !important;
+  font-size: 14.5px;
+  color: #3b281c;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 2. Donate a Cow and Calf Card */
+.gho-cow-calf-section {
+  margin-top: 20px !important;
+}
+
+.gho-dhanam-subheading {
+  display: block;
+  font-family: "helvetica" !important;
+  font-size: 13px;
+  font-weight: 700;
+  color: #9f1605;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.gho-cow-calf-card {
+  background: linear-gradient(135deg, #fffcf7 0%, #fcf4e8 60%, #f8e9c7 100%);
+  border: 1.5px solid #e8d5b5;
+  border-radius: 20px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(122, 31, 10, 0.06);
+}
+
+.gho-cow-calf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.gho-cow-calf-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff2d9;
+  border: 1px solid #e6c687;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-family: "arrusbtroman" !important;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8b0000;
+  letter-spacing: 0.05em;
+}
+
+.gho-cow-calf-badge i {
+  color: #8b0000;
+  font-size: 13px;
+}
+
+.gho-cow-calf-price-pill {
+  background: #8b0000;
+  color: #ffffff;
+  font-family: "arrusbtroman" !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 14px;
+  letter-spacing: 0.03em;
+}
+
+.gho-cow-calf-title {
+  font-family: "arrusbtroman" !important;
+  font-size: 26px;
+  font-weight: 700;
+  color: #381204;
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+
+.gho-cow-calf-pricing {
+  font-family: "helvetica" !important;
+  font-size: 15px;
+  color: #6e4d30;
+  margin-bottom: 14px;
+}
+
+.gho-cow-calf-pricing strong {
+  font-family: "arrusbtroman" !important;
+  font-size: 18px;
+  color: #8b0000;
+  font-weight: 700;
+}
+
+.gho-cow-calf-desc {
+  font-family: "helvetica" !important;
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.gho-cow-calf-perks {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 20px;
+  border: 1px solid #efe1cd;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.gho-calf-perk-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "helvetica" !important;
+  font-size: 14.5px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+.gho-calf-check {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  background: #8b0000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.gho-cow-calf-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #7f0101;
+  color: #ffffff !important;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-family: "helvetica" !important;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(127, 1, 1, 0.25);
+}
+
+.gho-cow-calf-cta-btn:hover {
+  background: #9f0505;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(127, 1, 1, 0.35);
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .gho-cow-calf-card {
+    padding: 20px 18px;
+  }
+  .gho-dhanam-history-card {
+    padding: 18px 16px;
+  }
+  .gho-cow-calf-title {
+    font-size: 22px;
+  }
+  .gho-cow-calf-cta-btn {
+    width: 100%;
+  }
+}
+
+/* ========================================================= */
+/* GHO SHALA HIGHLIGHTS BOX                                  */
+/* ========================================================= */
+
+.gho-shala-highlights-box {
+  background: #fcedd0;
+  border-radius: 14px;
+  padding: 18px 22px;
+  border: 1px solid #d4af37;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.gho-shala-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.gho-shala-highlight-item i {
+  color: #8e3809;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.gho-shala-highlight-item span {
+  font-family: "helvetica" !important;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #3a271b;
+  line-height: 1.45;
 }
