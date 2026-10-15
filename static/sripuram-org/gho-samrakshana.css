@@ -339,11 +339,27 @@
   border-bottom: 1px dashed #e8d7c3;
 }
 
+.gho-cost-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.gho-cost-card-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
 .gho-cost-header h3 {
   font-family: "arrusbtroman" !important;
   color: #2c2c2c;
   font-size: 21px;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .gho-cost-price {
@@ -386,21 +402,9 @@
 }
 
 .gho-cost-body {
-  padding: 18px 16px 20px 16px;
+  padding: 18px 20px 22px 20px;
   text-align: left;
   flex-grow: 1;
-}
-
-.gho-cost-fodder-icon {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
-  object-fit: contain;
-  display: block;
-  border-radius: 8px;
-  background: #fdf5e9;
-  padding: 6px;
-  border: 1px solid #ebd9c3;
 }
 
 .gho-cost-body h5 {
@@ -408,6 +412,7 @@
   color: #9f1605;
   font-size: 17.5px;
   margin-bottom: 6px;
+  text-align: left;
 }
 
 .gho-cost-body p {
@@ -416,6 +421,7 @@
   color: #555;
   line-height: 1.55;
   margin: 0;
+  text-align: left;
 }
 
 /* Sponsor Sacred Cow Care Section */

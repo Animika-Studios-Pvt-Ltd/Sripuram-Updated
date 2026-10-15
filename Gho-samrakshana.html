@@ -856,7 +856,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
             <div class="gho-cost-card">
               <div class="gho-cost-header">
-                <h3>Daily Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Daily Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Daily Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">150</span>
@@ -875,7 +882,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
             <div class="gho-cost-card featured">
               <div class="gho-cost-header">
-                <h3>Monthly Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Monthly Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Monthly Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">5,000</span>
@@ -894,7 +908,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
             <div class="gho-cost-card">
               <div class="gho-cost-header">
-                <h3>Annual Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Annual Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Annual Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">60,000</span>
@@ -1599,19 +1620,26 @@
 
         let currentFrequency = 'monthly'; // 'daily' | 'monthly' | 'yearly'
         let currentAmount = 5000;
+        let isCustom = false;
 
         function formatINR(val) {
           return Number(val).toLocaleString('en-IN');
         }
 
         function updateButton() {
-          const freqLabel = currentFrequency === 'daily' ? 'Daily' : (currentFrequency === 'monthly' ? 'Monthly' : 'Yearly');
-          donateBtn.textContent = `Donate ₹${formatINR(currentAmount)} ${freqLabel}`;
-          donateBtn.href = `payment/razorpay/checkout/catalogue/gho-samrakshana?amount=${currentAmount}&frequency=${currentFrequency}`;
+          if (isCustom) {
+            donateBtn.textContent = `Donate ₹${formatINR(currentAmount)}`;
+            donateBtn.href = `payment/razorpay/checkout/catalogue/gho-samrakshana?amount=${currentAmount}`;
+          } else {
+            const freqLabel = currentFrequency === 'daily' ? 'Daily' : (currentFrequency === 'monthly' ? 'Monthly' : 'Yearly');
+            donateBtn.textContent = `Donate ₹${formatINR(currentAmount)} ${freqLabel}`;
+            donateBtn.href = `payment/razorpay/checkout/catalogue/gho-samrakshana?amount=${currentAmount}&frequency=${currentFrequency}`;
+          }
         }
 
         tabBtns.forEach(btn => {
           btn.addEventListener('click', function() {
+            isCustom = false;
             tabBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
             currentFrequency = this.getAttribute('data-frequency');
@@ -1643,6 +1671,14 @@
         // Option cards selection
         document.querySelectorAll('.gho-opt-card').forEach(card => {
           card.addEventListener('click', function() {
+            isCustom = false;
+            // Ensure active frequency tab matches the parent grid if needed
+            tabBtns.forEach(b => {
+              if (b.getAttribute('data-frequency') === currentFrequency) {
+                b.classList.add('active');
+              }
+            });
+
             document.querySelectorAll('.gho-opt-card').forEach(c => c.classList.remove('active'));
             this.classList.add('active');
             if (customInput) customInput.value = '';
@@ -1656,10 +1692,33 @@
           customInput.addEventListener('input', function() {
             const val = parseFloat(this.value);
             if (!isNaN(val) && val > 0) {
+              isCustom = true;
+              // Remove active state from frequency tabs and option cards
+              tabBtns.forEach(b => b.classList.remove('active'));
               document.querySelectorAll('.gho-opt-card').forEach(c => c.classList.remove('active'));
               currentAmount = val;
             } else {
-              currentAmount = currentFrequency === 'daily' ? 150 : (currentFrequency === 'monthly' ? 5000 : 60000);
+              isCustom = false;
+              // Re-activate current frequency tab
+              tabBtns.forEach(b => {
+                if (b.getAttribute('data-frequency') === currentFrequency) {
+                  b.classList.add('active');
+                }
+              });
+
+              // Re-activate first option card in current active grid
+              let activeGrid;
+              if (currentFrequency === 'daily') activeGrid = dailyGrid;
+              else if (currentFrequency === 'monthly') activeGrid = monthlyGrid;
+              else activeGrid = yearlyGrid;
+
+              const firstCard = activeGrid ? activeGrid.querySelector('.gho-opt-card') : null;
+              if (firstCard) {
+                firstCard.classList.add('active');
+                currentAmount = Number(firstCard.getAttribute('data-amount'));
+              } else {
+                currentAmount = currentFrequency === 'daily' ? 150 : (currentFrequency === 'monthly' ? 5000 : 60000);
+              }
             }
             updateButton();
           });
