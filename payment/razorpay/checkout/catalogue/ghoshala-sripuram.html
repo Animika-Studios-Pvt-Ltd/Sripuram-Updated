@@ -1236,6 +1236,49 @@
   <script src="/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
 
   <script>
+    (function () {
+      const amountInput = document.getElementById("Booking_PayerAmount");
+      const selectedAmount = new URLSearchParams(window.location.search).get("amount");
+      const form = amountInput && amountInput.closest("form");
+      const amountField = amountInput && amountInput.closest(".checkout-amount");
+      const submitButton = form && form.querySelector('button[type="submit"]');
+
+      if (!amountInput) {
+        return;
+      }
+
+      let amount = Number(amountInput.value) || 100;
+
+      // Replace the default only when the Gho Shala page supplies a valid amount.
+      if (selectedAmount && /^\d+(?:\.\d{1,2})?$/.test(selectedAmount)) {
+        const selectedValue = Number(selectedAmount);
+        if (Number.isFinite(selectedValue) && selectedValue > 0) {
+          amount = selectedValue;
+        }
+      }
+
+      amountInput.value = String(amount);
+      amountInput.readOnly = true;
+      amountInput.dispatchEvent(new Event("input", { bubbles: true }));
+      amountInput.dispatchEvent(new Event("change", { bubbles: true }));
+
+      // Retain the named input for the existing Razorpay form submission, while
+      // displaying the fixed amount on the payment button instead of an input field.
+      if (amountField) {
+        amountField.style.display = "none";
+      }
+
+      if (submitButton) {
+        const formattedAmount = amount.toLocaleString("en-IN", {
+          maximumFractionDigits: 2
+        });
+
+        submitButton.textContent = `Pay ₹${formattedAmount}`;
+      }
+    })();
+  </script>
+
+  <script>
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))    
   </script>
