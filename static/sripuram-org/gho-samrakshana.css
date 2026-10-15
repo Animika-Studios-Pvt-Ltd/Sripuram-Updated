@@ -896,7 +896,7 @@
 .gho-dhanam-subheading {
   display: block;
   font-family: "helvetica" !important;
-  font-size: 13px;
+  font-size: 13px !important;
   font-weight: 700;
   color: #9f1605;
   letter-spacing: 0.12em;
@@ -1104,5 +1104,201 @@
   .gho-cost-card-icon {
     width: 60px;
     height: 60px;
+  }
+}
+
+/* Shared responsive refinements for Gho Samrakshana, Gho Shala and Gho Dhanam. */
+@media (max-width: 991.98px) {
+  .gho-design-cards-row {
+    row-gap: 16px;
+  }
+
+  .gho-feature-card {
+    height: 100%;
+  }
+
+  .gho-cost-card {
+    max-width: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gho-features-section,
+  .gho-cost-section {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .gho-section-header {
+    margin-bottom: 16px;
+  }
+
+  .gho-subtitle {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .gho-cost-header {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .gho-cost-card-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .gho-cost-header h3 {
+    font-size: 17px;
+  }
+
+  .gho-cost-price {
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .gho-cost-price .amount {
+    font-size: 22px;
+  }
+
+  .gho-cost-price .period {
+    font-size: 13px;
+  }
+
+  .gho-cost-body {
+    padding: 12px 14px 14px;
+  }
+
+  .gho-sponsor-section {
+    padding: 16px 0 32px;
+  }
+
+  .gho-sponsor-box {
+    padding: 24px 16px;
+    border-radius: 14px;
+  }
+
+  .gho-frequency-tabs {
+    margin: 14px 0 18px;
+  }
+
+  .gho-tab-btn {
+    flex: 1 1 0;
+    padding: 8px 10px;
+  }
+
+  .gho-primary-donate-btn {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .gho-stats-banner-card,
+  .gho-sanctuary-highlights-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gho-feature-card {
+    padding: 16px;
+  }
+
+  .gho-feature-card h4 {
+    font-size: 18px;
+  }
+
+  .gho-cost-header {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .gho-cost-card-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .gho-cost-header h3 {
+    font-size: 16px;
+  }
+
+  .gho-cost-price .currency {
+    font-size: 16px;
+  }
+
+  .gho-cost-price .amount {
+    font-size: 21px;
+  }
+
+  .gho-cost-price .period {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+
+  .gho-cost-body h5 {
+    font-size: 16px;
+  }
+
+  .gho-cost-body p,
+  .gho-feature-card p {
+    font-size: 14px;
+  }
+
+  .gho-frequency-tabs {
+    gap: 6px;
+  }
+
+  .gho-tab-btn {
+    font-size: 13px;
+  }
+
+  .gho-options-grid {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .gho-opt-card {
+    padding: 10px 6px;
+  }
+
+  .gho-custom-donation {
+    margin-bottom: 22px;
+  }
+
+  .gho-primary-donate-btn {
+    display: block;
+    width: 100%;
+    padding: 11px 16px;
+    font-size: 15px;
+  }
+
+  .gho-action-hint {
+    font-size: 12.5px;
+  }
+
+  .gho-stats-banner-card,
+  .gho-sanctuary-highlights-card {
+    border-radius: 14px;
+    padding: 14px;
+  }
+
+  .gho-stat-item {
+    width: 100%;
+  }
+
+  .gho-stat-number {
+    font-size: 20px;
+  }
+
+  .gho-highlight-item span {
+    font-size: 13px;
+  }
+
+  .gho-cow-calf-card,
+  .gho-dhanam-history-card {
+    padding: 16px 14px;
+  }
+
+  .gho-cow-calf-perks {
+    padding: 14px;
   }
 }
