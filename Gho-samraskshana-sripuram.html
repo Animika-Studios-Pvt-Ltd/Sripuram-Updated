@@ -874,7 +874,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
             <div class="gho-cost-card">
               <div class="gho-cost-header">
-                <h3>Daily Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Daily Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Daily Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">150</span>
@@ -882,16 +889,9 @@
                 </div>
                 <span class="gho-cost-tag">Estimated sanctuary maintenance cost</span>
               </div>
-              <div class="gho-cost-body d-flex align-items-start gap-3">
-                <img
-                  src="static/sripuram-org/daily-fodder-&-grass.webp"
-                  alt="Daily Fodder & Grass"
-                  class="gho-cost-fodder-icon"
-                />
-                <div>
-                  <h5>Daily Fodder &amp; Grass</h5>
-                  <p>Nutritious green fodder, dry grass, clean drinking water and daily shed maintenance for one sacred cow.</p>
-                </div>
+              <div class="gho-cost-body">
+                <h5>Daily Fodder &amp; Grass</h5>
+                <p>Nutritious green fodder, dry grass, clean drinking water and daily shed maintenance for one sacred cow.</p>
               </div>
             </div>
           </div>
@@ -900,7 +900,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
             <div class="gho-cost-card featured">
               <div class="gho-cost-header">
-                <h3>Monthly Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Monthly Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Monthly Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">5,000</span>
@@ -908,16 +915,9 @@
                 </div>
                 <span class="gho-cost-tag">Estimated sanctuary maintenance cost</span>
               </div>
-              <div class="gho-cost-body d-flex align-items-start gap-3">
-                <img
-                  src="static/sripuram-org/daily-fodder-&-grass.webp"
-                  alt="Monthly Upkeep & Care"
-                  class="gho-cost-fodder-icon"
-                />
-                <div>
-                  <h5>Monthly Upkeep &amp; Care</h5>
-                  <p>Wholesome organic nutrition, 24/7 veterinary doctor attention, seasonal supplements &amp; shed upkeep.</p>
-                </div>
+              <div class="gho-cost-body">
+                <h5>Monthly Upkeep &amp; Care</h5>
+                <p>Wholesome organic nutrition, 24/7 veterinary doctor attention, seasonal supplements &amp; shed upkeep.</p>
               </div>
             </div>
           </div>
@@ -926,7 +926,14 @@
           <div class="col-lg-4 col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
             <div class="gho-cost-card">
               <div class="gho-cost-header">
-                <h3>Annual Care</h3>
+                <div class="gho-cost-title-wrap">
+                  <img
+                    src="static/sripuram-org/daily-fodder-&-grass.webp"
+                    alt="Annual Care Icon"
+                    class="gho-cost-card-icon"
+                  />
+                  <h3>Annual Care</h3>
+                </div>
                 <div class="gho-cost-price">
                   <span class="currency">₹</span>
                   <span class="amount">60,000</span>
@@ -934,16 +941,9 @@
                 </div>
                 <span class="gho-cost-tag">Estimated sanctuary maintenance cost</span>
               </div>
-              <div class="gho-cost-body d-flex align-items-start gap-3">
-                <img
-                  src="static/sripuram-org/daily-fodder-&-grass.webp"
-                  alt="Annual Upkeep & Care"
-                  class="gho-cost-fodder-icon"
-                />
-                <div>
-                  <h5>Annual Upkeep &amp; Care</h5>
-                  <p>Comprehensive year-round nutrition, medical care, and dedicated cowherd supervision for one cow (₹5,000/mo × 12).</p>
-                </div>
+              <div class="gho-cost-body">
+                <h5>Annual Upkeep &amp; Care</h5>
+                <p>Comprehensive year-round nutrition, medical care, and dedicated cowherd supervision for one cow (₹5,000/mo × 12).</p>
               </div>
             </div>
           </div>
@@ -1639,19 +1639,27 @@
 
         let currentFrequency = "monthly";
         let currentAmount = 5000;
+        let isCustom = false;
 
         function updateButton() {
           if (!donateBtn) return;
           const formatted = Number(currentAmount).toLocaleString("en-IN");
-          const freqLabel =
-            currentFrequency.charAt(0).toUpperCase() +
-            currentFrequency.slice(1);
-          donateBtn.textContent = `Donate ₹${formatted} ${freqLabel}`;
+          if (isCustom) {
+            donateBtn.textContent = `Donate ₹${formatted}`;
+            donateBtn.href = `payment/razorpay/checkout/catalogue/ghoshala-sripuram?amount=${currentAmount}`;
+          } else {
+            const freqLabel =
+              currentFrequency.charAt(0).toUpperCase() +
+              currentFrequency.slice(1);
+            donateBtn.textContent = `Donate ₹${formatted} ${freqLabel}`;
+            donateBtn.href = `payment/razorpay/checkout/catalogue/ghoshala-sripuram?amount=${currentAmount}&frequency=${currentFrequency}`;
+          }
         }
 
         // Tab click
         tabButtons.forEach((btn) => {
           btn.addEventListener("click", function () {
+            isCustom = false;
             tabButtons.forEach((b) => b.classList.remove("active"));
             this.classList.add("active");
 
@@ -1685,6 +1693,13 @@
         // Option cards selection
         document.querySelectorAll(".gho-opt-card").forEach((card) => {
           card.addEventListener("click", function () {
+            isCustom = false;
+            tabButtons.forEach((b) => {
+              if (b.getAttribute("data-frequency") === currentFrequency) {
+                b.classList.add("active");
+              }
+            });
+
             document
               .querySelectorAll(".gho-opt-card")
               .forEach((c) => c.classList.remove("active"));
@@ -1700,21 +1715,44 @@
           customInput.addEventListener("input", function () {
             const val = parseFloat(this.value);
             if (!isNaN(val) && val > 0) {
+              isCustom = true;
+              // Remove active state from frequency tabs and option cards
+              tabButtons.forEach((b) => b.classList.remove("active"));
               document
                 .querySelectorAll(".gho-opt-card")
                 .forEach((c) => c.classList.remove("active"));
               currentAmount = val;
             } else {
-              currentAmount =
-                currentFrequency === "daily"
-                  ? 150
-                  : currentFrequency === "monthly"
-                  ? 5000
-                  : 60000;
+              isCustom = false;
+              // Re-activate current frequency tab
+              tabButtons.forEach((b) => {
+                if (b.getAttribute("data-frequency") === currentFrequency) {
+                  b.classList.add("active");
+                }
+              });
+
+              let activeGrid;
+              if (currentFrequency === "daily") activeGrid = dailyGrid;
+              else if (currentFrequency === "monthly") activeGrid = monthlyGrid;
+              else activeGrid = yearlyGrid;
+
+              const firstCard = activeGrid ? activeGrid.querySelector(".gho-opt-card") : null;
+              if (firstCard) {
+                firstCard.classList.add("active");
+                currentAmount = Number(firstCard.getAttribute("data-amount"));
+              } else {
+                currentAmount =
+                  currentFrequency === "daily"
+                    ? 150
+                    : currentFrequency === "monthly"
+                    ? 5000
+                    : 60000;
+              }
             }
             updateButton();
           });
         }
+        updateButton();
       });
     </script>
   </body>
