@@ -1,9 +1,161 @@
-.about-info-inner p {
-  margin-top: 0px !important;
+/* ----------------------------------------------- DARSHAN TIMINGS TOP / INTRO SECTION (#darshan-timings-row) ----------------------------------------------- */
+.darshan-timings-section {
+  padding: 30px 0;
 }
 
+.darshan-timings-mobile-header {
+  display: none;
+}
+
+#darshan-timings-row {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  align-items: center;
+}
+
+.darshan-timings-img-inner {
+  text-align: center;
+}
+
+.darshan-timings-img-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.darshan-timings-info-inner {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.darshan-timings-info-inner h1 {
+  margin-bottom: 10px;
+}
+
+.darshan-timings-info-inner p {
+  font-size: clamp(16px, 1.35vw, 22px);
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1440px) {
+  #darshan-timings-row {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #darshan-timings-row {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #darshan-timings-row {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  #darshan-timings-row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .darshan-timings-mobile-header {
+    display: block;
+    text-align: center;
+  }
+
+  .darshan-timings-mobile-header h1 {
+    margin-bottom: 10px;
+  }
+
+  .darshan-timings-mobile-header img {
+    width: auto;
+    max-width: 45%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .darshan-timings-desktop-header {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #darshan-timings-row {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .darshan-timings-mobile-header img {
+    max-width: 30%;
+  }
+
+  .darshan-timings-img-inner img {
+    width: 80%;
+  }
+
+  .darshan-timings-info-inner {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 15px 15px 10px;
+  }
+
+  .darshan-timings-info-inner h2 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+  }
+
+  .darshan-timings-info-inner p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  #darshan-timings-row {
+    margin-bottom: 0;
+  }
+  .darshan-timings-mobile-header img {
+    max-width: 25%;
+  }
+
+  .darshan-timings-img-inner img {
+    width: 90%;
+  }
+
+  .darshan-timings-info-inner {
+    max-width: 100%;
+    padding: 15px 15px 10px;
+  }
+}
+
+/* ----------------------------------------------- DARSHAN TIMINGS DETAILS SECTION (.darshan-section) ----------------------------------------------- */
 .darshan-section {
   padding: 40px 0px 20px 0px;
+}
+
+.darshan-timings-details p {
+  text-align: left;
+}
+
+.darshan-timings-details b {
+  color: #961908;
 }
 
 .darshan-timings-divider {
@@ -16,6 +168,25 @@
   opacity: 1 !important;
 }
 
+@media (max-width: 1200px) {
+  .darshan-section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .darshan-section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .darshan-section {
+    padding: 15px 0;
+  }
+}
+
+/* ----------------------------------------------- DARSHAN TIMINGS CARDS SECTION (.darshan-timing-cards) ----------------------------------------------- */
 .darshan-timing-cards {
   padding: 20px 0px 20px 0px;
 }
@@ -44,7 +215,7 @@
 }
 
 .darshan-timing-cards h5 {
-  font-family: 'helvetica';
+  font-family: "helvetica";
   font-size: 20px;
   color: #9f1605;
   margin-top: 20px;
@@ -64,68 +235,4 @@
 .darshan-timing-cards a:hover i {
   color: #9f1605 !important;
   transform: translateX(5px);
-}
-
-@media (min-width: 1919px) {
-  .about-info-inner {
-    padding: 50px 360px 0 0 !important;
-    text-align: center;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .about-info-inner {
-    padding: 30px 140px 0 0 !important;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  .about-info-inner {
-    padding: 10px 80px 0 0 !important;
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  .about-info-inner {
-    padding: 10px 30px 0 0 !important;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .about-info-inner {
-    padding: 10px 15px 0 0 !important;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  .about-info-inner {
-    padding: 0px 10px 0 0 !important;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  .about-info-inner {
-    padding: 0px 10px 0 0 !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .about-info-inner {
-    padding: 30px 30px 0 !important;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 575px) {
-  .about-info-inner {
-    padding: 20px 20px 0 !important;
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-info-inner {
-    padding: 15px 15px 0 !important;
-    margin-left: 0;
-  }
 }
