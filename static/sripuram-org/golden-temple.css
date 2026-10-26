@@ -1,0 +1,194 @@
+/* ----------------------------------------------- GOLDEN TEMPLE TOP / INTRO SECTION (#golden-temple-row) ----------------------------------------------- */
+.golden-temple-section {
+  padding: 30px 0;
+}
+
+.golden-temple-mobile-header {
+  display: none;
+}
+
+#golden-temple-row {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: 0;
+  margin-left: 0;
+  align-items: center;
+}
+
+.golden-temple-img-inner {
+  text-align: center;
+}
+
+.golden-temple-img-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.golden-temple-info-inner {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.golden-temple-info-inner h1 {
+  margin-bottom: 10px;
+}
+
+.golden-temple-info-inner p {
+  font-size: clamp(16px, 1.35vw, 22px);
+  line-height: 1.5;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* ----------------------------------------------- GOLDEN TEMPLE DETAILS SECTION (.golden-temple-details-section) ----------------------------------------------- */
+.golden-temple-details-section {
+  padding: 20px 0px;
+}
+
+.golden-temple-details p {
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.golden-temple-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d4b16f;
+  border: none;
+  margin: 25px auto 15px;
+  border-radius: 2px;
+  opacity: 1 !important;
+}
+
+@media (max-width: 1440px) {
+  #golden-temple-row {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  #golden-temple-row {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #golden-temple-row {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .golden-temple-details-section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  #golden-temple-row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .golden-temple-mobile-header {
+    display: block;
+    text-align: center;
+  }
+
+  .golden-temple-mobile-header h1 {
+    margin-bottom: 10px;
+  }
+
+  .golden-temple-mobile-header img {
+    width: auto;
+    max-width: 45%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .golden-temple-desktop-header {
+    display: none;
+  }
+
+  .golden-temple-details-section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #golden-temple-row {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .golden-temple-mobile-header img {
+    max-width: 30%;
+  }
+
+  .golden-temple-img-inner img {
+    width: 80%;
+    margin: 0;
+  }
+
+  .golden-temple-info-inner {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+  }
+
+  .golden-temple-info-inner p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .golden-temple-details-section {
+    padding: 15px 0;
+  }
+
+  .golden-temple-details p {
+    text-align: left;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  #golden-temple-row {
+    margin-bottom: 0;
+  }
+
+  .golden-temple-mobile-header img {
+    max-width: 25%;
+  }
+
+  .golden-temple-img-inner img {
+    width: 90%;
+  }
+
+  .golden-temple-details-section {
+    padding: 0px 0px 10px;
+  }
+
+  .golden-temple-info-inner {
+    max-width: 100%;
+    padding: 10px 0px 10px;
+  }
+
+  .golden-temple-info-inner p {
+    max-width: 100%;
+    padding: 10px 5px 0px;
+  }
+
+  .golden-temple-details p {
+    padding: 0 5px;
+  }
+}
