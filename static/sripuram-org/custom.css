@@ -16,6 +16,7 @@
 @import "charities.css";
 @import "poojas-and-sevas.css";
 @import "ammas-gallery.css";
+@import "contact.css";
 @import "global.css";
 
 @font-face {
@@ -182,6 +183,15 @@
 
 .fas {
   color: #fff;
+}
+
+.fa-phone-alt:before {
+  content: "\f095";
+}
+
+.fa-phone-alt {
+  display: inline-block;
+  transform: rotate(90deg);
 }
 
 .more-1 a:hover,
@@ -821,16 +831,6 @@ textarea {
   background: 0 0;
   overflow: hidden;
   height: 3em;
-}
-
-.map {
-  border: 5px solid #e4cc9e;
-  border-radius: 10px;
-}
-
-.map iframe {
-  border-radius: 10px !important;
-  margin: 0;
 }
 
 .anecdotes h6 {
