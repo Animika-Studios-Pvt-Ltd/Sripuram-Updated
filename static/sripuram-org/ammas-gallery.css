@@ -1,0 +1,64 @@
+/* Amma's Gallery */
+.amma-gallery-item {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.amma-gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.amma-gallery-item:hover img {
+  transform: scale(1.02);
+}
+
+.amma-gallery-download-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #d4b16f;
+  background: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.amma-gallery-download-btn i {
+  color: #4c83cc;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.amma-gallery-download-btn:hover {
+  background-color: #9f1605;
+  color: white;
+}
+
+.amma-gallery-download-btn:hover i {
+  color: white;
+  transform: translateY(2px);
+}
+
+@media (max-width: 575px) {
+  .amma-gallery-item {
+    text-align: center;
+  }
+
+  .amma-gallery-item img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .amma-gallery-item img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
