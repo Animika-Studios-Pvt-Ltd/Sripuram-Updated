@@ -44,6 +44,8 @@
         jumpTo(parseInt(this.dataset.point));
       });
     });
+
+    activatePoint(0);
   }
 
   function calculateThresholds() {

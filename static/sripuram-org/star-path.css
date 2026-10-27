@@ -1,449 +1,477 @@
 /* ---------------------------- STAR PATH PAGE CODE (star-path.css) ---------------------------- */
 .star-path-section {
-    background: linear-gradient(180deg, #faebd7 0%, #fdfbf7 10%, #fdfbf7 90%, #faebd7 100%);
-    padding: 40px 0;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #faebd7 0%,
+    #fdfbf7 10%,
+    #fdfbf7 90%,
+    #faebd7 100%
+  );
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .star-path-section h2 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .star-path-motif {
-    filter: sepia(0.5) hue-rotate(340deg) saturate(1.5);
-    opacity: 0.8;
-    margin-bottom: 30px;
+  filter: sepia(0.5) hue-rotate(340deg) saturate(1.5);
+  opacity: 0.8;
+  margin-bottom: 30px;
 }
 
 .star-path-subtitle {
-    margin-bottom: 10px;
-    font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #5c4033;
+  font-style: italic;
 }
 
+/* Map Container */
 .star-path-map-wrap {
-    margin: 0 auto 30px;
+  margin: 0 auto;
 }
 
 .star-path-map-container {
-    position: relative;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-    border: 2px solid rgba(212, 175, 55, 0.35);
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .star-path-star-img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .star-path-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .star-path-bg-path {
-    fill: none;
-    stroke: rgba(212, 175, 55, 0.25);
-    stroke-width: 4;
+  fill: none;
+  stroke: rgba(212, 175, 55, 0.25);
+  stroke-width: 4;
 }
 
 .star-path-trace-path {
-    fill: none;
-    stroke: #D4AF37;
-    stroke-width: 5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  fill: none;
+  stroke: #d4af37;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .star-path-tracer-dot {
-    fill: #FFD700;
-    opacity: 0;
+  fill: #ffd700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .star-path-tracer-dot.visible {
-    opacity: 1;
+  opacity: 1;
 }
 
+/* Point Markers */
 .star-path-point {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    z-index: 5;
-    width: 34px;
-    height: 34px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
 }
 
 .star-path-point-pulse {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid #D4AF37;
-    opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #d4af37;
+  opacity: 0;
 }
 
 .star-path-point.active .star-path-point-pulse {
-    animation: starPathPulse 1.5s ease-out infinite;
+  animation: starPathPulse 1.5s ease-out infinite;
 }
 
 .star-path-point-dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(circle, #FFD700 30%, #D4AF37 80%);
-    border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: #1c0b06;
-    font-family: "helvetica";
-    z-index: 2;
-    transition: all 0.3s ease;
-}
-
-.star-path-point.active .star-path-point-dot {
-    width: 28px;
-    height: 28px;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.8), 0 0 40px rgba(212, 175, 55, 0.3);
-    font-size: 12px;
-}
-
-.star-path-point.visited .star-path-point-dot {
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ffd700 30%, #d4af37 80%);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #1c0b06;
+  font-family: "helvetica";
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .star-path-point:hover .star-path-point-dot {
-    transform: translate(-50%, -50%) scale(1.15);
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.star-path-point.visited .star-path-point-dot {
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.star-path-point.active .star-path-point-dot {
+  width: 26px;
+  height: 26px;
+  box-shadow:
+    0 0 20px rgba(212, 175, 55, 0.8),
+    0 0 40px rgba(212, 175, 55, 0.3);
+  font-size: 12px;
 }
 
 @keyframes starPathPulse {
-    0% {
-        transform: scale(1);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(2.5);
-        opacity: 0;
-    }
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
 
-.star-path-info-panel {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.star-path-info-card {
-    display: none;
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.35);
-    background: #ffffff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    margin-bottom: 24px;
-}
-
-.star-path-info-card.active {
-    display: flex;
-    animation: starPathCardIn 0.5s ease forwards;
-}
-
-@keyframes starPathCardIn {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.star-path-card-img {
-    flex: 0 0 38%;
-    overflow: hidden;
-}
-
-.star-path-card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    min-height: 200px;
-}
-
-.star-path-card-body {
-    flex: 1;
-    padding: 28px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.star-path-card-body h3 {
-    color: #9f1605 !important;
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 10px;
-    text-transform: none;
-}
-
-.star-path-card-body p {
-    color: #4a3c31;
-    font-size: 16px;
-    text-align: left;
-    line-height: 1.65;
-    margin-bottom: 14px;
-}
-
-.star-path-link {
-    color: #9f1605;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "helvetica";
-    letter-spacing: 0.5px;
-    transition: color 0.3s;
-    text-align: left;
-    display: inline-block;
-    font-weight: 600;
-}
-
-.star-path-link:hover {
-    color: #D4AF37;
-}
-
-.star-path-info-default {
-    text-align: center;
-    padding: 45px 20px;
-    border: 1px dashed rgba(159, 22, 5, 0.3);
-    border-radius: 14px;
-    background: rgba(250, 235, 215, 0.25);
-    display: none;
-}
-
-.star-path-info-default.active {
-    display: block;
-}
-
-.star-path-info-default p {
-    color: #9f1605;
-    font-style: italic;
-    font-size: 17px;
-}
-
+/* Controls */
 .star-path-controls {
-    max-width: 900px;
-    width: fit-content;
-    margin: 24px auto 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    background: #faebd7;
-    padding: 5px 10px 5px 10px;
-    border-radius: 30px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  background: #faebd7;
+  padding: 6px 14px;
+  border-radius: 40px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  max-width: 100%;
 }
 
 .star-path-play-btn {
-    background: linear-gradient(135deg, #9f1605, #7d1003);
-    border: none;
-    color: #ffffff;
-    font-family: "helvetica";
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 26px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(159, 22, 5, 0.2);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+  background: linear-gradient(135deg, #9f1605, #7d1003);
+  border: none;
+  color: #ffffff;
+  font-family: "helvetica";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 9px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(159, 22, 5, 0.2);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .star-path-play-btn:hover {
-    box-shadow: 0 6px 24px rgba(159, 22, 5, 0.35);
-    transform: translateY(-1px);
-    color: #ffffff;
+  box-shadow: 0 6px 20px rgba(159, 22, 5, 0.35);
+  transform: translateY(-1px);
+  color: #ffffff;
 }
 
 .star-path-play-btn.playing {
-    background: linear-gradient(135deg, #D4AF37, #B8860B);
-    color: #1c0b06;
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  color: #1c0b06;
 }
 
 .star-path-indicators {
-    display: flex;
-    gap: 6px;
+  display: flex;
+  gap: 6px;
 }
 
 .star-path-ind {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(159, 22, 5, 0.25);
-    background: transparent;
-    color: rgba(159, 22, 5, 0.6);
-    font-family: "helvetica";
-    font-size: 11px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(159, 22, 5, 0.25);
+  background: transparent;
+  color: rgba(159, 22, 5, 0.7);
+  font-family: "helvetica";
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .star-path-ind:hover {
-    border-color: #9f1605;
-    color: #9f1605;
+  border-color: #9f1605;
+  color: #9f1605;
 }
 
 .star-path-ind.visited {
-    border-color: rgba(159, 22, 5, 0.6);
-    color: rgba(159, 22, 5, 0.85);
+  border-color: rgba(159, 22, 5, 0.6);
+  color: rgba(159, 22, 5, 0.9);
 }
 
 .star-path-ind.active,
 .star-path-ind.visited.active {
-    background: #9f1605 !important;
-    color: #D4AF37 !important;
-    border-color: #D4AF37 !important;
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+  background: #9f1605 !important;
+  color: #d4af37 !important;
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+/* Info Panel & Cards */
+.star-path-info-panel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.star-path-info-card {
+  display: none;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.star-path-info-card.active {
+  display: flex;
+  flex-direction: column;
+  animation: starPathCardIn 0.4s ease forwards;
+}
+
+@keyframes starPathCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.star-path-card-img {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f7edd8;
+}
+
+.star-path-card-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.star-path-card-body {
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.star-path-card-body h3 {
+  color: #9f1605 !important;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+
+.star-path-card-body p {
+  color: #4a3c31;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.star-path-link {
+  color: #9f1605;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "helvetica";
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  text-align: left;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.star-path-link:hover {
+  color: #d4af37;
+}
+
+@media (min-width: 992px) {
+  .star-path-map-wrap {
+    position: relative;
+  }
+
+  .star-path-info-panel {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 285px;
+    z-index: 10;
+    margin: 0;
+  }
+
+  .star-path-info-card {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+    border-radius: 12px;
+  }
+
+  .star-path-card-body {
+    padding: 14px 16px;
+  }
+
+  .star-path-card-body h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .star-path-card-body p {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .star-path-link {
+    font-size: 13px;
+  }
+
+  .star-path-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin: 0;
+  }
 }
 
 @media (max-width: 991px) {
-    .star-path-section {
-        padding: 30px 0;
-    }
+  .star-path-section {
+    padding: 30px 0;
+  }
+
+  .star-path-map-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .star-path-map-container {
+    order: 1;
+  }
+
+  .star-path-controls {
+    order: 2;
+    margin: 20px auto 0;
+  }
+
+  .star-path-info-panel {
+    order: 3;
+    width: 100%;
+    margin: 20px auto 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .star-path-section {
-        padding: 20px 0;
-    }
+  .star-path-section {
+    padding: 20px 0;
+  }
 
-    .star-path-point {
-        width: 26px;
-        height: 26px;
-    }
+  .star-path-subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 
-    .star-path-point-dot {
-        width: 14px;
-        height: 14px;
-        font-size: 8px;
-    }
+  .star-path-point {
+    width: 26px;
+    height: 26px;
+  }
 
-    .star-path-point.active .star-path-point-dot {
-        width: 22px;
-        height: 22px;
-        font-size: 10px;
-    }
+  .star-path-point-dot {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+  }
 
-    .star-path-info-card.active {
-        flex-direction: column;
-    }
+  .star-path-point.active .star-path-point-dot {
+    width: 22px;
+    height: 22px;
+    font-size: 10px;
+  }
 
-    .star-path-card-img {
-        flex: none;
-        max-width: 100%;
-    }
+  .star-path-card-body {
+    padding: 18px 20px;
+  }
 
-    .star-path-card-img img {
-        max-height: 200px;
-    }
+  .star-path-card-body h3 {
+    font-size: 18px;
+  }
 
-    .star-path-card-body {
-        padding: 20px;
-    }
+  .star-path-card-body p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
 
-    .star-path-card-body h3 {
-        font-size: 18px;
-    }
+  .star-path-controls {
+    gap: 12px;
+  }
 
-    .star-path-controls {
-        gap: 15px;
-    }
-
-    .star-path-ind {
-        width: 26px;
-        height: 26px;
-        font-size: 10px;
-    }
+  .star-path-ind {
+    width: 27px;
+    height: 27px;
+    font-size: 10px;
+  }
 }
 
-@media (min-width: 1024px) {
-    .star-path-map-wrap {
-        position: relative;
-    }
+@media (max-width: 480px) {
+  .star-path-play-btn {
+    padding: 7px 18px;
+    font-size: 12px;
+  }
 
-    .star-path-info-panel {
-        position: absolute;
-        top: 24px;
-        left: 24px;
-        bottom: auto;
-        right: auto;
-        width: 300px;
-        z-index: 10;
-        margin: 0;
-    }
+  .star-path-indicators {
+    gap: 4px;
+  }
 
-    .star-path-info-card {
-        margin-bottom: 0;
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
-    }
+  .star-path-ind {
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
+  }
 
-    .star-path-info-card.active {
-        flex-direction: column;
-    }
+  .star-path-card-body {
+    padding: 15px;
+  }
 
-    .star-path-card-img {
-        flex: none;
-        width: 100%;
-        height: 140px;
-    }
-
-    .star-path-card-body {
-        padding: 18px 20px;
-    }
-
-    .star-path-card-body h3 {
-        font-size: 16px;
-        margin-bottom: 8px;
-    }
-
-    .star-path-card-body p {
-        display: none;
-    }
-
-    .star-path-controls {
-        position: absolute;
-        bottom: 24px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-        margin: 0;
-        width: max-content;
-        background: #faebd7;
-        padding: 5px 10px 5px 10px;
-        border-radius: 40px;
-        border: 1px solid rgba(212, 175, 55, 0.4);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    }
+  .star-path-card-body h3 {
+    font-size: 16px;
+  }
 }
