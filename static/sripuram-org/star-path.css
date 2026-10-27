@@ -1,35 +1,31 @@
-/* ── Star Journey Section ── */
-.star-journey-section {
+/* ---------------------------- STAR PATH PAGE CODE (star-path.css) ---------------------------- */
+.star-path-section {
     background: linear-gradient(180deg, #faebd7 0%, #fdfbf7 10%, #fdfbf7 90%, #faebd7 100%);
-    padding: 60px 0 80px;
+    padding: 40px 0;
     position: relative;
     overflow: hidden;
 }
 
-.star-journey-section h2 {
-    margin-bottom: 8px;
+.star-path-section h2 {
+    margin-bottom: 0;
 }
 
-.sj-subtitle {
-    color: #5c4033;
-    font-style: italic;
-    margin-bottom: 40px;
+.star-path-motif {
+    filter: sepia(0.5) hue-rotate(340deg) saturate(1.5);
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.star-path-subtitle {
+    margin-bottom: 10px;
     font-size: 18px;
 }
 
-.sj-motif {
-    filter: sepia(0.5) hue-rotate(340deg) saturate(1.5);
-    opacity: 0.8;
-    margin-bottom: 10px;
-}
-
-/* ── Map Container ── */
-.sj-map-wrap {
-    max-width: 900px;
+.star-path-map-wrap {
     margin: 0 auto 30px;
 }
 
-.sj-map-container {
+.star-path-map-container {
     position: relative;
     border-radius: 14px;
     overflow: hidden;
@@ -37,13 +33,13 @@
     border: 2px solid rgba(212, 175, 55, 0.35);
 }
 
-.sj-star-img {
+.star-path-star-img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.sj-svg {
+.star-path-svg {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,13 +48,13 @@
     pointer-events: none;
 }
 
-.sj-bg-path {
+.star-path-bg-path {
     fill: none;
     stroke: rgba(212, 175, 55, 0.25);
     stroke-width: 4;
 }
 
-.sj-trace-path {
+.star-path-trace-path {
     fill: none;
     stroke: #D4AF37;
     stroke-width: 5;
@@ -66,17 +62,16 @@
     stroke-linejoin: round;
 }
 
-.sj-tracer-dot {
+.star-path-tracer-dot {
     fill: #FFD700;
     opacity: 0;
 }
 
-.sj-tracer-dot.visible {
+.star-path-tracer-dot.visible {
     opacity: 1;
 }
 
-/* ── Point Markers ── */
-.sj-point {
+.star-path-point {
     position: absolute;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -85,7 +80,22 @@
     height: 34px;
 }
 
-.sj-point-dot {
+.star-path-point-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #D4AF37;
+    opacity: 0;
+}
+
+.star-path-point.active .star-path-point-pulse {
+    animation: starPathPulse 1.5s ease-out infinite;
+}
+
+.star-path-point-dot {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -107,37 +117,22 @@
     transition: all 0.3s ease;
 }
 
-.sj-point-pulse {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 2px solid #D4AF37;
-    opacity: 0;
-}
-
-.sj-point.active .sj-point-pulse {
-    animation: sjPulse 1.5s ease-out infinite;
-}
-
-.sj-point.active .sj-point-dot {
+.star-path-point.active .star-path-point-dot {
     width: 28px;
     height: 28px;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.8), 0 0 40px rgba(212, 175, 55, 0.3);
     font-size: 12px;
 }
 
-.sj-point.visited .sj-point-dot {
+.star-path-point.visited .star-path-point-dot {
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
 }
 
-.sj-point:hover .sj-point-dot {
+.star-path-point:hover .star-path-point-dot {
     transform: translate(-50%, -50%) scale(1.15);
 }
 
-@keyframes sjPulse {
+@keyframes starPathPulse {
     0% {
         transform: scale(1);
         opacity: 0.7;
@@ -148,13 +143,12 @@
     }
 }
 
-/* ── Info Panel ── */
-.sj-info-panel {
+.star-path-info-panel {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.sj-info-card {
+.star-path-info-card {
     display: none;
     border-radius: 14px;
     overflow: hidden;
@@ -164,12 +158,12 @@
     margin-bottom: 24px;
 }
 
-.sj-info-card.active {
+.star-path-info-card.active {
     display: flex;
-    animation: sjCardIn 0.5s ease forwards;
+    animation: starPathCardIn 0.5s ease forwards;
 }
 
-@keyframes sjCardIn {
+@keyframes starPathCardIn {
     from {
         opacity: 0;
         transform: translateY(12px);
@@ -180,19 +174,19 @@
     }
 }
 
-.sj-card-img {
+.star-path-card-img {
     flex: 0 0 38%;
     overflow: hidden;
 }
 
-.sj-card-img img {
+.star-path-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     min-height: 200px;
 }
 
-.sj-card-body {
+.star-path-card-body {
     flex: 1;
     padding: 28px 32px;
     display: flex;
@@ -200,7 +194,7 @@
     justify-content: center;
 }
 
-.sj-card-body h3 {
+.star-path-card-body h3 {
     color: #9f1605 !important;
     font-size: 22px;
     text-align: left;
@@ -208,7 +202,7 @@
     text-transform: none;
 }
 
-.sj-card-body p {
+.star-path-card-body p {
     color: #4a3c31;
     font-size: 16px;
     text-align: left;
@@ -216,7 +210,7 @@
     margin-bottom: 14px;
 }
 
-.sj-link {
+.star-path-link {
     color: #9f1605;
     text-decoration: none;
     font-size: 14px;
@@ -228,11 +222,11 @@
     font-weight: 600;
 }
 
-.sj-link:hover {
+.star-path-link:hover {
     color: #D4AF37;
 }
 
-.sj-info-default {
+.star-path-info-default {
     text-align: center;
     padding: 45px 20px;
     border: 1px dashed rgba(159, 22, 5, 0.3);
@@ -241,18 +235,17 @@
     display: none;
 }
 
-.sj-info-default.active {
+.star-path-info-default.active {
     display: block;
 }
 
-.sj-info-default p {
+.star-path-info-default p {
     color: #9f1605;
     font-style: italic;
     font-size: 17px;
 }
 
-/* ── Controls ── */
-.sj-controls {
+.star-path-controls {
     max-width: 900px;
     width: fit-content;
     margin: 24px auto 0;
@@ -268,7 +261,7 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.sj-play-btn {
+.star-path-play-btn {
     background: linear-gradient(135deg, #9f1605, #7d1003);
     border: none;
     color: #ffffff;
@@ -284,23 +277,23 @@
     text-transform: uppercase;
 }
 
-.sj-play-btn:hover {
+.star-path-play-btn:hover {
     box-shadow: 0 6px 24px rgba(159, 22, 5, 0.35);
     transform: translateY(-1px);
     color: #ffffff;
 }
 
-.sj-play-btn.playing {
+.star-path-play-btn.playing {
     background: linear-gradient(135deg, #D4AF37, #B8860B);
     color: #1c0b06;
 }
 
-.sj-indicators {
+.star-path-indicators {
     display: flex;
     gap: 6px;
 }
 
-.sj-ind {
+.star-path-ind {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -317,73 +310,78 @@
     transition: all 0.3s;
 }
 
-.sj-ind:hover {
+.star-path-ind:hover {
     border-color: #9f1605;
     color: #9f1605;
 }
 
-.sj-ind.visited {
+.star-path-ind.visited {
     border-color: rgba(159, 22, 5, 0.6);
     color: rgba(159, 22, 5, 0.85);
 }
 
-.sj-ind.active,
-.sj-ind.visited.active {
+.star-path-ind.active,
+.star-path-ind.visited.active {
     background: #9f1605 !important;
     color: #D4AF37 !important;
     border-color: #D4AF37 !important;
     box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
 }
 
-/* ── Responsive ── */
+@media (max-width: 991px) {
+    .star-path-section {
+        padding: 30px 0;
+    }
+}
+
 @media (max-width: 768px) {
-    .star-journey-section {
-        padding: 60px 15px 50px;
+    .star-path-section {
+        padding: 20px 0;
     }
 
-    .sj-info-card.active {
-        flex-direction: column;
-    }
-
-    .sj-card-img {
-        flex: none;
-        max-width: 100%;
-    }
-
-    .sj-card-img img {
-        max-height: 200px;
-    }
-
-    .sj-card-body {
-        padding: 20px;
-    }
-
-    .sj-card-body h3 {
-        font-size: 18px;
-    }
-
-    .sj-point {
+    .star-path-point {
         width: 26px;
         height: 26px;
     }
 
-    .sj-point-dot {
+    .star-path-point-dot {
         width: 14px;
         height: 14px;
         font-size: 8px;
     }
 
-    .sj-point.active .sj-point-dot {
+    .star-path-point.active .star-path-point-dot {
         width: 22px;
         height: 22px;
         font-size: 10px;
     }
 
-    .sj-controls {
+    .star-path-info-card.active {
+        flex-direction: column;
+    }
+
+    .star-path-card-img {
+        flex: none;
+        max-width: 100%;
+    }
+
+    .star-path-card-img img {
+        max-height: 200px;
+    }
+
+    .star-path-card-body {
+        padding: 20px;
+    }
+
+    .star-path-card-body h3 {
+        font-size: 18px;
+    }
+
+    .star-path-controls {
         gap: 15px;
     }
 
-    .sj-ind {
+    .star-path-ind {
         width: 26px;
         height: 26px;
         font-size: 10px;
@@ -391,12 +389,11 @@
 }
 
 @media (min-width: 1024px) {
-    .sj-map-wrap {
+    .star-path-map-wrap {
         position: relative;
-        max-width: 1140px;
     }
 
-    .sj-info-panel {
+    .star-path-info-panel {
         position: absolute;
         top: 24px;
         left: 24px;
@@ -407,35 +404,35 @@
         margin: 0;
     }
 
-    .sj-info-card {
+    .star-path-info-card {
         margin-bottom: 0;
         box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
     }
 
-    .sj-info-card.active {
+    .star-path-info-card.active {
         flex-direction: column;
     }
 
-    .sj-card-img {
+    .star-path-card-img {
         flex: none;
         width: 100%;
         height: 140px;
     }
 
-    .sj-card-body {
+    .star-path-card-body {
         padding: 18px 20px;
     }
 
-    .sj-card-body h3 {
+    .star-path-card-body h3 {
         font-size: 16px;
         margin-bottom: 8px;
     }
 
-    .sj-card-body p {
+    .star-path-card-body p {
         display: none;
     }
 
-    .sj-controls {
+    .star-path-controls {
         position: absolute;
         bottom: 24px;
         left: 50%;

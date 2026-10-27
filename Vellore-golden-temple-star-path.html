@@ -719,45 +719,45 @@
     <!-- STAR PATH INTERACTIVE JOURNEY SECTION -->
     <!-- ============================================================ -->
 
-    <div id="star-journey" class="star-journey-section">
+    <div id="star-path" class="star-path-section">
       <div class="container text-center">
         <h2 data-aos="fade-down" data-aos-duration="1000">
           Journey Through the Star Path
         </h2>
         <img
           src="static/sripuram-org/motif-1.webp"
-          class="img-fluid sj-motif"
+          class="img-fluid star-path-motif"
           alt="motif"
           data-aos="fade-down"
           data-aos-duration="1000"
         />
-        <p class="sj-subtitle" data-aos="fade-up" data-aos-duration="1000">
+        <p class="star-path-subtitle" data-aos="fade-up" data-aos-duration="1000">
           Explore the sacred vertices of the divine star-shaped pathway
         </p>
       </div>
       <div class="container">
         <!-- Star Map with SVG Overlay -->
-        <div class="sj-map-wrap" data-aos="zoom-in" data-aos-duration="1200">
-          <div class="sj-map-container">
+        <div class="star-path-map-wrap" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="star-path-map-container">
             <img
               src="static/sripuram-org/aerial-view.webp"
-              class="sj-star-img"
+              class="star-path-star-img"
               alt="Star Path Aerial View"
             />
             <svg
-              class="sj-svg"
+              class="star-path-svg"
               viewBox="0 0 1923 1079.1"
               preserveAspectRatio="none"
             >
               <defs>
-                <filter id="sjGlow">
+                <filter id="starPathGlow">
                   <feGaussianBlur stdDeviation="4" result="b"></feGaussianBlur>
                   <feMerge>
                     <feMergeNode in="b"></feMergeNode>
                     <feMergeNode in="SourceGraphic"></feMergeNode>
                   </feMerge>
                 </filter>
-                <filter id="sjDotGlow">
+                <filter id="starPathDotGlow">
                   <feGaussianBlur stdDeviation="6" result="b"></feGaussianBlur>
                   <feMerge>
                     <feMergeNode in="b"></feMergeNode>
@@ -766,86 +766,86 @@
                 </filter>
               </defs>
               <path
-                class="sj-bg-path"
+                class="star-path-bg-path"
                 d="M567.5,610.6 L638.5,686.5 L742.2,632.8 L881.6,409.4 L698.5,274.2 L992.6,245.3 L1083.9,128.5 L1267.4,214.6 L1533.4,191.3 L1517.3,332.5 L1822.6,473.3 L1509,526.6 L1507.1,525.2 L1345.1,424.6 L1341.3,424.1 l-9.9,-4.7 c0,0,-30.6,16.5,-56.9,18.8 s-94.1,-12.2,-134.6,-47.1 s-12.7,-86.1,82.8,-81.9 c0,0,42.4,1.9,102.1,46.6 c0,0,20.2,25.9,-2.4,43.8 l-68.2,-37.6 l-9.9,6.6 L1242,373.8 l91.3,56 l-21.6,11.3 l80.9,54.8 l91.5,59.3 L1458,808.4 l-336.5,-225.6 l-322.7,47.8 c-15.2,2.2,-29.6,8,-42.2,16.8 L589.2,764.3 c-6.9,4.8,-8.3,14.5,-2.9,21.1 l75.2,92 l-18,15.2"
               ></path>
               <path
-                id="sjTracePath"
-                class="sj-trace-path"
+                id="starPathTrace"
+                class="star-path-trace-path"
                 d="M567.5,610.6 L638.5,686.5 L742.2,632.8 L881.6,409.4 L698.5,274.2 L992.6,245.3 L1083.9,128.5 L1267.4,214.6 L1533.4,191.3 L1517.3,332.5 L1822.6,473.3 L1509,526.6 L1507.1,525.2 L1345.1,424.6 L1341.3,424.1 l-9.9,-4.7 c0,0,-30.6,16.5,-56.9,18.8 s-94.1,-12.2,-134.6,-47.1 s-12.7,-86.1,82.8,-81.9 c0,0,42.4,1.9,102.1,46.6 c0,0,20.2,25.9,-2.4,43.8 l-68.2,-37.6 l-9.9,6.6 L1242,373.8 l91.3,56 l-21.6,11.3 l80.9,54.8 l91.5,59.3 L1458,808.4 l-336.5,-225.6 l-322.7,47.8 c-15.2,2.2,-29.6,8,-42.2,16.8 L589.2,764.3 c-6.9,4.8,-8.3,14.5,-2.9,21.1 l75.2,92 l-18,15.2"
-                filter="url(#sjGlow)"
+                filter="url(#starPathGlow)"
               ></path>
               <circle
-                id="sjDot"
-                class="sj-tracer-dot"
+                id="starPathDot"
+                class="star-path-tracer-dot"
                 r="10"
                 cx="567.5"
                 cy="610.6"
-                filter="url(#sjDotGlow)"
+                filter="url(#starPathDotGlow)"
               ></circle>
             </svg>
 
             <!-- Point Markers positioned dynamically based on 1923x1079.1 coordinate grid (1 to 6 path sequence) -->
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="0"
               style="top: 56.6%; left: 29.5%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>1</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>1</span></div>
             </div>
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="1"
               style="top: 63.6%; left: 33.2%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>2</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>2</span></div>
             </div>
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="2"
               style="top: 48.7%; left: 78.4%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>3</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>3</span></div>
             </div>
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="3"
               style="top: 39.3%; left: 69.9%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>4</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>4</span></div>
             </div>
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="4"
               style="top: 34.6%; left: 64.6%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>5</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>5</span></div>
             </div>
             <div
-              class="sj-point"
+              class="star-path-point"
               data-point="5"
               style="top: 82.7%; left: 33.5%"
             >
-              <div class="sj-point-pulse"></div>
-              <div class="sj-point-dot"><span>6</span></div>
+              <div class="star-path-point-pulse"></div>
+              <div class="star-path-point-dot"><span>6</span></div>
             </div>
           </div>
 
           <!-- Info Cards Panel -->
-          <div class="sj-info-panel">
-            <div class="sj-info-card" data-card="0">
-              <div class="sj-card-img">
+          <div class="star-path-info-panel">
+            <div class="star-path-info-card" data-card="0">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/sri-silver-ganapathy-temple.webp"
                   alt="Sri Sakthi Ganapathy Temple"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 1: Sri Sakthi Ganapathy Temple</h3>
                 <p>
                   The magnificent silver-made Sri Sakthi Ganapathy Temple stands
@@ -855,76 +855,76 @@
                 </p>
                 <a
                   href="Sri-sakthi-ganapathy-temple-sripuram.html"
-                  class="sj-link"
+                  class="star-path-link"
                   >Explore this temple →</a
                 >
               </div>
             </div>
-            <div class="sj-info-card" data-card="1">
-              <div class="sj-card-img">
+            <div class="star-path-info-card" data-card="1">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/guru-peedam.webp"
                   alt="Guru Peedam"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 2 — Sripuram Guru Peedam</h3>
                 <p>
                   The Guru Peedam represents the seat of the spiritual guide.
                   Devotees visit the Guru Peedam to offer their respects and
                   seek the guru's wisdom along their journey.
                 </p>
-                <a href="Sripuram-guru-peedam.html" class="sj-link"
+                <a href="Sripuram-guru-peedam.html" class="star-path-link"
                   >Explore Guru Peedam →</a
                 >
               </div>
             </div>
-            <div class="sj-info-card" data-card="2">
-              <div class="sj-card-img">
+            <div class="star-path-info-card" data-card="2">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/sri-swarna-lakshmi-temple.webp"
                   alt="Sri Swarna Lakshmi Temple"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 3 — Sri Swarna Lakshmi Temple</h3>
                 <p>
                   Dedicated to Sri Swarna Lakshmi, the goddess of golden
                   prosperity and abundance. Her divine presence fills the path
                   with auspicious blessings.
                 </p>
-                <a href="Sri-swarna-lakshmi-temple.html" class="sj-link"
+                <a href="Sri-swarna-lakshmi-temple.html" class="star-path-link"
                   >Explore Sri Swarna Lakshmi →</a
                 >
               </div>
             </div>
-            <div class="sj-info-card" data-card="3">
-              <div class="sj-card-img">
+            <div class="star-path-info-card" data-card="3">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/sri-kamadhenu-silver-gho-matha.webp"
                   alt="Silver Gho Maatha"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 4 — Sri Kamadhenu (Silver Gho Matha)</h3>
                 <p>
                   The divine Silver Gho Maatha (Kamadhenu) symbolizes abundance
                   and purity, located right at the bridge entry leading to the
                   inner temple loop.
                 </p>
-                <a href="Sri-kamadhenu-sripuram.html" class="sj-link"
+                <a href="Sri-kamadhenu-sripuram.html" class="star-path-link"
                   >Explore Kamadhenu →</a
                 >
               </div>
             </div>
-            <div class="sj-info-card" data-card="4">
-              <div class="sj-card-img">
+            <div class="star-path-info-card" data-card="4">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/sri-lakshmi-narayani-content-image.webp"
                   alt="Sri Lakshmi Narayani Temple"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 5 — Sri Lakshmi Narayani Temple</h3>
                 <p>
                   The pinnacle of the spiritual journey: the magnificent Golden
@@ -932,19 +932,19 @@
                   the ultimate blessings and divine darshan of Sri Lakshmi
                   Narayani.
                 </p>
-                <a href="Sri-lakshmi-narayani-temple.html" class="sj-link"
+                <a href="Sri-lakshmi-narayani-temple.html" class="star-path-link"
                   >Explore this temple →</a
                 >
               </div>
             </div>
-            <div class="sj-info-card" data-card="5">
-              <div class="sj-card-img">
+            <div class="star-path-info-card" data-card="5">
+              <div class="star-path-card-img">
                 <img
                   src="static/sripuram-org/sri-srinivasa-perumal-temple.webp"
                   alt="Sri Srinivasa Perumal Temple"
                 />
               </div>
-              <div class="sj-card-body">
+              <div class="star-path-card-body">
                 <h3>Point 6 — Sri Srinivasa Perumal Temple</h3>
                 <p>
                   Located near the end of the pathway, the temple of Sri
@@ -952,7 +952,7 @@
                   blesses devotees as they near the completion of their
                   spiritual journey through the Star Path.
                 </p>
-                <a href="Sripuram-srinivasa-perumal-temple.html" class="sj-link"
+                <a href="Sripuram-srinivasa-perumal-temple.html" class="star-path-link"
                   >Explore this temple →</a
                 >
               </div>
@@ -960,17 +960,17 @@
           </div>
 
           <!-- Play Controls & Point Indicators -->
-          <div class="sj-controls">
-            <button id="sjPlayBtn" class="sj-play-btn">
+          <div class="star-path-controls">
+            <button id="starPathPlayBtn" class="star-path-play-btn">
               <i class="fas fa-play"></i>&nbsp; Play
             </button>
-            <div class="sj-indicators">
-              <div class="sj-ind" data-point="0">1</div>
-              <div class="sj-ind" data-point="1">2</div>
-              <div class="sj-ind" data-point="2">3</div>
-              <div class="sj-ind" data-point="3">4</div>
-              <div class="sj-ind" data-point="4">5</div>
-              <div class="sj-ind" data-point="5">6</div>
+            <div class="star-path-indicators">
+              <div class="star-path-ind" data-point="0">1</div>
+              <div class="star-path-ind" data-point="1">2</div>
+              <div class="star-path-ind" data-point="2">3</div>
+              <div class="star-path-ind" data-point="3">4</div>
+              <div class="star-path-ind" data-point="4">5</div>
+              <div class="star-path-ind" data-point="5">6</div>
             </div>
           </div>
         </div>
