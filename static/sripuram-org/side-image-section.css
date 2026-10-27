@@ -31,10 +31,6 @@
   text-align: center;
 }
 
-.side-image-info-inner h1 {
-  margin-bottom: 10px;
-}
-
 .side-image-info-inner p {
   font-size: clamp(16px, 1.35vw, 22px);
   line-height: 1.5;
@@ -103,10 +99,6 @@
   .side-image-mobile-header {
     display: block;
     text-align: center;
-  }
-
-  .side-image-mobile-header h1 {
-    margin-bottom: 10px;
   }
 
   .side-image-mobile-header img {
