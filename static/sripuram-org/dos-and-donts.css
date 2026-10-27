@@ -1,48 +1,197 @@
-.strictly-prohibited-section h4,
-.strictly-prohibited-section1 h4 {
+/* ---------------------------- DOS AND DON'TS PAGE CODE (dos-and-donts.css) ---------------------------- */
+
+/* Motif */
+.strictly-prohibited-motif {
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section 1: Strictly Prohibited */
+.strictly-prohibited-section {
+  text-align: center;
+}
+
+.strictly-prohibited-section h4 {
   font-family: "helvetica";
+  font-size: 20px;
   color: #9f1605;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.strictly-prohibited-section p,
-.strictly-prohibited-section1 p {
-  margin-top: 10px;
+.strictly-prohibited-section .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.strictly-prohibited-section .row > [class*="col-"] {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .strictly-prohibited-section img {
-  background-color: #F1CD98;
+  background-color: #f1cd98;
   border-radius: 50%;
   padding: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
+.strictly-prohibited-section p {
+  line-height: 1.4;
+  margin-top: 12px;
+  text-align: center;
+  color: #333333;
+}
+
+/* Section 2: General Practices */
 .strictly-prohibited-section1 {
-  background-color: #F2CF99;
+  background-color: #f2cf99;
   border-radius: 15px;
   margin: 10px auto 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.strictly-prohibited-section1 h2 {
+  margin-bottom: 30px;
+}
+
+.strictly-prohibited-section1 .row {
+  display: flex;
+  justify-content: center;
+}
+
+.strictly-prohibited-section1 .row > [class*="col-"] {
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .strictly-prohibited-section1 img {
   background-color: #806940;
   border-radius: 50%;
   padding: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
+.strictly-prohibited-section1 p {
+  line-height: 1.4;
+  margin-top: 12px;
+  text-align: center;
+  color: #333333;
+}
+
+/* Responsive Media Queries */
 @media (min-width: 992px) {
-  .strictly-prohibited-section .row>[class*="col-"] {
+  .strictly-prohibited-section .row > [class*="col-"] {
     flex: 0 0 20%;
     max-width: 20%;
   }
 }
 
+@media (max-width: 991px) {
+  .strictly-prohibited-section h4 {
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+
+  .strictly-prohibited-section .row > [class*="col-"] {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .strictly-prohibited-motif {
+    margin: 0 auto 25px;
+    max-width: 40%;
+  }
+
+  .strictly-prohibited-section h4 {
+    margin-bottom: 25px;
+    font-size: 19px;
+  }
+
+  .strictly-prohibited-section .row > [class*="col-"] {
+    margin-bottom: 25px;
+  }
+
+  .strictly-prohibited-section1 {
+    padding: 25px 15px 15px;
+    margin: 10px auto 15px;
+  }
+}
+
 @media (max-width: 575px) {
+  .strictly-prohibited-motif {
+    max-width: 30%;
+    margin-bottom: 20px;
+  }
+
   .strictly-prohibited-section h4 {
     font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .strictly-prohibited-section .row > [class*="col-"] {
+    margin-bottom: 20px;
+  }
+
+  .strictly-prohibited-section img {
+    padding: 8px;
+    max-width: 65px;
   }
 
   .strictly-prohibited-section p {
-    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .strictly-prohibited-section1 {
+    padding: 20px 10px 10px;
+    border-radius: 10px;
+  }
+
+  .strictly-prohibited-section1 img {
+    padding: 8px;
+    max-width: 65px;
+  }
+
+  .strictly-prohibited-section1 p {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .strictly-prohibited-section h4 {
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .strictly-prohibited-section img {
+    max-width: 58px;
+  }
+
+  .strictly-prohibited-section1 img {
+    max-width: 58px;
+  }
+}
+
+@media (max-width: 360px) {
+  .strictly-prohibited-section h4 {
+    font-size: 16px;
+  }
+
+  .strictly-prohibited-section img {
+    max-width: 52px;
+    padding: 6px;
+  }
+
+  .strictly-prohibited-section1 img {
+    max-width: 52px;
+    padding: 6px;
   }
 }
