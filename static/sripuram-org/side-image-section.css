@@ -53,6 +53,22 @@
   margin-bottom: 10px;
 }
 
+.side-image-link,
+.side-image-details a {
+  color: #039be5;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  transition: color 0.2s ease;
+}
+
+.side-image-link:hover,
+.side-image-details a:hover {
+  color: #0277bd;
+}
+
 @media (max-width: 1440px) {
   .side-image-row {
     margin-top: 40px;
