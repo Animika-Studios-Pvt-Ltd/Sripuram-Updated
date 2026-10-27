@@ -1,22 +1,3 @@
-@font-face {
-  font-family: "helvetica";
-  font-style: normal;
-  font-weight: 500;
-  src: local("helvetica"), local("helvetica"),
-    url("static/sripuram-org/helvetica.ttf") format("truetype");
-}
-
-.about-info-inner h4 {
-  font-family: "helvetica";
-  color: #9f1605 !important;
-  text-transform: uppercase !important;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.about-info-inner p {
-  margin-top: 20px !important;
-}
 
 .dress-code-section h4 {
   font-family: "helvetica";
