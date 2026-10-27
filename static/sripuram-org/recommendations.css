@@ -21,6 +21,11 @@
   padding-bottom: 20px;
 }
 
+.recommendations-section .row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .recommendations-border {
   border-bottom: 1px solid #d4b16f;
 }
@@ -39,6 +44,7 @@
 .recommendations-image-bg img {
   display: block;
   margin: 0 auto;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -53,8 +59,8 @@
 
 .recommendations-card h4 {
   font-family: "helvetica";
-  color: #9f1605 !important;
-  text-transform: uppercase !important;
+  color: #9f1605;
+  text-transform: uppercase;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -69,7 +75,7 @@
   font-family: "helvetica";
   text-align: left;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   line-height: 1.6;
   position: relative;
   padding-left: 35px;
@@ -86,18 +92,73 @@
   vertical-align: middle;
 }
 
+@media (max-width: 1440px) {
+  .recommendations-image-bg {
+    padding: 50px;
+    max-width: 380px;
+  }
+
+  .recommendations-bullets li {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .recommendations-image-bg {
+    padding: 45px;
+    max-width: 360px;
+  }
+
+  .recommendations-card h4 {
+    margin-bottom: 15px;
+  }
+
+  .recommendations-bullets li {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .recommendations-card {
+    padding: 10px 10px;
+  }
+
+  .recommendations-image-bg {
+    width: 100%;
+    max-width: 340px;
+    padding: 50px;
+  }
+
+  .recommendations-bullets li {
+    font-size: 18px;
+    padding-left: 30px;
+    margin-bottom: 8px;
+  }
+
+  .recommendations-bullet-img {
+    width: 18px;
+  }
+}
+
 @media (max-width: 991px) {
+  .recommendations-section [class*="col-"] {
+    width: 100%;
+  }
+
   .recommendations-card h4 {
     text-align: center;
   }
 
-    .recommendations-bullets li {
+  .recommendations-bullets li {
     font-size: 18px;
-    }
+    margin-bottom: 8px;
+  }
 
   .recommendations-image-bg {
-    padding: 40px;
-    max-width: 320px;
+    width: 100%;
+    max-width: 310px;
+    padding: 45px;
   }
 }
 
@@ -108,7 +169,7 @@
   }
 
   .recommendations-card {
-    padding: 10px 5px;
+    padding: 10px 15px;
   }
 
   .recommendations-card h4 {
@@ -119,7 +180,7 @@
   .recommendations-bullets li {
     font-size: 16px;
     line-height: 1.5;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     padding-left: 28px;
   }
 
@@ -129,8 +190,9 @@
   }
 
   .recommendations-image-bg {
-    padding: 30px;
-    max-width: 260px;
+    width: 100%;
+    max-width: 300px;
+    padding: 45px;
   }
 }
 
@@ -145,8 +207,14 @@
     padding-bottom: 15px;
   }
 
+  .recommendations-section .row:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
   .recommendations-bullets li {
     font-size: 15px;
+    margin-bottom: 6px;
     padding-left: 24px;
   }
 
@@ -156,7 +224,58 @@
   }
 
   .recommendations-image-bg {
-    padding: 20px;
+    width: 100%;
+    max-width: 250px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendations-card h4 {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+
+  .recommendations-bullets li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    padding-left: 22px;
+  }
+
+  .recommendations-bullet-img {
+    width: 13px;
+    top: 3px;
+  }
+
+  .recommendations-image-bg {
+    width: 100%;
     max-width: 220px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .recommendations-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .recommendations-bullets li {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 5px;
+    padding-left: 20px;
+  }
+
+  .recommendations-bullet-img {
+    width: 12px;
+    top: 3px;
+  }
+
+  .recommendations-image-bg {
+    width: 100%;
+    max-width: 170px;
+    padding: 22px;
   }
 }

@@ -73,7 +73,7 @@
   margin-bottom: 0;
 }
 
-.inner-page-section img {
+.inner-page-img {
   width: auto;
   max-width: 100%;
 }
@@ -83,7 +83,7 @@
     padding: 30px 0;
   }
 
-  .inner-page-section img {
+  .inner-page-img {
     max-width: 60%;
   }
 }
@@ -93,7 +93,7 @@
     padding: 25px 0;
   }
 
-  .inner-page-section img {
+  .inner-page-img {
     max-width: 50%;
   }
 }
@@ -103,7 +103,7 @@
     padding: 20px 0;
   }
 
-  .inner-page-section img {
+  .inner-page-img {
     max-width: 25%;
   }
 }
@@ -113,7 +113,7 @@
     padding: 15px 0;
   }
 
-  .inner-page-section img {
+  .inner-page-img {
     max-width: 20%;
   }
 }
@@ -123,7 +123,7 @@
     padding: 10px 0;
   }
 
-  .inner-page-section img {
+  .inner-page-img {
     max-width: 25%;
   }
 }
