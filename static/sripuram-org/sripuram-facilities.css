@@ -4,13 +4,6 @@
   margin-top: 40px;
 }
 
-/* Anchor scroll margins for direct deep-linking */
-#guest-houses,
-#annadhana-mandapam {
-  scroll-margin-top: 160px;
-}
-
-/* Facility Row Item */
 .facility-item {
   border-bottom: 1px solid #d4b16f;
   margin-bottom: 20px;
@@ -23,7 +16,11 @@
   padding-bottom: 0;
 }
 
-/* Spinning Motif & Image Container */
+#guest-houses,
+#annadhana-mandapam {
+  scroll-margin-top: 160px;
+}
+
 .facility-bg {
   position: relative;
   width: 180px;
@@ -76,7 +73,6 @@
   margin: 0 auto;
 }
 
-/* Facility Info Content */
 .facility-info {
   width: 100%;
 }
