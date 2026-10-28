@@ -25,6 +25,7 @@
 @import "location-map.css";
 @import "dress-code.css";
 @import "global.css";
+@import "anecdotes.css";
 
 @font-face {
   font-family: "arrusbtroman";
@@ -821,10 +822,6 @@ input[type="submit"] {
   padding: 6px 20px;
 }
 
-.anecdotes h6 {
-  font-family: "arrusbtroman";
-}
-
 input[type="submit"]:hover {
   color: #fff;
   background: #8f1d03;
@@ -838,19 +835,6 @@ textarea {
   background: 0 0;
   overflow: hidden;
   height: 3em;
-}
-
-.anecdotes h6 {
-  font-size: 23px;
-  background: #ecb05a;
-  padding: 10px;
-  width: fit-content;
-  border-radius: 10px;
-}
-
-.anecdotes p {
-  text-align: justify;
-  padding: 0 0 0 20px;
 }
 
 .table > tbody > tr > td {
