@@ -197,12 +197,6 @@ $(document).ready(function () {
       )),
     );
     fixSlickAriaFocus();
-  }),
-  $(".read-more").click(function () {
-    ($(this).prev().slideToggle(),
-      "View All" == $(this).text()
-        ? $(this).text("View Less")
-        : $(this).text("View All"));
   }));
 
 // Progressive Batch Loading for Gallery Slider Images
