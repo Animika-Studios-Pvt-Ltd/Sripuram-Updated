@@ -33,14 +33,14 @@
     padding: 20px 0;
   }
 
-  .publications-section-row  img {
+  .publications-section-row img {
     padding-bottom: 15px;
     margin-bottom: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .publications-section-row  img {
+  .publications-section-row img {
     padding-bottom: 20px;
     margin-bottom: 10px;
   }
@@ -80,8 +80,6 @@
 }
 
 .pub-inner p {
-  font-family: "helvetica";
-  font-size: 19px;
   margin: auto;
 }
 
@@ -96,7 +94,7 @@
 }
 
 .pub-btn a {
-  font-family: "helvetica", sans-serif;
+  font-family: "helvetica";
   text-decoration: none;
   font-size: 17px;
   letter-spacing: 0.01em;
@@ -199,7 +197,7 @@
   border: 1px solid #9f1605;
   color: #9f1605;
   border-radius: 20px;
-  margin: 10px 0 40px;
+  margin: 10px 0 30px;
 }
 
 .news-drpdwn button:hover,
@@ -245,6 +243,6 @@
 @media (max-width: 991px) {
   .news-drpdwn button {
     font-size: 14px;
-    margin: 10px 0 30px;
+    margin: 10px 0 20px;
   }
 }
