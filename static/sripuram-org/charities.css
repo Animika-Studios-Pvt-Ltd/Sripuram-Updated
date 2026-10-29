@@ -247,10 +247,6 @@
   margin: 0 auto;
 }
 
-.charities-info {
-  margin-bottom: 40px;
-}
-
 .charities-info h4,
 .charities-info h5,
 .charities-info h6 {
@@ -264,7 +260,7 @@
 
 .charities-info p {
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 .charities-link,
@@ -277,12 +273,87 @@
 .charities-link:hover,
 .charities-info a:hover {
   color: #0277bd;
-  text-decoration: underline;
+}
+
+.charities-star,
+.charities-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.charities-star-2,
+.charities-list-2 {
+  padding-left: 25px;
+  list-style-type: none;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.charities-star li,
+.charities-star-2 li,
+.charities-list li,
+.charities-list-2 li {
+  font-family: "helvetica";
+  font-size: 19px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.charities-star li span,
+.charities-star-2 li span,
+.charities-list li span,
+.charities-list-2 li span {
+  color: #9f1605;
+  font-size: 22px;
+}
+
+.charities-full-col,
+.charities-full-content,
+.charities-row .col-lg-12 {
+  margin-top: 30px;
+}
+
+@media (max-width: 1440px) {
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 991px) {
   .charities-info h4,
   .charities-info h6 {
+    font-size: 16px;
+  }
+
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
     font-size: 16px;
   }
 }
@@ -302,12 +373,32 @@
 
   .charities-info {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .charities-info h4,
   .charities-info h6 {
     font-size: 15px;
+  }
+
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 16px;
+  }
+
+  .charities-star li span,
+  .charities-star-2 li span,
+  .charities-list li span,
+  .charities-list-2 li span {
+    font-size: 19px;
+  }
+
+  .charities-full-col,
+  .charities-full-content,
+  .charities-row .col-lg-12 {
+    margin-top: 20px;
   }
 }
 
@@ -336,6 +427,26 @@
   .charities-info p {
     margin-bottom: 5px;
   }
+
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 15px;
+  }
+
+  .charities-star li span,
+  .charities-star-2 li span,
+  .charities-list li span,
+  .charities-list-2 li span {
+    font-size: 18px;
+  }
+
+  .charities-full-col,
+  .charities-full-content,
+  .charities-row .col-lg-12 {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -343,10 +454,31 @@
     margin-bottom: 0px;
     padding: 0 15px;
   }
+
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 360px) {
   .charities-info {
     padding: 0 10px;
+  }
+
+  .charities-star li,
+  .charities-star-2 li,
+  .charities-list li,
+  .charities-list-2 li {
+    font-size: 14px;
+  }
+
+  .charities-star li span,
+  .charities-star-2 li span,
+  .charities-list li span,
+  .charities-list-2 li span {
+    font-size: 16px;
   }
 }
