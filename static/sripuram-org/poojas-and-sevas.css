@@ -1,25 +1,29 @@
-/* --------------------------------------- Pooja's and Seva's Section --------------------------------------- */
-.pooja-img {
+/* --------------------------------------- POOJAS AND SEVAS OUTSIDE PAGE --------------------------------------- */
+.poojas-and-sevas-row {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.poojas-and-sevas-img {
   border-bottom: 1px solid #d4b16f;
   margin-bottom: 20px;
 }
 
-.pooja-img img {
+.poojas-and-sevas-img img {
   border-radius: 10px;
 }
 
-.pooja-img img:hover {
+.poojas-and-sevas-img img:hover {
   transform: scale(1.1) !important;
   transition: 0.2s ease-in-out 0.1s;
 }
 
-.pooja-img a,
-.pooja-img p {
+.poojas-and-sevas-img a,
+.poojas-and-sevas-img p {
   font-family: "arrusbtroman";
   margin-top: 10px;
   text-decoration: none;
   color: #333;
-  font-size: 18px;
 }
 
 .poojas-and-sevas-buttons-group {
@@ -29,19 +33,39 @@
   padding: 10px 5px;
 }
 
-.poojas-and-sevas-buttons-group .book,
+.poojas-and-sevas-buttons-group .poojas-and-sevas-book-btn,
 .poojas-and-sevas-buttons-group .poojas-and-sevas-more-btn {
   padding: 0 !important;
   margin: 0 !important;
   float: none !important;
 }
 
-.poojas-and-sevas-buttons-group .book {
+.poojas-and-sevas-buttons-group .poojas-and-sevas-book-btn {
   order: 2;
 }
 
 .poojas-and-sevas-buttons-group .poojas-and-sevas-more-btn {
   order: 1;
+}
+
+.poojas-and-sevas-book-btn button {
+  font-family: "helvetica";
+  background: #0078e0;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2px 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.poojas-and-sevas-book-btn button:hover {
+  background: #a71605;
+}
+
+.poojas-and-sevas-book-btn a {
+  font-size: 14px !important;
+  text-decoration: none;
 }
 
 .poojas-and-sevas-more-btn {
@@ -57,6 +81,7 @@
   color: #4c83cc;
   font-family: "helvetica";
   font-size: inherit;
+  text-decoration: none;
 }
 
 .poojas-and-sevas-more-btn a:hover {
@@ -77,25 +102,212 @@
   transform: rotate(45deg);
 }
 
+/* ------------------------------------- POOJAS AND SEVAS INNER PAGES ------------------------------------- */
+.poojas-and-sevas-detail-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.poojas-and-sevas-info {
+  text-align: left;
+}
+
+.poojas-and-sevas-info h4,
+.poojas-and-sevas-info h5,
+.poojas-and-sevas-info h6 {
+  font-family: "arrusbtroman";
+  color: #9f1605;
+  text-align: left;
+}
+
+.poojas-and-sevas-info h4 {
+  font-size: 20px;
+}
+
+.poojas-and-sevas-info h6 {
+  font-size: 18px;
+}
+
+.poojas-and-sevas-info p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.poojas-and-sevas-info p strong {
+  color: #000;
+}
+
+.poojas-and-sevas-info label {
+  font-family: "helvetica";
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.poojas-and-sevas-info input[type="checkbox"] {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.poojas-and-sevas-link,
+.poojas-and-sevas-info a.poojas-and-sevas-link,
+.poojas-and-sevas-info .terms-link {
+  background: none !important;
+  color: #039be5 !important;
+  text-decoration: none;
+  font-family: "helvetica";
+  position: relative;
+  top: 0px;
+  padding: 0px 5px;
+  border-radius: 0;
+}
+
+.poojas-and-sevas-link:hover,
+.poojas-and-sevas-info a.poojas-and-sevas-link:hover,
+.poojas-and-sevas-info .terms-link:hover {
+  color: #0277bd !important;
+  text-decoration: underline;
+}
+
+.poojas-and-sevas-submit-btn,
+.poojas-and-sevas-info a.poojas-and-sevas-submit-btn,
+.poojas-and-sevas-info a:not(.poojas-and-sevas-link):not(.terms-link) {
+  background: #9f1605;
+  color: #fff !important;
+  border-radius: 45px;
+  padding: 4px 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "helvetica";
+  font-size: 16px;
+  position: relative;
+  top: 15px;
+  transition: 0.3s ease;
+}
+
+.poojas-and-sevas-submit-btn:hover,
+.poojas-and-sevas-info a.poojas-and-sevas-submit-btn:hover,
+.poojas-and-sevas-info a:not(.poojas-and-sevas-link):not(.terms-link):hover {
+  background: #7a1104;
+  color: #fff !important;
+}
+
+.poojas-and-sevas-full-col,
+.poojas-and-sevas-row .col-lg-12 {
+  margin-top: 20px;
+}
+
+/* ------------------------------------- RESPONSIVE BREAKPOINTS ------------------------------------- */
 @media (max-width: 991px) {
   .poojas-and-sevas-more-btn {
     padding: 40px 0 20px 5px;
     font-size: 12px;
   }
+
+  .poojas-and-sevas-full-col,
+.poojas-and-sevas-row .col-lg-12 {
+  margin-top: 0px;
+}
+
+  .poojas-and-sevas-book-btn button {
+    font-size: 13px;
+  }
+
+  .poojas-and-sevas-info h4,
+  .poojas-and-sevas-info h6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .poojas-and-sevas-row {
+    margin-top: 10px;
+  }
+
+  .poojas-and-sevas-book-btn {
+    font-size: 12px;
+  }
+
+  .poojas-and-sevas-detail-img {
+    margin-bottom: 10px;
+  }
+
+  .poojas-and-sevas-detail-img img {
+    width: 80%;
+  }
+
+  .poojas-and-sevas-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .poojas-and-sevas-info h4,
+  .poojas-and-sevas-info h6 {
+    font-size: 15px;
+  }
+
+  .poojas-and-sevas-full-col,
+  .poojas-and-sevas-row .col-lg-12 {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 575px) {
-  .pooja-img {
+  .poojas-and-sevas-row {
+    margin-top: 10px;
+  }
+
+  .poojas-and-sevas-img {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .poojas-and-sevas-detail-img {
+    margin-bottom: 0px;
+  }
+
+  .poojas-and-sevas-detail-img img {
+    width: 70%;
+  }
+
+  .poojas-and-sevas-info {
+    padding: 0 20px;
+  }
+
+  .poojas-and-sevas-info h4,
+  .poojas-and-sevas-info h6 {
+    font-size: 14px;
+  }
+
+  .poojas-and-sevas-info p {
+    margin-bottom: 5px;
+  }
+
+  .poojas-and-sevas-full-col,
+  .poojas-and-sevas-row .col-lg-12 {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-  .pooja-img {
+  .poojas-and-sevas-img {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .poojas-and-sevas-info {
+    margin-bottom: 0px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .poojas-and-sevas-info {
+    padding: 0 10px;
   }
 }
