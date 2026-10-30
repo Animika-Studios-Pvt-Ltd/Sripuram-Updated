@@ -1,0 +1,249 @@
+/* ------------------------------------- SRIPURAM EVENTS PAGE STYLES ------------------------------------- */
+.events-page-section .inner-page-img {
+  margin-bottom: 30px;
+}
+
+.events-page-section h2 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.events-page-section .row,
+.events-page-row {
+  margin-top: 25px;
+}
+
+.events-page-card {
+  border-bottom: 1px solid #d4b16f;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  padding-bottom: 15px;
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+.events-page-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.events-page-card-link:hover {
+  text-decoration: none;
+}
+
+.events-page-card-img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.events-page-card-img:hover {
+  transform: scale(1.05);
+}
+
+.events-page-card-title {
+  font-family: "arrusbtroman";
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.events-page-card:hover .events-page-card-title {
+  color: #9f1605;
+}
+
+.events-page-buttons-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+  padding: 0;
+}
+
+.events-page-card-tag {
+  font-family: "helvetica";
+  font-size: 16px;
+  color: #9f1605;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.events-page-book-btn button {
+  font-family: "helvetica";
+  background: #0078e0;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.events-page-book-btn button:hover {
+  background: #a71605;
+}
+
+.events-page-book-btn a {
+  text-decoration: none;
+}
+
+.events-page-card-date {
+  font-family: "arrusbtroman";
+  margin-bottom: 6px;
+  text-align: center;
+  display: block;
+}
+
+.events-page-more-group {
+  justify-content: center;
+}
+
+.events-page-more-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.events-page-more-btn a {
+  font-family: "arrusbtroman";
+  font-size: 18px;
+  color: #0078e0;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.events-page-more-btn a:hover {
+  color: #9f1605;
+}
+
+.events-page-more-btn img {
+  width: 14px;
+  height: auto;
+  border-radius: 0;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.events-page-more-btn a:hover img {
+  transform: rotate(45deg);
+  filter: hue-rotate(150deg);
+}
+
+@media (max-width: 991px) {
+  .events-page-section .inner-page-img {
+    margin-bottom: 25px;
+  }
+  .events-page-book-btn button {
+    font-size: 13px;
+    padding: 2px 8px;
+  }
+
+  .events-page-card-date {
+    margin-top: 0px;
+  }
+
+  .events-page-more-btn a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events-page-section .inner-page-img {
+    margin-bottom: 20px;
+  }
+  .events-page-section .row,
+  .events-page-row {
+    margin-top: 15px;
+  }
+
+  .events-page-card {
+    margin-bottom: 25px;
+  }
+
+  .events-page-card-img {
+    width: 85%;
+  }
+
+  .events-page-card-title {
+    font-size: 18px;
+  }
+
+  .events-page-more-btn a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .events-page-card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .events-page-card-img {
+    width: 100%;
+  }
+
+  .events-page-card-tag {
+    font-size: 15px;
+  }
+
+  .events-page-card-date {
+    font-size: 15px;
+  }
+
+  .events-page-more-btn a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-page-card {
+    width: 90%;
+  }
+
+  .events-page-card-tag {
+    font-size: 15px;
+  }
+
+  .events-page-card-date {
+    font-size: 15px;
+  }
+
+  .events-page-more-btn a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .events-page-card {
+    width: 95%;
+  }
+
+  .events-page-card-tag {
+    font-size: 14px;
+  }
+
+  .events-page-card-date {
+    font-size: 14px;
+  }
+}
