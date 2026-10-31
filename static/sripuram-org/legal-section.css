@@ -1,0 +1,148 @@
+/* ---------------------------------------------------- Legal Section Styles ---------------------------------------------------- */
+.legal-section .inner-page-img {
+  margin-bottom: 30px;
+}
+
+.legal-info {
+  text-align: left;
+}
+
+.legal-info h5 {
+  font-family: "arrusbtroman";
+  font-size: 20px;
+  color: #9f1605;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.legal-info h5:first-child {
+  margin-top: 10px;
+}
+
+.legal-info p {
+  font-family: "helvetica";
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.legal-info a {
+  color: #9f1605;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.legal-info a:hover {
+  color: #7a1104;
+}
+
+.legal-info ul,
+.legal-list {
+  padding: 0;
+  margin: 12px 0 20px 0;
+  list-style-type: none;
+}
+
+.legal-info li,
+.legal-list li {
+  font-family: "helvetica";
+  font-size: 19px;
+  line-height: 1.65;
+  color: #333333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 26px;
+  text-align: left;
+}
+
+.legal-info li span,
+.legal-list span {
+  color: #9f1605;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+@media (max-width: 1440px) {
+  .legal-info li,
+  .legal-list li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .legal-info li,
+  .legal-list li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .legal-info li,
+  .legal-list li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .legal-section .inner-page-img {
+    margin-bottom: 25px;
+  }
+  .legal-info h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .legal-section .inner-page-img {
+    margin-bottom: 20px;
+  }
+  .legal-info h5 {
+    font-size: 16px;
+  }
+
+  .legal-info p {
+    text-align: left;
+  }
+
+  .legal-info li,
+  .legal-list li {
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .legal-section .inner-page-img {
+    margin-bottom: 15px;
+  }
+  .legal-info h5 {
+    font-size: 15px;
+  }
+  .legal-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .legal-info li,
+  .legal-list li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-info h5 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .legal-info li,
+  .legal-list li {
+    font-size: 14px;
+  }
+}
