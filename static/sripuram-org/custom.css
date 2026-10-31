@@ -28,6 +28,7 @@
 @import "anecdotes.css";
 @import "sripuram-facilities.css";
 @import "eventspage.css";
+@import "accommodation.css";
 
 @font-face {
   font-family: "arrusbtroman";
@@ -1508,8 +1509,7 @@ input:-internal-autofill-selected {
   }
 
   .list a,
-  .list li,
-  h2 {
+  .list li {
     font-size: 22px;
   }
 

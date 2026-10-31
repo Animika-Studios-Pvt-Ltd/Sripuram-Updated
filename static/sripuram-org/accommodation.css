@@ -1,0 +1,206 @@
+/* ---------------------------------------------------- Sripuram Accommodation Styles ---------------------------------------------------- */
+.accommodation-section .inner-page-img {
+  margin-bottom: 25px;
+}
+
+.accommodation-section h2 {
+  font-family: "arrusbtroman";
+  font-size: 26px;
+  color: #9f1605;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.accommodation-section > p {
+  font-family: "helvetica";
+  font-size: 17px;
+  line-height: 1.75;
+  color: #333333;
+  width: 85%;
+  margin: 0 auto 35px auto;
+  text-align: center;
+}
+
+.accommodation-section > p strong {
+  color: #9f1605;
+}
+
+.accommodation-item {
+  border-bottom: 1.5px solid #d4b16f;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.accommodation-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 25px;
+}
+
+.accommodation-item h4 {
+  font-family: "arrusbtroman";
+  font-size: 22px;
+  color: #9f1605;
+  margin: 0 0 10px 0;
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.accommodation-item h4 span {
+  font-family: "helvetica";
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #7a1104;
+  background: #fbf3e5;
+  padding: 3px 12px;
+  border-radius: 20px;
+  border: 1px solid #d4b16f;
+  letter-spacing: 0.01em;
+}
+
+.accommodation-item > p {
+  font-family: "helvetica";
+  font-size: 16px;
+  line-height: 1.65;
+  color: #555555;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.accommodation-item h5 {
+  font-family: "arrusbtroman";
+  font-size: 17px;
+  color: #9f1605;
+  margin: 0 0 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #d4b16f;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.accommodation-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.accommodation-item li {
+  font-family: "helvetica";
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(212, 177, 111, 0.2);
+  position: relative;
+  padding-left: 20px;
+}
+
+.accommodation-item li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.accommodation-item li::before {
+  content: "•";
+  color: #9f1605;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+.accommodation-item li span {
+  color: #9f1605;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.accommodation-item li small {
+  font-size: 13.5px;
+  color: #666666;
+  font-weight: normal;
+}
+
+.accommodation-item li a {
+  color: #9f1605;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.accommodation-item li a:hover {
+  text-decoration: underline;
+}
+
+.accommodation-btn {
+  display: inline-block;
+  background: transparent;
+  color: #9f1605 !important;
+  border: 1.5px solid #9f1605;
+  font-family: "helvetica";
+  font-size: 15.5px;
+  font-weight: 600;
+  padding: 9px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.accommodation-btn:hover {
+  background: #9f1605;
+  color: #ffffff !important;
+  border-color: #9f1605;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(159, 22, 5, 0.2);
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .accommodation-section > p {
+    width: 95%;
+    font-size: 16.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .accommodation-section > p {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .accommodation-item h4 {
+    font-size: 20px;
+  }
+
+  .accommodation-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .accommodation-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .accommodation-item h4 span {
+    font-size: 12.5px;
+    padding: 2px 10px;
+  }
+
+  .accommodation-item li {
+    font-size: 15.5px;
+  }
+}

@@ -1,9 +1,8 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Room Reservation</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -604,6 +603,7 @@
         </div>
       </div>
     </header>
+
     <div class="outer-container">
       <div class="banner">
         <img
@@ -620,6 +620,7 @@
         />
       </div>
     </div>
+
     <div class="container-fluid m-0 p-0">
       <div class="container brd-crmb">
         <div class="row">
@@ -630,7 +631,7 @@
                   <a href="index.html">Home</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Room Reservation
+                  Accommodation
                 </li>
               </ol>
             </nav>
@@ -638,595 +639,104 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="pooja-inner">
-          <h2 data-aos="fade-down" data-aos-duration="1000">
-            ROOM RESERVATION
-          </h2>
-          <img
-            src="static/sripuram-org/motif-1.webp"
-            class="img-fluid"
-            alt="amma"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-          />
-        </div>
+
+    <div class="container inner-page-section accommodation-section">
+      <!-- Main Page Heading -->
+      <h1 data-aos="fade-down" data-aos-duration="1000">Accomodation</h1>
+      <img
+        src="static/sripuram-org/motif-1.webp"
+        class="img-fluid inner-page-img"
+        alt="amma"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      />
+
+      <h2 data-aos="fade-down" data-aos-duration="1000">Guest Houses</h2>
+
+      <p>
+        Sripuram offers comfortable and serene lodging facilities for devotees visiting the Golden Temple. Two major guest houses — <strong>Sripuram Guest House</strong> and <strong>Kamala Nivas</strong> — are available to suit all pilgrim preferences.
+      </p>
+
+      <!-- 1. Sripuram Guest House -->
+      <div class="accommodation-item" data-aos="fade-up" data-aos-duration="1000">
+        <h4>
+          Sripuram Guest House
+          <span>Official Temple Trust Guest House</span>
+        </h4>
+
+        <p>
+          Managed directly by the Sripuram Temple Trust, offering serene, clean, and comfortable lodging within the sacred temple complex.
+        </p>
+
         <div class="row">
-          <style>
-            .dclass input {
-              background-repeat: no-repeat;
-              right: 0;
-            }
+          <div class="col-lg-6 col-md-12 mb-3">
+            <h5>TARIFF &amp; ROOM TYPES</h5>
+            <ul>
+              <li>
+                <span>Non A/C Room:</span> ₹1,100/- <small>including GST</small>
+              </li>
+              <li>
+                <span>A/C Room:</span> ₹1,500/- <small>including GST</small>
+              </li>
+              <li>
+                <span>Extra Bed:</span> ₹300/- extra for Non A/C &amp; ₹400/- extra for A/C
+              </li>
+            </ul>
+          </div>
 
-            td.highlight {
-              border: none !important;
-              padding: 1px 0 1px 1px !important;
-              background: none !important;
-              overflow: hidden;
-            }
+          <div class="col-lg-6 col-md-12 mb-3">
+            <h5>AMENITIES</h5>
+            <ul>
+              <li>Breakfast: 7:30 AM – 8:00 AM (Room)</li>
+              <li>Double Occupancy</li>
+              <li>Car Parking Available</li>
+            </ul>
+            <a href="tel:+919942993019" class="accommodation-btn">
+              Mobile: +91-9942993019
+            </a>
+          </div>
+        </div>
+      </div>
 
-            td.highlight a {
-              border: 1px #88a276 solid !important;
-            }
+      <!-- 2. Kamala Nivas -->
+      <div class="accommodation-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+        <h4>
+          Kamala Nivas
+          <span>Located 100m from Sripuram Entrance</span>
+        </h4>
 
-            input[type="dpicker"] {
-              width: 100% !important;
-            }
+        <p>
+          Situated steps away from the Sripuram Golden Temple main entrance, offering modern air-conditioned rooms, full dining, and private parking.
+        </p>
 
-            .book-pooja {
-              padding: 0 90px 0 90px;
-            }
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-3">
+            <h5>LOCATION &amp; AMENITIES</h5>
+            <ul>
+              <li>
+                <span>Proximity:</span> 100 Meters from Sripuram Entrance
+              </li>
+              <li>
+                <span>Amenities:</span> A/C Rooms, Free Wi-Fi, Dining &amp; Car Parking
+              </li>
+            </ul>
+          </div>
 
-            .checkbox {
-              position: relative;
-              display: inline-block;
-            }
-
-            input[type="checkbox"] {
-              width: auto;
-              opacity: 0.00000001;
-              position: absolute;
-              left: 0;
-              margin-left: -20px;
-            }
-
-            .helper {
-              position: absolute;
-              top: -4px;
-              left: -4px;
-              cursor: pointer;
-              display: block;
-              font-size: 16px;
-              user-select: none;
-              color: #e7e7e7;
-            }
-
-            .helper:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              margin: 4px;
-              width: 22px;
-              height: 22px;
-              transition: transform 0.28s ease;
-              border-radius: 3px;
-              border: 2px solid #f38949;
-            }
-
-            .helper:after {
-              content: "";
-              display: block;
-              width: 10px;
-              height: 5px;
-              border-bottom: 2px solid #f38949;
-              border-left: 2px solid #f38949;
-              -webkit-transform: rotate(-45deg) scale(0);
-              -moz-transform: rotate(-45deg) scale(0);
-              -ms-transform: rotate(-45deg) scale(0);
-              transform: rotate(-45deg) scale(0);
-              position: absolute;
-              top: 12px;
-              left: 10px;
-            }
-
-            input[type="checkbox"]:checked ~ .helper::before {
-              color: #7bbe72;
-            }
-
-            input[type="checkbox"]:checked ~ .helper::after {
-              -webkit-transform: rotate(-45deg) scale(1);
-              -moz-transform: rotate(-45deg) scale(1);
-              -ms-transform: rotate(-45deg) scale(1);
-              transform: rotate(-45deg) scale(1);
-            }
-
-            .checkbox label {
-              min-height: 24px;
-              padding-left: 35px;
-              margin-bottom: 0;
-              font-weight: normal;
-              cursor: pointer;
-              vertical-align: sub;
-              margin-top: 0;
-              font-size: 17px;
-              color: #ff6f0f;
-            }
-
-            input[type="checkbox"]:focus + label::before {
-              outline: rgb(59, 153, 252) auto 5px;
-            }
-
-            #datepicker1 {
-              display: none;
-            }
-
-            .editor-field p {
-              text-align: left;
-            }
-
-            [type="radio"]:checked,
-            [type="radio"]:not(:checked) {
-              position: absolute;
-              left: -9999px;
-            }
-
-            [type="radio"]:checked + label,
-            [type="radio"]:not(:checked) + label {
-              position: relative;
-              padding: 0px 0px 0px 28px;
-              cursor: pointer;
-              line-height: 20px;
-              display: inline-block;
-              font-family: "Helvetica";
-              color: #333;
-              font-size: 17px;
-            }
-
-            [type="radio"]:checked + label:before,
-            [type="radio"]:not(:checked) + label:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 0;
-              width: 18px;
-              height: 18px;
-              border: 1px solid #9f1605;
-              border-radius: 100%;
-              background: #fff;
-            }
-
-            [type="radio"]:checked + label:after,
-            [type="radio"]:not(:checked) + label:after {
-              content: "";
-              width: 10px;
-              height: 10px;
-              background: #9f1605;
-              position: absolute;
-              top: 4px;
-              left: 4px;
-              border-radius: 100%;
-              -webkit-transition: all 0.2s ease;
-              transition: all 0.2s ease;
-            }
-
-            [type="radio"]:not(:checked) + label:after {
-              opacity: 0;
-              -webkit-transform: scale(0);
-              transform: scale(0);
-            }
-
-            [type="radio"]:checked + label:after {
-              opacity: 1;
-              -webkit-transform: scale(1);
-              transform: scale(1);
-            }
-
-            .ui-state-default,
-            .ui-widget-content .ui-state-default,
-            .ui-widget-header .ui-state-default,
-            .ui-button,
-            html .ui-button.ui-state-disabled:hover,
-            html .ui-button.ui-state-disabled:active {
-              border: 1px solid #f5d28d;
-              background: #9f1605;
-              font-weight: normal;
-              color: #f5d28d;
-              text-align: center;
-              border-radius: 5px;
-              font-family: OpenSansRegular;
-              letter-spacing: 0.07em;
-            }
-
-            .ui-state-default:hover,
-            .ui-state:hover,
-            .ui-button:hover {
-              border: 1px solid #f6c76c;
-              background: #f6c76c;
-              font-weight: normal;
-              color: #fefefc;
-            }
-
-            .ui-datepicker .ui-datepicker-header {
-              color: #f9da9f;
-              background: #9f1605;
-              font-family: OpenSansRegular;
-              letter-spacing: 0.04em;
-              font-weight: 100;
-            }
-
-            .ui-datepicker .ui-datepicker-prev:hover,
-            .ui-datepicker .ui-datepicker-next:hover {
-              background: #9f1605;
-              border: 1px solid #9f1605;
-            }
-
-            .ui-widget.ui-widget-content {
-              border: 1px solid #efbf5c;
-            }
-
-            .ui-state-active,
-            .ui-widget-content .ui-state-active {
-              background: #4bb543;
-              color: #fff;
-            }
-
-            .ui-datepicker th {
-              padding: 0.7em 0.3em;
-              text-align: center;
-              font-weight: bold;
-              border: 0;
-              font-family: OpenSansRegular;
-              letter-spacing: 0.05em;
-              font-size: 15px !important;
-              font-weight: 100;
-            }
-
-            .outer-input1 {
-              text-align: center;
-            }
-
-            .outer-input1 button {
-              background: #fff;
-              font-family: "Helvetica";
-              border: 1px solid #ecb05a;
-              border-radius: 40px;
-              padding: 4px 20px;
-              font-size: 18px;
-              color: #991505;
-            }
-
-            .outer-input1 button:hover {
-              color: #fff;
-              background: #991505;
-            }
-          </style>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-            <form
-              action="https://sripuram.org/Custom/RoomReservation"
-              id="RoomReservation79Form"
-              method="post"
-              model="Sripuram.Areas.Admin.Models.Topic.RoomReservation"
-            >
-              <input
-                name="__RequestVerificationToken"
-                type="hidden"
-                value="dJ_C5uRxxdJnyqJ1YhF6HZ8c2JRqL-vVqyCZAEgMoyFVv0JSi1DCGAWcMQXV3WRvkksZACvejnbOMLF5vqvRvSMYhNkT0h1VVtywXp2dPHU9AQ5tSySf-n40tZsea3cX2pMBRtXCLAziB8kL6YBQzac4y2jfxSVIH7suMq91C9o1"
-              />
-              <fieldset>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <p>
-                      <b>Accomodation</b>
-                    </p>
-                    <div class="editor-field">
-                      <div class="message_container">
-                        <input
-                          value=""
-                          autocomplete="off"
-                          data-val="true"
-                          id="CheckInDate"
-                          name="CheckInDate"
-                          placeholder="From Date"
-                          type="dpicker"
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="CheckInDate"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="message_container">
-                        <input
-                          value=""
-                          autocomplete="off"
-                          data-val="true"
-                          id="CheckOutDate"
-                          name="CheckOutDate"
-                          placeholder="End Date"
-                          type="dpicker"
-                          requied=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="CheckOutDate"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="message_container">
-                        <select
-                          data-val="true"
-                          id="RoomType"
-                          name="RoomType"
-                          required=""
-                        >
-                          <option value="">Select RoomType</option>
-                          <option value="Non A/C">Non A/C</option>
-                          <option value="A/C">A/C</option>
-                        </select>
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="RoomType"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="message_container">
-                        <select
-                          data-val="true"
-                          id="Adults"
-                          name="Adults"
-                          required=""
-                        >
-                          <option value="">Select No. of Adults</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                        </select>
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Adults"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <select
-                        data-val="true"
-                        id="Childs"
-                        name="Childs"
-                        required=""
-                      >
-                        <option value="">Select No. of Childrens</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                      </select>
-                      <span
-                        class="field-validation-valid"
-                        data-valmsg-for="Childs"
-                        data-valmsg-replace="true"
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                    <p>
-                      <b>Pilgrim Details</b>
-                    </p>
-                    <div class="editor-field">
-                      <div class="name_container">
-                        <input
-                          data-val="true"
-                          id="Name"
-                          maxlength="50"
-                          name="Name"
-                          placeholder="Name"
-                          type="text"
-                          value=""
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Name"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="emailid_container">
-                        <input
-                          data-val="true"
-                          data-val-regex-pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}"
-                          data-val-required="Please Enter Your email-id"
-                          id="Email"
-                          name="Email"
-                          placeholder="email ID"
-                          type="email"
-                          value=""
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="EmailId"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <input
-                          data-val="true"
-                          data-val-regex="Please Enter Your Phone Number"
-                          data-val-regex-pattern="^\d+$"
-                          id="Phone"
-                          maxlength="50"
-                          name="Phone"
-                          placeholder="Phone Number"
-                          type="text"
-                          value=""
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Phone"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <textarea
-                          cols="20"
-                          id="Address"
-                          name="Address"
-                          placeholder="Address"
-                          rows="2"
-                          required=""
-                        ></textarea>
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Address"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <input
-                          data-val="true"
-                          data-val-regex="City Should contain only letters"
-                          data-val-regex-pattern="[A-Za-z_]+$"
-                          id="City"
-                          name="City"
-                          placeholder="City"
-                          type="text"
-                          value=""
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="City"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <input
-                          data-val="true"
-                          data-val-regex="State Should contain only letters"
-                          data-val-regex-pattern="[A-Za-z_]+$"
-                          id="State"
-                          name="State"
-                          placeholder="State"
-                          type="text"
-                          value=""
-                          required=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="State"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <input
-                          data-val="true"
-                          data-val-regex="Country Should contain only letters"
-                          data-val-regex-pattern="[A-Za-z_]+$"
-                          id="Country"
-                          name="Country"
-                          placeholder="Country"
-                          type="text"
-                          value=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Country"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <div class="editor-field">
-                      <div class="phone_contaienr">
-                        <input
-                          data-val="true"
-                          data-val-regex="Pincode Should contain only numbers"
-                          data-val-regex-pattern="[0-9A-za-z_]+$"
-                          id="Pincode"
-                          name="Pincode"
-                          placeholder="Pincode"
-                          type="text"
-                          value=""
-                        />
-                        <span
-                          class="field-validation-valid"
-                          data-valmsg-for="Pincode"
-                          data-valmsg-replace="true"
-                        ></span>
-                      </div>
-                    </div>
-                    <p class="submit_container">
-                      <input type="submit" value="submit" />
-                    </p>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-            <script type="text/javascript">
-              //$(document).ready(function () {
-              var dates = [],
-                tips = [],
-                datee = "",
-                tips = [],
-                dateArr = [],
-                tip = 0;
-              $("#CheckInDate").datepicker({
-                prevText: '<i class="fa fa-fw fa-angle-left"></i>',
-                nextText: '<i class="fa fa-fw fa-angle-right"></i>',
-
-                dateFormat: "dd/mm/yy",
-                minDate: "+2",
-                showOtherMonths: false,
-                numberOfMonths: 1,
-              });
-              $("#CheckOutDate").datepicker({
-                prevText: '<i class="fa fa-fw fa-angle-left"></i>',
-                nextText: '<i class="fa fa-fw fa-angle-right"></i>',
-
-                dateFormat: "dd/mm/yy",
-                minDate: "+2",
-                showOtherMonths: false,
-                numberOfMonths: 1,
-              });
-
-              function highlightDays(date) {
-                for (var i = 0; i < dateArr.length; i++) {
-                  if (new Date(dateArr[i]).toString() == date.toString()) {
-                    return [true, "highlight", tips[i]];
-                  }
-                }
-                return [true, ""];
-              }
-
-              function enableDays(date) {
-                alert("fds");
-              }
-            </script>
+          <div class="col-lg-6 col-md-12 mb-3">
+            <h5>BOOKINGS &amp; CONTACT</h5>
+            <ul>
+              <li>
+                <span>For bookings:</span>
+                <a href="mailto:kamalanivas@sripuram.org">kamalanivas@sripuram.org</a>
+              </li>
+              <li>
+                <span>Mobile Booking:</span>
+                <a href="tel:+919003916838">+91-9003916838</a>
+              </li>
+            </ul>
+            <a href="tel:+919003916838" class="accommodation-btn">
+              Mobile: +91-9003916838
+            </a>
           </div>
         </div>
       </div>
@@ -1422,6 +932,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <div class="container-fluid p-0">
         <img
