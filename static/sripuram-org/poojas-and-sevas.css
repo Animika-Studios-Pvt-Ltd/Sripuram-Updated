@@ -140,6 +140,10 @@
   color: #000;
 }
 
+.poojas-and-sevas-info .bullet-star {
+  color: #9f1605;
+}
+
 .poojas-and-sevas-info label {
   position: relative;
   display: inline-block;
