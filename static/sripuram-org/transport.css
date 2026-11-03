@@ -1,29 +1,157 @@
 /* ------------------------------------- TRANSPORT SECTION (HOMEPAGE) ------------------------------------- */
+.transport-section {
+  padding: 20px 0;
+}
+
 .transport-header {
   background: #01417e;
-  padding: 60px 260px;
+  border-radius: 20px;
+  margin: 0 30px;
+  padding: 40px 30px 40px;
   position: relative;
   z-index: 0;
-  border-radius: 20px;
-  margin: 0px 30px;
+}
+
+.transport-grid,
+.transport-header > .row {
+  position: relative;
+}
+
+.transport-grid::after,
+.transport-header > .row::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 12px solid #688eb3;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.transport-card {
+  background: #fff;
+  border: 1px solid #d3a888;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 580px;
+  min-height: 155px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.transport-card > .row {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.transport-card-air,
+.transport-card-helipad {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.transport-card-bus,
+.transport-card-rail {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+.transport-card ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.transport-card li {
+  font-family: "helvetica", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.transport-card li:last-child {
+  margin-bottom: 0;
+}
+
+.transport-card-air li,
+.transport-card-helipad li {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.transport-card-bus li,
+.transport-card-rail li {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.transport-card li img {
+  width: 40px;
+  height: auto;
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
+.transport-icon-right,
+.transport-icon-left {
+  padding: 10px;
+}
+
+.transport-icon-right p,
+.transport-icon-left p {
+  font-family: "arrusbtroman", serif;
+  color: #9f1605;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+}
+
+.transport-icon-right p {
+  justify-content: flex-end;
+}
+
+.transport-icon-left p {
+  justify-content: flex-start;
+}
+
+.transport-icon-right img,
+.transport-icon-left img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .transport-more-btn {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 0 !important;
 }
 
 .transport-more-btn a {
-  font-family: "helvetica";
+  font-family: "helvetica", sans-serif;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
   letter-spacing: 0.01em;
   border: 1px solid #d4b16f;
   border-radius: 40px;
   color: #4173ba;
   background: #fff;
-  padding: 4px 15px;
+  padding: 6px 22px;
   text-transform: capitalize;
   display: inline-block;
   position: relative;
@@ -43,665 +171,568 @@
   filter: brightness(10.5);
 }
 
-.transport-card {
-  background: #fff;
-  margin: 15px 0;
-  width: 58vh;
-  position: relative;
-  border: 1px solid #d3a888;
-  border-radius: 10px;
-  left: 40px;
+.transport-helipad-short {
+  display: none;
 }
 
-.transport-card p {
-  font-family: "arrusbtroman";
-  color: brown;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  gap: 0px;
-  margin: 0;
+.transport-helipad-break {
+  display: none;
 }
 
-.transport-card-air p,
-.transport-card-helipad p {
-  justify-content: flex-end;
-}
-
-.transport-card-bus p,
-.transport-card-rail p {
-  justify-content: flex-start;
-  position: relative;
-  right: 55px;
-}
-
-.transport-icon-right img,
-.transport-icon-left img {
-  padding-bottom: 6px;
-}
-
-.transport-icon-right p {
-  position: relative;
-  left: 60px;
-}
-
-.transport-card ul {
-  list-style-type: none;
-  margin-top: 15px;
-  position: relative;
-  left: 5vh;
-  padding: 0;
-}
-
-.transport-card li {
-  font-family: "helvetica";
-  font-size: 17px;
-}
-
-.transport-card-air li,
-.transport-card-helipad li {
-  text-align: right;
-}
-
-.transport-card-bus ul {
-  margin-left: -115px;
-}
-
-.transport-card-helipad ul {
-  padding: 15px 0 0 0;
-}
-
-.transport-card-rail ul {
-  text-align: left;
-  position: relative;
-  left: -50px;
-  margin-left: -20px;
-}
-
-.transport-card-bus::after {
-  content: "";
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  border: 12px solid #688eb3;
-  display: block;
-  top: 85px;
-  left: -135px;
-  z-index: -1;
-  position: absolute;
-}
-
-@media (min-width: 1831px) and (max-width: 1919px) {
-  .transport-icon-right p {
-    left: 80px;
-  }
-}
-
-@media (min-width: 1731px) and (max-width: 1830px) {
-  .transport-card-air,
-  .transport-card-helipad {
-    left: 10vh;
-    width: 80vh;
-  }
-
-  .transport-card-bus,
-  .transport-card-rail {
-    left: 15px;
-    width: 80vh;
-  }
-
-  .transport-header {
-    padding: 25px 85px;
-  }
-
-  .transport-card li {
-    font-size: 19px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: 8px;
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .transport-card li,
-  .transport-card p {
-    font-size: 15px;
-  }
-
-  .transport-header {
-    padding: 20px 70px;
-  }
-
-  .transport-card-helipad ul {
-    padding: 30px 0 0 80px;
-  }
-
-  .transport-card-bus ul {
-    margin-left: -110px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: 0;
-  }
-
-  .transport-card-air,
-  .transport-card-helipad {
-    left: 15vh;
-    width: 75vh;
-  }
-
-  .transport-card-bus,
-  .transport-card-rail {
-    width: 75vh;
-  }
-
-  .transport-card-bus::after {
-    left: -128px;
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .transport-card p {
-    font-size: 20px;
-  }
-
-  .transport-header {
-    padding: 25px 85px;
-  }
-
-  .transport-card-air,
-  .transport-card-helipad {
-    left: 0;
-    width: 80vh;
-  }
-
-  .transport-card-bus,
-  .transport-card-rail {
-    width: 80vh;
-  }
-}
-
-@media (max-width: 1440px) {
-  .transport-more-btn a {
-    font-size: 16px;
-    padding: 4px 14px;
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  .transport-card li {
-    font-size: 18px;
-  }
-
-  .transport-header {
-    padding: 60px 77px;
-  }
-
-  .transport-card p {
-    font-size: 20px;
-  }
-
-  .transport-card-air,
-  .transport-card-helipad {
-    left: -5vh;
-    width: auto;
-  }
-
-  .transport-card-bus,
-  .transport-card-rail {
-    width: auto;
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  .transport-card p {
-    font-size: 18px;
-  }
-
+@media (max-width: 1400px) {
   .transport-card {
-    left: 0;
-    width: auto;
-  }
-
-  .transport-card-bus::after {
-    width: 150px;
-    height: 150px;
-    left: -87px;
-  }
-
-  .transport-header {
-    padding: 25px 56px;
-  }
-
-  .transport-card-bus ul {
-    margin-left: -100px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: 7px;
-  }
-
-  .transport-card-bus p,
-  .transport-card-rail p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .transport-icon-right p {
-    position: relative;
-    left: 25px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .transport-more-btn a {
-    font-size: 15px;
-    padding: 3px 13px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .transport-card p {
-    font-size: 12px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: 0;
-  }
-
-  .transport-header {
-    padding: 10px 50px;
+    max-width: 530px;
+    min-height: 150px;
   }
 
   .transport-card-air,
   .transport-card-helipad {
-    left: -20px;
-    width: auto;
-  }
-
-  .transport-card-bus ul {
-    margin-left: -100px;
+    margin-right: 25px;
   }
 
   .transport-card-bus,
   .transport-card-rail {
-    width: auto;
-    left: 20px;
+    margin-left: 25px;
   }
 
-  .transport-card li {
-    font-size: 14px;
-  }
-
-  .transport-card-bus::after {
-    left: -120px;
-  }
-
-  .transport-card-bus p,
-  .transport-card-rail p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .transport-icon-right p {
-    position: relative;
-    left: 25px;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  .transport-card li,
-  .transport-card p {
-    font-size: 15px;
-  }
-
-  .transport-card {
-    left: 0;
-    width: 55vh;
-  }
-
-  .transport-card-bus::after {
-    left: -116px;
-  }
-
-  .transport-header {
-    padding: 25px 30px;
-  }
-
-  .transport-card-bus p,
-  .transport-card-rail p {
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  }
-
-  .transport-icon-right p {
-    position: relative;
-    left: 25px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  .transport-icon-left span {
-    right: 0;
-  }
-
-  .transport-icon-right span {
-    left: 0;
-  }
-
-  .transport-header {
-    padding: 10px 50px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: -5px;
+  .transport-grid::after,
+  .transport-header > .row::after {
+    width: 170px;
+    height: 170px;
+    border-width: 11px;
   }
 
   .transport-icon-right img,
   .transport-icon-left img {
-    margin-top: 0;
+    width: 105px;
+    height: 105px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 20px;
+  }
+
+  .transport-card li {
+    font-size: 16px;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .transport-card li img {
+    width: 34px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .transport-header {
+    margin: 0 20px;
+    padding: 35px 25px 30px;
   }
 
   .transport-card {
-    width: auto;
+    max-width: 440px;
+    min-height: 140px;
   }
 
   .transport-card-air,
   .transport-card-helipad {
-    left: -40px;
-  }
-
-  .transport-card p {
-    font-size: 14px;
-  }
-
-  .transport-card li {
-    font-size: 13px;
-  }
-
-  .transport-card-helipad ul {
-    padding: 20px 0 0 80px;
-  }
-
-  .transport-card-rail ul {
-    left: -30px;
-  }
-
-  .transport-card-bus ul {
-    margin-left: -88px;
-  }
-}
-
-@media (max-width: 991px) {
-  .transport-more-btn a {
-    font-size: 15px;
-    padding: 3px 12px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .transport-card li {
-    font-size: 8px;
-  }
-
-  .transport-card p {
-    font-size: 12px;
-  }
-
-  .transport-card-helipad li img {
-    bottom: 0;
-  }
-
-  .transport-card-bus::after {
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: -100px;
-  }
-
-  .transport-card-air,
-  .transport-card-helipad {
-    width: auto;
-    left: -10px;
+    margin-right: 20px;
   }
 
   .transport-card-bus,
   .transport-card-rail {
-    left: 10px;
-    width: auto;
+    margin-left: 20px;
   }
 
+  .transport-grid::after,
+  .transport-header > .row::after {
+    width: 155px;
+    height: 155px;
+    border-width: 10px;
+  }
+
+  .transport-card li {
+    font-size: 15px;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .transport-card li img {
+    width: 30px;
+    margin: 0 6px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 19px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .transport-more-btn a {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 1050px) {
   .transport-header {
-    padding: 0 50px;
+    margin: 0 15px;
+    padding: 30px 20px 25px;
   }
 
-  .transport-card ul li img {
-    width: 35px;
+  .transport-card {
+    max-width: 380px;
+    width: 100%;
+    min-height: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    margin-left: auto !important;
+    margin-right: 15px !important;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    margin-right: auto !important;
+    margin-left: 15px !important;
+  }
+
+  .transport-grid::after,
+  .transport-header > .row::after {
+    width: 135px;
+    height: 135px;
+    border-width: 8px;
+  }
+
+  .transport-card > .row {
+    flex-wrap: nowrap;
+  }
+
+  .transport-card > .row > [class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .transport-card-air .row > div:first-child,
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+
+  .transport-card-air .row > div:last-child,
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 34%;
+    max-width: 34%;
+  }
+
+  .transport-card-bus .row > div:first-child,
+  .transport-card-rail .row > div:first-child {
+    flex: 0 0 34%;
+    max-width: 34%;
+  }
+
+  .transport-card-bus .row > div:last-child,
+  .transport-card-rail .row > div:last-child {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+
+  .transport-card ul {
+    padding: 8px 6px;
+  }
+
+  .transport-card li {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .transport-helipad-break {
+    display: inline;
+  }
+
+  .transport-card li img {
+    width: 19px;
+    margin: 0 4px;
+  }
+
+  .transport-icon-right,
+  .transport-icon-left {
+    padding: 6px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 15.5px;
+    gap: 6px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .transport-more-btn a {
+    font-size: 14px;
+    padding: 5px 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .transport-header {
+    padding: 25px 15px 20px;
+  }
+
+  .transport-card {
+    max-width: 330px;
+    min-height: 120px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    margin-right: 12px !important;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    margin-left: 12px !important;
+  }
+
+  .transport-grid::after,
+  .transport-header > .row::after {
+    width: 120px;
+    height: 120px;
+    border-width: 7px;
+  }
+
+  .transport-card li {
+    font-size: 11.5px;
+    margin-bottom: 3px;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.3;
+  }
+
+  .transport-card li img {
+    width: 16px;
+    margin: 0 3px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 14px;
+    gap: 4px;
   }
 
   .transport-icon-right img,
   .transport-icon-left img {
     width: 60px;
-  }
-
-  .transport-card-helipad ul {
-    padding: 5px 0 7px 80px;
-  }
-
-  .transport-card-rail ul {
-    left: -18px;
-    margin-left: -20px;
-  }
-
-  .transport-icon-right p {
-    left: 35px;
-    top: 12px;
-  }
-
-  .transport-card-bus ul {
-    margin-left: -75px;
-  }
-
-  .transport-card-bus p,
-  .transport-card-rail p {
-    right: 35px;
-    top: 12px;
-  }
-
-  .transport-icon-left span {
-    right: 0;
-  }
-
-  .transport-card-air p,
-  .transport-card-helipad p {
-    left: 20px !important;
-  }
-
-  .transport-icon-right span {
-    left: 0;
+    height: 60px;
   }
 }
 
 @media (max-width: 767px) {
-  .transport-more-btn a {
-    font-size: 14px;
-    padding: 3px 12px;
-  }
-
-  .transport-header {
+  .transport-section {
     padding: 15px 0;
   }
 
-  .transport-card-bus::after {
+  .transport-grid::after,
+  .transport-header > .row::after {
     display: none;
   }
 
-  .transport-icon-left p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
+  .transport-header {
+    margin: 0 10px;
+    padding: 25px 15px 20px;
+  }
+
+  .transport-card {
+    max-width: 480px;
+    width: 100%;
+    min-height: auto;
+    margin: 12px auto !important;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad,
+  .transport-card-bus,
+  .transport-card-rail {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .transport-card > .row {
+    flex-wrap: nowrap;
+  }
+
+  .transport-card-air .row > div:first-child,
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 64%;
+    max-width: 64%;
+  }
+
+  .transport-card-air .row > div:last-child,
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 36%;
+    max-width: 36%;
+  }
+
+  .transport-card-bus .row > div:first-child,
+  .transport-card-rail .row > div:first-child {
+    flex: 0 0 36%;
+    max-width: 36%;
+  }
+
+  .transport-card-bus .row > div:last-child,
+  .transport-card-rail .row > div:last-child {
+    flex: 0 0 64%;
+    max-width: 64%;
+  }
+
+  .transport-card-air li,
+  .transport-card-helipad li {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .transport-card-bus li,
+  .transport-card-rail li {
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .transport-icon-right p {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
+    justify-content: flex-end;
   }
 
-  .transport-icon-right span,
-  .transport-icon-left span {
-    display: block !important;
-    font-size: 16px;
-    margin-top: 5px;
-    text-align: center;
+  .transport-icon-left p {
+    justify-content: flex-start;
+  }
+
+  .transport-card ul {
+    padding: 12px 10px;
+  }
+
+  .transport-card li {
+    font-size: 14.5px;
+    white-space: nowrap;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .transport-card li img {
+    width: 24px;
+    margin: 0 5px;
   }
 
   .transport-icon-right img,
   .transport-icon-left img {
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
   }
 
-  .transport-card-bus p,
-  .transport-card-rail p {
-    right: 0;
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 18px;
+    gap: 8px;
   }
 
-  .transport-card {
-    right: 0;
-    left: 0;
-    margin: 15px auto;
-    max-width: 400px;
-  }
-
-  .transport-card-air ul {
-    position: absolute;
-    top: 120px;
-  }
-
-  .transport-card-air .transport-icon-right p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 150px;
-  }
-
-  .transport-card-bus ul,
-  .transport-card-rail ul {
-    margin-left: 0;
-  }
-
-  .transport-card-helipad ul {
-    padding: 50px 0 0 10px;
-    position: absolute;
-    top: 70px;
-  }
-
-  .transport-card-helipad li img {
-    position: relative;
-    bottom: 0;
-    padding: 0 5px;
-  }
-
-  .transport-icon-right p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 70px;
-  }
-
-  .transport-card-rail ul {
-    left: 5vh;
-  }
-
-  .transport-card li {
-    font-size: 16px;
-    margin-left: -30px;
-    text-align: left;
-  }
-
-  .transport-card-air ul li,
-  .transport-card-helipad ul li {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-  }
-
-  .transport-card-air ul li img,
-  .transport-card-helipad ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport-card-bus ul li,
-  .transport-card-rail ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-
-  .transport-card-bus ul li img,
-  .transport-card-rail ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport-card-helipad p {
-    left: 0 !important;
+  .transport-more-btn a {
+    font-size: 14px;
+    padding: 5px 16px;
   }
 }
 
 @media (max-width: 575px) {
-  .transport-more-btn a {
-    font-size: 13.5px;
-    padding: 3px 10px;
+  .transport-section {
+    padding: 10px 0;
+  }
+
+  .transport-header {
+    margin: 0 8px;
+    padding: 22px 12px 18px;
+    border-radius: 16px;
   }
 
   .transport-card {
-    right: 0;
-    left: 0;
-    margin: 15px !important;
-    width: auto !important;
+    max-width: 420px;
+    margin: 10px auto !important;
+  }
+
+  .transport-card-air .row > div:first-child,
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+
+  .transport-card-air .row > div:last-child,
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+
+  .transport-card-bus .row > div:first-child,
+  .transport-card-rail .row > div:first-child {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+
+  .transport-card-bus .row > div:last-child,
+  .transport-card-rail .row > div:last-child {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+
+  .transport-card ul {
+    padding: 10px 8px;
   }
 
   .transport-card li {
-    font-size: 14px !important;
-    margin-left: -20px;
+    font-size: 13px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .transport-helipad-full {
+    display: none;
+  }
+
+  .transport-helipad-short {
+    display: inline;
+  }
+
+  .transport-card li img {
+    width: 21px;
+    margin: 0 4px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 16.5px;
+    gap: 6px;
+  }
+
+  .transport-more-btn a {
+    font-size: 13.5px;
+    padding: 4px 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .transport-more-btn a {
-    font-size: 13px;
-    padding: 2px 10px;
+  .transport-header {
+    margin: 0 5px;
+    padding: 20px 8px 15px;
+    border-radius: 15px;
+  }
+
+  .transport-card {
+    max-width: 95%;
+    margin: 8px auto !important;
+  }
+
+  .transport-card-air .row > div:first-child,
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  .transport-card-air .row > div:last-child,
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+
+  .transport-card-bus .row > div:first-child,
+  .transport-card-rail .row > div:first-child {
+    flex: 0 0 33%;
+    max-width: 33%;
+  }
+
+  .transport-card-bus .row > div:last-child,
+  .transport-card-rail .row > div:last-child {
+    flex: 0 0 67%;
+    max-width: 67%;
+  }
+
+  .transport-card ul {
+    padding: 10px 6px;
   }
 
   .transport-card li {
-    font-size: 12px !important;
-    margin-left: -35px !important;
-  }
-
-  .transport-card ul li img {
-    width: 35px !important;
-    height: auto;
-  }
-}
-
-@media (max-width: 360px) {
-  .transport-more-btn a {
     font-size: 12px;
-    padding: 2px 8px;
+    white-space: nowrap;
+    margin-bottom: 4px;
+  }
+
+  .transport-card-helipad li {
+    white-space: normal;
+    line-height: 1.3;
+  }
+
+  .transport-helipad-full {
+    display: none;
+  }
+
+  .transport-helipad-short {
+    display: inline;
+  }
+
+  .transport-card li img {
+    width: 18px;
+    margin: 0 3px;
+  }
+
+  .transport-icon-right p,
+  .transport-icon-left p {
+    font-size: 15px;
+    gap: 4px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .transport-more-btn a {
+    font-size: 13px;
+    padding: 4px 14px;
   }
 }
