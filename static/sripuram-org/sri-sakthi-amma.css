@@ -4,14 +4,14 @@
   padding: 50px 0;
 }
 
-#about {
+.sri-sakthi-amma-container {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 80%;
 }
 
 /* Heading & Subtitle Block */
-.amma-heading-section {
+.sri-sakthi-amma-heading-section {
   text-align: center;
   margin-bottom: 10px;
 }
@@ -27,14 +27,14 @@
   margin-bottom: 0px;
 }
 
-.sri-sakthi-amma .motif {
+.sri-sakthi-amma-motif {
   margin: 0 auto 15px auto;
   display: block;
   max-width: 120px;
 }
 
 /* Left Image Column */
-.about-img {
+.sri-sakthi-amma-img-wrapper {
   text-align: center;
 }
 
@@ -46,11 +46,11 @@
 }
 
 /* Right Content Column */
-.about-info {
+.sri-sakthi-amma-info {
   text-align: center;
 }
 
-.about-info p {
+.sri-sakthi-amma-info p {
   width: 90%;
   margin: 0 auto 20px auto;
   font-size: 18px;
@@ -59,12 +59,12 @@
 }
 
 /* Action Button (.sri-sakthi-amma-more-btn) */
-.sri-sakthi-amma .sri-sakthi-amma-more-btn {
+.sri-sakthi-amma-more-btn {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+.sri-sakthi-amma-more-btn a {
   font-family: "helvetica", sans-serif;
   text-decoration: none;
   font-size: 16px;
@@ -80,17 +80,17 @@
   transition: 0.35s;
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover {
+.sri-sakthi-amma-more-btn a:hover {
   color: #fff;
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn:hover .more-img {
+.sri-sakthi-amma-more-btn:hover .sri-sakthi-amma-more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:after,
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:before {
+.sri-sakthi-amma-more-btn a:after,
+.sri-sakthi-amma-more-btn a:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -102,28 +102,28 @@
   transition: 0.35s;
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:after {
+.sri-sakthi-amma-more-btn a:after {
   transition-delay: 0.2s;
 }
 
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover:after,
-.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover:before {
+.sri-sakthi-amma-more-btn a:hover:after,
+.sri-sakthi-amma-more-btn a:hover:before {
   top: 0;
 }
 
 /* Video Thumbnail & Animated Play Button */
-.video {
+.sri-sakthi-amma-video {
   width: 50%;
   margin: 0 auto;
   position: relative;
   text-align: center;
 }
 
-.video img {
+.sri-sakthi-amma-video img {
   border-radius: 10px;
 }
 
-.button.is-play {
+.sri-sakthi-amma-play-btn {
   background-color: rgba(250, 235, 215, 0.75);
   border-radius: 50%;
   width: 60px;
@@ -134,7 +134,7 @@
   transform: translate(-50%, -50%);
 }
 
-.button.is-play .button-outer-circle {
+.sri-sakthi-amma-play-circle {
   background: rgb(250, 235, 215);
   border-radius: 50%;
   position: absolute;
@@ -146,7 +146,7 @@
   width: 100%;
 }
 
-.button.is-play .button-icon {
+.sri-sakthi-amma-play-icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,24 +155,24 @@
   transform: translate(-50%, -50%);
 }
 
-.button.is-play .button-icon .triangle {
+.sri-sakthi-amma-play-triangle {
   -webkit-animation: 7s fadeIn;
   animation: 7s fadeIn;
 }
 
-.button.is-play .button-icon .path {
+.sri-sakthi-amma-play-path {
   stroke-dasharray: 90;
   stroke-dashoffset: 0;
   -webkit-animation: 3s triangleStroke;
   animation: 3s triangleStroke;
 }
 
-.has-scale-animation {
+.sri-sakthi-amma-scale-animation {
   -webkit-animation: 3s infinite smallScale;
   animation: 3s infinite smallScale;
 }
 
-.has-delay-short {
+.sri-sakthi-amma-delay-short {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
@@ -239,7 +239,7 @@
   .sri-sakthi-amma {
     padding: 60px 0;
   }
-  #about {
+  .sri-sakthi-amma-container {
     max-width: 85%;
   }
 }
@@ -248,13 +248,13 @@
   .sri-sakthi-amma {
     padding: 60px 0 50px;
   }
-  #about {
+  .sri-sakthi-amma-container {
     max-width: 85%;
   }
   .sri-sakthi-amma h1 {
     font-size: 29px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 15px;
     padding: 5px 20px;
   }
@@ -270,10 +270,10 @@
   .sri-sakthi-amma h2 {
     font-size: 23px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     font-size: 17px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 15px;
     padding: 5px 18px;
   }
@@ -289,17 +289,17 @@
   .sri-sakthi-amma h2 {
     font-size: 22px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     font-size: 17px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 5px 18px;
   }
 }
 
 @media (max-width: 1200px) {
-  .amma-heading-section {
+  .sri-sakthi-amma-heading-section {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -311,18 +311,18 @@
   .sri-sakthi-amma h2 {
     font-size: 21px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     font-size: 17px;
     margin: 0 auto 10px auto;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn {
+  .sri-sakthi-amma-more-btn {
     margin-bottom: 10px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 4px 16px;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 60%;
   }
 }
@@ -337,10 +337,10 @@
   .sri-sakthi-amma {
     padding: 60px 0 30px;
   }
-  #about {
+  .sri-sakthi-amma-container {
     max-width: 90%;
   }
-  .amma-heading-section {
+  .sri-sakthi-amma-heading-section {
     margin-bottom: 10px;
   }
   .sri-sakthi-amma h1 {
@@ -350,21 +350,21 @@
   .sri-sakthi-amma h2 {
     font-size: 19px;
   }
-  .about-img {
+  .sri-sakthi-amma-img-wrapper {
     margin-bottom: 10px;
   }
   .sri-sakthi-amma-image {
     max-width: 55%;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     width: 90%;
     font-size: 16px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 4px 16px;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 45%;
   }
 }
@@ -373,7 +373,7 @@
   .sri-sakthi-amma {
     padding: 25px 0;
   }
-    #about {
+  .sri-sakthi-amma-container {
     max-width: 100%;
     padding: 0;
   }
@@ -386,37 +386,37 @@
   .sri-sakthi-amma h2 {
     font-size: 17px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     font-size: 15px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 13px;
     padding: 4px 14px;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 55%;
   }
 }
 
 @media (max-width: 575px) {
-    .sri-sakthi-amma {
+  .sri-sakthi-amma {
     padding: 20px 0;
   }
   .sri-sakthi-amma-image {
     max-width: 85%;
   }
-    .sri-sakthi-amma h1 {
+  .sri-sakthi-amma h1 {
     font-size: 20px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     width: 100%;
     padding: 0 20px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 12px;
     padding: 3px 12px;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 65%;
   }
 }
@@ -428,13 +428,13 @@
   .sri-sakthi-amma-image {
     max-width: 80%;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 75%;
   }
   .sri-sakthi-amma h1 {
     font-size: 19px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 11px;
     padding: 3px 10px;
   }
@@ -453,15 +453,15 @@
   .sri-sakthi-amma h2 {
     font-size: 16px;
   }
-  .about-info p {
+  .sri-sakthi-amma-info p {
     font-size: 14px;
     padding: 0 10px;
   }
-  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
+  .sri-sakthi-amma-more-btn a {
     font-size: 10px;
     padding: 3px 8px;
   }
-  .video {
+  .sri-sakthi-amma-video {
     width: 85%;
   }
 }
