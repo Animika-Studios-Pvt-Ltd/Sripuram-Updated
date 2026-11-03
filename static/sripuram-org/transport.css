@@ -1,4 +1,4 @@
-/* Transport Homepage Section Styles */
+/* ------------------------------------- TRANSPORT SECTION (HOMEPAGE) ------------------------------------- */
 .transport-header {
   background: #01417e;
   padding: 60px 260px;
@@ -8,14 +8,13 @@
   margin: 0px 30px;
 }
 
-/* Location Map / More Button in Transport Section */
-.transport-header .more-2 {
+.transport-more-btn {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 0 !important;
 }
 
-.transport-header .more-2 a {
+.transport-more-btn a {
   font-family: "helvetica";
   text-decoration: none;
   font-size: 17px;
@@ -32,72 +31,19 @@
   transition: all 0.35s ease;
 }
 
-.transport-header .more-2 a:hover {
+.transport-more-btn a:hover {
   color: #fff;
   background: #9f1605;
   border-color: #9f1605;
 }
 
-.transport-header .more-2:hover .more-img,
-.transport-header .more-2 a:hover .more-img {
+.transport-more-btn:hover .transport-more-img,
+.transport-more-btn a:hover .transport-more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
 
-/* Responsive More Button Styles in Transport Header */
-@media (max-width: 1440px) {
-  .transport-header .more-2 a {
-    font-size: 16px;
-    padding: 4px 14px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .transport-header .more-2 a {
-    font-size: 15px;
-    padding: 3px 13px;
-  }
-}
-
-@media (max-width: 991px) {
-  .transport-header .more-2 a {
-    font-size: 15px;
-    padding: 3px 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .transport-header .more-2 a {
-    font-size: 14px;
-    padding: 3px 12px;
-  }
-}
-
-@media (max-width: 575px) {
-  .transport-header .more-2 a {
-    font-size: 13.5px;
-    padding: 3px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .transport-header .more-2 a {
-    font-size: 13px;
-    padding: 2px 10px;
-  }
-}
-
-@media (max-width: 360px) {
-  .transport-header .more-2 a {
-    font-size: 12px;
-    padding: 2px 8px;
-  }
-}
-
-.transport,
-.transport-2,
-.transport-3,
-.transport-4 {
+.transport-card {
   background: #fff;
   margin: 15px 0;
   width: 58vh;
@@ -107,10 +53,7 @@
   left: 40px;
 }
 
-.transport p,
-.transport-2 p,
-.transport-3 p,
-.transport-4 p {
+.transport-card p {
   font-family: "arrusbtroman";
   color: brown;
   font-size: 20px;
@@ -120,34 +63,29 @@
   margin: 0;
 }
 
-.transport p,
-.transport-3 p {
+.transport-card-air p,
+.transport-card-helipad p {
   justify-content: flex-end;
 }
 
-.transport-2 p,
-.transport-4 p {
+.transport-card-bus p,
+.transport-card-rail p {
   justify-content: flex-start;
   position: relative;
   right: 55px;
 }
 
-.img-1 img,
-.img-2 img,
-.img-3 img,
-.img-4 img {
+.transport-icon-right img,
+.transport-icon-left img {
   padding-bottom: 6px;
 }
 
-.img-1 p {
+.transport-icon-right p {
   position: relative;
   left: 60px;
 }
 
-.transport ul,
-.transport-2 ul,
-.transport-3 ul,
-.transport-4 ul {
+.transport-card ul {
   list-style-type: none;
   margin-top: 15px;
   position: relative;
@@ -155,35 +93,32 @@
   padding: 0;
 }
 
-.transport li,
-.transport-2 li,
-.transport-3 li,
-.transport-4 li {
+.transport-card li {
   font-family: "helvetica";
   font-size: 17px;
 }
 
-.transport li,
-.transport-3 li {
+.transport-card-air li,
+.transport-card-helipad li {
   text-align: right;
 }
 
-.transport-2 ul {
+.transport-card-bus ul {
   margin-left: -115px;
 }
 
-.transport-3 ul {
+.transport-card-helipad ul {
   padding: 15px 0 0 0;
 }
 
-.transport-4 ul {
+.transport-card-rail ul {
   text-align: left;
   position: relative;
   left: -50px;
   margin-left: -20px;
 }
 
-.transport-2::after {
+.transport-card-bus::after {
   content: "";
   width: 170px;
   height: 170px;
@@ -196,1071 +131,577 @@
   position: absolute;
 }
 
-/* Media Queries (High to Low) */
-@media (min-width: 992px) and (max-width: 1099px) {
-  .transport-header {
-    padding: 10px 50px;
-  }
-
-  .transport-3 li img {
-    bottom: -5px;
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .transport-2::after {
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: -100px;
-  }
-
-  .transport,
-  .transport-3 {
-    width: auto;
-    left: -10px;
-  }
-
-  .transport-2,
-  .transport-4 {
-    left: 10px;
-    width: auto;
-  }
-
-  .transport-header {
-    padding: 0 50px;
-  }
-
-  .transport ul li img,
-  .transport-2 ul li img,
-  .transport-3 ul li img,
-  .transport-4 ul li img {
-    width: 35px;
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    width: 60px;
-  }
-
-  .transport-3 ul {
-    padding: 5px 0 7px 80px;
-  }
-
-  .transport-4 ul {
-    left: -18px;
-    margin-left: -20px;
-  }
-
-  .img-1 p {
-    left: 35px;
-    top: 12px;
-  }
-
-  .transport-2 ul {
-    margin-left: -75px;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    right: 35px;
-    top: 12px;
-  }
-
-  .img-2 span {
-    right: 0;
-  }
-
-  .transport-3 p,
-  .transport p {
-    left: 20px !important;
-  }
-
-  .img-1 span {
-    left: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .transport-2::after {
-    display: none;
-  }
-
-  .img-2 p,
-  .img-4 p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  }
-
-  .img-1 p,
-  .img-3 p {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  }
-
-  .img-1 span,
-  .img-2 span,
-  .img-3 span,
-  .img-4 span {
-    display: block !important;
-    font-size: 16px;
-    margin-top: 5px;
-    text-align: center;
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-    width: 100px;
-    height: auto;
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-    right: 0;
-  }
-
-  .transport-header {
-    padding: 15px 0;
-  }
-
-  .transport ul {
-    position: absolute;
-    top: 120px;
-  }
-
-  .transport .img-1 p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 150px;
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-    right: 0;
-    left: 0;
-    margin: 15px auto;
-    max-width: 400px;
-  }
-
-  .transport-2 ul,
-  .transport-4 ul {
-    margin-left: 0;
-  }
-
-  .transport-3 ul {
-    padding: 50px 0 0 10px;
-    position: absolute;
-    top: 70px;
-  }
-
-  .transport-3 li img {
-    position: relative;
-    bottom: 0;
-    padding: 0 5px;
-  }
-
-  .img-1 p {
-    left: 0;
-    top: -10px;
-    padding-bottom: 70px;
-  }
-
-  .transport-4 ul {
-    left: 5vh;
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-    font-size: 16px;
-    margin-left: -30px;
-  }
-
-  .transport ul li,
-  .transport-3 ul li {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-  }
-
-  .transport ul li img,
-  .transport-3 ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport-2 ul li,
-  .transport-4 ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  }
-
-  .transport-2 ul li img,
-  .transport-4 ul li img {
-    width: 40px;
-    height: auto;
-  }
-
-  .transport li,
-  .transport-3 li {
-    text-align: left;
-  }
-
-  .transport-3 p {
-    left: 0 !important;
-  }
-}
-
-/* Extracted Transport Media Queries from custom.css */
-
-@media (max-width: 767px) {
-  .transport-2::after {
-
-    display: none;
-  
-  }
-
-  .img-2 p,
-  .img-4 p {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  
-  }
-
-  .img-1 p,
-  .img-3 p {
-
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 0px;
-  
-  }
-
-  .img-1 span,
-  .img-2 span,
-  .img-3 span,
-  .img-4 span {
-
-    display: block !important;
-    font-size: 16px;
-    margin-top: 5px;
-    text-align: center;
-  
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-
-    width: 100px;
-    height: auto;
-  
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-
-    right: 0;
-  
-  }
-
-  .transport-header {
-
-    padding: 15px 0;
-  
-  }
-
-  .transport ul {
-
-    position: absolute;
-    top: 120px;
-  
-  }
-
-  .transport .img-1 p {
-
-    left: 0;
-    top: -10px;
-    padding-bottom: 150px;
-  
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-
-    right: 0;
-    left: 0;
-    margin: 15px auto;
-    max-width: 400px;
-  
-  }
-
-  .transport-2 ul,
-  .transport-4 ul {
-
-    margin-left: 0;
-  
-  }
-
-  .transport-3 ul {
-
-    padding: 50px 0 0 10px;
-    position: absolute;
-    top: 70px;
-  
-  }
-
-  .transport-3 li img {
-
-    position: relative;
-    bottom: 0;
-    padding: 0 5px;
-  
-  }
-
-  .img-1 p {
-
-    left: 0;
-    top: -10px;
-    padding-bottom: 70px;
-  
-  }
-
-  .transport-4 ul {
-
-    left: 5vh;
-  
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 16px;
-    margin-left: -30px;
-  
-  }
-
-  .transport ul li,
-  .transport-3 ul li {
-
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-  
-  }
-
-  .transport ul li img,
-  .transport-3 ul li img {
-
-    width: 40px;
-    height: auto;
-  
-  }
-
-  .transport-2 ul li,
-  .transport-4 ul li {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-  
-  }
-
-  .transport-2 ul li img,
-  .transport-4 ul li img {
-
-    width: 40px;
-    height: auto;
-  
-  }
-
-  .transport li,
-  .transport-3 li {
-
-    text-align: left;
-  
-  }
-
-  .transport-3 p {
-
-    left: 0 !important;
-  
-  }
-}
-
-@media (max-width: 575px) {
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-
-    right: 0;
-    left: 0;
-    margin: 15px !important;
-    width: auto !important;
-  
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 14px !important;
-    margin-left: -20px;
-  
-  }
-}
-
-@media (max-width: 480px) {
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 12px !important;
-    margin-left: -35px !important;
-  
-  }
-
-  .transport ul li img,
-  .transport-2 ul li img,
-  .transport-3 ul li img,
-  .transport-4 ul li img {
-
-    width: 35px !important;
-    height: auto;
-  
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 8px;
-  
-  }
-
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 12px;
-  
-  }
-
-  .transport-3 li img {
-
-    bottom: 0;
-  
-  }
-
-  .transport-2::after {
-
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: -100px;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    width: auto;
-    left: -10px;
-  
-  }
-
-  .transport-2,
-  .transport-4 {
-
-    left: 10px;
-    width: auto;
-  
-  }
-
-  .transport-header {
-
-    padding: 0 50px;
-  
-  }
-
-  .transport ul li img,
-  .transport-2 ul li img,
-  .transport-3 ul li img,
-  .transport-4 ul li img {
-
-    width: 35px;
-  
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-
-    width: 60px;
-  
-  }
-
-  .transport-3 ul {
-
-    padding: 5px 0 7px 80px;
-  
-  }
-
-  .transport-4 ul {
-
-    left: -18px;
-    margin-left: -20px;
-  
-  }
-
-  .img-1 p {
-
-    left: 35px;
-    top: 12px;
-  
-  }
-
-  .transport-2 ul {
-
-    margin-left: -75px;
-  
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-
-    right: 35px;
-    top: 12px;
-  
-  }
-
-  .img-2 span {
-
-    right: 0;
-  
-  }
-
-  .transport-3 p,
-  .transport p {
-
-    left: 20px !important;
-  
-  }
-
-  .img-1 span {
-
-    left: 0;
-  
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1099px) {
-  .img-2 span {
-
-    right: 0;
-  
-  }
-
-  .transport-header {
-
-    padding: 10px 50px;
-  
-  }
-
-  .transport-3 li img {
-
-    bottom: -5px;
-  
-  }
-
-  .img-1 img,
-  .img-2 img,
-  .img-3 img,
-  .img-4 img {
-
-    margin-top: 0;
-  
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-
-    width: auto;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    left: -40px;
-  
-  }
-
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 14px;
-  
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 13px;
-  
-  }
-
-  .img-1 span {
-
-    left: 0;
-  
-  }
-
-  .transport-3 ul {
-
-    padding: 20px 0 0 80px;
-  
-  }
-
-  .transport-4 ul {
-
-    left: -30px;
-  
-  }
-
-  .transport-2 ul {
-
-    margin-left: -88px;
-  
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1199px) {
-  .transport li,
-  .transport p,
-  .transport-2 li,
-  .transport-2 p,
-  .transport-3 li,
-  .transport-3 p,
-  .transport-4 li,
-  .transport-4 p {
-
-    font-size: 15px;
-  
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-
-    left: 0;
-    width: 55vh;
-  
-  }
-
-  .transport-2::after {
-
-    left: -116px;
-  
-  }
-
-  .transport-header {
-
-    padding: 25px 30px;
-  
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  
-  }
-
-  .img-1 p {
-
-    position: relative;
-    left: 25px;
-  
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1320px) {
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 12px;
-  
-  }
-
-  .transport-3 li img {
-
-    bottom: 0;
-  
-  }
-
-  .transport-header {
-
-    padding: 10px 50px;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    left: -20px;
-    width: auto;
-  
-  }
-
-  .transport-2 ul {
-
-    margin-left: -100px;
-  
-  }
-
-  .transport-2,
-  .transport-4 {
-
-    width: auto;
-    left: 20px;
-  
-  }
-
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 14px;
-  
-  }
-
-  .transport-2::after {
-
-    left: -120px;
-  
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  
-  }
-
-  .img-1 p {
-
-    position: relative;
-    left: 25px;
-  
-  }
-}
-
-@media (min-width: 1321px) and (max-width: 1400px) {
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 18px;
-  
-  }
-
-  .transport,
-  .transport-2,
-  .transport-3,
-  .transport-4 {
-
-    left: 0;
-    width: auto;
-  
-  }
-
-  .transport-2::after {
-
-    width: 150px;
-    height: 150px;
-    left: -87px;
-  
-  }
-
-  .transport-header {
-
-    padding: 25px 56px;
-  
-  }
-
-  .transport-2 ul {
-
-    margin-left: -100px;
-  
-  }
-
-  .transport-3 li img {
-
-    bottom: 7px;
-  
-  }
-
-  .transport-2 p,
-  .transport-4 p {
-
-    justify-content: flex-start;
-    position: relative;
-    right: 24px;
-  
-  }
-
-  .img-1 p {
-
-    position: relative;
-    left: 25px;
-  
-  }
-}
-
-@media (min-width: 1401px) and (max-width: 1499px) {
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
-    font-size: 18px;
-  
-  }
-
-  .transport-header {
-
-    padding: 60px 77px;
-  
-  }
-
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 20px;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    left: -5vh;
-    width: auto;
-  
-  }
-
-  .transport-2,
-  .transport-4 {
-
-    width: auto;
-  
-  }
-}
-
-@media (min-width: 1500px) and (max-width: 1599px) {
-  .transport p,
-  .transport-2 p,
-  .transport-3 p,
-  .transport-4 p {
-
-    font-size: 20px;
-  
-  }
-
-  .transport-header {
-
-    padding: 25px 85px;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    left: 0;
-    width: 80vh;
-  
-  }
-
-  .transport-2,
-  .transport-4 {
-
-    width: 80vh;
-  
-  }
-}
-
-@media (min-width: 1600px) and (max-width: 1730px) {
-  .transport li,
-  .transport p,
-  .transport-2 li,
-  .transport-2 p,
-  .transport-3 li,
-  .transport-3 p,
-  .transport-4 li,
-  .transport-4 p {
-
-    font-size: 15px;
-  
-  }
-
-  .transport-header {
-
-    padding: 20px 70px;
-  
-  }
-
-  .transport-3 ul {
-
-    padding: 30px 0 0 80px;
-  
-  }
-
-  .transport-2 ul {
-
-    margin-left: -110px;
-  
-  }
-
-  .transport-3 li img {
-
-    bottom: 0;
-  
-  }
-
-  .transport,
-  .transport-3 {
-
-    left: 15vh;
-    width: 75vh;
-  
-  }
-
-  .transport-2,
-  .transport-4 {
-
-    width: 75vh;
-  
-  }
-
-  .transport-2::after {
-
-    left: -128px;
-  
+@media (min-width: 1831px) and (max-width: 1919px) {
+  .transport-icon-right p {
+    left: 80px;
   }
 }
 
 @media (min-width: 1731px) and (max-width: 1830px) {
-  .transport,
-  .transport-3 {
-
+  .transport-card-air,
+  .transport-card-helipad {
     left: 10vh;
     width: 80vh;
-  
   }
 
-  .transport-2,
-  .transport-4 {
-
+  .transport-card-bus,
+  .transport-card-rail {
     left: 15px;
     width: 80vh;
-  
   }
 
   .transport-header {
-
     padding: 25px 85px;
-  
   }
 
-  .transport li,
-  .transport-2 li,
-  .transport-3 li,
-  .transport-4 li {
-
+  .transport-card li {
     font-size: 19px;
-  
   }
 
-  .transport-3 li img {
-
+  .transport-card-helipad li img {
     bottom: 8px;
-  
   }
 }
 
-@media (min-width: 1831px) and (max-width: 1919px) {
-  .img-1 p {
+@media (min-width: 1600px) and (max-width: 1730px) {
+  .transport-card li,
+  .transport-card p {
+    font-size: 15px;
+  }
 
-    left: 80px;
-  
+  .transport-header {
+    padding: 20px 70px;
+  }
+
+  .transport-card-helipad ul {
+    padding: 30px 0 0 80px;
+  }
+
+  .transport-card-bus ul {
+    margin-left: -110px;
+  }
+
+  .transport-card-helipad li img {
+    bottom: 0;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    left: 15vh;
+    width: 75vh;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    width: 75vh;
+  }
+
+  .transport-card-bus::after {
+    left: -128px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+  .transport-card p {
+    font-size: 20px;
+  }
+
+  .transport-header {
+    padding: 25px 85px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    left: 0;
+    width: 80vh;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    width: 80vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  .transport-more-btn a {
+    font-size: 16px;
+    padding: 4px 14px;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1499px) {
+  .transport-card li {
+    font-size: 18px;
+  }
+
+  .transport-header {
+    padding: 60px 77px;
+  }
+
+  .transport-card p {
+    font-size: 20px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    left: -5vh;
+    width: auto;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    width: auto;
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1400px) {
+  .transport-card p {
+    font-size: 18px;
+  }
+
+  .transport-card {
+    left: 0;
+    width: auto;
+  }
+
+  .transport-card-bus::after {
+    width: 150px;
+    height: 150px;
+    left: -87px;
+  }
+
+  .transport-header {
+    padding: 25px 56px;
+  }
+
+  .transport-card-bus ul {
+    margin-left: -100px;
+  }
+
+  .transport-card-helipad li img {
+    bottom: 7px;
+  }
+
+  .transport-card-bus p,
+  .transport-card-rail p {
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  }
+
+  .transport-icon-right p {
+    position: relative;
+    left: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .transport-more-btn a {
+    font-size: 15px;
+    padding: 3px 13px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1320px) {
+  .transport-card p {
+    font-size: 12px;
+  }
+
+  .transport-card-helipad li img {
+    bottom: 0;
+  }
+
+  .transport-header {
+    padding: 10px 50px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    left: -20px;
+    width: auto;
+  }
+
+  .transport-card-bus ul {
+    margin-left: -100px;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    width: auto;
+    left: 20px;
+  }
+
+  .transport-card li {
+    font-size: 14px;
+  }
+
+  .transport-card-bus::after {
+    left: -120px;
+  }
+
+  .transport-card-bus p,
+  .transport-card-rail p {
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  }
+
+  .transport-icon-right p {
+    position: relative;
+    left: 25px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .transport-card li,
+  .transport-card p {
+    font-size: 15px;
+  }
+
+  .transport-card {
+    left: 0;
+    width: 55vh;
+  }
+
+  .transport-card-bus::after {
+    left: -116px;
+  }
+
+  .transport-header {
+    padding: 25px 30px;
+  }
+
+  .transport-card-bus p,
+  .transport-card-rail p {
+    justify-content: flex-start;
+    position: relative;
+    right: 24px;
+  }
+
+  .transport-icon-right p {
+    position: relative;
+    left: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1099px) {
+  .transport-icon-left span {
+    right: 0;
+  }
+
+  .transport-icon-right span {
+    left: 0;
+  }
+
+  .transport-header {
+    padding: 10px 50px;
+  }
+
+  .transport-card-helipad li img {
+    bottom: -5px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    margin-top: 0;
+  }
+
+  .transport-card {
+    width: auto;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    left: -40px;
+  }
+
+  .transport-card p {
+    font-size: 14px;
+  }
+
+  .transport-card li {
+    font-size: 13px;
+  }
+
+  .transport-card-helipad ul {
+    padding: 20px 0 0 80px;
+  }
+
+  .transport-card-rail ul {
+    left: -30px;
+  }
+
+  .transport-card-bus ul {
+    margin-left: -88px;
+  }
+}
+
+@media (max-width: 991px) {
+  .transport-more-btn a {
+    font-size: 15px;
+    padding: 3px 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .transport-card li {
+    font-size: 8px;
+  }
+
+  .transport-card p {
+    font-size: 12px;
+  }
+
+  .transport-card-helipad li img {
+    bottom: 0;
+  }
+
+  .transport-card-bus::after {
+    width: 150px;
+    height: 150px;
+    top: 40px;
+    left: -100px;
+  }
+
+  .transport-card-air,
+  .transport-card-helipad {
+    width: auto;
+    left: -10px;
+  }
+
+  .transport-card-bus,
+  .transport-card-rail {
+    left: 10px;
+    width: auto;
+  }
+
+  .transport-header {
+    padding: 0 50px;
+  }
+
+  .transport-card ul li img {
+    width: 35px;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 60px;
+  }
+
+  .transport-card-helipad ul {
+    padding: 5px 0 7px 80px;
+  }
+
+  .transport-card-rail ul {
+    left: -18px;
+    margin-left: -20px;
+  }
+
+  .transport-icon-right p {
+    left: 35px;
+    top: 12px;
+  }
+
+  .transport-card-bus ul {
+    margin-left: -75px;
+  }
+
+  .transport-card-bus p,
+  .transport-card-rail p {
+    right: 35px;
+    top: 12px;
+  }
+
+  .transport-icon-left span {
+    right: 0;
+  }
+
+  .transport-card-air p,
+  .transport-card-helipad p {
+    left: 20px !important;
+  }
+
+  .transport-icon-right span {
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .transport-more-btn a {
+    font-size: 14px;
+    padding: 3px 12px;
+  }
+
+  .transport-header {
+    padding: 15px 0;
+  }
+
+  .transport-card-bus::after {
+    display: none;
+  }
+
+  .transport-icon-left p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .transport-icon-right p {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .transport-icon-right span,
+  .transport-icon-left span {
+    display: block !important;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .transport-icon-right img,
+  .transport-icon-left img {
+    width: 100px;
+    height: auto;
+  }
+
+  .transport-card-bus p,
+  .transport-card-rail p {
+    right: 0;
+  }
+
+  .transport-card {
+    right: 0;
+    left: 0;
+    margin: 15px auto;
+    max-width: 400px;
+  }
+
+  .transport-card-air ul {
+    position: absolute;
+    top: 120px;
+  }
+
+  .transport-card-air .transport-icon-right p {
+    left: 0;
+    top: -10px;
+    padding-bottom: 150px;
+  }
+
+  .transport-card-bus ul,
+  .transport-card-rail ul {
+    margin-left: 0;
+  }
+
+  .transport-card-helipad ul {
+    padding: 50px 0 0 10px;
+    position: absolute;
+    top: 70px;
+  }
+
+  .transport-card-helipad li img {
+    position: relative;
+    bottom: 0;
+    padding: 0 5px;
+  }
+
+  .transport-icon-right p {
+    left: 0;
+    top: -10px;
+    padding-bottom: 70px;
+  }
+
+  .transport-card-rail ul {
+    left: 5vh;
+  }
+
+  .transport-card li {
+    font-size: 16px;
+    margin-left: -30px;
+    text-align: left;
+  }
+
+  .transport-card-air ul li,
+  .transport-card-helipad ul li {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  .transport-card-air ul li img,
+  .transport-card-helipad ul li img {
+    width: 40px;
+    height: auto;
+  }
+
+  .transport-card-bus ul li,
+  .transport-card-rail ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .transport-card-bus ul li img,
+  .transport-card-rail ul li img {
+    width: 40px;
+    height: auto;
+  }
+
+  .transport-card-helipad p {
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .transport-more-btn a {
+    font-size: 13.5px;
+    padding: 3px 10px;
+  }
+
+  .transport-card {
+    right: 0;
+    left: 0;
+    margin: 15px !important;
+    width: auto !important;
+  }
+
+  .transport-card li {
+    font-size: 14px !important;
+    margin-left: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transport-more-btn a {
+    font-size: 13px;
+    padding: 2px 10px;
+  }
+
+  .transport-card li {
+    font-size: 12px !important;
+    margin-left: -35px !important;
+  }
+
+  .transport-card ul li img {
+    width: 35px !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .transport-more-btn a {
+    font-size: 12px;
+    padding: 2px 8px;
   }
 }
