@@ -28,6 +28,56 @@
   margin-bottom: 16px;
 }
 
+.publications-btn {
+  text-align: center;
+}
+
+.publications-btn a {
+  font-family: "helvetica";
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  border: 1px solid #d4b16f;
+  border-radius: 40px;
+  color: #4173ba;
+  padding: 4px 15px;
+  text-transform: capitalize;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s;
+}
+
+.publications-btn a:before {
+  opacity: 0.5;
+}
+
+.publications-btn a:after,
+.publications-btn a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: #9f1605;
+  z-index: -1;
+  transition: 0.35s;
+}
+
+.publications-btn a:after {
+  transition-delay: 0.2s;
+}
+
+.publications-btn a:hover {
+  color: #fff;
+}
+
+.publications-btn a:hover:after,
+.publications-btn a:hover:before {
+  top: 0;
+}
+
 @media (max-width: 767px) {
   .publications-section {
     padding: 20px 0;
