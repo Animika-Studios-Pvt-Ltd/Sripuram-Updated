@@ -24,3 +24,14 @@
     display: none;
   }
 }
+
+/* ------------------------------------- CAROUSEL SECTION ------------------------------------- */
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+  text-decoration: none;
+}
