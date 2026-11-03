@@ -58,13 +58,13 @@
   color: #333;
 }
 
-/* Action Button (.more-1) */
-.sri-sakthi-amma .more-1 {
+/* Action Button (.sri-sakthi-amma-more-btn) */
+.sri-sakthi-amma .sri-sakthi-amma-more-btn {
   text-align: center;
   margin-bottom: 25px;
 }
 
-.sri-sakthi-amma .more-1 a {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a {
   font-family: "helvetica", sans-serif;
   text-decoration: none;
   font-size: 16px;
@@ -80,17 +80,17 @@
   transition: 0.35s;
 }
 
-.sri-sakthi-amma .more-1 a:hover {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover {
   color: #fff;
 }
 
-.sri-sakthi-amma .more-1:hover .more-img {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn:hover .more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
 
-.sri-sakthi-amma .more-1 a:after,
-.sri-sakthi-amma .more-1 a:before {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:after,
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:before {
   position: absolute;
   content: "";
   width: 100%;
@@ -102,12 +102,12 @@
   transition: 0.35s;
 }
 
-.sri-sakthi-amma .more-1 a:after {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:after {
   transition-delay: 0.2s;
 }
 
-.sri-sakthi-amma .more-1 a:hover:after,
-.sri-sakthi-amma .more-1 a:hover:before {
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover:after,
+.sri-sakthi-amma .sri-sakthi-amma-more-btn a:hover:before {
   top: 0;
 }
 
@@ -254,7 +254,7 @@
   .sri-sakthi-amma h1 {
     font-size: 29px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 15px;
     padding: 5px 20px;
   }
@@ -273,7 +273,7 @@
   .about-info p {
     font-size: 17px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 15px;
     padding: 5px 18px;
   }
@@ -292,7 +292,7 @@
   .about-info p {
     font-size: 17px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 5px 18px;
   }
@@ -315,10 +315,10 @@
     font-size: 17px;
     margin: 0 auto 10px auto;
   }
-  .sri-sakthi-amma .more-1 {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn {
     margin-bottom: 10px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 4px 16px;
   }
@@ -360,7 +360,7 @@
     width: 90%;
     font-size: 16px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 14px;
     padding: 4px 16px;
   }
@@ -389,7 +389,7 @@
   .about-info p {
     font-size: 15px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 13px;
     padding: 4px 14px;
   }
@@ -412,7 +412,7 @@
     width: 100%;
     padding: 0 20px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 12px;
     padding: 3px 12px;
   }
@@ -434,7 +434,7 @@
   .sri-sakthi-amma h1 {
     font-size: 19px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 11px;
     padding: 3px 10px;
   }
@@ -457,7 +457,7 @@
     font-size: 14px;
     padding: 0 10px;
   }
-  .sri-sakthi-amma .more-1 a {
+  .sri-sakthi-amma .sri-sakthi-amma-more-btn a {
     font-size: 10px;
     padding: 3px 8px;
   }
