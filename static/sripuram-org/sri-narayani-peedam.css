@@ -30,13 +30,13 @@
   margin-bottom: 5px;
 }
 
-.peedam .more-2 {
+.peedam-more-btn {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 35px;
 }
 
-.peedam .more-2 a {
+.peedam-more-btn a {
   font-family: "helvetica";
   text-decoration: none;
   font-size: 17px;
@@ -52,14 +52,14 @@
   transition: all 0.35s ease;
 }
 
-.peedam .more-2 a:hover {
+.peedam-more-btn a:hover {
   color: #fff;
   background: #9f1605;
   border-color: #9f1605;
 }
 
-.peedam .more-2:hover .more-img,
-.peedam .more-2 a:hover .more-img {
+.peedam-more-btn:hover .more-img,
+.peedam-more-btn a:hover .more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
 }
@@ -130,10 +130,10 @@
     padding: 0 60px;
     font-size: 17px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 30px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 16px;
     padding: 4px 14px;
   }
@@ -156,10 +156,10 @@
     padding: 0 50px;
     font-size: 16px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 28px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 16px;
     padding: 4px 14px;
   }
@@ -182,10 +182,10 @@
     padding: 0 40px;
     font-size: 16px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 25px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 15px;
     padding: 3px 13px;
   }
@@ -208,10 +208,10 @@
     padding: 0 30px;
     font-size: 15.5px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 25px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 15px;
     padding: 3px 13px;
   }
@@ -272,10 +272,10 @@
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 10px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 14px;
     padding: 3px 12px;
   }
@@ -313,10 +313,10 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 22px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 14px;
     padding: 3px 12px;
   }
@@ -344,10 +344,10 @@
     font-size: 14px;
     padding: 0 5px;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 20px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 13.5px;
     padding: 3px 10px;
   }
@@ -384,10 +384,10 @@
     font-size: 13.5px;
     padding: 0;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 18px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 13px;
     padding: 2px 10px;
   }
@@ -413,10 +413,10 @@
     font-size: 13px;
     padding: 0;
   }
-  .peedam .more-2 {
+  .peedam-more-btn {
     margin-bottom: 15px;
   }
-  .peedam .more-2 a {
+  .peedam-more-btn a {
     font-size: 12px;
     padding: 2px 8px;
   }
