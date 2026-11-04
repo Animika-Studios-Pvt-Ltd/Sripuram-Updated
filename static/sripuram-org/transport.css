@@ -222,6 +222,20 @@
     line-height: 1.35;
   }
 
+  .transport-helipad-break {
+    display: block;
+  }
+
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+
   .transport-card li img {
     width: 34px;
   }
@@ -262,6 +276,20 @@
   .transport-card-helipad li {
     white-space: normal;
     line-height: 1.35;
+  }
+
+  .transport-helipad-break {
+    display: block;
+  }
+
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
   }
 
   .transport-card li img {
@@ -365,6 +393,20 @@
   .transport-card-helipad li {
     white-space: normal;
     line-height: 1.35;
+  }
+
+  .transport-helipad-break {
+    display: block;
+  }
+
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
   }
 
   .transport-helipad-break {
@@ -546,6 +588,20 @@
     line-height: 1.35;
   }
 
+  .transport-helipad-break {
+    display: block;
+  }
+
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+
   .transport-card li img {
     width: 24px;
     margin: 0 5px;
@@ -622,6 +678,20 @@
   .transport-card-helipad li {
     white-space: normal;
     line-height: 1.35;
+  }
+
+  .transport-helipad-break {
+    display: block;
+  }
+
+  .transport-card-helipad .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+  }
+
+  .transport-card-helipad .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
   }
 
   .transport-helipad-full {
