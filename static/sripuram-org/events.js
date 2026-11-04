@@ -456,18 +456,18 @@ function initCalendarApp() {
   }
 
   function initDynamicEventsCarousel() {
-    const container = document.querySelector(".events-client-section, .client-section");
+    const container = document.querySelector(".client-section");
     if (!container) return;
     // Parse custom slides written in the HTML
     let customSlides = [];
-    container.querySelectorAll(".events-slide, .custom-event-slide").forEach((slide) => {
+    container.querySelectorAll(".custom-event-slide").forEach((slide) => {
       const dateAttr = slide.getAttribute("data-date");
       if (dateAttr) {
         const parts = dateAttr.split("-");
         if (parts.length === 3) {
           const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
           const clonedSlide = slide.cloneNode(true);
-          clonedSlide.className = "px-3 events-slide custom-event-slide";
+          clonedSlide.className = "px-3 custom-event-slide";
           customSlides.push({
             isCustomHtml: true,
             html: clonedSlide.outerHTML,
@@ -585,17 +585,17 @@ function initCalendarApp() {
 
         html += `
           <div class="px-3">
-            <div class="events-card each-client">
+            <div class="each-client">
               <img src="${img}" class="img-fluid" alt="${evt.title}" />
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-                  <div class="events-date eventsdate">
-                    <span class="events-day event-day">${dayStr}</span>
-                    <span class="events-month event-month">${monthName}</span>
+                  <div class="eventsdate">
+                    <span class="event-day">${dayStr}</span>
+                    <span class="event-month">${monthName}</span>
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-9">
-                  <div class="events-details eventsdetails">
+                  <div class="eventsdetails">
                     <p>${evt.title}</p>
                   </div>
                 </div>
@@ -617,17 +617,17 @@ function initCalendarApp() {
 
         slidesHtml += `
           <div class="px-3">
-            <div class="events-card each-client">
+            <div class="each-client">
               <img src="${img}" class="img-fluid" alt="${evt.title}" />
               <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-                  <div class="events-date eventsdate">
-                    <span class="events-day event-day">${dayStr}</span>
-                    <span class="events-month event-month">${monthName}</span>
+                  <div class="eventsdate">
+                    <span class="event-day">${dayStr}</span>
+                    <span class="event-month">${monthName}</span>
                   </div>
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-9">
-                  <div class="events-details eventsdetails">
+                  <div class="eventsdetails">
                     <p>${evt.title}</p>
                   </div>
                 </div>
