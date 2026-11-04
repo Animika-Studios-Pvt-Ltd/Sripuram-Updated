@@ -456,11 +456,11 @@ function initCalendarApp() {
   }
 
   function initDynamicEventsCarousel() {
-    const container = document.querySelector(".events-client-section, .client-section");
+    const container = document.querySelector(".client-section");
     if (!container) return;
     // Parse custom slides written in the HTML
     let customSlides = [];
-    container.querySelectorAll(".events-slide, .custom-event-slide").forEach((slide) => {
+    container.querySelectorAll(".custom-event-slide").forEach((slide) => {
       const dateAttr = slide.getAttribute("data-date");
       if (dateAttr) {
         const parts = dateAttr.split("-");

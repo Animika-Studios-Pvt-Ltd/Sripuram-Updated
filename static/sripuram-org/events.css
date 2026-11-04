@@ -1,41 +1,34 @@
-/* -------------------------------------- Events Section Styles -------------------------------------- */
+/* -------------------------------------- Auspicious Days & Events Section Styles -------------------------------------- */
 /* Section Outer Container & Title */
-.events-section,
 .auspicious-events-section {
   padding: 40px 0 20px;
 }
 
-.events-section-title,
 .auspicious-events-section-title {
   position: relative;
   bottom: 0px;
 }
 
-.events-section-title h2,
 .auspicious-events-section-title h2 {
   margin-bottom: 0;
 }
 
-.events-section a,
 .auspicious-events-section a {
   color: #000;
   text-decoration: none;
 }
 
 /* Event Cards Grid Container */
-.events-client-section,
 .client-section {
   border-bottom: 2px solid #d4b16f;
   margin-top: -100px;
 }
 
-.events-card img,
 .each-client img {
   padding: 0 10px;
   border-radius: 25px;
 }
 
-.events-date,
 .eventsdate {
   background: #fcd475;
   border-radius: 6px;
@@ -44,9 +37,6 @@
   padding: 5px;
 }
 
-.events-date h5,
-.events-date .events-day,
-.events-date .event-day,
 .eventsdate h5,
 .eventsdate .event-day {
   font-size: 40px;
@@ -58,9 +48,6 @@
   display: block;
 }
 
-.events-date h4,
-.events-date .events-month,
-.events-date .event-month,
 .eventsdate h4,
 .eventsdate .event-month {
   margin: -5px 0 0;
@@ -71,7 +58,6 @@
   display: block;
 }
 
-.events-details,
 .eventsdetails {
   display: block;
   position: relative;
@@ -79,7 +65,6 @@
   padding-bottom: 70px;
 }
 
-.events-details p,
 .eventsdetails p {
   text-align: left;
 }
@@ -93,9 +78,7 @@
   position: relative;
 }
 
-.events-more-btn,
 .more-3,
-.events-calendar-btn,
 .calender {
   width: fit-content;
   display: inline-flex;
@@ -104,11 +87,8 @@
   position: relative;
 }
 
-.events-calendar-btn a,
-.events-calendar-btn button,
 .calender a,
 .calender button,
-.events-more-btn a,
 .more-3 a {
   display: inline-flex;
   align-items: center;
@@ -131,12 +111,10 @@
   white-space: nowrap;
 }
 
-.events-calendar-btn button,
 .calender button {
   text-transform: capitalize;
 }
 
-.events-calendar-btn button .fa-calendar-alt,
 .calender button .fa-calendar-alt {
   background: #d6b06f;
   display: inline-flex;
@@ -153,28 +131,19 @@
   transition: all 0.2s ease;
 }
 
-.events-more-btn a:hover,
 .more-3 a:hover,
-.events-calendar-btn button:hover,
 .calender button:hover {
   color: #fff;
   background: #9f1605;
   border-color: #9f1605;
 }
 
-.events-more-btn a:hover .fa-calendar-alt,
 .more-3 a:hover .fa-calendar-alt,
-.events-calendar-btn button:hover .fa-calendar-alt,
 .calender button:hover .fa-calendar-alt {
   background: #7a1104;
 }
 
-.events-calendar-btn:hover .events-more-img,
-.events-calendar-btn:hover .more-img,
-.calender:hover .events-more-img,
 .calender:hover .more-img,
-.events-more-btn:hover .events-more-img,
-.events-more-btn:hover .more-img,
 .more-3:hover .more-img {
   transform: rotate(45deg) !important;
   filter: brightness(10.5);
@@ -271,17 +240,14 @@
 
 /* Events Section Media Queries (High to Low: 1440px, 1366px, 1200px, 1024px, 991px, 767px, 575px, 480px, 360px) */
 @media (max-width: 1440px) {
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 42px;
     font-size: 14px;
     padding: 0 18px;
     border-radius: 21px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 42px;
     padding: 0 12px;
     margin-left: -18px;
@@ -303,23 +269,16 @@
 }
 
 @media (max-width: 1366px) {
-  .events-date,
-.eventsdate {
+  .eventsdate {
     height: 70px;
     width: 65px;
   }
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 17px;
   }
@@ -337,21 +296,17 @@
 }
 
 @media (max-width: 1200px) {
-  .events-section,
-.auspicious-events-section {
+  .auspicious-events-section {
   padding: 35px 0 20px;
 }
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 40px;
     font-size: 14px;
     padding: 0 16px;
     border-radius: 20px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 40px;
     padding: 0 12px;
     margin-left: -16px;
@@ -359,28 +314,20 @@
     border-bottom-left-radius: 20px;
     font-size: 13px;
   }
-  .events-date,
-.eventsdate {
+  .eventsdate {
     height: 70px;
     width: 65px;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 15px;
   }
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
-  .events-details,
-.eventsdetails {
+  .eventsdetails {
     top: 15px;
     padding-bottom: 50px;
   }
@@ -398,23 +345,16 @@
 }
 
 @media (max-width: 1024px) {
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 30px;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     margin-top: 0;
     font-size: 18px;
   }
-  .events-date,
-.eventsdate {
+  .eventsdate {
     height: 70px;
     width: 65px;
   }
@@ -432,21 +372,17 @@
 }
 
 @media (max-width: 991px) {
-  .events-section,
-.auspicious-events-section {
+  .auspicious-events-section {
   padding: 30px 0 15px;
 }
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 38px;
     font-size: 13.5px;
     padding: 0 15px;
     border-radius: 19px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 38px;
     padding: 0 10px;
     margin-left: -15px;
@@ -454,32 +390,23 @@
     border-bottom-left-radius: 19px;
     font-size: 12.5px;
   }
-  .events-card,
-.each-client {
+  .each-client {
     text-align: center;
   }
-  .events-date,
-.eventsdate {
+  .eventsdate {
     height: 60px;
     width: 50px;
   }
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 20px;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 14px;
     margin-top: 0;
   }
-  .events-details p,
-.eventsdetails p {
+  .eventsdetails p {
     font-size: 18px;
   }
   .carousel-nav-btn {
@@ -496,8 +423,7 @@
 }
 
 @media (max-width: 767px) {
-  .events-section,
-.auspicious-events-section {
+  .auspicious-events-section {
   padding: 25px 0 10px;
 }
   .events-action-container {
@@ -505,17 +431,14 @@
     gap: 10px;
     margin-top: 15px;
   }
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 36px;
     font-size: 13px;
     padding: 0 14px;
     border-radius: 18px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 36px;
     padding: 0 10px;
     margin-left: -14px;
@@ -523,45 +446,32 @@
     border-bottom-left-radius: 18px;
     font-size: 12px;
   }
-  .events-calendar-btn,
   .calender,
-  .events-details,
   .eventsdetails,
-  .events-more-btn,
   .more-3 {
     position: relative;
   }
-  .events-card,
-.each-client {
+  .each-client {
     margin-bottom: 20px;
   }
-  .events-date,
-.eventsdate {
+  .eventsdate {
     width: 70%;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 16px;
   }
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 24px;
   }
-  .events-details,
-.eventsdetails {
+  .eventsdetails {
     padding-bottom: 0px;
     bottom: auto;
     right: 0;
     width: 70%;
   }
-  .events-details p,
-.eventsdetails p {
+  .eventsdetails p {
     font-size: 18px;
   }
   .carousel-nav-btn {
@@ -578,21 +488,17 @@
 }
 
 @media (max-width: 575px) {
-  .events-section,
-.auspicious-events-section {
+  .auspicious-events-section {
   padding: 20px 0 10px;
 }
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 34px;
     font-size: 12.5px;
     padding: 0 12px;
     border-radius: 17px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 34px;
     padding: 0 8px;
     margin-left: -12px;
@@ -600,8 +506,7 @@
     border-bottom-left-radius: 17px;
     font-size: 11.5px;
   }
-  .events-details p,
-.eventsdetails p {
+  .eventsdetails p {
     font-size: 18px !important;
   }
   .carousel-nav-btn {
@@ -618,17 +523,14 @@
 }
 
 @media (max-width: 480px) {
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 32px;
     font-size: 12px;
     padding: 0 10px;
     border-radius: 16px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 32px;
     padding: 0 8px;
     margin-left: -10px;
@@ -636,12 +538,10 @@
     border-bottom-left-radius: 16px;
     font-size: 11px;
   }
-  .events-date,
-.eventsdate {
+  .eventsdate {
     width: 80%;
   }
-  .events-details,
-.eventsdetails {
+  .eventsdetails {
     width: 80%;
   }
   .carousel-nav-btn {
@@ -658,17 +558,14 @@
 }
 
 @media (max-width: 360px) {
-  .events-calendar-btn button,
   .calender button,
-  .events-more-btn a,
   .more-3 a {
     height: 30px;
     font-size: 11px;
     padding: 0 8px;
     border-radius: 15px;
   }
-  .events-calendar-btn button .fa-calendar-alt,
-.calender button .fa-calendar-alt {
+  .calender button .fa-calendar-alt {
     height: 30px;
     padding: 0 6px;
     margin-left: -8px;
@@ -676,22 +573,15 @@
     border-bottom-left-radius: 15px;
     font-size: 10px;
   }
-  .events-date h5,
-.events-date .events-day,
-.events-date .event-day,
-.eventsdate h5,
-.eventsdate .event-day {
+  .eventsdate h5,
+  .eventsdate .event-day {
     font-size: 20px;
   }
-  .events-date h4,
-.events-date .events-month,
-.events-date .event-month,
-.eventsdate h4,
-.eventsdate .event-month {
+  .eventsdate h4,
+  .eventsdate .event-month {
     font-size: 14px;
   }
-  .events-details p,
-.eventsdetails p {
+  .eventsdetails p {
     font-size: 16px !important;
   }
   .carousel-nav-btn {
