@@ -1,18 +1,18 @@
 /* ----------------------------- HOW TO GET HERE SECTION ----------------------------- */
-.HGH {
+.how-to-get-here-section {
   padding: 60px 0;
   text-align: center;
 }
 
-.HGH .row {
+.how-to-get-here-section .row {
   margin: 0;
 }
 
-.HGH .motif-1 {
+.how-to-get-here-section .motif-1 {
   margin-bottom: 40px;
 }
 
-.hgh-desktop-map {
+.how-to-get-here-section-desktop-map {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,138 +21,138 @@
   width: 100%;
 }
 
-.hgh-desktop-map img {
+.how-to-get-here-section-desktop-map img {
   max-width: 100%;
   height: auto;
   width: auto;
   object-fit: contain;
 }
 
-.hgh-mobile-row {
+.how-to-get-here-section-mobile-row {
   display: none;
   margin: 0;
 }
 
-.hgh-mobile-row .globe {
+.how-to-get-here-section-mobile-row .globe {
   position: relative;
   text-align: center;
   margin-bottom: 30px;
 }
 
-.hgh-mobile-row .globe:last-child,
-.hgh-mobile-row .globe:last-child img {
+.how-to-get-here-section-mobile-row .globe:last-child,
+.how-to-get-here-section-mobile-row .globe:last-child img {
   margin-bottom: 0;
 }
 
 /* Media Queries (High to Low - Desktop First) */
 @media (max-width: 1440px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 50px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 35px;
   }
 }
 
 @media (max-width: 1366px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 45px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 1200px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 35px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 25px;
   }
 }
 
 @media (max-width: 991px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 30px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 25px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 25px;
   }
 }
 
 @media (max-width: 575px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 20px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 20px;
   }
 
-  .hgh-desktop-map {
+  .how-to-get-here-section-desktop-map {
     display: none;
   }
 
-  .hgh-mobile-row {
+  .how-to-get-here-section-mobile-row {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hgh-mobile-row .globe {
+  .how-to-get-here-section-mobile-row .globe {
     margin-bottom: 25px;
   }
 
-  .hgh-mobile-row .globe img {
+  .how-to-get-here-section-mobile-row .globe img {
     max-width: 70%;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 30px 0;
   }
 
-  .hgh-mobile-row .globe {
+  .how-to-get-here-section-mobile-row .globe {
     margin-bottom: 20px;
   }
 
-  .hgh-mobile-row .globe img {
+  .how-to-get-here-section-mobile-row .globe img {
     max-width: 60%;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 360px) {
-  .HGH {
+  .how-to-get-here-section {
     padding: 25px 0;
   }
 
-  .HGH .motif-1 {
+  .how-to-get-here-section .motif-1 {
     margin-bottom: 15px;
   }
 
-  .hgh-mobile-row .globe {
+  .how-to-get-here-section-mobile-row .globe {
     margin-bottom: 15px;
   }
 
-  .hgh-mobile-row .globe img {
+  .how-to-get-here-section-mobile-row .globe img {
     max-width: 70%;
     margin-bottom: 10px;
   }
