@@ -262,10 +262,10 @@ $(document).ready(function () {
   setTimeout(fixSlickAriaFocus, 1000);
 
   // Initialize Gallery Slider only if the section exists on page and Slick library is available
-  if ($(".gallery-slider").length && typeof $.fn.slick === "function") {
-    var $imagesSlider = $(".gallery-slider .gallery-slider__images>div");
-    var $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
-    var $caption = $(".gallery-slider .caption");
+  if ($(".distinguished-guests-slider").length && typeof $.fn.slick === "function") {
+    var $imagesSlider = $(".distinguished-guests-images > div");
+    var $thumbnailsSlider = $(".distinguished-guests-thumbnails > div");
+    var $caption = $(".distinguished-guests-slider .caption");
 
     function updateCaption(caption) {
       if (!caption) caption = "&nbsp;";
@@ -280,9 +280,9 @@ $(document).ready(function () {
       cssEase: "linear",
       fade: true,
       draggable: false,
-      asNavFor: ".gallery-slider__thumbnails>div",
-      prevArrow: ".gallery-slider__images .prev-arrow",
-      nextArrow: ".gallery-slider__images .next-arrow",
+      asNavFor: ".distinguished-guests-thumbnails > div",
+      prevArrow: ".distinguished-guests-images .distinguished-guests-prev-arrow",
+      nextArrow: ".distinguished-guests-images .distinguished-guests-next-arrow",
     });
 
     $thumbnailsSlider.slick({
@@ -294,9 +294,9 @@ $(document).ready(function () {
       centerMode: true,
       draggable: false,
       focusOnSelect: true,
-      asNavFor: ".gallery-slider .gallery-slider__images>div",
-      prevArrow: ".gallery-slider__thumbnails .prev-arrow",
-      nextArrow: ".gallery-slider__thumbnails .next-arrow",
+      asNavFor: ".distinguished-guests-images > div",
+      prevArrow: ".distinguished-guests-thumbnails .distinguished-guests-prev-arrow",
+      nextArrow: ".distinguished-guests-thumbnails .distinguished-guests-next-arrow",
       responsive: [
         {
           breakpoint: 1200,
@@ -315,7 +315,7 @@ $(document).ready(function () {
       ],
     });
 
-    var captionText = $(".gallery-slider__images .slick-current img").attr(
+    var captionText = $(".distinguished-guests-images .slick-current img").attr(
       "alt",
     );
     updateCaption(captionText);
@@ -333,7 +333,7 @@ $(document).ready(function () {
     });
 
     $imagesSlider.on("afterChange", function () {
-      var currentCaption = $(".gallery-slider__images .slick-current img").attr(
+      var currentCaption = $(".distinguished-guests-images .slick-current img").attr(
         "alt",
       );
       updateCaption(currentCaption);
@@ -345,7 +345,7 @@ $(document).ready(function () {
 /* --------------------------------- 4. PROGRESSIVE IMAGE BATCH LOADER (GALLERY SLIDER) --------------------------------- */
 function processGalleryImageBatches() {
   var lazyImages = Array.from(
-    document.querySelectorAll(".gallery-slider img[data-src]"),
+    document.querySelectorAll(".distinguished-guests-slider img[data-src]"),
   );
   if (!lazyImages.length) return;
 
