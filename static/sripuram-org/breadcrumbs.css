@@ -9,12 +9,12 @@
   text-decoration: none;
 }
 
-.brd-crmb nav,
-.brd-crmb ol {
+.breadcrumb-section nav,
+.breadcrumb-section ol {
   border-radius: 0 0 15px 15px;
 }
 
-.brd-crmb ol {
+.breadcrumb-section ol {
   background: #ecb05a;
   padding: 20px;
 }
@@ -73,7 +73,7 @@
     font-size: 14px;
   }
 
-  .brd-crmb ol {
+  .breadcrumb-section ol {
     padding: 5px;
   }
 }
